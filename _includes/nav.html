@@ -1,0 +1,28 @@
+<div class="mainNav">
+	<div class="container-fluid">
+		<div class="row">
+			<header role="banner">
+				<nav>
+				<img src="what.png" alt="Albert logo" />
+					<ul>
+					   {% for navLink in site.data.navItems.navLinks %}
+					      <li><a href="{{ navLink.url }}" alt="{{ navLink.title }}">{{ navLink.title }}</a>
+
+			                {% if navLink.subitems[0] %}
+
+			                <ul>
+					   			{% for subitem in navLink.subitems %}
+					   				<li><a href="{{ subitem.url }}" alt="{{ subitem.title }}">{{ subitem.title }}</a></li>
+					   			{% endfor %}
+			                </ul>
+
+			               	{% endif %}
+
+					      </li>
+					   {% endfor %}
+					</ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+</div>

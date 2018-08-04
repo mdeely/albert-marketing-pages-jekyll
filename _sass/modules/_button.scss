@@ -1,0 +1,30 @@
+#{$button} {
+	@include button();
+
+	.icon {
+		&--left {
+			margin-right: em(5);
+		}
+
+		&--right {
+			margin-left: em(5);
+		}
+	}
+}
+
+.button--large {
+	@include button();
+	@include small-title();
+	padding: em(20) em(30);
+}
+
+.button--small {
+	@include button();
+	@include paragraph-small();
+	padding: em(5) em(10);
+}
+
+.button--white {
+	@include button();
+	@include button-color(white, $link);
+}

@@ -1,0 +1,61 @@
+html {
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
+}
+
+html,
+body {
+	font-size: 100%;
+	color: $abbey-grey;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: $link;
+	text-decoration: none;
+}
+
+p {
+	@include base-text-styles();
+	font-weight: 200;
+	line-height: em(23);
+	margin-bottom: em(30);
+}
+
+h1 {
+	@include x-large-title;
+}
+
+h2 {
+	@include large-title;
+}
+
+h3 {
+	@include medium-title;
+}
+
+h4 {
+	@include small-title;
+}
+
+h5 {
+	@include x-small-title;
+}
+
+h6 {
+	@include label-title;
+}
+
+hr {
+	margin-top: em(40);
+	border: 0px solid transparent;
+	border-bottom: em(1) solid $menuBorder;
+	max-width: 100%;
+}
+

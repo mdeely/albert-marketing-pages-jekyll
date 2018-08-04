@@ -1,0 +1,51 @@
+$lastCtaComponent-viewport: $m-viewport;
+
+.lastCtaComponent {
+
+	.lastCtaComponent__left,
+	.lastCtaComponent__right {
+		display: flex;
+		@include large-padding();
+		color: #FFFFFF;
+
+		@media only screen and (max-width: $lastCtaComponent-viewport) {
+			display: initial;
+		}
+
+		.lastCtaComponent__info-container {
+			margin-left: rem(20);
+
+			@media only screen and (max-width: $lastCtaComponent-viewport) {
+				margin-left: 0;
+			}
+
+
+			.lastCtaComponent__title{
+				@include medium-title();
+				@include make-fancy();
+			}
+		}
+
+		.lastCtaComponent__visual {
+			flex: none;
+			height: rem(100);
+			width: rem(100);
+			margin-right: rem(20);
+			border-radius: 50%;
+			background-color: white;
+			overflow: hidden;
+
+			@media only screen and (max-width: $lastCtaComponent-viewport) {
+				margin-bottom: rem(20);
+			}
+		}
+	}
+
+	.lastCtaComponent__left {
+		background-color: $primaryGreen;
+	}
+
+	.lastCtaComponent__right {
+		background-color: $link;
+	}
+}

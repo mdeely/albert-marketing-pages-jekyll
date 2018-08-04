@@ -1,0 +1,113 @@
+// Buttons
+@mixin base-button() {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: em(5);
+	padding: rem(15) rem(25);
+	font-size: rem(16);
+	box-shadow: $shadow_depth_2;
+	border: 0 solid transparent;
+	cursor: pointer;
+	outline: 0px solid transparent;
+	@include x-small-title();
+}
+
+@mixin button-color($button-bg-color: $mountain-meadow-green, $button-text-color: #FFFFFF) {
+	color: $button-text-color;
+	background-color: $button-bg-color;
+
+	&:hover {
+		box-shadow: $shadow_depth_4;
+		background-color: darken($button-bg-color, 1.5);
+	}
+
+	&:active {
+		transition: box-shadow 0s ease-in-out;
+		background-color: $button-bg-color;
+		box-shadow: $shadow_depth_2;
+	}
+}
+
+@mixin button() {
+	@include base-button();
+	@include button-color();
+	transition: box-shadow .2s ease-in-out;
+}
+
+
+// Typography
+
+@mixin base-text-styles() {
+	font-weight: 400;
+	margin-bottom: rem(10);
+	line-height: rem(28);
+}
+
+@mixin make-fancy {
+	font-family: 'All Round Gothic';
+}
+
+@mixin x-large-title() {
+	@include base-text-styles();
+	font-size: rem(52);
+	color: $secondary_blue;
+
+	@media only screen and (max-width: $s-viewport) {
+		font-size: rem(38);
+	}
+}
+
+@mixin large-title() {
+	@include base-text-styles();
+	font-size: em(28);
+}
+
+@mixin medium-title() {
+	@include base-text-styles();
+	font-size: em(24);
+}
+
+@mixin small-title() {
+	@include base-text-styles();
+	font-size: em(20);
+}
+
+@mixin x-small-title() {
+	@include base-text-styles();
+	font-size: em(16);
+	font-weight: 400;
+}
+
+@mixin label-title() {
+	@include base-text-styles();
+	@include make-fancy();
+	color: $text-black--lighter_step_1;
+	font-weight: 600;
+	line-height: em(64);
+	font-size: em(20);
+	text-transform: uppercase;
+	letter-spacing: .65px;
+
+	@media only screen and (max-width: $s-viewport) {
+		font-size: rem(16);
+	}
+}
+
+@mixin paragraph-small() {
+	font-size: em(14);
+	line-height: em(24);
+}
+
+@mixin paragraph-large() {
+	font-size: em(4);
+}
+
+
+// Spacing
+@mixin large-padding() {
+	padding: rem(80);
+
+	@media only screen and (max-width: $s-viewport) {
+		padding: rem(40);
+	}
+}

@@ -1,0 +1,22 @@
+navLinks:
+
+- title: Features
+  url: features.html
+
+- title: Products
+  url: products.html
+  subitems:
+    - title: K-12 Core
+    - url: k-12-core.html
+    
+    - title: K-12 Advanced Placement
+    - url: k-12-advanced-placement.html
+
+- title: Benefits
+  url: benefits.html
+
+- title: Results
+  url: results.html
+
+- title: Pricing
+  url: pricing.html
