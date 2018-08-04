@@ -1,0 +1,39 @@
+{% assign lastCta = include.content %}
+
+<div class="container-fluid">
+    <div class="lastCtaComponent row">
+        <div class="lastCtaComponent__left col-md-6 col-sm-12">
+            <div class="lastCtaComponent__visual">
+                <img src="{{ lastCta.left.img_src }}"/>
+            </div>
+            <div class="lastCtaComponent__info-container">
+                <div class="lastCtaComponent__title">{{ lastCta.left.title }}</div>
+
+                {% if lastCta.left.description %} 
+                	<p class="lasttaComponent__description">{{ lastCta.left.description }}</p>
+                {% endif %}
+
+                {% if lastCta.left.cta_url %} 
+                	<a href="{{ lastCta.left.cta_url }}" class="lastCtaComponent__cta button--white">{{ lastCta.left.cta_label }}</a>
+                {% endif %}
+
+            </div>
+        </div>
+        <div class="lastCtaComponent__right col-md-6 col-sm-12">
+            <div class="lastCtaComponent__visual">
+                <img src="{{ lastCta.right.img_src }}"/>
+            </div>
+            <div class="lastCtaComponent__info-container">
+                <div class="lastCtaComponent__title">{{ lastCta.right.title }}</div>
+
+                {% if lastCta.right.description %} 
+                	<p class="lasttaComponent__description">{{ lastCta.right.description }}</p>
+                {% endif %}
+
+                {% if lastCta.right.cta_url %} 
+                	<a href="{{ lastCta.right.cta_url }}" class="lastCtaComponent__cta button--white">{{ lastCta.right.cta_label }}</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

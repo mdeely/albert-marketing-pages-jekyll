@@ -38,6 +38,11 @@ $lastCtaComponent-viewport: $m-viewport;
 			@media only screen and (max-width: $lastCtaComponent-viewport) {
 				margin-bottom: rem(20);
 			}
+
+			img {
+				height: 100%;
+				width: auto;
+			}
 		}
 	}
 

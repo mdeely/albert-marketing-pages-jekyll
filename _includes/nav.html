@@ -1,26 +1,38 @@
+{% assign nav = site.data.nav %}
 <div class="mainNav">
 	<div class="container-fluid">
 		<div class="row">
 			<header role="banner">
+				<img class="mainNav__logo" src="assets/img//hero-test.svg" alt="Albert logo" />
 				<nav>
-				<img src="what.png" alt="Albert logo" />
-					<ul>
-					   {% for navLink in site.data.navItems.navLinks %}
-					      <li><a href="{{ navLink.url }}" alt="{{ navLink.title }}">{{ navLink.title }}</a>
+					<ul class="mainNav__nav">
+						{% for navItem in nav.navItems %}
+					      <li><a href="{{ navItem.url }}">{{ navItem.label }}</a>
 
-			                {% if navLink.subitems[0] %}
+			                {% if navItem.subitems[0] %}
 
 			                <ul>
-					   			{% for subitem in navLink.subitems %}
-					   				<li><a href="{{ subitem.url }}" alt="{{ subitem.title }}">{{ subitem.title }}</a></li>
+					   			{% for subitem in navItem.subitems %}
+					   				<li><a href="{{ subitem.url }}">{{ subitem.label }}</a></li>
 					   			{% endfor %}
 			                </ul>
 
 			               	{% endif %}
 
 					      </li>
-					   {% endfor %}
+						{% endfor %}
 					</ul>
+			        
+			        {% if nav.accountItems[0] %}
+
+						<ul class="mainNav__account">
+							{% for accountItem in nav.accountItems %}
+								<li><a href="{{ accountItem_href }}">{{ accountItem.label }}</a></li>
+							{% endfor %}
+						</ul>
+
+			        {% endif %}
+
 				</nav>
 			</header>
 		</div>

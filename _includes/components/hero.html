@@ -1,0 +1,30 @@
+{% assign hero = include.content %}
+
+<div class="heroComponent">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="heroComponent__info-container col-md-6">
+            
+                {% if hero.supertitle %} 
+                    <h6 class="heroComponent__supertitle">{{ hero.supertitle }}</h6>
+                {% endif %}
+
+                {% if hero.title %} 
+                    <h1 class="heroComponent__title">{{ hero.title }}</h1>
+                {% endif %}
+
+                {% if hero.description %} 
+                    <p class="heroComponent__description">{{ hero.description }}</p>
+                {% endif %}
+
+                {% if hero.cta_href %} 
+                    <a href="{{ hero.cta_href }}" class="button heroComponent__cta">{{ hero.cta_label }}</a>
+                {% endif %}
+
+            </div>
+            <div class="heroComponent__visual ">
+                <img src="{{ hero.img_src }}">
+            </div>
+        </div>
+    </div>
+</div>

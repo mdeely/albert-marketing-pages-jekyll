@@ -1,0 +1,23 @@
+{% assign grid = include.content %}
+
+<div class="container-fluid">
+	<div class="row">
+	<div class="gridComponent col-xs-12">
+		<div class="gridComponent__title">{{ grid.title }}</div>
+
+			<ul class="gridItems">
+				{% for gridItem in grid.gridItems %}
+				<li class="gridItem">
+					<div class="gridItem__visual">
+						<img src="{{ gridItem.img_src }}">
+					</div>
+					<div class="gridItem__badge">{{ gridItem.badge }}</div>
+					<div class="gridItem__title">{{ gridItem.title }}</div>
+					<div class="gridItem__description">{{ gridItem.description }}</div>
+					<a href="{{ gridItem.cta_url }}" class="gridItem__link button">{{ gridItem.cta_label }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
