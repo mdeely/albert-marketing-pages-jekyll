@@ -2,6 +2,12 @@
 
 {% include nav.html %}
 
-	{{ content }}
+  {% assign components = page.components %}
+  {% for component in components %}
+
+    {% assign include_file = component.component_type | append: '.html' %}
+    {% include /components/{{ include_file }} content=component %}
+
+  {% endfor %}
 
 {% include footer.html %}

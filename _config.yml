@@ -18,7 +18,7 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   No
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://www.albert.io/ # the base hostname & protocol for your site, e.g. http://example.com
+url: https://www.albert.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -28,14 +28,20 @@ theme: minima
 plugins:
   - jekyll-feed
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+collections: 
+  landing_pages: 
+    output: true
+    permalink: /:name
+
 sass:
   sass_dir: _sass
-
-  defaults:
-  - scope:
-      path: "assets/img"
-    values:
-      image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

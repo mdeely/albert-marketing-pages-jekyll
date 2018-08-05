@@ -1,0 +1,21 @@
+{% assign tabBar = include.content %}
+
+<div class="tabBar">
+  <ul class="tabBar__list">
+    {% for tabBar in tabBar.tabBarItems %}
+
+    <li class="tabBar__list__item">
+
+      {% if tabBar.img_src %} 
+      <img src="{{ tabBar.img_src }}">
+      {% endif %}
+
+      {% if tabBar.url %} 
+      <a href="{{ tabBar.url }}" class="tabBar__anchor">{{ tabBar.label }}</a>
+      {% endif %}
+
+    </li>
+
+    {% endfor %}
+  </ul>
+</div>

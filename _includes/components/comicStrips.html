@@ -1,0 +1,32 @@
+{% assign comics = include.content %}
+
+<div class="comicStrip">
+
+	<div class="comicStrip__nav">
+		<!-- collect all items for tabbar. Then include tabbar and pass variables to the include -->
+		{% for comicStrip in comics.comicStrips %}
+		<a href="#">{{ comicStrip.teacher_name }}</a>
+		{% endfor %}
+	</div>
+
+	<ul class="comicStrip__list">
+		{% for comicStrip in comics.comicStrips %}
+		<li class="comicStrip__item">
+			<ul class="comicPanel__list">
+
+				{% for comicPanel in comicStrip.comicPanels %}
+				<li class="comicPanel__item">
+					<a href="#" class="comicStrip__panel-link">
+						<img src="{{ comicPanel.img_src }}" class="comicStrip__panel-img"/>
+						<p class="comicStrip__panel-caption">{{ comicPanel.caption }}</p>
+					</a>
+				</li>
+				{% endfor %}
+
+			</ul>
+		</li>
+		{% endfor %}
+
+	</div>
+
+</div>

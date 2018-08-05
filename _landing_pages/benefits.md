@@ -1,6 +1,8 @@
+---
+components:
 - component_type: hero
-  supertitle: Hero supertitle
-  title: Hero title
+  supertitle: Benefits
+  title: Benefits of Albert
   description: Hero description
   cta_label: Hero CTA
   cta_url: hero-url
@@ -42,3 +44,4 @@
   cta_label: Hero CTA
   cta_url: hero-url
   img_src: "assets/img//hero-test.svg"
+---
