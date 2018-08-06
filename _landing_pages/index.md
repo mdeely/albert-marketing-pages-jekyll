@@ -8,7 +8,7 @@ components:
   cta_url: hero-url
   img_src: "assets/img//hero-test.svg"
 
-- component_type: lastCta
+- component_type: preFooter
   left:
     img_src: "assets/img//hero-test.svg"
     title: Left title

@@ -1,0 +1,28 @@
+{% assign preFooter = include.content %}
+
+<section class="preFooter">
+    <div class="preFooter__left">
+        <div class="container">
+            <div class="preFooter__visual">
+                <img src="{{ preFooter.left.img_src | default: 'assets/img/random-img.svg' }}"/>
+            </div>
+            <div class="preFooter__info-container">
+                <div class="preFooter__title">{{ preFooter.left.title | default: 'Default Left Title'  }}</div>
+                <p class="lasttaComponent__description">{{ preFooter.left.description | default: 'Default left description' }}</p>
+                <a href="{{ preFooter.left.cta_url | default: '#' }}" class="preFooter__cta button--white">{{ preFooter.left.cta_label | default: 'Default CTA Label' }}</a>
+            </div>
+        </div>
+    </div>
+    <div class="preFooter__right">
+        <div class="container">
+            <div class="preFooter__visual">
+                <img src="{{ preFooter.right.img_src | default: 'assets/img/random-img.svg' }}"/>
+            </div>
+            <div class="preFooter__info-container">
+                <div class="preFooter__title">{{ preFooter.right.title | default: 'Default right Title'  }}</div>
+                <p class="lasttaComponent__description">{{ preFooter.right.description | default: 'Default right description' }}</p>
+                <a href="{{ preFooter.right.cta_url | default: '#' }}" class="preFooter__cta button--white">{{ preFooter.right.cta_label | default: 'Default CTA Label' }}</a>
+            </div>
+        </div>
+    </div>
+</section>

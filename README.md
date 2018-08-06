@@ -67,4 +67,4 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-* **Marc Deely** - *Built and styled* - [Portfolio website](www.marcdeely.com)
+* **Marc Deely** - *Built and styled* - [Portfolio website](http://www.marcdeely.com/)

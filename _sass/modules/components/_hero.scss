@@ -1,0 +1,63 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: $nav-height;
+    min-height: 600px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: auto 40%;
+
+	.hero__content {
+		width: 100%;
+    	display: flex;
+    	flex-direction: column;
+		height: calc(100vh - #{$nav-height});
+		width: (100 - 16) * 1vw;
+
+
+		.hero__info-container {
+
+			.hero__supertitle {
+
+			}
+
+			.hero__title {
+				
+			}
+
+			.hero__description {
+				
+			}
+
+			.hero__cta {
+
+			}
+
+		}
+
+		.hero__visual {
+			img	{
+				display: none;
+				max-width: 100%;
+			}
+
+		}
+
+	}
+
+}
+
+@media only screen and (min-width: $s-viewport) {
+	.hero {
+	    background-size: 100% 90%;
+	    background-position-x: rem(290);
+	    background-position-y: center;
+	    background-origin: content-box;
+
+		.hero__content {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+}

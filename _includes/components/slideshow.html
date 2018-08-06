@@ -1,0 +1,34 @@
+{% assign slideshow = include.content %}
+
+<section class="slideshow">
+	<div class="slideshow__title">{{ slideshow.title }}</div>
+	<div class="slideshow__description">{{ slideshow.description }}</div>
+
+	<div class="slideshow__nav">
+		<ul class="slideShow__nav-list"></ul>
+
+		{% for slideshowItem in slideshow.slideshowItems %}
+		<li class="slideshow__nav-item">
+			<a href="">
+				<div class="slideshow__nav-item-title">{{ slideshowItem.title }}</div>
+				<div class="slideshow__nav-item-description">{{ slideshowItem.description }}</div>
+			</a>
+		</li>
+		{% endfor %}
+
+		</ul>
+	</div>
+
+	<div class="slideshow__display">
+		<ul class="slideshow__display-list"></ul>
+		
+		{% for slideshowItem in slideshow.slideshowItems %}
+		<li class="slideshow__display-item">
+			<img src="{{ slideshowItem.img_src }}"/>
+		</li>
+		{% endfor %}
+
+		</ul>
+	</div>
+
+</div>

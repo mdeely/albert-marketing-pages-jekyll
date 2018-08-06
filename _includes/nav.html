@@ -1,42 +1,43 @@
 {% assign nav = site.data.nav %}
 <div class="mainNav">
-	<div class="container-fluid">
-		<div class="row">
-			<header role="banner">
-				<a href="/">
-					<img class="mainNav__logo" src="assets/img//hero-test.svg" alt="Albert logo" />
-				</a>
-				<nav>
-					<ul class="mainNav__nav">
-						{% for navItem in nav.navItems %}
-					      <li><a href="{{ navItem.url }}">{{ navItem.label }}</a>
+	<header role="banner">
+		<a href="/" class="mainNav__logo">
+			<img src="assets/img/logo-combined-white.svg" alt="Albert logo" />
+		</a>
+		<div class="mainNav__mobile-toggle">
+			<div>x</div>
+			<img class="toggle--open" src="/img/navtoggle-open.svg" alt="Open nav">
+			<img class="toggle--close" src="/img/navtoggle-close.svg" alt="Close nav">
+    	</div>
+		<nav role=navigation>
+			<ul class="mainNav__nav">
+				{% for navItem in nav.navItems %}
+			      <li><a href="{{ navItem.url }}">{{ navItem.label }}</a>
 
-			                {% if navItem.subitems[0] %}
+	                {% if navItem.subitems[0] %}
 
-			                <ul>
-					   			{% for subitem in navItem.subitems %}
-					   				<li><a href="{{ subitem.url }}">{{ subitem.label }}</a></li>
-					   			{% endfor %}
-			                </ul>
+	                <ul>
+			   			{% for subitem in navItem.subitems %}
+			      		<li><a href="{{ subitem.url }}">{{ subitem.label }}</a>
+			   			{% endfor %}
+	                </ul>
 
-			               	{% endif %}
+	               	{% endif %}
 
-					      </li>
-						{% endfor %}
-					</ul>
-			        
-			        {% if nav.accountItems[0] %}
+			      </li>
+				{% endfor %}
+			</ul>
+	        
+	        {% if nav.accountItems[0] %}
 
-						<ul class="mainNav__account">
-							{% for accountItem in nav.accountItems %}
-								<li><a href="{{ accountItem_href }}">{{ accountItem.label }}</a></li>
-							{% endfor %}
-						</ul>
+				<ul class="mainNav__account">
+					{% for accountItem in nav.accountItems %}
+						<li><a href="{{ accountItem_href }}">{{ accountItem.label }}</a></li>
+					{% endfor %}
+				</ul>
 
-			        {% endif %}
+	        {% endif %}
 
-				</nav>
-			</header>
-		</div>
-	</div>
+		</nav>
+	</header>
 </div>

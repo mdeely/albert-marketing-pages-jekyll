@@ -1,5 +1,4 @@
 navItems:
-
 - label: Features
   url: features
 
@@ -7,10 +6,10 @@ navItems:
   url: products
   subitems:
     - label: K-12 Core
-    - url: k-12-core
+      url: k-12-core
     
     - label: K-12 Advanced Placement
-    - url: k-12-advanced-placement
+      url: k-12-advanced-placement
 
 - label: Benefits
   url: benefits
@@ -23,7 +22,6 @@ navItems:
 
 
 accountItems:
-
 - label: Login
   url: login
 

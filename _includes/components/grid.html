@@ -1,34 +1,30 @@
 {% assign grid = include.content %}
 
-<div class="container-fluid">
-	<div class="row">
-	<div class="gridComponent col-xs-12">
-		<div class="gridComponent__title">{{ grid.title }}</div>
+<div class="gridComponent">
+	<div class="gridComponent__title">{{ grid.title }}</div>
 
-			<ul class="gridItems">
-				{% for gridItem in grid.gridItems %}
-				<li class="gridItem">
-					<div class="gridItem__visual">
-						<img src="{{ gridItem.img_src }}">
-					</div>
+		<ul class="gridItems">
+			{% for gridItem in grid.gridItems %}
+			<li class="gridItem">
+				<div class="gridItem__visual">
+					<img src="{{ gridItem.img_src }}">
+				</div>
 
-                	{% if gridItem.badge %} 
-					<div class="gridItem__badge">{{ gridItem.badge }}</div>
-                	{% endif %} 
+            	{% if gridItem.badge %} 
+				<div class="gridItem__badge">{{ gridItem.badge }}</div>
+            	{% endif %} 
 
-					<div class="gridItem__title">{{ gridItem.title }}</div>
+				<div class="gridItem__title">{{ gridItem.title }}</div>
 
-                	{% if gridItem.description %} 
-					<div class="gridItem__description">{{ gridItem.description }}</div>
-					{% endif %}
+            	{% if gridItem.description %} 
+				<div class="gridItem__description">{{ gridItem.description }}</div>
+				{% endif %}
 
-                	{% if gridItem.cta_url %} 
-					<a href="{{ gridItem.cta_url }}" class="gridItem__link button">{{ gridItem.cta_label }}</a>
-					{% endif %}
-				</li>
-				{% endfor %}
-			</ul>
+            	{% if gridItem.cta_url %} 
+				<a href="{{ gridItem.cta_url }}" class="gridItem__link button">{{ gridItem.cta_label }}</a>
+				{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
 
-		</div>
 	</div>
-</div>

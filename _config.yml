@@ -28,17 +28,19 @@ theme: minima
 plugins:
   - jekyll-feed
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
-
 collections: 
   landing_pages: 
     output: true
     permalink: /:name
+  case_studies:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 
 sass:
   sass_dir: _sass
