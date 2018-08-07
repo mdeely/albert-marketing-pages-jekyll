@@ -5,7 +5,7 @@
 	<div class="slideshow__description">{{ slideshow.description }}</div>
 
 	<div class="slideshow__nav">
-		<ul class="slideShow__nav-list"></ul>
+		<ul class="slideShow__nav-list">
 
 		{% for slideshowItem in slideshow.slideshowItems %}
 		<li class="slideshow__nav-item">
@@ -20,7 +20,7 @@
 	</div>
 
 	<div class="slideshow__display">
-		<ul class="slideshow__display-list"></ul>
+		<ul class="slideshow__display-list">
 		
 		{% for slideshowItem in slideshow.slideshowItems %}
 		<li class="slideshow__display-item">
@@ -31,4 +31,4 @@
 		</ul>
 	</div>
 
-</div>
+</section>

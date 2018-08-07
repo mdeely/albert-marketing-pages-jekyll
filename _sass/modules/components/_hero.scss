@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: $nav-height;
+    padding: $nav-height $container-spacing 0 $container-spacing;
     min-height: 600px;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	background-size: auto 40%;
+	background-size: auto 35%;
 
 	.hero__content {
 		width: 100%;
@@ -15,8 +15,8 @@
 		height: calc(100vh - #{$nav-height});
 		width: (100 - 16) * 1vw;
 
-
 		.hero__info-container {
+			margin-top: 8vh;
 
 			.hero__supertitle {
 
@@ -50,14 +50,19 @@
 
 @media only screen and (min-width: $s-viewport) {
 	.hero {
-	    background-size: 100% 90%;
-	    background-position-x: rem(290);
+	    background-size: 90%;
+	    background-position-x: 30vw;
 	    background-position-y: center;
 	    background-origin: content-box;
 
 		.hero__content {
 			flex-direction: row;
 			align-items: center;
+
+			.hero__info-container {
+				margin-top: 0;
+				max-width: 40vw;
+			}
 		}
 	}
 }

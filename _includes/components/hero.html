@@ -1,30 +1,28 @@
 {% assign hero = include.content %}
 
 <section class="hero" style="background-image: url(' {{ hero.img_src }} ')">
-    <div class="container">
-        <div class="hero__content">
-            <div class="hero__info-container">
-            
-                {% if hero.supertitle %} 
-                    <h6 class="hero__supertitle">{{ hero.supertitle }}</h6>
-                {% endif %}
+    <div class="hero__content">
+        <div class="hero__info-container">
+        
+            {% if hero.supertitle %} 
+                <div class="hero__supertitle">{{ hero.supertitle }}</div>
+            {% endif %}
 
-                {% if hero.title %} 
-                    <h1 class="hero__title">{{ hero.title }}</h1>
-                {% endif %}
+            {% if hero.title %} 
+                <h1 class="hero__title">{{ hero.title }}</h1>
+            {% endif %}
 
-                {% if hero.description %} 
-                    <p class="hero__description">{{ hero.description }}</p>
-                {% endif %}
+            {% if hero.description %} 
+                <p class="hero__description">{{ hero.description }}</p>
+            {% endif %}
 
-                {% if hero.cta_url %} 
-                    <a href="{{ hero.cta_url }}" class="button hero__cta">{{ hero.cta_label }}</a>
-                {% endif %}
+            {% if hero.cta_url %} 
+                <a href="{{ hero.cta_url }}" class="button hero__cta">{{ hero.cta_label }}</a>
+            {% endif %}
 
-            </div>
-            <div class="hero__visual ">
-                <img src="{{ hero.img_src }}">
-            </div>
+        </div>
+        <div class="hero__visual ">
+            <img src="{{ hero.img_src }}">
         </div>
     </div>
 </section>

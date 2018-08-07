@@ -30,11 +30,15 @@ $nav-padding: rem(20);
 			align-items: center;
 			display: flex;
 			margin-left: auto;
+
+			.toggle--close {
+				display: none;
+			}
 		}
 
 		nav {
 			display: none;
-			
+
 			position: fixed;
 			background-color: $nav-background-color;
 			width: 100%;
@@ -48,8 +52,9 @@ $nav-padding: rem(20);
 					a {
 						font-size: rem(18);
 						display: block;
-						padding: rem(15);
+						padding: 0 rem(15);
 						color: white;
+						line-height: $nav-height;
 					}
 
 					ul {
@@ -86,6 +91,7 @@ $nav-padding: rem(20);
 	    		width: auto;
 	    		border-top: 0px solid transparent;
 		    	margin-left: auto;
+		    	height: 100%;
 
 	    		ul {
 	    			li {

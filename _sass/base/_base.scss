@@ -59,3 +59,10 @@ hr {
 	max-width: 100%;
 }
 
+section:not(.hero):not(.preFooter) {
+	padding-top: $section-padding;
+	padding-bottom: $section-padding;
+	padding-left: $container-spacing;
+	padding-right: $container-spacing;
+}
+

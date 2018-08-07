@@ -40,8 +40,6 @@
 
 @mixin base-text-styles() {
 	font-weight: 400;
-	margin-bottom: rem(10);
-	line-height: rem(28);
 }
 
 @mixin make-fancy {

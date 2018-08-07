@@ -1,7 +1,35 @@
 .comicStrip {
-	background-color: yellow;
 
-	img {
-		max-width: 100px;
+	.comicStrip__list {
+
+		.comicStrip__item {
+
+			.comicPanel__list {
+				display: flex;
+
+				.comicPanel__item {
+					width: 25%;
+					background-color: grey;
+					text-align: center;
+
+					.comicPanel__link {
+						display: flex;
+						flex-direction: column;
+						width: 100%;
+
+						.comicPanel__img {
+							width: 100%;
+							height: auto;
+						}
+
+						.comicPanel__caption {
+							width: 100%;
+							text-align: left;
+							padding: rem(10);
+						}
+					}
+				}
+			}
+		}
 	}
 }

@@ -1,18 +1,23 @@
 {% assign comics = include.content %}
 
 <section class="comicStrip">
+
 	<div class="tabBar">
 	  <ul class="tabBar__list">
 
 		{% for comicStrip in comics.comicStrips %}
-	    <li class="tabBar__list__item">
+	    <li class="tabBar__item">
+
+	      {% if comicStrip.teacher_name %} 
+	      <a href="#" class="tabBar__anchor">
 
 	      {% if comicStrip.teacher_img_src %} 
 	      <img src="{{ comicStrip.teacher_img_src }}">
 	      {% endif %}
 
-	      {% if comicStrip.teacher_name %} 
-	      <a href="#" class="tabBar__anchor">{{ comicStrip.teacher_name }}</a>
+	      {{ comicStrip.teacher_name }}
+
+	      </a>
 	      {% endif %}
 
 	    </li>
@@ -29,9 +34,9 @@
 
 				{% for comicPanel in comicStrip.comicPanels %}
 				<li class="comicPanel__item">
-					<a href="#" class="comicStrip__panel-link">
-						<img src="{{ comicPanel.img_src }}" class="comicStrip__panel-img"/>
-						<div class="comicStrip__panel-caption">{{ comicPanel.caption }}</div>
+					<a href="#" class="comicPanel__link">
+						<img src="{{ comicPanel.img_src }}" class="comicPanel__img"/>
+						<div class="comicPanel__caption">{{ comicPanel.caption }}</div>
 					</a>
 				</li>
 				{% endfor %}
