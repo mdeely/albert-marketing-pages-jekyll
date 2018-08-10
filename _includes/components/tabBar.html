@@ -1,25 +1,29 @@
 {% assign tabBar = include.content %}
+{% assign anchorClass = "tabBar__anchor" %}
 
 <section class="tabBar">
   <ul class="tabBar__list">
     {% for tabBar in tabBar.tabBarItems %}
-
-    <li class="tabBar__item">
-
-      {% if tabBar.url %} 
-      <a href="{{ tabBar.url }}" class="tabBar__anchor">
-
-      {% if tabBar.img_src %} 
-      <img src="{{ tabBar.img_src }}">
-      {% endif %}
-
-      {{ tabBar.label }}
-
-      </a>
-      {% endif %}
-
-    </li>
-
+      <li class="tabBar__item">
+        {% if tabBar.url %} 
+          {% if forloop.index == 1 %}
+            <a href="{{ tabBar.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+          {% else %}
+            <a href="{{ tabBar.url }}" class="{{ anchorClass }}">
+          {% endif %}
+        {% else %}
+          {% if forloop.index == 1 %}
+            <a href="#{{ tabBar.label | slugify }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+          {% else %}
+            <a href="#{{ tabBar.label | slugify }}" class="{{ anchorClass }}">
+          {% endif %}
+        {% endif %}
+          {% if tabBar.img_src %} 
+            <img src="{{ tabBar.img_src }}">
+          {% endif %}
+          {{ tabBar.label }}
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </section>

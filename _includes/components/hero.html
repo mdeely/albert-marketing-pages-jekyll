@@ -1,6 +1,6 @@
 {% assign hero = include.content %}
 
-<section class="hero" style="background-image: url(' {{ hero.img_src }} ')">
+<section class="hero">
     <div class="hero__content">
         <div class="hero__info-container">
         
@@ -21,8 +21,6 @@
             {% endif %}
 
         </div>
-        <div class="hero__visual ">
-            <img src="{{ hero.img_src }}">
-        </div>
+        <div class="hero__visual" style="background-image: url(' {{ hero.img_src }} ')"></div>
     </div>
 </section>

@@ -1,34 +1,36 @@
 {% assign slideshow = include.content %}
+{% assign anchorClass = "tabBar__anchor" %}
 
 <section class="slideshow">
 	<div class="slideshow__title">{{ slideshow.title }}</div>
 	<div class="slideshow__description">{{ slideshow.description }}</div>
-
 	<div class="slideshow__nav">
 		<ul class="slideShow__nav-list">
-
 		{% for slideshowItem in slideshow.slideshowItems %}
-		<li class="slideshow__nav-item">
-			<a href="">
-				<div class="slideshow__nav-item-title">{{ slideshowItem.title }}</div>
-				<div class="slideshow__nav-item-description">{{ slideshowItem.description }}</div>
-			</a>
-		</li>
+			<li class="slideshow__nav-item">
+				{% if forloop.index == 1 %}
+					<a href="#{{ slideshowItem.title | slugify }}" class="slideshow__anchor active">
+				{% else %}
+					<a href="#{{ slideshowItem.title | slugify }}" class="slideshow__anchor">
+				{% endif %}
+						<div class="slideshow__nav-item-title">{{ slideshowItem.title }}</div>
+						<div class="slideshow__nav-item-description">{{ slideshowItem.description }}</div>
+					</a>
+			</li>
 		{% endfor %}
-
 		</ul>
 	</div>
-
 	<div class="slideshow__display">
 		<ul class="slideshow__display-list">
-		
 		{% for slideshowItem in slideshow.slideshowItems %}
-		<li class="slideshow__display-item">
-			<img src="{{ slideshowItem.img_src }}"/>
-		</li>
+			{% if forloop.index == 1 %}
+				<li id="{{ slideshowItem.title | slugify }}" class="slideshow__display-item active">
+			{% else %}
+				<li id="{{ slideshowItem.title | slugify }}" class="slideshow__display-item">
+			{% endif %}
+				<img src="{{ slideshowItem.img_src }}"/>
+			</li>
 		{% endfor %}
-
 		</ul>
 	</div>
-
 </section>

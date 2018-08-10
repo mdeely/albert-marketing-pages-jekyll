@@ -8,22 +8,6 @@ components:
   cta_url: hero-url
   img_src: "assets/img//hero-test.svg"
 
-- component_type: grid
-  title: Grid title
-  gridItems:
-  - gridItem:
-    img_src: "assets/img//hero-test.svg"
-    title: First grid title
-    description: First grid description
-    cta_label: First grid CTA
-    cta_url: first-grid-cta
-  - gridItem:
-    img_src: "assets/img//hero-test.svg"
-    title: Second grid title
-    description: Second grid description
-    cta_label: Second grid CTA
-    cta_url: second-grid-cta
-
 - component_type: preFooter
   left:
     img_src: "assets/img//hero-test.svg"

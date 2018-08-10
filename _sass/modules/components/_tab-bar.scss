@@ -11,24 +11,25 @@
 			align-items: center;
 			margin-right: rem(40);
 
-			&:after {
-				content: "";
-				width: 100%;
-				height: 100%;
-				box-shadow: 0 2px 0 $link;
-			}
-
 			.tabBar__anchor {
 				height: 100%;
 				display: block;
-				margin-bottom: rem(20);
 				text-align: center;
+				padding-bottom: rem(20);
+				pointer-events: cursor;
+				color: $text_grey;
+
+				&.active {
+					box-shadow: 0 2px 0 $link;
+					color: $link;
+				}
 
 				img {
 					display: block;
 					max-width: 100%;
 					height: rem(70);
 					margin-bottom: rem(10);
+					pointer-events: none;
 				}
 			}
 

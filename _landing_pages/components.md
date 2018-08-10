@@ -1,4 +1,8 @@
 ---
+title: Components page
+meta:
+  ogTitle: Test og title?
+  
 components:
 - component_type: hero
   supertitle: Hero supertitle
@@ -8,9 +12,10 @@ components:
   cta_url: hero-url
   img_src: "assets/img/hero-test.svg"
 
-- component_type: grid
+- component_type: featureGrid
+  cardLayout: true
   title: Grid title
-  gridItems:
+  featureGridItems:
   - img_src: "assets/img/random-img3.svg"
     title: First grid title
     description: First grid description
@@ -49,11 +54,23 @@ components:
     - teacher_name: Mr. Secondeely
       teacher_img_src: "assets/img/random-img3.svg"
       comicPanels:
-      - img_src: "assets/img/random-img2.svg"
-        caption: First panel of SECOND strip
+      - img_src: "assets/img/comic_1.png"
+        caption: First panel of FIRST strip. Lorem ipsum lots of text would go here so that we can see an accurate representation of the amount of text that would display here. 
 
-      - img_src: "assets/img/random-img3.svg"
-        caption: Second panel of SECOND strip
+      - img_src: "assets/img/comic_2.png"
+        caption: Second panel of FIRST strip. Lorem ipsum lots of text would go here so that we can see an accurate representation of the amount of text that would display here.
+
+      - img_src: "assets/img/comic_3.png"
+        caption: Third panel of FIRST strip.  Lorem ipsum lots of text would go here so that we can see an accurate representation of the amount of text that would display here.
+
+    - teacher_name: Mr. Third person
+      teacher_img_src: "assets/img/random-img2.svg"
+      comicPanels:
+      - img_src: "assets/img/comic_1.png"
+        caption: First panel of FIRST strip. Lorem ipsum lots of text would go here so that we can see an accurate representation of the amount of text that would display here. 
+
+      - img_src: "assets/img/comic_2.png"
+        caption: Second panel of FIRST strip. Lorem ipsum lots of text would go here so that we can see an accurate representation of the amount of text that would display here.
 
 - component_type: hero
   title: Second title
@@ -64,13 +81,12 @@ components:
 
 - component_type: tabBar
   tabBarItems:
-  - img_src: "assets/img/hero-test.svg"
+  - img_src: "assets/img/random-img3.svg"
     label: Item 1
-    url: "/"
+    # url: "path/to/page" THIS IS OPTIONAL
 
   - img_src: "assets/img/hero-test.svg"
     label: Item 2
-    url: "/"
 
 - component_type: slideshow
   title: Slideshow title
@@ -82,7 +98,11 @@ components:
 
   - title: Slideshow item 2
     description: Slideshow description 2
-    img_src: "assets/img/hero-test.svg"
+    img_src: "assets/img/random-img3.svg"
+
+  - title: Slideshow item 3
+    description: Slideshow description 3
+    img_src: "assets/img/random-img2.svg"
 
 - component_type: preFooter
   # left:

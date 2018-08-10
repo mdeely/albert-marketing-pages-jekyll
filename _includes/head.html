@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
 	<head>	
+		<title>{{ page.title | default: site.title }} | Albert</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content={{ include.metaDescription }}>
+		<meta name="description" content="{{ page.description | default: site.description }}"/>
 		<meta name="robots" content="index,follow">
-		<meta property="og:title" content={{ site.title }} />
-		<meta property="og:url" content={{ include.metaOgUrl }} />
-		<meta property="og:image" content={{ include.metaOgImage }} />
-		<link rel="stylesheet" href="/css/styles.css">
+		<meta property="og:title" content="{{ page.meta.ogTitle | default: site.title }}"/>
+		<meta property="og:url" content={{ page.meta.ogUrl }} />
+		<meta property="og:image" content={{ page.meta.OgImage }} />
+		<link rel="stylesheet" href="{{ site.baseUrl }}/css/styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<title>{{ site.title }}</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
   	<body>
