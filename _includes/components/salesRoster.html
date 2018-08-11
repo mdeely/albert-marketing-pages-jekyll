@@ -4,12 +4,16 @@
 	<div class="salesRoster__info">
 		<div class="salesRoster__title">{{ salesRoster.title }}</div>
 		<div class="salesRoster__description">{{ salesRoster.description }}</div>
+
+		{% if salesRoster.cta_url %}
 		<a href="{{ salesRoster.cta_url }}" class="salesRoster__anchor button">{{ salesRoster.cta_label }}</a>
+		{% endif %}
+
 	</div>
 	<div class="salesRoster__visuals">
 		<ul class="salesRoster__list">
 
-			{% for person in salesRosterItems %}
+			{% for person in salesRoster.salesRosterItems %}
 			<li class="salesRoster__item">
 				<figure class="salesRoster__profile">
 					<img src="{{ person.profile_img }}" class="salesRoster__profile-img"></img>

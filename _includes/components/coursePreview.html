@@ -1,0 +1,34 @@
+{% assign coursePreview = include.content %}
+
+<section class="coursePreview">
+	<div class="coursePreview__title">{{ coursePreview.title }}</div>
+	<div class="coursePreview__group-title">{{ coursePreview.group_title }}</div>
+
+	<div class="tabBar">
+	  	<ul class="tabBar__list">
+			{% if coursePreview.courseDomains.size > 1 %} 
+				{% for domain in coursePreview.courseDomains %}
+					<li class="tabBar__item">
+						<a href="#{{ domain.title | slugify }}" class="tabBar__anchor">{{ domain.title}}</a>
+					</li>
+		  		{% endfor %}
+			{% endif %}
+	  		<li class="tabBar__actions">
+				{% for domain in coursePreview.courseDomains %}
+					<a href="{{ domain.cta_url}}">{{ domain.cta_label }}</a>
+			  	{% endfor %}
+			</li>
+	  	</ul>
+	</div>
+
+	{% for domain in coursePreview.courseDomains %}
+		<ul class="couresPreview__card-list">
+			{% for card in domain.courseCards %}
+				<li class="coursePreview__card-item">
+					{{ card.title }}
+				</li>
+	  		{% endfor %}
+		</ul>
+  	{% endfor %}
+
+</section>

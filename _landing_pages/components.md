@@ -23,7 +23,7 @@ components:
 
   - profile_img: "assets/img/random-img3.svg"
     name: Marcus Deely
-    
+
   - profile_img: "assets/img/random-img3.svg"
     name: Marcus Aurelious
 
@@ -48,6 +48,26 @@ components:
     description: Third grid description
     cta_label: Third grid CTA
     cta_url: third-grid-cta
+
+- component_type: coursePreview
+  title: Learn anything
+  group_title: K-12 Core
+  cta_url: ""
+  courseDomains:
+  - title: ELA
+    cta_label: View more courses
+    cta_url: ""
+    courseCards:
+    - group: ELA 1
+      title: ELA subject 1
+    - group: ELA 2
+      title: ELA subject 2
+  - title: Social Studies
+    cta_label: View more courses
+    cta_url: ""
+    courseCards:
+    - group: social-studies
+      title: social studies subject
 
 - component_type: comicStrips
   comicStrips:

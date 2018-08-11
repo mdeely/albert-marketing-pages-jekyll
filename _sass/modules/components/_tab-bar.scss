@@ -16,7 +16,7 @@
 				display: block;
 				text-align: center;
 				padding-bottom: rem(20);
-				pointer-events: cursor;
+				cursor: pointer;
 				color: $text_grey;
 
 				&.active {
