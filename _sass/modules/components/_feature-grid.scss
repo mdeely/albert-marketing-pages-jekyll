@@ -1,8 +1,10 @@
 .featureGrid {
+	@include section-spacing;
 	max-width: 90vw;
 	margin: 0 auto;
 
 	.featureGrid__title {
+		@include fancy-title-medium;
 		text-align: center;
 		margin-bottom: rem(60);
 	}

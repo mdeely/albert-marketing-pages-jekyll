@@ -17,32 +17,37 @@
 			z-index: 1;
 
 			.hero__supertitle {
+				@include super-title;
 				margin-bottom: rem(10);
+				letter-spacing: rem(.8);
 			}
 
 			.hero__title {
-				margin-bottom: rem(30);
+				@include page-title;
+				margin-bottom: rem(40);
 			}
 
 			.hero__description {
-				margin-bottom: rem(50);
+				font-size: rem(18);
+				color: $text_grey;
+				margin-bottom: 0;
 			}
 
 			.hero__cta {
-
+				margin-top: rem(50);
+				background-color: $primary-green;
 			}
-
 		}
 
 		.hero__visual {
 			position: absolute;
 			background-repeat: no-repeat;
 		    width: 100%;
-		    height: 90%;
+		    height: 100%;
 		    bottom: 0;
 		    left: 0;
 		    background-position: bottom;
-		    background-size: contain;
+		    background-size: 90%;
 		    background-position: bottom;
 		}
 
@@ -60,6 +65,11 @@
 			.hero__info-container {
 				margin-top: 0;
 				max-width: 40vw;
+
+				.hero__description {
+					max-width: rem(400);
+					line-height: 1.6em;
+				}
 			}
 
 			.hero__visual {

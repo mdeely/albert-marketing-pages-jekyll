@@ -10,6 +10,7 @@ $base-font-size: 16;
 // Spacing
 $nav-height: rem(80);
 $container-spacing: 8vw;
+$container-width-slim: 80%; 
 
 $section-padding: rem(80);
 $section-padding-mobile: rem(40);
@@ -41,7 +42,7 @@ $wild-sand-grey: #F4F4F4;
 /////////////////////////
 
 $secondary_blue: $steel-blue;
-$primaryGreen: $mountain-meadow-green;
+$primary-green: $mountain-meadow-green;
 $nav-background-color: $havelock-blue;
 
 //// link
@@ -53,24 +54,30 @@ $bgGrey: #FAFAFA;
 $menuBorder: #E1E4E6;
 $bgGrey--darker: #F4F4F4;
 
+// button
+$button-primary: $picton-blue;
+
 // text
 $text_black: #4F5355;
 $text-black--lighter_step_1: #666B6E;
 $text-black--lighter_step_2: #797E81;
 $text-black--lighter_step_3: #7A7E81;
-$text_grey: #7F8487;
+$text_grey: $nevada-grey;
 $text_light_grey: #A7ADB0;
 
+$supertitle-grey: $nevada-grey;
+$supertitle-light-grey: $regent-grey;
+
 //// course colors
-$course-ela: #AB5FAB;
-$course-world-language: #C2416E;
-$course-social-studies: #D8734C;
-$course-computer-science: #DD983C;
-$course-math: #5EAFBA;
-$course-science: #9284CE;
-$course-other: #A99988;
-
-
+$course-color-map: (
+	ela: #AB5FAB,
+	world-language: #C2416E,
+	social-studies: #D8734C,
+	computer-science: #DD983C,
+	math: #5EAFBA,
+	science: #9284CE,
+	other: #A99988,
+);
 
 ///////////////////////
 ////// Selectors //////

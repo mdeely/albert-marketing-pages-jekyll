@@ -1,0 +1,23 @@
+{% assign testimonials = include.content %}
+
+<section class="testimonials">
+	<div class="testimonials__title">{{ testimonials.title }}</div>
+	<ul class="testimonials__list">
+		
+		{% for testimonialItem in testimonials.testimonialItems %}
+		<li class="testimonial__item">
+			<div class="testimonial__visual">
+				<img src="{{ testimonialItem.teacher_img_src }}">
+			</div>
+			<div class="testimonial__info">
+				<div class="test imonial__quote">{{ testimonialItem.quote }}</div>
+				<div class="testimonial__nameOfPerson">{{ testimonialItem.teacher_name }}</div>
+				<div class="testimonial__teacher-type">{{ testimonialItem.teacher_type }}</div>
+				<div class="testimonial__teacher-level">{{ testimonialItem.teacher_level }}</div>
+				<div class="testimonial__location">{{ testimonialItem.teacher_location }}</div>
+			</div>
+		</li>
+		{% endfor %}
+
+	</ul>
+</section>

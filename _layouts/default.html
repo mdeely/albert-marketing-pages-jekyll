@@ -5,7 +5,8 @@
   {% assign components = page.components %}
   {% for component in components %}
 
-    {% assign include_file = component.component_type | append: '.html' %}
+    {% assign include_file = component.component_name | append: '.html' %}
+
     {% include /components/{{ include_file }} content=component %}
 
   {% endfor %}

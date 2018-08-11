@@ -1,4 +1,5 @@
 .comicStrip {
+	@include section-spacing;
 
 	.comicStrip__list {
 

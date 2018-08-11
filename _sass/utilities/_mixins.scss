@@ -1,4 +1,6 @@
-// Buttons
+/////////////////
+//   Buttons   //
+/////////////////
 @mixin base-button() {
 	display: inline-block;
 	text-decoration: none;
@@ -10,10 +12,10 @@
 	cursor: pointer;
 	outline: 0px solid transparent;
 	text-align: center;
-	@include x-small-title();
+	font-weight: 400;
 }
 
-@mixin button-color($button-bg-color: $mountain-meadow-green, $button-text-color: #FFFFFF) {
+@mixin button-color($button-bg-color: $button-primary, $button-text-color: #FFFFFF) {
 	color: $button-text-color;
 	background-color: $button-bg-color;
 
@@ -36,7 +38,11 @@
 }
 
 
-// Typography
+
+////////////////
+// Typography //
+////////////////
+
 
 @mixin base-text-styles() {
 	font-weight: 400;
@@ -46,24 +52,68 @@
 	font-family: 'All Round Gothic';
 }
 
-@mixin x-large-title() {
+@mixin page-title() {
 	@include base-text-styles();
-	font-size: rem(52);
+	font-size: rem(42);
 	color: $secondary_blue;
+	line-height: 1.3em;
 
-	@media only screen and (max-width: $s-viewport) {
-		font-size: rem(38);
+	@media only screen and (min-width: $s-viewport) {
+		font-size: rem(52);
 	}
 }
 
-@mixin large-title() {
+@mixin super-title() {
 	@include base-text-styles();
-	font-size: em(28);
+	@include make-fancy;
+	font-size: rem(18);
+	text-transform: uppercase;
+	color: $supertitle-grey;
 }
 
-@mixin medium-title() {
+
+@mixin fancy-title-medium() {
 	@include base-text-styles();
-	font-size: em(24);
+	@include make-fancy;
+	font-size: rem(22);
+	text-transform: uppercase;
+
+	@media only screen and (min-width: $s-viewport) {
+		font-size: rem(28);
+ 	}
+}
+
+@mixin fancy-title-xs() {
+	@include base-text-styles();
+	@include make-fancy;
+	font-size: rem(12);
+	text-transform: uppercase;
+	color: $supertitle-light-grey;
+
+	@media only screen and (min-width: $s-viewport) {
+		font-size: rem(14);
+ 	}
+}
+
+@mixin fancy-title-sm() {
+	@include base-text-styles();
+	@include make-fancy;
+	font-size: rem(16);
+	text-transform: uppercase;
+
+	@media only screen and (min-width: $s-viewport) {
+		font-size: rem(20);
+ 	}
+}
+
+@mixin title-medium() {
+	@include base-text-styles();
+	font-size: rem(20);
+	line-height: 1.3em;
+
+	@media only screen and (min-width: $s-viewport) {
+		font-size: rem(30);
+ 	}
 }
 
 @mixin small-title() {
@@ -71,26 +121,31 @@
 	font-size: em(20);
 }
 
-@mixin x-small-title() {
-	@include base-text-styles();
-	font-size: em(16);
-	font-weight: 400;
-}
 
-@mixin label-title() {
-	@include base-text-styles();
-	@include make-fancy();
-	color: $text-black--lighter_step_1;
-	font-weight: 600;
-	line-height: em(64);
-	font-size: em(20);
-	text-transform: uppercase;
-	letter-spacing: .65px;
+// @mixin large-title() {
+// 	@include base-text-styles();
+// 	font-size: em(28);
+// }
 
-	@media only screen and (max-width: $s-viewport) {
-		font-size: rem(16);
-	}
-}
+// @mixin medium-title() {
+// 	@include base-text-styles();
+// 	font-size: em(24);
+// }
+
+// @mixin label-title() {
+// 	@include base-text-styles();
+// 	@include make-fancy();
+// 	color: $text-black--lighter_step_1;
+// 	font-weight: 600;
+// 	line-height: em(64);
+// 	font-size: em(20);
+// 	text-transform: uppercase;
+// 	letter-spacing: .65px;
+
+// 	@media only screen and (max-width: $s-viewport) {
+// 		font-size: rem(16);
+// 	}
+// }
 
 @mixin paragraph-small() {
 	font-size: em(14);
@@ -102,7 +157,16 @@
 }
 
 
-// Spacing
+/////////////////
+//   Spacing   //
+/////////////////
+@mixin section-spacing() {
+	padding-top: $section-padding;
+	padding-bottom: $section-padding;
+	padding-left: $container-spacing;
+	padding-right: $container-spacing;
+}
+
 @mixin large-padding() {
 	padding: rem(80);
 

@@ -1,4 +1,5 @@
 {% assign coursePreview = include.content %}
+{% assign cardListClass = "coursePreview__card-list" %}
 
 <section class="coursePreview">
 	<div class="coursePreview__title">{{ coursePreview.title }}</div>
@@ -9,26 +10,50 @@
 			{% if coursePreview.courseDomains.size > 1 %} 
 				{% for domain in coursePreview.courseDomains %}
 					<li class="tabBar__item">
-						<a href="#{{ domain.title | slugify }}" class="tabBar__anchor">{{ domain.title}}</a>
+						{% if forloop.index == 1 %}
+						<a href="#{{ domain.domain | slugify }}" class="tabBar__anchor active">{{ domain.domain }}</a>
+						{% else %}
+						<a href="#{{ domain.domain | slugify }}" class="tabBar__anchor">{{ domain.domain }}</a>
+						{% endif %}
 					</li>
 		  		{% endfor %}
 			{% endif %}
 	  		<li class="tabBar__actions">
 				{% for domain in coursePreview.courseDomains %}
-					<a href="{{ domain.cta_url}}">{{ domain.cta_label }}</a>
+					{% if forloop.index == 1 %}
+					<a class="button active" href="{{ domain.cta_url }}" data-additional-target="#{{ domain.domain | slugify }}">{{ domain.cta_label }}</a>
+					{% else %}
+					<a class="button" href="{{ domain.cta_url }}" data-additional-target="#{{ domain.domain | slugify }}">{{ domain.cta_label }}</a>
+					{% endif %}
 			  	{% endfor %}
 			</li>
 	  	</ul>
 	</div>
 
 	{% for domain in coursePreview.courseDomains %}
-		<ul class="couresPreview__card-list">
+
+		{% if domain.domain_description %}
+			{% if forloop.index == 1 %}
+			<p class="coursePreview__group-description active" data-additional-target="#{{ domain.domain | slugify }}">{{ domain.domain_description }}</p>
+			{% else %}
+			<p class="coursePreview__group-description" data-additional-target="#{{ domain.domain | slugify }}">{{ domain.domain_description }}</p>
+			{% endif %}
+		{% endif %}
+
+		{% if forloop.index == 1 %}
+		<ul id="{{ domain.domain | slugify }}" class="{{ cardListClass | append: ' active' }}">
+		{% else %}
+		<ul id="{{ domain.domain | slugify }}" class="{{ cardListClass }}">
+		{% endif %}
 			{% for card in domain.courseCards %}
 				<li class="coursePreview__card-item">
-					{{ card.title }}
+					<div class="coursePreview__card-item-visual">
+						<img src="{{ card.card_img_src }}">
+						<div class="coursePreview__card-decoration {{ card.card_group }}"></div>
+					</div>
+					<div class="coursePreview__card-item-title">{{ card.card_title }}</div>
 				</li>
 	  		{% endfor %}
 		</ul>
   	{% endfor %}
-
 </section>

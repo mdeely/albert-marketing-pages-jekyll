@@ -1,0 +1,33 @@
+{% assign graph = include.content %}
+
+<section class="graph">
+	<div class="graph__title">{{ graph.title }}</div>
+	<div class="graph__description">{{ graph.description }}</div>
+
+	<div class="tabBar">
+	  	<ul class="tabBar__list">
+			{% if graph.graphItems.size > 1 %} 
+				{% for graph in graph.graphItems %}
+					<li class="tabBar__item">
+						<a href="#{{ graph.title | slugify }}" class="tabBar__anchor">{{ graph.title}}</a>
+					</li>
+		  		{% endfor %}
+		  	{% else %}
+		  		<h1 class="graph__title">{{ graph.title }}</h1>
+			{% endif %}
+	  	</ul>
+	</div>
+
+	<ul class="graph__list">
+		{% for graph in graph.graphItems %}
+		<li id="{{ graph.title | slugify }}" class="graph__item">
+			{% for data in graph.dataItems %}
+				<div class="data__value">{{ data.value }}</div>
+				<div class="data__label-x">{{ data.label_x }}</div>
+				<div class="data__footer-label">{{ data.footer_label }}</div>
+			{% endfor %}
+		</li>
+		{% endfor %}
+	</ul>
+
+</section>

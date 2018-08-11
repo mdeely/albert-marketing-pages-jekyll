@@ -1,0 +1,123 @@
+.coursePreview {
+	padding-top: $section-padding;
+	padding-bottom: $section-padding;
+
+	> *:not(.coursePreview__card-list) {
+		padding-left: $container-spacing;
+		padding-right: $container-spacing;
+	}
+
+	.coursePreview__title {
+		@include fancy-title-medium;
+		text-align: center;
+		margin-bottom: rem(80);
+	}
+
+	.coursePreview__group-title {
+		@include title-medium;
+		margin-bottom: rem(40);
+	}
+
+	.coursePreview__group-description {
+		margin-top: rem(30);
+		margin-bottom: 0;
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	.coursePreview__card-list {
+		min-width: 100%;
+		display: none;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		display: flex;
+		flex-direction: row;
+		display: none;
+
+		&.active {
+			display: flex;
+		}
+
+		.coursePreview__card-item {
+			$card-size: rem(200);
+
+			background-color: #FFFFFF;
+			border-radius: rem(5);
+			box-shadow: $shadow_depth_3;
+			overflow: hidden;
+			position: relative;
+			z-index: 1;
+			color: $text_black;
+			min-width: $card-size;
+			max-width: $card-size;
+			max-height: $card-size;
+			margin-top: rem(30);
+			margin-right: rem(15);
+			margin-left: rem(15);
+			margin-bottom: rem(15);
+			display: inline-block;
+
+			&:hover {
+				// if you want the icon to do some fun animation on hover
+			}
+
+			.coursePreview__card-item-visual {
+				text-align: center;
+				position: relative;
+				z-index: 2;
+
+				img {
+					margin-top: rem(15);
+					height: rem(42);
+				}
+
+				.coursePreview__card-decoration {
+					position: relative;
+					height: rem(15);
+					z-index: -1;
+
+					&:after {
+						content: "";
+						position: absolute;
+						bottom: 0;
+						border-radius: 100%;
+					    left: 50%;
+					    -webkit-transform: translateX(-50%);
+					    transform: translateX(-50%);
+					    width: 250%;
+					    background-color: $link;
+					    z-index: 1;
+					    height: 200px;
+					}
+
+					// Generate course color classes
+					@each $course-name, $course-color in $course-color-map {
+						&.#{$course-name}:after {
+							background-color: $course-color;
+						}
+					}
+				}
+			}
+
+			.coursePreview__card-item-title {
+				text-align: center;
+				padding: rem(20) rem(30);
+				width: 100%;
+				line-height: rem(22);
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $s-viewport) {
+	.coursePreview {
+		> *:not(.coursePreview__card-list) {
+	    	max-width: $container-width-slim;
+	    	margin-right: auto;
+	    	margin-left: auto;
+		}
+	}
+}

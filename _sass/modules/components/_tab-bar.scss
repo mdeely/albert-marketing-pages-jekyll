@@ -1,3 +1,7 @@
+section.tabBar {
+	@include section-spacing;
+}
+
 .tabBar {
 
 	.tabBar__list {
@@ -18,6 +22,7 @@
 				padding-bottom: rem(20);
 				cursor: pointer;
 				color: $text_grey;
+				white-space: nowrap;
 
 				&.active {
 					box-shadow: 0 2px 0 $link;
@@ -35,6 +40,23 @@
 
 			&:last-child {
 				margin-right: 0;
+			}
+		}
+
+		.tabBar__actions {
+			margin-left: auto;
+			margin-top: rem(-20);
+
+			#{$button} {
+				display: none;
+
+				&.active {
+					display: inline-block;
+				}
+
+				&:only-child {
+					display: inline-block;
+				}
 			}
 		}
 	}	

@@ -1,4 +1,5 @@
 .slideshow {
+	@include section-spacing;
 	text-align: center;
 
 	.slideshow__title {

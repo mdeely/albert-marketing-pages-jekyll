@@ -1,14 +1,25 @@
 {% assign preFooter = include.content %}
 
+{% assign left_title = "Bring Albert to your class" %}
+{% assign left_description = "Teachers get free, limited access to Albert’s core academic areas to use with their students." %}
+{% assign left_cta_label = "Get started" %}
+{% assign left_cta_url = "no-url-set" %}
+
+{% assign right_title = "Learn about school-wide solutions" %}
+{% assign right_description = "Deploy Albert to all classes and unify your school on a single practice and assessment platform." %}
+{% assign right_cta_label = "Explore pricing" %}
+{% assign right_cta_url = "no-url-set" %}
+
+
 <section class="preFooter">
     <div class="preFooter__left">
         <div class="preFooter__visual">
             <img src="{{ preFooter.left.img_src | default: 'assets/img/random-img.svg' }}"/>
         </div>
         <div class="preFooter__info-container">
-            <div class="preFooter__title">{{ preFooter.left.title | default: 'Default Left Title'  }}</div>
-            <p class="lasttaComponent__description">{{ preFooter.left.description | default: 'Default left description' }}</p>
-            <a href="{{ preFooter.left.cta_url | default: '#' }}" class="preFooter__cta button--white">{{ preFooter.left.cta_label | default: 'Default CTA Label' }}</a>
+            <div class="preFooter__title">{{ preFooter.left.title | default: left_title  }}</div>
+            <p class="preFooter__description">{{ preFooter.left.description | default: left_description }}</p>
+            <a href="{{ preFooter.left.cta_url | default: left_cta_url }}" class="preFooter__cta button--white">{{ preFooter.left.cta_label | default: left_cta_label }}</a>
         </div>
     </div>
     <div class="preFooter__right">
@@ -16,9 +27,9 @@
             <img src="{{ preFooter.right.img_src | default: 'assets/img/random-img.svg' }}"/>
         </div>
         <div class="preFooter__info-container">
-            <div class="preFooter__title">{{ preFooter.right.title | default: 'Default right Title'  }}</div>
-            <p class="lasttaComponent__description">{{ preFooter.right.description | default: 'Default right description' }}</p>
-            <a href="{{ preFooter.right.cta_url | default: '#' }}" class="preFooter__cta button--white">{{ preFooter.right.cta_label | default: 'Default CTA Label' }}</a>
+            <div class="preFooter__title">{{ preFooter.right.title | default: right_title  }}</div>
+            <p class="preFooter__description">{{ preFooter.right.description | default: right_description }}</p>
+            <a href="{{ preFooter.right.cta_url | default: right_cta_url }}" class="preFooter__cta button--white">{{ preFooter.right.cta_label | default: right_cta_label }}</a>
         </div>
     </div>
 </section>

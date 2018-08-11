@@ -80,7 +80,6 @@ $( document ).ready(function() {
 
  			var index = $( ".slideshow__anchor" ).index( this );
 
- 			console.log(index);
 	        setSlideshowPosition(index);
 		}
 
@@ -88,16 +87,7 @@ $( document ).ready(function() {
 		var linkTargetHref = $(linkTarget).attr('href');
 
 		setLinkFromHref(linkTargetHref);
-
-		// If an element has an id that matches the target's href, then show that element. If not, do nothing else.
-
 	};
-
-	function setSlideshowPosition(positionNum) {
-	    $(slideshowList).css({
-	    	"left": "-"+(positionNum * 100)+"%"
-	    });
-	}
 
 	function setLinkFromId(linkTargetId){
 		var targetNav = $('.slideshow__anchor[href="#'+linkTargetId+'"]');
@@ -113,7 +103,18 @@ $( document ).ready(function() {
 
 			$(targetClass).removeClass('active');
 			$(linkTargetHref).addClass('active');
+
+			var additionalTargets = $("[data-additional-target='"+linkTargetHref+"']");
+
+			$(additionalTargets).siblings('.active').removeClass('active');
+			$(additionalTargets).addClass('active');
 		}
+	}
+
+	function setSlideshowPosition(positionNum) {
+	    $(slideshowList).css({
+	    	"left": "-"+(positionNum * 100)+"%"
+	    });
 	}
 
 	// function next() {
