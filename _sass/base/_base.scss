@@ -66,3 +66,7 @@ section:not(.hero):not(.preFooter) {
 	padding-right: $container-spacing;
 }
 
+section {
+	overflow: hidden;
+}
+

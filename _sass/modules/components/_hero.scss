@@ -14,6 +14,7 @@
 
 		.hero__info-container {
 			margin-top: 8vh;
+			z-index: 1;
 
 			.hero__supertitle {
 				margin-bottom: rem(10);
@@ -37,12 +38,12 @@
 			position: absolute;
 			background-repeat: no-repeat;
 		    width: 100%;
-		    height: 100%;
-		    max-width: 900px;
-		    left: 34vw;
-		    background-position: center;
+		    height: 90%;
+		    bottom: 0;
+		    left: 0;
+		    background-position: bottom;
 		    background-size: contain;
-
+		    background-position: bottom;
 		}
 
 	}
@@ -59,6 +60,11 @@
 			.hero__info-container {
 				margin-top: 0;
 				max-width: 40vw;
+			}
+
+			.hero__visual {
+		    	left: 34vw;
+		    	background-position: center;
 			}
 		}
 	}

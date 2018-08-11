@@ -1,0 +1,24 @@
+{% assign salesRoster = include.content %}
+
+<section class="salesRoster">
+	<div class="salesRoster__info">
+		<div class="salesRoster__title">{{ salesRoster.title }}</div>
+		<div class="salesRoster__description">{{ salesRoster.description }}</div>
+		<a href="{{ salesRoster.cta_url }}" class="salesRoster__anchor button">{{ salesRoster.cta_label }}</a>
+	</div>
+	<div class="salesRoster__visuals">
+		<ul class="salesRoster__list">
+
+			{% for person in salesRosterItems %}
+			<li class="salesRoster__item">
+				<figure class="salesRoster__profile">
+					<img src="{{ person.profile_img }}" class="salesRoster__profile-img"></img>
+					<figcaption class="salesRoster__caption">{{ person.name }}</figcaption>
+				</figure>
+			</li>
+			{% endfor %}
+
+		</ul>
+	</div>
+
+</section>

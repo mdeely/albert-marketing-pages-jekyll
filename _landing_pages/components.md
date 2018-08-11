@@ -12,6 +12,21 @@ components:
   cta_url: hero-url
   img_src: "assets/img/hero-test.svg"
 
+- component_type: salesRoster
+  title: Meet the team
+  description: As former educators, our School Success team intimately understand what makes for a successful Albert implementation, both within the classroom and across a school.
+  cta_label: Contact us
+  cta_url: ""
+  salesRosterItems:
+  - profile_img: "assets/img/random-img3.svg"
+    name: Marc Deely
+
+  - profile_img: "assets/img/random-img3.svg"
+    name: Marcus Deely
+    
+  - profile_img: "assets/img/random-img3.svg"
+    name: Marcus Aurelious
+
 - component_type: featureGrid
   cardLayout: true
   title: Grid title
