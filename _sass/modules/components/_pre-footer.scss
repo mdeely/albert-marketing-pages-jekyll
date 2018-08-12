@@ -65,13 +65,7 @@
 	    .preFooter__left,
 	    .preFooter__right {
 	    	flex-direction: row;
-	    	padding-left: $container-spacing*2;
 	    	align-self: normal;
-	    }
-
-	    .preFooter__right {
-    		padding-left: $container-spacing;
-    		padding-right: $container-spacing*2;
 	    }
 
 		.container {

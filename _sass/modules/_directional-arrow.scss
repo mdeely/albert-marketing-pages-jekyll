@@ -1,0 +1,19 @@
+$size: 70;
+
+.directionalArrow {
+	content: "down";
+	bottom: rem(40);
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: rem($size);
+	height: rem($size); 
+	box-shadow: $shadow_depth_4;
+	background-color: #FFFFFF;
+	margin: auto;
+	border-radius: 50%;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: $size+px;
+	z-index: $directional-arrow-index;
+}

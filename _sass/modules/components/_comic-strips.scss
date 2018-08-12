@@ -1,6 +1,18 @@
 .comicStrip {
 	@include section-spacing;
 
+	.tabBar {
+		.tabBar__list {
+			justify-content: left;
+
+			.tabBar__item {
+				.tabBar__anchor {
+					text-transform: none;
+				}
+			}
+		}
+	}
+
 	.comicStrip__list {
 
 		.comicStrip__item {

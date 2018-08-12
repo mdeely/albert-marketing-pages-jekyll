@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: $nav-height $container-spacing 0 $container-spacing;
+    position: relative;
 
 	.hero__content {
 		width: 100%;
@@ -29,7 +30,7 @@
 
 			.hero__description {
 				font-size: rem(18);
-				color: $text_grey;
+				color: $text_light_grey;
 				margin-bottom: 0;
 			}
 

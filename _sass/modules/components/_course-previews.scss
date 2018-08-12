@@ -1,6 +1,9 @@
 .coursePreview {
 	padding-top: $section-padding;
 	padding-bottom: $section-padding;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 
 	> *:not(.coursePreview__card-list) {
 		padding-left: $container-spacing;
@@ -19,9 +22,10 @@
 	}
 
 	.coursePreview__group-description {
-		margin-top: rem(30);
+		margin-top: rem(40);
 		margin-bottom: 0;
 		display: none;
+		text-align: center;
 
 		&.active {
 			display: block;
@@ -29,36 +33,51 @@
 	}
 
 	.coursePreview__card-list {
-		min-width: 100%;
 		display: none;
+		max-width: 100%;
 		overflow-x: scroll;
 		overflow-y: hidden;
-		display: flex;
+		-webkit-overflow-scrolling: touch;
 		flex-direction: row;
-		display: none;
 
 		&.active {
-			display: flex;
+			display: inline-flex;
+		}
+
+		// adds spacing for scrolling through cards
+		&:after,
+		&:before {
+			content:"";
+			min-width: rem(15);
 		}
 
 		.coursePreview__card-item {
-			$card-size: rem(200);
+			$card-width: rem(250);
+			$card-height: rem(300);
 
+			position: relative;
 			background-color: #FFFFFF;
-			border-radius: rem(5);
-			box-shadow: $shadow_depth_3;
+			border-radius: rem(10);
+			box-shadow: $shadow_depth_5;
 			overflow: hidden;
 			position: relative;
 			z-index: 1;
 			color: $text_black;
-			min-width: $card-size;
-			max-width: $card-size;
-			max-height: $card-size;
-			margin-top: rem(30);
+			min-width: $card-width;
+			max-width: $card-width;
+			max-height: $card-height;
+			margin-top: 10vh;
 			margin-right: rem(15);
 			margin-left: rem(15);
-			margin-bottom: rem(15);
-			display: inline-block;
+			margin-bottom: rem(20);
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+
+			&:last-of-type {
+				margin-right: 0;
+			}
 
 			&:hover {
 				// if you want the icon to do some fun animation on hover
@@ -103,11 +122,32 @@
 			}
 
 			.coursePreview__card-item-title {
+				color: $course-card-title;
+				font-size: rem(18);
 				text-align: center;
-				padding: rem(20) rem(30);
+				padding: rem(40) rem(30);
 				width: 100%;
 				line-height: rem(22);
 			}
+		}
+	}
+
+
+	.tabBar__actions {
+		display: none;
+	}
+
+	.coursePreview__mobile-actions {
+    	display: flex;
+    	justify-content: center;
+		margin-top: 10vh;
+	}
+
+	[data-additional-target] {
+		display: none;
+
+		&.active {
+			display: block;
 		}
 	}
 }

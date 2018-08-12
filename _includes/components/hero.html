@@ -17,10 +17,13 @@
             {% endif %}
 
             {% if hero.cta_url %} 
-                <a href="{{ hero.cta_url }}" class="button hero__cta">{{ hero.cta_label }}</a>
+                <a href="{{ hero.cta_url }}" class="button--large hero__cta">{{ hero.cta_label }}</a>
             {% endif %}
 
         </div>
         <div class="hero__visual" style="background-image: url(' {{ hero.img_src }} ')"></div>
     </div>
+    {% if include.directional_arrow == true %} 
+        {% include /components/directionalArrow.html %}
+    {% endif %}
 </section>

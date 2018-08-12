@@ -121,6 +121,15 @@
 	font-size: em(20);
 }
 
+@mixin label-title() {
+	@include base-text-styles();
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: rem(14);
+	letter-spacing: .5px;
+	color: $text_light_grey;
+}
+
 
 // @mixin large-title() {
 // 	@include base-text-styles();
@@ -161,10 +170,15 @@
 //   Spacing   //
 /////////////////
 @mixin section-spacing() {
-	padding-top: $section-padding;
-	padding-bottom: $section-padding;
+	padding-top: $section-padding-mobile;
+	padding-bottom: $section-padding-mobile;
 	padding-left: $container-spacing;
 	padding-right: $container-spacing;
+
+	@media only screen and (min-width: $s-viewport) {
+		padding-top: $section-padding;
+		padding-bottom: $section-padding;
+	}
 }
 
 @mixin large-padding() {

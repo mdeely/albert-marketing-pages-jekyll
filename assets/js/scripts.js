@@ -1,10 +1,43 @@
 $( document ).ready(function() {
 
+	var $directional_arrow = $(".directionalArrow");
+
+    $(window).scroll(function(){
+        if ($(window).scrollTop() < 140){
+        	$directional_arrow.show();
+        }
+        else {
+        	$directional_arrow.hide();
+        }
+    });
+
 	// define elements to bind click event to
-	var anchor = ".tabBar__anchor"
+	var anchor = ".tabBar__anchor";
+
 	$(anchor).on('click', updateDisplay);
 
+	// direction arrow for hero section
+	$directional_arrow.on('click', goToNextSection);
+	var navHeight = $(".mainNav").outerHeight();
+
+	function goToNextSection(event) {
+		event.preventDefault();
+
+	    var $this = $(event.target);
+	        $next = $this.parent().next();
+
+	        console.log($next);
+
+        $('html,body').animate({
+          scrollTop: $next.offset().top - navHeight
+        }, 500);
+	};
+
 	function updateDisplay(anchor) {
+		// prevent default actions
+        anchor.stopImmediatePropagation();
+		anchor.preventDefault();
+		
 		// variablize clicked anchor
 		var anchor = $(anchor.target);
 
@@ -13,10 +46,6 @@ $( document ).ready(function() {
 			return false;
 		};
 
-		// prevent default actions
-        event.stopImmediatePropagation();
-		event.preventDefault();
-
 		// find object's scope
 		var anchorParent = $(anchor).parents("section");
 		// get that object's href
@@ -24,6 +53,7 @@ $( document ).ready(function() {
 		// find any additional targets	
 		var additionalTargets = $("[data-additional-target='"+anchorHref+"']");
 
+		console.log(anchorParent);
 		// remove .active class from everyting in the parent
 		$(anchorParent).find('.active').removeClass('active');
 
@@ -35,22 +65,7 @@ $( document ).ready(function() {
 		$(additionalTargets).addClass("active");
 	}
 
-	// SLIDESHOW
 
-	// define and collect slideshow
-	var slideshowClass = $(".slideshow");
-
-	var timeInterval = 3000;
-
-	// set interval on each instance of the slideshow
-	$.each(slideshowClass, function( index, value ) {
-
-  		console.log( index + ": " + $(value) );
-
-	});
-
-	// define time interval between slides
-	// run slideshow on the element(s)
 
 	// TABBAR, COMICSTRIP, and SLIDESHOW
 	
@@ -97,10 +112,10 @@ $( document ).ready(function() {
 
 	// MOBILE NAV
 	$(".mainNav__mobile-toggle").click(function() {
-		console.log("mobile nav clicked");
 		$(".toggle--open").toggle();
 		$(".toggle--close").toggle();
 
+		$('.mainNav').toggleClass('mobile--open');
 		$('.mainNav nav').toggle();
 	});
 

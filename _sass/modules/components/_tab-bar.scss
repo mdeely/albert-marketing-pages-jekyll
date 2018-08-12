@@ -3,29 +3,37 @@ section.tabBar {
 }
 
 .tabBar {
+	width: 100%;
 
 	.tabBar__list {
 		display: flex;
 		flex-direction: row;
-		border-bottom: 2px solid $menuBorder;
+		box-shadow: 0 -1px 0 $menuBorder inset;
+    	overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
+    	justify-content: center;
 
 		.tabBar__item {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin-right: rem(40);
+			margin-left: rem(40);
+
+			&:first-of-type {
+				margin-left: 0;
+			}
 
 			.tabBar__anchor {
+				@include label-title;
 				height: 100%;
 				display: block;
 				text-align: center;
 				padding-bottom: rem(20);
 				cursor: pointer;
-				color: $text_grey;
 				white-space: nowrap;
 
 				&.active {
-					box-shadow: 0 2px 0 $link;
+					box-shadow: 0 -5px 0 $link inset;
 					color: $link;
 				}
 
@@ -33,7 +41,7 @@ section.tabBar {
 					display: block;
 					max-width: 100%;
 					height: rem(70);
-					margin-bottom: rem(10);
+					margin-bottom: rem(15);
 					pointer-events: none;
 				}
 			}
@@ -44,8 +52,15 @@ section.tabBar {
 		}
 
 		.tabBar__actions {
+			$button-spacing: 20;
+
 			margin-left: auto;
-			margin-top: rem(-20);
+			margin-top: rem(-($button-spacing));
+
+			&:only-child {
+				margin-top: 0;
+				padding-bottom: rem($button-spacing); 
+			}
 
 			#{$button} {
 				display: none;

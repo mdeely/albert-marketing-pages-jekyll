@@ -1,7 +1,7 @@
 {% assign slideshow = include.content %}
 {% assign anchorClass = "tabBar__anchor" %}
 
-<section class="slideshow">
+<section class="{{ "slideshow slideshow-" | append: include.component_id }}">
 	<div class="slideshow__title">{{ slideshow.title }}</div>
 	<div class="slideshow__description">{{ slideshow.description }}</div>
 	<div class="slideshow__nav">

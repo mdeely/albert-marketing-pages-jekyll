@@ -31,4 +31,8 @@ components:
   - title: Slideshow item 3
     description: Slideshow description 3
     img_src: "assets/img/random-img2.svg"
+
+  - title: Slideshow item 4
+    description: Slideshow description 4
+    img_src: "assets/img/random-img.svg"
 ---

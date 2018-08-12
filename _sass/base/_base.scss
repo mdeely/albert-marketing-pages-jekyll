@@ -23,7 +23,6 @@ a {
 
 p {
 	@include base-text-styles();
-	font-weight: 200;
 	line-height: em(23);
 	margin-bottom: em(30);
 }

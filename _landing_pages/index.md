@@ -1,6 +1,7 @@
 ---
 title: Practice. Assess. Improve.
 components:
+# Hero
 - component_name: hero
   title: Practice. Assess. Improve.
   description: "Albert is a learning companion built on a simple idea: That learning is best done by doing."
@@ -8,9 +9,10 @@ components:
   cta_url: "no-url-set"
   img_src: "assets/img/home-hero-illustration.svg"
 
+# Course preview
 - component_name: coursePreview
-  title: Learn anything
-  group_title: K-12 Core
+  title: K-12 Core
+  group_title:
   cta_url: ""
   courseDomains:
   - domain: ELA
@@ -70,6 +72,69 @@ components:
       card_title: social studies subject
       card_img_src: "assets/img/heart_of_darkness.svg"
 
+# Course preview
+- component_name: coursePreview
+  title: Test prep
+  cta_url: ""
+  courseDomains:
+  - domain: Advanced Placement®
+    domain_description: Description for domain here
+    cta_label: View Advanced Placement®
+    cta_url: ""
+    courseCards:
+    - card_group: ela
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: ELA subject 1
+
+    - card_group: ela
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: ELA subject 2
+
+    - card_group: ela
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: ELA subject 2
+
+    - card_group: ela
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: ELA subject 2
+
+    - card_group: ela
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: ELA subject 2
+
+  - domain: College Entrance
+    cta_label: View College Entrance
+    cta_url: ""
+    courseCards:
+    - card_group: world language
+      card_title: World language subject
+      card_img_src: "assets/img/heart_of_darkness.svg"
+
+    - card_group: math
+      card_title: math subject
+      card_img_src: "assets/img/heart_of_darkness.svg"
+
+    - card_group: social-studies
+      card_title: social studies subject
+      card_img_src: "assets/img/heart_of_darkness.svg"
+
+    - card_group: social-studies
+      card_title: social studies subject
+      card_img_src: "assets/img/heart_of_darkness.svg"
+
+    - card_group: social-studies
+      card_title: social studies subject
+      card_img_src: "assets/img/heart_of_darkness.svg"
+
+    - card_group: social-studies
+      card_title: social studies subject
+      card_img_src: "assets/img/heart_of_darkness.svg"
+
+    - card_group: social-studies
+      card_title: social studies subject
+      card_img_src: "assets/img/heart_of_darkness.svg"
+
+# Staggered features
 - component_name: stagger
   staggerItems:
   - supertitle: Albert is…
@@ -94,5 +159,6 @@ components:
     title: The one-on-one tutor students can take wherever they go.
     img_src: "assets/img/home-illustration-5.svg"
 
+# Pre footer
 - component_name: preFooter
 ---

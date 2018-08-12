@@ -8,6 +8,15 @@ $nav-padding: rem(20);
 	height: $nav-height;
 	z-index: $nav-index;
 	padding: 0 $container-spacing;
+	transition: all .1s ease-in-out;
+
+	&.mobile--open {
+		background-color: #FFFFFF;
+
+		.mainNav__mobile-toggle {
+			color: $link;
+		}
+	}
 
 	header {
 		display: flex;
@@ -54,7 +63,7 @@ $nav-padding: rem(20);
 						display: block;
 						padding: 0 rem(15);
 						color: white;
-						line-height: $nav-height;
+						line-height: $nav-height/1.25;
 					}
 
 					ul {
@@ -97,6 +106,7 @@ $nav-padding: rem(20);
 	    			li {
 	    				a {
 							font-size: rem(16);
+							line-height: $nav-height;
 	    				}
 
 	    				&:hover,
