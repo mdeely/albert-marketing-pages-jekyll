@@ -1,6 +1,10 @@
 .slideshow {
-	@include section-spacing;
 	text-align: center;
+
+	> *:not(.slideshow__display) {
+		padding-left: $container-spacing;
+		padding-right: $container-spacing;
+	}
 
 	.slideshow__title {
 		margin-bottom: rem(15);

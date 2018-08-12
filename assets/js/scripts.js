@@ -1,9 +1,61 @@
 $( document ).ready(function() {
 
+	// define elements to bind click event to
+	var anchor = ".tabBar__anchor"
+	$(anchor).on('click', updateDisplay);
+
+	function updateDisplay(anchor) {
+		// variablize clicked anchor
+		var anchor = $(anchor.target);
+
+		// if anchor is already active, do nothing else
+		if ( $(anchor).hasClass('active') ) {
+			return false;
+		};
+
+		// prevent default actions
+        event.stopImmediatePropagation();
+		event.preventDefault();
+
+		// find object's scope
+		var anchorParent = $(anchor).parents("section");
+		// get that object's href
+		var anchorHref = $(anchor).attr("href");
+		// find any additional targets	
+		var additionalTargets = $("[data-additional-target='"+anchorHref+"']");
+
+		// remove .active class from everyting in the parent
+		$(anchorParent).find('.active').removeClass('active');
+
+		// make anchor active
+		$(anchor).addClass('active');
+		// make target active
+		$(anchorHref).addClass("active");
+		// make additional targets active
+		$(additionalTargets).addClass("active");
+	}
+
+	// SLIDESHOW
+
+	// define and collect slideshow
+	var slideshowClass = $(".slideshow");
+
+	var timeInterval = 3000;
+
+	// set interval on each instance of the slideshow
+	$.each(slideshowClass, function( index, value ) {
+
+  		console.log( index + ": " + $(value) );
+
+	});
+
+	// define time interval between slides
+	// run slideshow on the element(s)
+
 	// TABBAR, COMICSTRIP, and SLIDESHOW
 	
 	// Link classes that require this behavior
-	var links = ".tabBar__anchor, .slideshow__anchor";
+	var links = "slideshow__anchor";
 	var slideshowDisplayItem = ".slideshow__display-item";
 
 	// Bind link classes to click event
@@ -116,16 +168,4 @@ $( document ).ready(function() {
 	    	"left": "-"+(positionNum * 100)+"%"
 	    });
 	}
-
-	// function next() {
-	// 	// go to next slide
-	// }
-
-	// function previous() {
-	// 	// go to previous slide
-	// }
-
-	// function showSlideFromNavLink() {
-	// 	// go to previous slide
-	// }
 });
