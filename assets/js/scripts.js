@@ -2,12 +2,20 @@ $( document ).ready(function() {
 
 	var $directional_arrow = $(".directionalArrow");
 
+	setTimeout(
+	  function() 
+	  {
+		if ( $(window).scrollTop() < 140 ) {
+        	$directional_arrow.addClass("active");
+		}
+	  }, 2000);
+
     $(window).scroll(function(){
         if ($(window).scrollTop() < 140){
-        	$directional_arrow.show();
+        	$directional_arrow.addClass("active");
         }
         else {
-        	$directional_arrow.hide();
+        	$directional_arrow.removeClass("active");
         }
     });
 
@@ -24,6 +32,7 @@ $( document ).ready(function() {
 		event.preventDefault();
 
 	    var $this = $(event.target);
+	    console.log($this);
 	        $next = $this.parent().next();
 
 	        console.log($next);
@@ -112,11 +121,18 @@ $( document ).ready(function() {
 
 	// MOBILE NAV
 	$(".mainNav__mobile-toggle").click(function() {
-		$(".toggle--open").toggle();
-		$(".toggle--close").toggle();
-
-		$('.mainNav').toggleClass('mobile--open');
-		$('.mainNav nav').toggle();
+		if ( $(event.target).hasClass("toggle--open") ) {
+			$('.mainNav').addClass('mobile--open');
+			$('.mainNav nav').addClass("active");
+			$(".toggle--open").removeClass("active");
+			$(".toggle--close").addClass("active");
+		}
+		else {
+			$('.mainNav').removeClass('mobile--open');
+			$('.mainNav nav').removeClass("active");
+			$(".toggle--open").addClass("active");
+			$(".toggle--close").removeClass("active");
+		}
 	});
 
 

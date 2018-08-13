@@ -49,7 +49,7 @@
 }
 
 @mixin make-fancy {
-	font-family: 'All Round Gothic';
+	font-family: 'All Round Gothic', 'Futura';
 }
 
 @mixin page-title() {
@@ -187,4 +187,24 @@
 	@media only screen and (max-width: $s-viewport) {
 		padding: rem(40);
 	}
+}
+
+
+/////////////////
+//  Keyframes  //
+/////////////////
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
 }

@@ -17,7 +17,7 @@ components:
   courseDomains:
   - domain: ELA
     domain_description: Description for domain here
-    cta_label: View more ELA
+    cta_label: View all ELA
     cta_url: ""
     courseCards:
     - card_group: ela
@@ -41,7 +41,7 @@ components:
       card_title: ELA subject 2
 
   - domain: Social Studies
-    cta_label: View Social Studies
+    cta_label: View all Social Studies
     cta_url: ""
     courseCards:
     - card_group: social-studies

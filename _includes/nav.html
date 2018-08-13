@@ -6,23 +6,30 @@
 			<img src="assets/img/logo-combined-white.svg" alt="Albert logo" />
 		</a>
 		<div class="mainNav__mobile-toggle">
-			<div>x</div>
-			<img class="toggle--open" src="/img/navtoggle-open.svg" alt="Open nav">
-			<img class="toggle--close" src="/img/navtoggle-close.svg" alt="Close nav">
+			<i class="fas fa-bars toggle--open active"></i>
+			<i class="fas fa-times toggle--close"></i>
     	</div>
 		<nav role=navigation>
 			<ul class="mainNav__nav">
 				{% for navItem in nav.navItems %}
-			      <li><a href="{{ navItem.url }}">{{ navItem.label }}</a>
 
-	                {% if navItem.subitems[0] %}
+					{% if navItem.url %}
+			      	<li><a href="{{ navItem.url }}">{{ navItem.label }}</a>
+					{% else %}
+			      	<li>{{ navItem.label }}</a>
+			      	{% endif %}
 
-	                <ul>
-			   			{% for subitem in navItem.subitems %}
-			      		<li><a href="{{ subitem.url }}">{{ subitem.label }}</a>
-			   			{% endfor %}
-	                </ul>
-
+	                {% if navItem.subitem_groups[0] %}
+		                <ul>
+				   			{% for subitem_group in navItem.subitem_groups %}
+								<div>
+				   					<h1>{{ subitem_group.group_title }}</h1>
+					   				 {% for subitem in subitem_group.subitems %}
+						      			<li><a href="{{ subitem.url }}">{{ subitem.label }}</a></li>
+					   				 {% endfor %}
+					   			</div>
+				   			{% endfor %}
+		                </ul>
 	               	{% endif %}
 
 			      </li>
@@ -32,9 +39,8 @@
 	        {% if nav.accountItems[0] %}
 
 				<ul class="mainNav__account">
-					{% for accountItem in nav.accountItems %}
-						<li><a href="{{ accountItem_href }}">{{ accountItem.label }}</a></li>
-					{% endfor %}
+					<li><a href="#">Log in</a></li>
+					<li><a class="button button--sign-up" href="#">Sign up</a></li>
 				</ul>
 
 	        {% endif %}

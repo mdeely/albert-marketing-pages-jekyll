@@ -52,7 +52,7 @@
 		}
 
 		.coursePreview__card-item {
-			$card-width: rem(250);
+			$card-width: rem(150);
 			$card-height: rem(300);
 
 			position: relative;
@@ -66,8 +66,8 @@
 			min-width: $card-width;
 			max-width: $card-width;
 			max-height: $card-height;
-			margin-top: 10vh;
-			margin-right: rem(15);
+			margin-top: rem(40);
+			margin-right: rem(5);
 			margin-left: rem(15);
 			margin-bottom: rem(20);
 
@@ -125,7 +125,7 @@
 				color: $course-card-title;
 				font-size: rem(18);
 				text-align: center;
-				padding: rem(40) rem(30);
+				padding: rem(20) rem(15);
 				width: 100%;
 				line-height: rem(22);
 			}
@@ -140,7 +140,7 @@
 	.coursePreview__mobile-actions {
     	display: flex;
     	justify-content: center;
-		margin-top: 10vh;
+		margin-top: rem(40);
 	}
 
 	[data-additional-target] {
@@ -159,5 +159,21 @@
 	    	margin-right: auto;
 	    	margin-left: auto;
 		}
+
+		.coursePreview__card-list {
+			.coursePreview__card-item {
+				$card-width: rem(250);
+
+				max-width: $card-width;
+				min-width: $card-width;
+				margin-right: rem(15);
+
+				.coursePreview__card-item-title {
+
+					padding: rem(40) rem(30);
+				}
+			}
+		}
+
 	}
 }

@@ -3,13 +3,24 @@ navItems:
   url: features
 
 - label: Products
-  url: products
-  subitems:
-    - label: K-12 Core
-      url: k-12-core
-    
-    - label: K-12 Advanced Placement
-      url: k-12-advanced-placement
+  subitem_groups:
+    - group_title: K-12 Core title
+      subitems:
+      - label: subitem
+        url: k-12-core
+      - label: subitem 2
+        url: k-12-core
+      - label: subitem 3
+        url: k-12-core
+
+    - group_title: K-12 Test Prep
+      subitems:
+      - label: subitem 4
+        url: k-12-core
+      - label: subitem 5
+        url: k-12-core
+      - label: subitem 6
+        url: k-12-core
 
 - label: Benefits
   url: benefits

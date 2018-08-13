@@ -4,14 +4,17 @@ section.tabBar {
 
 .tabBar {
 	width: 100%;
+	box-shadow: 0 -1px 0 $menuBorder inset;
+	display: flex;
+	justify-content: center;
 
 	.tabBar__list {
-		display: flex;
+		display: inline-flex;
 		flex-direction: row;
-		box-shadow: 0 -1px 0 $menuBorder inset;
     	overflow-x: scroll;
 		-webkit-overflow-scrolling: touch;
-    	justify-content: center;
+    	justify-content: start;
+
 
 		.tabBar__item {
 			display: flex;

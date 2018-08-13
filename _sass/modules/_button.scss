@@ -1,5 +1,7 @@
 #{$button} {
 	@include button();
+	@include button-color(white, $link);
+	border: 2px solid $link;
 
 	.icon {
 		&--left {
@@ -14,13 +16,13 @@
 
 .button--large {
 	@include button();
-	@include small-title();
-	padding: em(20) em(30);
+	font-size: rem(20);
+	padding: em(18) em(28);
 }
 
 .button--small {
 	@include button();
-	@include paragraph-small();
+	font-size: rem(16);
 	padding: em(5) em(10);
 }
 

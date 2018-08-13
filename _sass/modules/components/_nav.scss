@@ -39,29 +39,53 @@ $nav-padding: rem(20);
 			align-items: center;
 			display: flex;
 			margin-left: auto;
+			position: relative;
+			height: $nav-height;
 
-			.toggle--close {
-				display: none;
+			.toggle--close,
+			.toggle--open {
+				position: absolute;
+				right: 0;
+				display: flex;
+			    font-size: rem(25);
+			    text-align: center;
+			    min-width: rem(20);
+			    opacity: 0;
+			    pointer-events: none;
+			    transition: opacity .1s ease-in-out;
+			    line-height: $nav-height;
+
+				&.active {
+			    	opacity: 1;
+			    	cursor: pointer;
+			    	pointer-events: all;
+				}
 			}
 		}
 
 		nav {
 			display: none;
-
 			position: fixed;
 			background-color: $nav-background-color;
 			width: 100%;
 		    left: 0;
 		    right: 0;
+		    bottom: 0;
 		    top: $nav-height;
 		    border-top: 1px solid rgba(white, .25);
+			flex-direction: column;
+
+		    &.active {
+		    	display: flex;
+		    }
 
 			ul {
-				li {					
+				li {	
+					padding: 0 rem(15);
+
 					a {
 						font-size: rem(18);
 						display: block;
-						padding: 0 rem(15);
 						color: white;
 						line-height: $nav-height/1.25;
 					}
@@ -71,21 +95,36 @@ $nav-padding: rem(20);
 	    				background-color: $nav-background-color;
 					}
 				}
+
+				&.mainNav__nav {
+					display: flex;
+					flex-direction: column;
+				}
+
+				&.mainNav__account {
+					display: flex;
+					flex-direction: column;
+					margin-left: 0;
+
+					.button--sign-up {
+						display: inline-block;
+					    border: 0px solid transparent;
+					    padding: 0 rem(15);
+					    color: $link;
+					    line-height: rem(40);
+					}
+				}
 			}
 
-			.mainNav__nav {
-				align-items: center;
-			}
-
-			.mainNav__account {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-			}
 		}
 	}
 
     @media only screen and (min-width: $s-viewport) {
+
+   		&.mobile--open {
+   			background-color: $link;
+   		}
+
     	header {
 			.mainNav__mobile-toggle {
 				display: none;
@@ -93,6 +132,7 @@ $nav-padding: rem(20);
 
 	    	nav {
 	    		display: flex;
+	    		flex-direction: row;
 	    		position: initial;
 	    		left: initial;
 	    		top: initial;
@@ -104,6 +144,8 @@ $nav-padding: rem(20);
 
 	    		ul {
 	    			li {
+						line-height: $nav-height;
+
 	    				a {
 							font-size: rem(16);
 							line-height: $nav-height;
@@ -126,6 +168,7 @@ $nav-padding: rem(20);
 	    					box-shadow: $shadow_depth_5;
 	    					left: $container-spacing;
 	    					right: $container-spacing;
+	    					color: $text_grey;
 
 	    					li {
 	    						a {
@@ -134,11 +177,21 @@ $nav-padding: rem(20);
 	    					}
 	    				}
 	    			}
-	    		}
 
-	    		.mainNav__nav {
-	    			display: flex;
-	    			flex-direction: row;
+		    		&.mainNav__nav {
+		    			flex-direction: row;
+		    			align-items: center;
+		    		}
+
+		    		&.mainNav__account {
+		    			flex-direction: row;
+		    			margin-left: rem(40);
+		    			align-items: center;
+
+		    			.button--sign-up {
+		    				display: block;
+		    			}
+		    		}
 	    		}
 	    	}
     	}

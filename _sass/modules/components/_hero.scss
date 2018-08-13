@@ -36,7 +36,6 @@
 
 			.hero__cta {
 				margin-top: rem(50);
-				background-color: $primary-green;
 			}
 		}
 
@@ -49,7 +48,10 @@
 		    left: 0;
 		    background-position: bottom;
 		    background-size: 90%;
-		    background-position: bottom;
+		    position: absolute;
+		    /* max-height: 100%; */
+		    /* margin-left: auto; */
+		    /* align-self: unset; */
 		}
 
 	}
@@ -74,7 +76,8 @@
 			}
 
 			.hero__visual {
-		    	left: 34vw;
+				flex: 1;
+			    position: relative;
 		    	background-position: center;
 			}
 		}
