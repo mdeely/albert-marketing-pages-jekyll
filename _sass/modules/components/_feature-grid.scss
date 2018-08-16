@@ -1,6 +1,6 @@
 .featureGrid {
 	@include section-spacing;
-	max-width: 90vw;
+	max-width: $xxl-viewport;
 	margin: 0 auto;
 
 	.featureGrid__title {
@@ -16,7 +16,7 @@
 
 		.featureGrid__item {
 			text-align: center;
-			margin-bottom: rem(80);
+			margin-bottom: rem(40);
 
 			.featureGrid__item-visual {
 				height: rem(120);
@@ -91,11 +91,13 @@
 
 		.featureGrid__list {
 			flex-direction: row;
-			justify-content: space-evenly;
+			justify-content: center;
 
 			.featureGrid__item {
 				margin-bottom: rem(100);
 				flex: 0 1 300px;
+				margin-left: rem(15);
+				margin-right: rem(15);
 
 				.featureGrid__item-visual {
 					height: rem(160);

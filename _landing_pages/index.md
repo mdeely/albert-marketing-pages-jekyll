@@ -16,14 +16,10 @@ components:
   cta_url: ""
   courseDomains:
   - domain: ELA
-    domain_description: Description for domain here
+    domain_description: Optional description for domain here
     cta_label: View all ELA
     cta_url: ""
     courseCards:
-    - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
-      card_title: ELA subject 1
-
     - card_group: ela
       card_img_src: "assets/img/heart_of_darkness.svg"
       card_title: ELA subject 2
@@ -78,7 +74,7 @@ components:
   cta_url: ""
   courseDomains:
   - domain: Advanced Placement®
-    domain_description: Description for domain here
+    domain_description: Optional description for domain here
     cta_label: View Advanced Placement®
     cta_url: ""
     courseCards:

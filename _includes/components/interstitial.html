@@ -1,12 +1,12 @@
 {% assign interstitial = include.content %}
 
 {% if interstitial.component_large == true %}
-<section class="intersitial interstitial__small">
+<section class="interstitial interstitial__small">
 {% else %}
-<section class="intersitial interstitial__large">
+<section class="interstitial interstitial__large">
 {% endif %}
 
 	<a class="interstitial__anchor button">{{ interstitial.cta_label}}</a>
-	<div class="interstitial_description">{{ interstitial.description }}</div>
+	<div class="interstitial__description">{{ interstitial.description }}</div>
 
 </section>

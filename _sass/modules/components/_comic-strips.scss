@@ -1,5 +1,8 @@
 .comicStrip {
 	@include section-spacing;
+	max-width: $xxl-viewport;
+	margin-left: auto;
+	margin-right: auto;
 
 	.tabBar {
 		.tabBar__list {
@@ -25,31 +28,19 @@
 
 			.comicPanel__list {
 				display: flex;
+				border: 1px solid #dedede;
+				border-radius: rem(10);
+				overflow: hidden;
 
 				.comicPanel__item {
 					width: 25%;
 					background-color: $bgGrey--darker;
 					text-align: center;
-					border-radius: rem(5);
-					overflow: hidden;
-					margin-right: rem(10);
-					transition: filter .1s ease-in-out;
+					border-right: 1px solid #dedede;
 
-					img {
-						transition: filter .1s ease-in-out;
-						filter: grayscale(100%);
-					}
-
-					&:last {
+					&:last-child {
 						margin-right: 0;
-					}
-
-					&.active {
-						box-shadow: 0 0 0 5px $link;
-
-						img {
-							filter: grayscale(0%);
-						}
+						border-right: 0px solid transparent;
 					}
 
 					&:hover {
@@ -72,9 +63,10 @@
 						.comicPanel__caption {
 							width: 100%;
 							text-align: left;
-							padding: rem(10);
+							padding: rem(35);
 							color: $text_grey;
-
+						    font-size: rem(14);
+						    line-height: 26px;
 						}
 					}
 				}

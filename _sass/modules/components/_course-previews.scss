@@ -5,11 +5,6 @@
 	align-items: center;
 	flex-direction: column;
 
-	> *:not(.coursePreview__card-list) {
-		padding-left: $container-spacing;
-		padding-right: $container-spacing;
-	}
-
 	.coursePreview__title {
 		@include fancy-title-medium;
 		text-align: center;
@@ -26,6 +21,8 @@
 		margin-bottom: 0;
 		display: none;
 		text-align: center;
+		padding-left: 4vw;
+		padding-right: 4vw;
 
 		&.active {
 			display: block;
@@ -158,6 +155,12 @@
 	    	max-width: $container-width-slim;
 	    	margin-right: auto;
 	    	margin-left: auto;
+			padding-left: $container-spacing;
+			padding-right: $container-spacing;
+		}
+
+		.coursePreview__group-description {
+			max-width: rem(600);
 		}
 
 		.coursePreview__card-list {

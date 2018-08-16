@@ -74,6 +74,7 @@ $nav-padding: rem(20);
 		    top: $nav-height;
 		    border-top: 1px solid rgba(white, .25);
 			flex-direction: column;
+			overflow-y: scroll;
 
 		    &.active {
 		    	display: flex;
@@ -81,10 +82,11 @@ $nav-padding: rem(20);
 
 			ul {
 				li {	
+					font-size: rem(15);
 					padding: 0 rem(15);
 
 					a {
-						font-size: rem(18);
+						font-size: rem(15);
 						display: block;
 						color: white;
 						line-height: $nav-height/1.25;
@@ -119,8 +121,7 @@ $nav-padding: rem(20);
 		}
 	}
 
-    @media only screen and (min-width: $s-viewport) {
-
+    @media only screen and (min-width: $m-viewport) {
    		&.mobile--open {
    			background-color: $link;
    		}
@@ -147,14 +148,13 @@ $nav-padding: rem(20);
 						line-height: $nav-height;
 
 	    				a {
-							font-size: rem(16);
 							line-height: $nav-height;
 	    				}
 
 	    				&:hover,
 	    				&:focus {
 	    					ul {
-	    						display: block; 
+	    						display: flex;
 	    					}
 	    				}
 
@@ -169,6 +169,7 @@ $nav-padding: rem(20);
 	    					left: $container-spacing;
 	    					right: $container-spacing;
 	    					color: $text_grey;
+	    					flex: 1;
 
 	    					li {
 	    						a {
@@ -188,6 +189,10 @@ $nav-padding: rem(20);
 		    			margin-left: rem(40);
 		    			align-items: center;
 
+						// .mainNav__account-mobile-toggle {
+						// 	display: none;
+						// }
+
 		    			.button--sign-up {
 		    				display: block;
 		    			}
@@ -196,4 +201,5 @@ $nav-padding: rem(20);
 	    	}
     	}
     }
+
 }

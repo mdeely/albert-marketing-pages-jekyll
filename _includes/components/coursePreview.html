@@ -4,10 +4,6 @@
 
 <section class="coursePreview coursePreview-{{ index }}">
 	<div class="coursePreview__title">{{ coursePreview.title }}</div>
-	{% if coursePreview.group_title %}
-		<div class="coursePreview__group-title">{{ coursePreview.group_title }}</div>
-	{% endif %}
-
 	<div class="tabBar">
 	  	<ul class="tabBar__list">
 			{% if coursePreview.courseDomains.size > 1 %} 

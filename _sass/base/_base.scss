@@ -69,5 +69,9 @@ hr {
 
 section {
 	overflow: hidden;
+
+	&:nth-child(even):not(.hero) {
+		background-color: $bgGrey;
+	}
 }
 

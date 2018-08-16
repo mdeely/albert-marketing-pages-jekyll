@@ -1,6 +1,48 @@
 .testimonials {
 	@include section-spacing;
 
+	.testimonials__title {
+		text-align: center;
+	}
+
+	.testimonials__list {
+		display: flex;
+		flex-direction: row;
+
+		.testimonial__item {
+			box-shadow: $shadow_depth_4;
+			border-radius: rem(10);
+			background-color: #FFFFFF;
+			margin: rem(20);
+			text-align: left;
+
+			.testimonial__visual {
+			}
+
+			.testimonial__info {
+
+				> * {
+					padding: rem(20);
+				}
+				.testimonial__quote {
+				}
+
+				.testimonial__nameOfPerson {
+				}
+
+				.testimonial__teacher-type {
+				}
+
+				.testimonial__teacher-level {
+				}
+
+				.testimonial__location {
+				}
+
+			}
+		}
+	}
+
 	img {
 		width: 200px;
 	}

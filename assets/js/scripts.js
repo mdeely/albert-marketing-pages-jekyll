@@ -25,17 +25,14 @@ $( document ).ready(function() {
 	$(anchor).on('click', updateDisplay);
 
 	// direction arrow for hero section
-	$directional_arrow.on('click', goToNextSection);
+	$directional_arrow.on('click mouseover', goToNextSection);
 	var navHeight = $(".mainNav").outerHeight();
 
 	function goToNextSection(event) {
 		event.preventDefault();
 
 	    var $this = $(event.target);
-	    console.log($this);
 	        $next = $this.parent().next();
-
-	        console.log($next);
 
         $('html,body').animate({
           scrollTop: $next.offset().top - navHeight
@@ -62,7 +59,6 @@ $( document ).ready(function() {
 		// find any additional targets	
 		var additionalTargets = $("[data-additional-target='"+anchorHref+"']");
 
-		console.log(anchorParent);
 		// remove .active class from everyting in the parent
 		$(anchorParent).find('.active').removeClass('active');
 
@@ -120,7 +116,7 @@ $( document ).ready(function() {
 
 
 	// MOBILE NAV
-	$(".mainNav__mobile-toggle").click(function() {
+	$(".mainNav__mobile-toggle").click(function(event) {
 		if ( $(event.target).hasClass("toggle--open") ) {
 			$('.mainNav').addClass('mobile--open');
 			$('.mainNav nav').addClass("active");

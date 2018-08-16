@@ -49,9 +49,6 @@
 		    background-position: bottom;
 		    background-size: 90%;
 		    position: absolute;
-		    /* max-height: 100%; */
-		    /* margin-left: auto; */
-		    /* align-self: unset; */
 		}
 
 	}
@@ -68,6 +65,7 @@
 			.hero__info-container {
 				margin-top: 0;
 				max-width: 40vw;
+				min-width: 30vw;
 
 				.hero__description {
 					max-width: rem(400);

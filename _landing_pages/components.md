@@ -161,7 +161,10 @@ components:
       comicPanels:
       - img_src: "assets/img/comic_1.png"
         caption: First panel of FIRST strip. Lorem ipsum lots of text would go here so that we can see an accurate representation of the amount of text that would display here. 
-
+      
+      - img_src: "assets/img/comic_1.png"
+        caption: First panel of FIRST strip. Lorem ipsum
+        
       - img_src: "assets/img/comic_2.png"
         caption: Second panel of FIRST strip. Lorem ipsum lots of text would go here so that we can see an accurate representation of the amount of text that would display here.
 
@@ -171,6 +174,12 @@ components:
     - teacher_name: Mr. Third person
       teacher_img_src: "assets/img/random-img2.svg"
       comicPanels:
+      - img_src: "assets/img/comic_1.png"
+        caption: First panel of FIRST strip. Lorem ipsum
+
+      - img_src: "assets/img/comic_1.png"
+        caption: First panel of FIRST strip. Lorem ipsum
+
       - img_src: "assets/img/comic_1.png"
         caption: First panel of FIRST strip. Lorem ipsum lots of text would go here so that we can see an accurate representation of the amount of text that would display here. 
 

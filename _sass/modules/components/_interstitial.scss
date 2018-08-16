@@ -1,0 +1,37 @@
+.interstitial {
+	@include section-spacing;
+	padding-left: $section-padding;
+	padding-right: $section-padding;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.interstitial__description {
+		max-width: rem(400);
+		margin-top: rem(20);
+		text-align: center;
+		line-height: 1.5em;
+	}
+}
+
+.interstitial__small {
+
+}
+
+.interstitial__large {
+
+}
+
+@media only screen and (min-width: $m-viewport) {
+	.interstitial {
+		flex-direction: row;
+		justify-content: center;
+
+		.interstitial__description {
+			margin-top: 0;
+			text-align: left;
+			margin-left: rem(40);
+		}
+	}
+
+}

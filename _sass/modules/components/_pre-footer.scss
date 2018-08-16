@@ -36,7 +36,7 @@
 
 	.preFooter__info-container {
 	    width: auto;
-	    max-width: 50vw;
+	    max-width: 55vw;
 	    margin: 0 auto;
 		flex: 1;
 		text-align: center;
@@ -66,25 +66,41 @@
 	    .preFooter__right {
 	    	flex-direction: row;
 	    	align-self: normal;
+
+			.preFooter__visual {
+				height: rem(100);
+				width: rem(100);
+				margin-right: 0;
+			}
+
+			.preFooter__info-container {
+				text-align: left;
+				max-width: rem(300);
+				margin-left: 0;
+
+				#{$button} {
+					width: auto;
+				}
+			}
+	    }
+
+	    .preFooter__left {
+	    	.preFooter__info-container {
+	    		margin-right: 0;
+	    		margin-left: rem(40);
+	    	}
+	    }
+
+	    .preFooter__right {
+	    	.preFooter__visual{
+	    		margin-left: 0;
+	    		margin-right: rem(40);
+	    	}
 	    }
 
 		.container {
 			display: flex;
 	    	flex-direction: row;
-		}
-
-		.preFooter__visual {
-			height: rem(100);
-			width: rem(100);
-			margin-right: rem(40);
-		}
-
-		.preFooter__info-container {
-			text-align: left;
-
-			#{$button} {
-				width: auto;
-			}
 		}
 	}
 }
