@@ -1,0 +1,26 @@
+.graph {
+	@include section-spacing;
+	text-align: center;
+
+	.graph__title {
+		margin-bottom: rem(40);
+	}
+
+	.graph__description {
+		margin-bottom: rem(40);
+	}
+
+	.graph__list {
+		display: flex;
+		flex-direction: row;
+		margin-top: rem(40);
+
+		.graph__item {
+			background-color: #FFFFFF;
+			box-shadow: $shadow_depth_5;
+			border-radius: rem(10);
+			padding: rem(40);
+			width: 50%;
+		}
+	}
+}
