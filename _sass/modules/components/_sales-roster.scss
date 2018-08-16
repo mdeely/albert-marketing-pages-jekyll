@@ -9,8 +9,9 @@
 		margin-bottom: rem(40);
 
 		.salesRoster__title {
+			@include title-medium;
 			margin-bottom: rem(40);
-
+			color: $text_grey;
 		}
 
 		.salesRoster__description {

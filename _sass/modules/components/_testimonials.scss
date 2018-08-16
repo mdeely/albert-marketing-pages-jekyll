@@ -2,7 +2,9 @@
 	@include section-spacing;
 
 	.testimonials__title {
+		@include fancy-title-medium;
 		text-align: center;
+		margin-bottom: rem(80);
 	}
 
 	.testimonials__list {
@@ -15,19 +17,46 @@
 			background-color: #FFFFFF;
 			margin: rem(20);
 			text-align: left;
+			position: relative;
 
 			.testimonial__visual {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: rem(-40);
+				width: rem(120);
+				height: rem(120);
+				border-radius: 50%;
+				box-shadow: $shadow_depth_4;
+				overflow: hidden;
+				margin: 0 auto;
+				background-color: #FFFFFF;
+
+				img {
+					height: 100%;
+					width: auto;
+					max-width: 100%;
+				}
 			}
 
 			.testimonial__info {
+				margin-top: rem(120);
+				text-align: center;
 
 				> * {
-					padding: rem(20);
+					padding-left: rem(20);
+					padding-right: rem(20);
+
+					&:last-child {
+						padding-bottom: rem(20);
+					}
 				}
+
 				.testimonial__quote {
 				}
 
 				.testimonial__nameOfPerson {
+					border-top: 1px solid $menuBorder;
 				}
 
 				.testimonial__teacher-type {
