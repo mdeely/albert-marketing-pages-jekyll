@@ -1,5 +1,8 @@
 .testimonials {
-	@include section-spacing;
+	padding-top: $container-spacing;
+	padding-bottom: $container-spacing;
+	padding-left: 0;
+	padding-right: 0;
 
 	.testimonials__title {
 		@include fancy-title-medium;
@@ -10,6 +13,8 @@
 	.testimonials__list {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		overflow: scroll;
 
 		.testimonial__item {
 			box-shadow: $shadow_depth_4;
@@ -18,6 +23,8 @@
 			margin: rem(20);
 			text-align: left;
 			position: relative;
+			max-width: rem(430);
+			min-width: rem(300);
 
 			.testimonial__visual {
 				position: absolute;
@@ -53,10 +60,13 @@
 				}
 
 				.testimonial__quote {
+					margin-bottom: rem(20);
 				}
 
 				.testimonial__nameOfPerson {
+					@include fancy-title-medium;
 					border-top: 1px solid $menuBorder;
+					padding-top: rem(20);
 				}
 
 				.testimonial__teacher-type {
@@ -74,5 +84,12 @@
 
 	img {
 		width: 200px;
+	}
+}
+
+@media only screen and (min-width: $s-viewport) {
+	.testimonials {
+		padding-left: $container-spacing;
+		padding-right: $container-spacing;
 	}
 }
