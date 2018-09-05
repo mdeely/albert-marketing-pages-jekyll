@@ -31,10 +31,11 @@
 				border: 1px solid #dedede;
 				border-radius: rem(10);
 				overflow: hidden;
+				box-shadow: $shadow_depth_6;
 
 				.comicPanel__item {
 					width: 25%;
-					background-color: $bgGrey--darker;
+					// background-color: $bgGrey--darker;
 					text-align: center;
 					border-right: 1px solid #dedede;
 

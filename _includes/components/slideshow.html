@@ -21,6 +21,8 @@
 		</ul>
 	</div>
 	<div class="slideshow__display">
+		<a href="#" class="slideshow__display-next"></a>
+		<a href="#" class="slideshow__display-previous"></a>
 		<ul class="slideshow__display-list">
 		{% for slideshowItem in slideshow.slideshowItems %}
 			{% if forloop.index == 1 %}

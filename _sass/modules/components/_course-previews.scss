@@ -55,7 +55,7 @@
 			position: relative;
 			background-color: #FFFFFF;
 			border-radius: rem(10);
-			box-shadow: $shadow_depth_5;
+			box-shadow: $shadow_depth_6;
 			overflow: hidden;
 			position: relative;
 			z-index: 1;
@@ -67,6 +67,7 @@
 			margin-right: rem(5);
 			margin-left: rem(15);
 			margin-bottom: rem(20);
+			border: 1px solid $menuBorder;
 
 			&:first-of-type {
 				margin-left: 0;
@@ -86,13 +87,13 @@
 				z-index: 2;
 
 				img {
-					margin-top: rem(15);
-					height: rem(42);
+					margin-top: rem(40);
+					height: rem(70);
 				}
 
 				.coursePreview__card-decoration {
 					position: relative;
-					height: rem(15);
+					height: rem(40);
 					z-index: -1;
 
 					&:after {

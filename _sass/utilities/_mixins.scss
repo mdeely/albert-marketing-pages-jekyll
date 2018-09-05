@@ -116,9 +116,13 @@
  	}
 }
 
-@mixin small-title() {
+@mixin title-small() {
 	@include base-text-styles();
-	font-size: em(20);
+	font-size: em(18);
+
+	@media only screen and (min-width: $s-viewport) {
+		font-size: rem(20);
+ 	}
 }
 
 @mixin label-title() {

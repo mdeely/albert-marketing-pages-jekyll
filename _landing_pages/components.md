@@ -207,15 +207,15 @@ components:
   description: Slideshow description
   slideshowItems:
   - title: Slideshow item 1
-    description: Slideshow description 1
+    description: Slideshow description 1. Lorem ipsum long description goes about here. 
     img_src: "assets/img/hero-test.svg"
 
   - title: Slideshow item 2
-    description: Slideshow description 2
+    description: Slideshow description 2. Carpe diem more latin words lorem ipsum. 
     img_src: "assets/img/random-img3.svg"
 
   - title: Slideshow item 3
-    description: Slideshow description 3
+    description: Slideshow description 3. Another description to fill up the space instead of lorem ipsum.
     img_src: "assets/img/random-img2.svg"
 
 - component_name: preFooter

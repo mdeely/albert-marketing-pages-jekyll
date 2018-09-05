@@ -82,7 +82,7 @@ $( document ).ready(function() {
 	$(links).on('click', updateLinkDisplay);
 
 	// Slideshow
-	var timeInterval = 3000;
+	var timeInterval = 4000;
 
 	var slideshowContainer = $(".slideshow");
 	var slideshowList = $(".slideshow__display-list");
@@ -91,10 +91,12 @@ $( document ).ready(function() {
 	var timeRun = 0
 	var interval = setInterval(function(){
 	    timeRun += 1;
-	    if(timeRun === slideshowItemsCount){
+	    if (timeRun === slideshowItemsCount) {
 		    $(slideshowList).css({
 		    	"left": "0%"
 		    });
+
+			$(".slideShow__nav-list").animate({ scrollLeft: 0 } ,400);
 
 	    	var activeSlide = slideshowDisplayItem+":first";
 	    	var activeSlideId = $(activeSlide).attr("id");
@@ -103,7 +105,13 @@ $( document ).ready(function() {
 
 		    timeRun = 0;
 		    return
-	    }
+		} 
+		else if ( timeRun === (slideshowItemsCount - 1) ) { 
+			$(".slideShow__nav-list").animate( { scrollLeft: (($(".slideShow__nav-list").width() / 3) * timeRun) } ,400);
+	    } else {
+	    	console.log( ($(".slideshow__nav-item").outerWidth() * slideshowItemsCount ) );
+			$(".slideShow__nav-list").animate( { scrollLeft: (($(".slideShow__nav-list").width() / 3) * timeRun) } ,400);
+	    };
 
 	    var activeSlide = slideshowDisplayItem+":nth-of-type("+(timeRun + 1)+")";
 	    var activeSlideId = $(activeSlide).attr("id");

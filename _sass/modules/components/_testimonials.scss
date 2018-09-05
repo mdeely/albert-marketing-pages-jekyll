@@ -51,8 +51,8 @@
 				text-align: center;
 
 				> * {
-					padding-left: rem(20);
-					padding-right: rem(20);
+					padding-left: rem(30);
+					padding-right: rem(30);
 
 					&:last-child {
 						padding-bottom: rem(20);
@@ -60,22 +60,27 @@
 				}
 
 				.testimonial__quote {
-					margin-bottom: rem(20);
+					margin-bottom: rem(40);
+					line-height: rem(25);
 				}
 
 				.testimonial__nameOfPerson {
-					@include fancy-title-medium;
+					@include fancy-title-sm;
 					border-top: 1px solid $menuBorder;
 					padding-top: rem(20);
 				}
 
 				.testimonial__teacher-type {
+					margin-top: rem(10);
+					color: $regent-grey;
 				}
 
 				.testimonial__teacher-level {
 				}
 
 				.testimonial__location {
+					margin-top: rem(10);
+					color: $link;
 				}
 
 			}
