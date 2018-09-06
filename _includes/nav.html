@@ -25,7 +25,12 @@
 								<div>
 				   					<h1>{{ subitem_group.group_title }}</h1>
 					   				 {% for subitem in subitem_group.subitems %}
-						      			<li><a href="{{ subitem.url }}">{{ subitem.label }}</a></li>
+						      			<li>
+						      				<a href="{{ subitem.url }}">
+						      					<div class="nav__subitem-title">{{ subitem.label }}</div>
+						      					<div class="nav__subitem-description">{{ subitem.description }}</div>
+						      				</a>
+						      			</li>
 					   				 {% endfor %}
 					   			</div>
 				   			{% endfor %}

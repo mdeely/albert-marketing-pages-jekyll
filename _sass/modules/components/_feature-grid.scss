@@ -29,11 +29,15 @@
 			}
 
 			.featureGrid__item-title {
+				@include fancy-title-medium;
 				margin-bottom: rem(15);
 			}
 
 			.featureGrid__item-description {
-				margin-bottom: rem(30);
+				min-width: rem(300);
+				text-align: left;
+				line-height: 25px;
+				margin: 0 auto rem(30) auto;
 			}
 		}
 	}
@@ -96,8 +100,8 @@
 			.featureGrid__item {
 				margin-bottom: rem(100);
 				flex: 0 1 300px;
-				margin-left: rem(15);
-				margin-right: rem(15);
+				margin-left: rem(50);
+				margin-right: rem(50);
 
 				.featureGrid__item-visual {
 					height: rem(160);

@@ -34,7 +34,7 @@ collections:
     permalink: /:name
   case_studies:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:path
 
 defaults:
   - scope:

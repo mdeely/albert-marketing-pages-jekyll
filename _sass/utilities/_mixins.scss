@@ -125,6 +125,15 @@
  	}
 }
 
+@mixin title-xs() {
+	@include base-text-styles();
+	font-size: em(16);
+
+	@media only screen and (min-width: $s-viewport) {
+		font-size: rem(17);
+ 	}
+}
+
 @mixin label-title() {
 	@include base-text-styles();
 	text-transform: uppercase;

@@ -4,22 +4,25 @@ navItems:
 
 - label: Products
   subitem_groups:
-    - group_title: K-12 Core title
+    - group_title: K-12 Core
       subitems:
-      - label: subitem
+      - label: K-12 ELA
+        description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-core
-      - label: subitem 2
+      - label: K-12 Math
+        description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-core
-      - label: subitem 3
+      - label: K-12 Science
+        description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-core
 
     - group_title: K-12 Test Prep
       subitems:
-      - label: subitem 4
+      - label: K-12 Advanced Placement
+        description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-core
-      - label: subitem 5
-        url: k-12-core
-      - label: subitem 6
+      - label: K-12 College Entrance
+        description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-core
 
 - label: Benefits

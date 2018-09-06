@@ -153,6 +153,8 @@ $nav-padding: rem(20);
 
 	    				&:hover,
 	    				&:focus {
+	    					background-color: rgba(0,0,0,.05);
+
 	    					ul {
 	    						display: flex;
 	    					}
@@ -164,16 +166,43 @@ $nav-padding: rem(20);
 	    					padding-left: 0;
 	    					background-color: #FFFFFF;
 	    					border-radius: 5px;
-	    					padding: rem(30);
 	    					box-shadow: $shadow_depth_5;
-	    					left: $container-spacing;
-	    					right: $container-spacing;
 	    					color: $text_grey;
 	    					flex: 1;
+	    					max-width: rem(800);
+	    					right: rem(40);
+
+	    					> * {
+	    						padding: rem(40);
+
+	    						&:last-child {
+	    							border-left: 1px solid $iron-grey;
+	    						}
+	    					}
+
+	    					h1 {
+	    						@include fancy-title-sm;
+	    					}
 
 	    					li {
+	    						padding: 0;
+
 	    						a {
-	    							color: $text_grey;
+	    							margin-bottom: rem(30);
+
+	    							.nav__subitem-title {
+	    								padding-left: rem(50);
+	    								@include title-xs;
+	    								color: $text_grey;	
+	    								line-height: initial;
+	    								margin-bottom: rem(10);	
+	    							}
+
+	    							.nav__subitem-description {
+	    								padding-left: rem(50);
+	    								color: $oslo-grey;
+	    								line-height: initial;	
+	    							}
 	    						}
 	    					}
 	    				}

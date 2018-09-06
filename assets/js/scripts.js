@@ -203,4 +203,9 @@ $( document ).ready(function() {
 	    	"left": "-"+(positionNum * 100)+"%"
 	    });
 	}
+
+	// Graphs
+
+	// Find graph elements
+	// Get data attribute values on .data__value
 });

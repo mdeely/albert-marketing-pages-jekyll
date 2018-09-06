@@ -13,26 +13,26 @@ components:
   img_src: "assets/img/hero-test.svg"
 
 - component_name: graph
-  title: Graph title
-  description: Graph description lorem ipsum descriptionum of this componentum
+  title: Groundbreaking efficacy research
+  description: Based on a controlled study, schools that implemented Albert saw a TBD% improvement in test scores and a strong correlation between scores and Albert usage. Learn more about our methodology
   graphItems:
   - title: Graph title 1
     dataItems:
-    - value: 80%
+    - value: 80
       label_x: Label_x 1
       footer_label: Before Albert 1
 
-    - value: 20%%
+    - value: 20
       label_x: Label_x 2
       footer_label: After Albert 2
 
   - title: Graph title 2
     dataItems:
-    - value: 100%
+    - value: 100
       label_x: Label_x 2.1
       footer_label: Before Albert 2.1
 
-    - value: 0%
+    - value: 0
       label_x: Label_x 2.2
       footer_label: After Albert 2.2
 
