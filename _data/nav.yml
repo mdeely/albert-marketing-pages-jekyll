@@ -1,14 +1,15 @@
 navItems:
-- label: Features
+- label: Subjects
   url: features
 
-- label: Products
+- label: Solutions
   subitem_groups:
     - group_title: K-12 Core
       subitems:
       - label: K-12 ELA
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-core
+        icon_url: "assets/img/heart_of_darkness.svg"
       - label: K-12 Math
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-core
@@ -25,15 +26,32 @@ navItems:
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-core
 
-- label: Benefits
-  url: benefits
-
-- label: Results
-  url: results
+- label: Explore
+  subitem_groups:
+    - subitems:
+      - label: Features
+        url: features
+      - label: Benefits
+        url: benefits
+      - label: Results
+        url: results
+      - label: Case studies
+        url: case-studies
 
 - label: Pricing
   url: pricing
 
+- label: Resources
+  subitem_groups:
+    - subitems:
+      - label: Help Center
+        url: help-center
+      - label: Pilot Program
+        url: pilot-program
+      - label: Success Team
+        url: success-team
+      - label: Blog
+        url: blog
 
 accountItems:
 - label: Login

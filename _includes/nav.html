@@ -16,19 +16,28 @@
 					{% if navItem.url %}
 			      	<li><a href="{{ navItem.url }}">{{ navItem.label }}</a>
 					{% else %}
-			      	<li>{{ navItem.label }}</a>
+			      	<li class="nav__dropdown">{{ navItem.label }}
 			      	{% endif %}
 
 	                {% if navItem.subitem_groups[0] %}
 		                <ul>
 				   			{% for subitem_group in navItem.subitem_groups %}
 								<div>
-				   					<h1>{{ subitem_group.group_title }}</h1>
+									{% if subitem_group.group_title %}
+				   						<h1>{{ subitem_group.group_title }}</h1>
+									{% endif %}
 					   				 {% for subitem in subitem_group.subitems %}
 						      			<li>
 						      				<a href="{{ subitem.url }}">
-						      					<div class="nav__subitem-title">{{ subitem.label }}</div>
-						      					<div class="nav__subitem-description">{{ subitem.description }}</div>
+												{% if subitem.description %}
+						      						<div class="nav__subitem-visual"><img src="{{ subitem.icon_url }}"></div>
+												{% endif %}
+						      					<div class="nav__subitem-info-container">
+						      						<div class="nav__subitem-title">{{ subitem.label }}</div>
+													{% if subitem.description %}
+						      							<div class="nav__subitem-description">{{ subitem.description }}</div>
+													{% endif %}
+						      					</div>
 						      				</a>
 						      			</li>
 					   				 {% endfor %}

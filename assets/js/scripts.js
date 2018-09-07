@@ -208,4 +208,26 @@ $( document ).ready(function() {
 
 	// Find graph elements
 	// Get data attribute values on .data__value
+
+	// nav subitems
+	var navSubmenu = ".nav__dropdown";
+
+	// Bind link classes to click event
+	$(navSubmenu).on('click', updateSubmenuDisplay);
+
+	function updateSubmenuDisplay() {
+        event.stopImmediatePropagation();
+		event.preventDefault();
+
+		var linkTarget = event.target;
+
+		if ( $(linkTarget).hasClass("active") ) {
+			$(linkTarget).removeClass("active");
+			return
+		}
+
+		$(navSubmenu).removeClass("active");
+		$(linkTarget).addClass("active");
+
+	}
 });
