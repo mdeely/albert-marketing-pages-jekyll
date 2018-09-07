@@ -215,7 +215,11 @@ $( document ).ready(function() {
 	// Bind link classes to click event
 	$(navSubmenu).on('click', updateSubmenuDisplay);
 
-	function updateSubmenuDisplay() {
+	function updateSubmenuDisplay(event) {
+		if $(linkTarget).is("a") {
+			return
+		}
+
         event.stopImmediatePropagation();
 		event.preventDefault();
 
