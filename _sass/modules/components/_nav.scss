@@ -97,6 +97,7 @@ $nav-padding: rem(20);
 					&.nav__dropdown {
 						cursor: pointer;
 						line-height: $nav-height/1.25;
+						display: flex;
 
 						&.active {
 	    					ul {
@@ -112,8 +113,8 @@ $nav-padding: rem(20);
 							content: "\f0d7";
 							font-family: "Font Awesome 5 Free";
 							font-weight: 900;
-							margin-right: rem(15);
 							padding-right: rem(15);
+							margin-left: rem(10);
 							opacity: .6;
 						}
 					}
@@ -156,6 +157,8 @@ $nav-padding: rem(20);
     							}
 
 	    						.nav__subitem-info-container {
+	    							pointer-events: none;
+
 	    							.nav__subitem-title {
 	    								@include title-xs;
 	    								font-weight: bold;
@@ -205,6 +208,10 @@ $nav-padding: rem(20);
 				display: none;
 			}
 
+			.mainNav__logo {
+    			height: 100%;
+			}
+
 	    	nav {
 	    		display: flex;
 	    		flex-direction: row;
@@ -221,16 +228,28 @@ $nav-padding: rem(20);
 
 	    			> li {
 	    				&:hover,
-	    				&:focus {
+	    				&:focus
+	    				&.active {
 	    					background-color: rgba(0,0,0,.05);
 	    				}
 	    			}
 
 	    			li {
 						line-height: $nav-height;
+						margin-left: 0;
 
 						&.nav__dropdown {
 							line-height: $nav-height;
+							margin-left: rem(5);
+
+							&.active {
+								background-color: rgba(0,0,0,.05);
+							}
+
+							&:after {
+								margin-right: 0;
+								padding-right: 0;
+							}
 						}
 
 	    				a {
@@ -261,6 +280,7 @@ $nav-padding: rem(20);
 	    					left: 100vw;
     						flex-direction: row;
 	    					pointer-events: initial;
+							top: $nav-height;
 
 
 	    					> * {
