@@ -131,18 +131,6 @@ $nav-padding: rem(20);
 	    						border-top: 1px solid rgba(white, .2);
 	    					}
 						}
-
-						// &:after {
-						// 	content: "\f0d7";
-						// 	font-family: "Font Awesome 5 Free";
-						// 	font-weight: 900;
-						// 	padding-right: rem(15);
-						// 	margin-left: rem(10);
-						// 	opacity: .6;
-						//     position: absolute;
-						//     right: rem(15);
-						//     top: 0;
-						// }
 					}
 
 					ul {
@@ -298,11 +286,6 @@ $nav-padding: rem(20);
 							&.active {
 								background-color: rgba(0,0,0,.05);
 							}
-
-							// &:after {
-							// 	margin-right: 0;
-							// 	padding-right: 0;
-							// }
 						}
 
 	    				a {
@@ -388,7 +371,7 @@ $nav-padding: rem(20);
 	    								.nav__subitem-visual {
 	    									background-color: $link;
 	    								}
-	    								
+
 			    						.nav__subitem-info-container {
 			    							.nav__subitem-title {
 			    								color: $link;	
@@ -420,10 +403,6 @@ $nav-padding: rem(20);
 		    					white-space: nowrap;
 		    				}
 		    			}
-
-						// .mainNav__account-mobile-toggle {
-						// 	display: none;
-						// }
 
 		    			.button--sign-up {
 		    				display: block;
