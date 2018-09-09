@@ -81,11 +81,26 @@ $nav-padding: rem(20);
 		    }
 
 			ul {
+
+				> li {
+					padding-left: rem(20);
+				}
+
 				li {	
 					font-size: rem(15);
-					padding: 0 rem(15);
-					margin-left: rem(15);
-					margin-right: rem(5);
+					margin-left: 0;
+					margin-right: 0;
+					border-bottom: 1px solid rgba(white, .2);
+					line-height: rem(64);
+
+    				&:hover,
+    				&:focus {
+    					background-color: rgba(0,0,0,.05);
+
+    					li {
+    						background-color: inherit;
+    					}
+    				}
 
 					a {
 						font-size: rem(15);
@@ -97,26 +112,37 @@ $nav-padding: rem(20);
 					&.nav__dropdown {
 						cursor: pointer;
 						line-height: $nav-height/1.25;
-						display: flex;
+						display: block;
+
+						i {
+							pointer-events: none;
+							margin-left: rem(10);
+						}
 
 						&.active {
+    						background-color: rgba(0,0,0,.05);
+
 	    					ul {
 	    						opacity: 1;
 	    						left: initial;
 	    						height: auto;
 	    						transition: opacity .2s ease-in-out;
 	    						pointer-events: initial;
+	    						border-top: 1px solid rgba(white, .2);
 	    					}
 						}
 
-						&:after {
-							content: "\f0d7";
-							font-family: "Font Awesome 5 Free";
-							font-weight: 900;
-							padding-right: rem(15);
-							margin-left: rem(10);
-							opacity: .6;
-						}
+						// &:after {
+						// 	content: "\f0d7";
+						// 	font-family: "Font Awesome 5 Free";
+						// 	font-weight: 900;
+						// 	padding-right: rem(15);
+						// 	margin-left: rem(10);
+						// 	opacity: .6;
+						//     position: absolute;
+						//     right: rem(15);
+						//     top: 0;
+						// }
 					}
 
 					ul {
@@ -129,10 +155,24 @@ $nav-padding: rem(20);
     					flex: 1;
     					height: 0;
     					pointer-events: none;
+						margin-left: rem(-20);
+
+						.nav__subitem-group-title {
+	    					@include fancy-title-sm;
+						}
+
 
 	    				li {
+							padding-left: rem(40);
+
+		    				&:hover,
+		    				&:focus {
+		    					background-color: rgba(0,0,0,.05);
+		    				}
+
 	    					a {
 	    						display: flex;
+	    						padding: rem(20);
 
     							.nav__subitem-visual {
     								height: rem(50);
@@ -143,6 +183,7 @@ $nav-padding: rem(20);
     								border-radius: 50%;
 	    							margin-right: rem(30);
 	    							position: relative;
+    								margin-left: rem(-30);
 
 	    							img {
 									    max-height: 100%;
@@ -176,8 +217,7 @@ $nav-padding: rem(20);
 				}
 
 				&.mainNav__nav {
-					display: flex;
-					flex-direction: column;
+					display: block;
 				}
 
 				&.mainNav__account {
@@ -227,29 +267,31 @@ $nav-padding: rem(20);
 	    		ul {
 
 	    			> li {
-	    				&:hover,
-	    				&:focus
-	    				&.active {
-	    					background-color: rgba(0,0,0,.05);
+
+	    				&.sign-up {
+	    					&:hover {
+	    						background-color: transparent;
+	    					}
 	    				}
 	    			}
 
 	    			li {
 						line-height: $nav-height;
-						margin-left: 0;
+						margin-left: rem(0);
+						margin-right: rem(0);
+						padding: 0 rem(15);
 
 						&.nav__dropdown {
 							line-height: $nav-height;
-							margin-left: rem(5);
 
 							&.active {
 								background-color: rgba(0,0,0,.05);
 							}
 
-							&:after {
-								margin-right: 0;
-								padding-right: 0;
-							}
+							// &:after {
+							// 	margin-right: 0;
+							// 	padding-right: 0;
+							// }
 						}
 
 	    				a {
@@ -289,10 +331,6 @@ $nav-padding: rem(20);
 	    						&:not(:first-child) {
 	    							border-left: 1px solid $iron-grey;
 	    						}
-	    					}
-
-	    					h1 {
-	    						@include fancy-title-sm;
 	    					}
 
 	    					li {
@@ -335,6 +373,7 @@ $nav-padding: rem(20);
 	    			}
 
 		    		&.mainNav__nav {
+		    			display: flex;
 		    			flex-direction: row;
 		    			align-items: center;
 		    		}
@@ -343,6 +382,12 @@ $nav-padding: rem(20);
 		    			flex-direction: row;
 		    			margin-left: rem(40);
 		    			align-items: center;
+
+		    			li {
+		    				a {
+		    					white-space: nowrap;
+		    				}
+		    			}
 
 						// .mainNav__account-mobile-toggle {
 						// 	display: none;

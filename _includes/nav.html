@@ -16,7 +16,7 @@
 					{% if navItem.url %}
 			      	<li><a href="{{ navItem.url }}">{{ navItem.label }}</a>
 					{% else %}
-			      	<li class="nav__dropdown">{{ navItem.label }}
+			      	<li class="nav__dropdown">{{ navItem.label }}<i class="fa fa-caret-down"></i>
 			      	{% endif %}
 
 	                {% if navItem.subitem_groups[0] %}
@@ -24,7 +24,7 @@
 				   			{% for subitem_group in navItem.subitem_groups %}
 								<div>
 									{% if subitem_group.group_title %}
-				   						<h1>{{ subitem_group.group_title }}</h1>
+				   						<div class="nav__subitem-group-title">{{ subitem_group.group_title }}</h1>
 									{% endif %}
 					   				 {% for subitem in subitem_group.subitems %}
 						      			<li>
@@ -54,7 +54,7 @@
 
 				<ul class="mainNav__account">
 					<li><a href="#">Log in</a></li>
-					<li><a class="button button--sign-up" href="#">Sign up</a></li>
+					<li class="sign-up""><a class="button button--sign-up" href="#">Sign up</a></li>
 				</ul>
 
 	        {% endif %}
