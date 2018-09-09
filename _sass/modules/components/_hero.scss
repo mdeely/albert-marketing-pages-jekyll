@@ -1,20 +1,13 @@
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: $nav-height $container-spacing 0 $container-spacing;
     position: relative;
 
 	.hero__content {
-		width: 100%;
-    	display: flex;
-    	flex-direction: column;
-		height: calc(100vh - #{$nav-height});
-		width: (100 - 16) * 1vw;
 		position: relative;
 
 		.hero__info-container {
 			margin-top: 8vh;
+			margin-bottom: 8vh;
 			z-index: 1;
 
 			.hero__supertitle {
@@ -40,14 +33,11 @@
 		}
 
 		.hero__visual {
-			position: absolute;
+			min-height: rem(200);
 			background-repeat: no-repeat;
 		    width: 100%;
-		    height: 100%;
-		    bottom: 0;
-		    left: 0;
 		    background-position: bottom;
-		    background-size: 90%;
+		    background-size: contain;
 		}
 
 	}
@@ -56,13 +46,20 @@
 
 @media only screen and (min-width: $s-viewport) {
 	.hero {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
 
 		.hero__content {
 			flex-direction: row;
 			align-items: center;
+			width: 100%;
+	    	display: flex;
+			height: calc(100vh - #{$nav-height});
 
 			.hero__info-container {
 				margin-top: 0;
+				margin-bottom: 0;
 				max-width: 50vw;
 				min-width: 40vw;
 
@@ -76,6 +73,9 @@
 				flex: 1;
 			    position: relative;
 		    	background-position: center;
+			    height: 100%;
+			    bottom: 0;
+			    left: 0;
 			}
 		}
 	}

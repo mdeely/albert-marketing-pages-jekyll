@@ -159,6 +159,7 @@ $nav-padding: rem(20);
 
 						.nav__subitem-group-title {
 	    					@include fancy-title-sm;
+	    					padding-left: rem(20);
 						}
 
 
@@ -178,12 +179,19 @@ $nav-padding: rem(20);
     								height: rem(50);
     								max-width: rem(50);
     								min-width: rem(50);
-    								background-color: $link;
+    								background-color: $danube-blue;
     								overflow: hidden;
     								border-radius: 50%;
 	    							margin-right: rem(30);
 	    							position: relative;
     								margin-left: rem(-30);
+
+									// Generate course color classes
+									@each $course-name, $course-color in $course-color-map {
+										&.#{$course-name} {
+											background-color: $course-color;
+										}
+									}
 
 	    							img {
 									    max-height: 100%;
@@ -208,7 +216,9 @@ $nav-padding: rem(20);
 	    							}
 
 	    							.nav__subitem-description {
-	    								line-height: initial;	
+	    								line-height: initial;
+	    								font-size: rem(13);
+	    								opacity: .6;
 	    							}
     							}
 	    					}
@@ -280,6 +290,7 @@ $nav-padding: rem(20);
 						margin-left: rem(0);
 						margin-right: rem(0);
 						padding: 0 rem(15);
+						border-bottom: 0px solid transparent;
 
 						&.nav__dropdown {
 							line-height: $nav-height;
@@ -333,9 +344,18 @@ $nav-padding: rem(20);
 	    						}
 	    					}
 
+	    					.nav__subitem-group-title {
+	    						padding-left: 0;
+	    					}
+
 	    					li {
 	    						padding: 0;
 	    						margin: 0;
+
+	    						&:hover,
+	    						&:focus {
+	    							background-color: transparent;
+	    						}
 
     							&:last-child {
     								a {
@@ -344,7 +364,13 @@ $nav-padding: rem(20);
     							}
 
 	    						a {
-	    							margin-bottom: rem(35);
+	    							margin-bottom: rem(25);
+	    							padding: 0;
+
+
+	    							.nav__subitem-visual {
+	    								margin-left: 0;
+	    							}
 
 		    						.nav__subitem-info-container {
 		    							.nav__subitem-title {
@@ -353,10 +379,16 @@ $nav-padding: rem(20);
 
 		    							.nav__subitem-description {
 		    								color: $oslo-grey;
+		    								opacity: 1;
+		    								font-size: rem(14);
 		    							}
 	    							}
 
 	    							&:hover {
+	    								.nav__subitem-visual {
+	    									background-color: $link;
+	    								}
+	    								
 			    						.nav__subitem-info-container {
 			    							.nav__subitem-title {
 			    								color: $link;	

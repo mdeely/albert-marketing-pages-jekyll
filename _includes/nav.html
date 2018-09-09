@@ -24,13 +24,13 @@
 				   			{% for subitem_group in navItem.subitem_groups %}
 								<div>
 									{% if subitem_group.group_title %}
-				   						<div class="nav__subitem-group-title">{{ subitem_group.group_title }}</h1>
+				   						<div class="nav__subitem-group-title">{{ subitem_group.group_title }}</div>
 									{% endif %}
 					   				 {% for subitem in subitem_group.subitems %}
 						      			<li>
 						      				<a href="{{ subitem.url }}">
-												{% if subitem.description %}
-						      						<div class="nav__subitem-visual"><img src="{{ subitem.icon_url }}"></div>
+												{% if subitem.icon_url %}
+						      						<div class=" {{ subitem.domain | prepend: 'nav__subitem-visual ' }} "><img src="{{ subitem.icon_url }}"></div>
 												{% endif %}
 						      					<div class="nav__subitem-info-container">
 						      						<div class="nav__subitem-title">{{ subitem.label }}</div>

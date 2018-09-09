@@ -3,7 +3,7 @@ title: Pilot Program
 
 components:
 - component_name: hero
-  supertitle: Pilot
+  supertitle: Pilot Program
   title: Try a school-wide Albert pilot.
   description: The Albert Pilot Program (APP) is the only way for high-potential schools to try Albert at no-cost for 60-days.
   cta_label: Submit application
