@@ -22,7 +22,6 @@ $nav-padding: rem(20);
 		display: flex;
 		height: 100%;
 		align-items: center;
-		display: flex;
 		flex-direction: row;
 
 		.mainNav__logo {
@@ -84,6 +83,11 @@ $nav-padding: rem(20);
 
 				> li {
 					padding-left: rem(20);
+
+    				&:hover,
+    				&:focus {
+    					background-color: rgba(0,0,0,.05);
+    				}
 				}
 
 				li {	
@@ -91,27 +95,19 @@ $nav-padding: rem(20);
 					margin-left: 0;
 					margin-right: 0;
 					border-bottom: 1px solid rgba(white, .2);
-					line-height: rem(64);
-
-    				&:hover,
-    				&:focus {
-    					background-color: rgba(0,0,0,.05);
-
-    					li {
-    						background-color: inherit;
-    					}
-    				}
+					line-height: $nav-height;
+					color: white;
 
 					a {
 						font-size: rem(15);
 						display: block;
-						color: white;
-						line-height: $nav-height/1.25;
+						color: inherit;
+						// line-height: $nav-height/1.25;
 					}
 
 					&.nav__dropdown {
 						cursor: pointer;
-						line-height: $nav-height/1.25;
+						// line-height: $nav-height/1.25;
 						display: block;
 
 						i {
@@ -134,45 +130,44 @@ $nav-padding: rem(20);
 					}
 
 					ul {
-						padding-left: rem(20);
-	    				background-color: $nav-background-color;
     					display: flex;
     					flex-direction: column;
+    					flex: 1;
+						padding-left: rem(20);
+	    				background-color: #FFFFFF;
     					opacity: 0;
     					padding-left: 0;
-    					flex: 1;
     					height: 0;
-    					pointer-events: none;
 						margin-left: rem(-20);
+    					pointer-events: none;
+	    				color: $text_grey;
 
 						.nav__subitem-group-title {
 	    					@include fancy-title-sm;
 	    					padding-left: rem(20);
 						}
 
-
 	    				li {
-							padding-left: rem(40);
-
-		    				&:hover,
-		    				&:focus {
-		    					background-color: rgba(0,0,0,.05);
-		    				}
+							padding-left: rem(20);
+		    				color: $text_grey;	
 
 	    					a {
 	    						display: flex;
-	    						padding: rem(20);
+
+	    						&:hover {
+	    							color: $link;
+	    						}
 
     							.nav__subitem-visual {
+	    							position: relative;
     								height: rem(50);
     								max-width: rem(50);
     								min-width: rem(50);
+	    							margin-right: rem(30);
+    								border-radius: 50%;
     								background-color: $danube-blue;
     								overflow: hidden;
-    								border-radius: 50%;
-	    							margin-right: rem(30);
-	    							position: relative;
-    								margin-left: rem(-30);
+    								margin-top: rem(20);
 
 									// Generate course color classes
 									@each $course-name, $course-color in $course-color-map {
@@ -195,6 +190,8 @@ $nav-padding: rem(20);
 
 	    						.nav__subitem-info-container {
 	    							pointer-events: none;
+    								margin-top: rem(20);
+    								margin-bottom: rem(20);
 
 	    							.nav__subitem-title {
 	    								@include title-xs;
@@ -206,7 +203,7 @@ $nav-padding: rem(20);
 	    							.nav__subitem-description {
 	    								line-height: initial;
 	    								font-size: rem(13);
-	    								opacity: .6;
+	    								color: $oslo-grey;
 	    							}
     							}
 	    					}
@@ -236,7 +233,97 @@ $nav-padding: rem(20);
 		}
 	}
 
-    @media only screen and (min-width: $m-viewport) {
+    // @media only screen and (min-width: $m-viewport) {
+   		// &.mobile--open {
+   		// 	background-color: $link;
+   		// }
+    // 	header {
+    // 		.mainNav__mobile-toggle {
+    // 			display: none;
+    // 		}
+
+    // 		nav {
+    // 			display: flex;
+    // 			flex-direction: row;
+    // 			height: $nav-height;
+    // 			position: initial;
+    // 			margin-left: auto;
+    // 			width: auto;
+    // 			overflow: visible;
+
+    // 			ul {
+    // 				&.mainNav__nav,
+    // 				&.mainNav__account {
+    // 					display: flex;
+    // 					flex-direction: row;
+
+    // 					> li {
+				// 			padding-right: rem(20);
+    // 					}
+
+    // 					li {
+				// 			border-bottom: 0px solid transparent;
+
+    // 						&.nav__dropdown {
+    // 							position: relative; 
+
+				// 				&:hover,
+				// 				&:focus,
+				// 				&.active {
+
+				// 					ul {
+				// 						opacity: 1;
+				// 						left: 0;
+				// 					}
+				// 				}
+
+    // 							ul {
+			 //    					position: absolute;
+			 //    					background-color: #FFFFFF;
+			 //    					border-bottom-left-radius: 5px;
+			 //    					border-bottom-right-radius: 5px;
+			 //    					box-shadow: $shadow_depth_5;
+			 //    					max-width: rem(800);
+			 //    					margin-left: rem(-15);
+			 //    					left: 100vw;
+		  //   						flex-direction: row;
+			 //    					pointer-events: initial;
+				// 					top: $nav-height;
+				// 					height: auto;
+
+			 //    					> * {
+			 //    						padding: rem(40);
+
+			 //    						&:not(:first-child) {
+			 //    							border-left: 1px solid $iron-grey;
+			 //    						}
+			 //    					}
+
+			 //    					.nav__subitem-group-title {
+			 //    						padding-left: 0;
+			 //    					}
+
+			 //    					li {
+			 //    						padding-left: 0;
+
+			 //    						a {
+			 //    							.nav__subitem-info-container {
+			 //    								.nav__subitem-description {
+			 //    									min-width: rem(250);
+			 //    								}
+			 //    							}
+			 //    						}
+			 //    					}
+    // 							}
+    // 						}
+    // 					}
+    // 				}
+    // 			}
+    // 		}
+    // 	}
+    // }
+
+@media only screen and (min-width: $m-viewport) {
    		&.mobile--open {
    			background-color: $link;
    		}
@@ -309,7 +396,6 @@ $nav-padding: rem(20);
 	    					border-bottom-left-radius: 5px;
 	    					border-bottom-right-radius: 5px;
 	    					box-shadow: $shadow_depth_5;
-	    					color: $text_grey;
 	    					flex: 1;
 	    					max-width: rem(800);
 	    					margin-left: rem(-15);
@@ -349,20 +435,16 @@ $nav-padding: rem(20);
 	    						a {
 	    							margin-bottom: rem(25);
 	    							padding: 0;
-
+	    							line-height: initial;
 
 	    							.nav__subitem-visual {
-	    								margin-left: 0;
+	    								margin-top: 0;
 	    							}
 
 		    						.nav__subitem-info-container {
-		    							.nav__subitem-title {
-		    								color: $text_grey;	
-		    							}
+		    							margin-top: 0;
 
 		    							.nav__subitem-description {
-		    								color: $oslo-grey;
-		    								opacity: 1;
 		    								font-size: rem(14);
 		    							}
 	    							}
@@ -373,6 +455,7 @@ $nav-padding: rem(20);
 	    								}
 
 			    						.nav__subitem-info-container {
+
 			    							.nav__subitem-title {
 			    								color: $link;	
 			    							}
@@ -412,5 +495,4 @@ $nav-padding: rem(20);
 	    	}
     	}
     }
-
 }

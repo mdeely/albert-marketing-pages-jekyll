@@ -12,29 +12,29 @@ components:
   cta_url: hero-url
   img_src: "assets/img/hero-test.svg"
 
-- component_name: graph
-  title: Groundbreaking efficacy research
-  description: Based on a controlled study, schools that implemented Albert saw a TBD% improvement in test scores and a strong correlation between scores and Albert usage. Learn more about our methodology
-  graphItems:
+- component_name: barGraph
+  component_title: Groundbreaking efficacy research
+  component_description: Based on a controlled study, schools that implemented Albert saw a TBD% improvement in test scores and a strong correlation between scores and Albert usage. Learn more about our methodology
+  graphs:
   - title: Graph title 1
-    dataItems:
-    - value: 80
-      label_x: Label_x 1
-      footer_label: Before Albert 1
+    data:
+    - bar_value: 80
+      bar_label: Label_x 1
+      group_label: Before Albert
 
-    - value: 20
-      label_x: Label_x 2
-      footer_label: After Albert 2
+    - bar_value: 20
+      bar_label: Label_x 2
+      group_label: Before Albert
 
   - title: Graph title 2
-    dataItems:
-    - value: 100
-      label_x: Label_x 2.1
-      footer_label: Before Albert 2.1
+    data:
+    - bar_value: 100
+      bar_label: Label_x 2.1
+      group_label: After Albert
 
-    - value: 0
-      label_x: Label_x 2.2
-      footer_label: After Albert 2.2
+    - bar_value: 0
+      bar_label: Label_x 2.2
+      group_label: After Albert
 
 - component_name: testimonials
   title: testimonials

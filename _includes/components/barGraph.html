@@ -1,0 +1,54 @@
+{% assign graph = include.content %}
+
+<section class="barGraph">
+	<div class="component__title">{{ graph.component_title }}</div>
+	<div class="component__description">{{ graph.component_description }}</div>
+
+	<div class="graph__wrapper">
+		<div class="tabBar">
+		  	<ul class="tabBar__list">
+				{% if graph.graphs.size > 1 %} 
+					{% for graph in graph.graphs %}
+						<li class="tabBar__item">
+					         {% if forloop.index == 1 %}
+								<a href="#{{ graph.title | slugify }}" class="tabBar__anchor active">{{ graph.title}}</a>
+					         {% else %}
+								<a href="#{{ graph.title | slugify }}" class="tabBar__anchor">{{ graph.title}}</a>
+					         {% endif %}
+						</li>
+			  		{% endfor %}
+				{% endif %}
+		  	</ul>
+		</div>
+	  	<ul class="graphs">
+			{% for graph in graph.graphs %}
+				<li class="graph__item">
+					<div class="data__title">{{ graph.title }}</div>
+			  		<div class="data__info-container">
+			  			<div class="data__markers">
+			  				<div class="data__middle-marker"></div>
+			  			</div>
+						{% for data in graph.data %}
+				  			<div class="data__value-wrapper">
+				  				<div class="data__value">{{ data.bar_value | append: '%' }}</div>
+				  				<div class="data__bar" style="height: {{ data.bar_value | append: '%' }}"></div>
+				  			</div>
+	  					{% endfor %}
+			  		</div>
+
+			  		<div class="data__bar-labels">
+						{% for data in graph.data %}
+					  		<div class="data__bar-label">{{ data.bar_label }}</div>
+		  				{% endfor %}
+			  		</div>
+
+			  		<ul class="data__group-label">
+			  			<li>Before Albert</li>
+			  			<li>After Albert</li>
+			  		</ul>
+
+				</li>
+			{% endfor %}
+	  	</ul>
+	</div>
+</section>
