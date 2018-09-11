@@ -15,7 +15,6 @@ section.tabBar {
 		-webkit-overflow-scrolling: touch;
     	justify-content: start;
 
-
 		.tabBar__item {
 			display: flex;
 			flex-direction: column;
@@ -23,7 +22,11 @@ section.tabBar {
 			margin-left: rem(40);
 
 			&:first-of-type {
-				margin-left: 0;
+				margin-left: rem(10);
+			}
+
+			&:last-of-type {
+				margin-right: rem(10);
 			}
 
 			.tabBar__anchor {
@@ -47,10 +50,6 @@ section.tabBar {
 					margin-bottom: rem(15);
 					pointer-events: none;
 				}
-			}
-
-			&:last-child {
-				margin-right: 0;
 			}
 		}
 

@@ -22,7 +22,11 @@
 		</div>
 	  	<ul class="graphs">
 			{% for graph in graph.graphs %}
-				<li class="graph__item">
+				{% if forloop.index == 1 %}
+					<li id="{{ graph.title | slugify }}" class="graph__item active">
+				{% else %}
+					<li id="{{ graph.title | slugify }}" class="graph__item">
+				{% endif %}
 					<div class="data__title">{{ graph.title }}</div>
 			  		<div class="data__info-container">
 			  			<div class="data__markers">
@@ -30,21 +34,27 @@
 			  			</div>
 						{% for data in graph.data %}
 				  			<div class="data__value-wrapper">
-				  				<div class="data__value">{{ data.bar_value | append: '%' }}</div>
-				  				<div class="data__bar" style="height: {{ data.bar_value | append: '%' }}"></div>
+				  				<div class="data__bar" style="background-color: {{ data.bar_color }}; height: {{ data.bar_value | append: '%' }}">
+				  					<div class="data__value">{{ data.bar_value | append: '%' }}</div>
+				  				</div>
 				  			</div>
 	  					{% endfor %}
 			  		</div>
-
+			  		
 			  		<div class="data__bar-labels">
 						{% for data in graph.data %}
-					  		<div class="data__bar-label">{{ data.bar_label }}</div>
+			  				{% if data.bar_label %}
+					  			<div class="data__bar-label">{{ data.bar_label }}</div>
+		  					{% endif %}
 		  				{% endfor %}
 			  		</div>
 
 			  		<ul class="data__group-label">
-			  			<li>Before Albert</li>
-			  			<li>After Albert</li>
+			  			{% for data in graph.data %}
+			  				{% if data.group_label %}
+			  					<li>{{ data.group_label }}</li>
+			  				{% endif %}
+			  			{% endfor %}
 			  		</ul>
 
 				</li>
