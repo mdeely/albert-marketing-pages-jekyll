@@ -125,8 +125,8 @@ components:
   courseDomains:
   - domain: ELA
     domain_description: Description for domain here
-    cta_label: View more ELA
-    cta_url: ""
+    domain_cta_label: View more ELA
+    domain_cta_url: ""
     courseCards:
     - card_group: ela
       card_img_src: "assets/img/heart_of_darkness.svg"
@@ -137,8 +137,8 @@ components:
       card_title: ELA subject 2
 
   - domain: Social Studies
-    cta_label: View Social Studies
-    cta_url: ""
+    domain_cta_label: View Social Studies
+    domain_cta_url: ""
     courseCards:
     - card_group: social-studies
       card_title: social studies subject
@@ -208,19 +208,19 @@ components:
     label: Item 2
 
 - component_name: slideshow
-  title: Slideshow title
+  title: Learn by doing
   description: Slideshow description
   slideshowItems:
-  - title: Slideshow item 1
-    description: Slideshow description 1. Lorem ipsum long description goes about here. 
+  - title: Immediate feedback
+    description: Our detailed explanations let learners address misconceptions and build context as they practice. Each interaction feels like having a personal tutor, on-demand.
     img_src: "assets/img/hero-test.svg"
 
-  - title: Slideshow item 2
-    description: Slideshow description 2. Carpe diem more latin words lorem ipsum. 
+  - title: Personalization
+    description: Learners can customize their learning experience to fit their needs and interests to always stay motivated and engaged. 
     img_src: "assets/img/random-img3.svg"
 
-  - title: Slideshow item 3
-    description: Slideshow description 3. Another description to fill up the space instead of lorem ipsum.
+  - title: Engaging formats
+    description: Our question formats provide learners with multiple ways to learn and make the content come alive like pencil and paper never could.
     img_src: "assets/img/random-img2.svg"
 
 - component_name: preFooter

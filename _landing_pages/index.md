@@ -11,124 +11,124 @@ components:
 
 # Course preview
 - component_name: coursePreview
-  title: K-12 Core
-  group_title:
+  title: Learn anything
+  group_title: K-12 Core
   cta_url: ""
   courseDomains:
   - domain: ELA
-    domain_description: Optional description for domain here
-    cta_label: View all ELA
-    cta_url: ""
+    domain_cta_label: View all ELA
+    domain_cta_url: ""
     courseCards:
     - card_group: ela
       card_img_src: "assets/img/heart_of_darkness.svg"
-      card_title: ELA subject 2
+      card_title: Elements of a Sentence
 
     - card_group: ela
       card_img_src: "assets/img/heart_of_darkness.svg"
-      card_title: ELA subject 2
+      card_title: Confused and Misused
 
     - card_group: ela
       card_img_src: "assets/img/heart_of_darkness.svg"
-      card_title: ELA subject 2
+      card_title: Reading Blueprints
 
     - card_group: ela
       card_img_src: "assets/img/heart_of_darkness.svg"
-      card_title: ELA subject 2
+      card_title: Transitional Reading
 
-  - domain: Social Studies
-    cta_label: View all Social Studies
-    cta_url: ""
+    - card_group: ela
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: Leveled Reading in Arts and Culture
+
+    - card_group: ela
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: Leveled Reading in History, Politics, and Biography
+
+    - card_group: ela
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: Leveled Reading in Science and Technology
+
+    - card_group: ela
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: Essential Reading
+
+  - domain: Math
+    domain_cta_label: View all Math
+    domain_cta_url: ""
     courseCards:
-    - card_group: social-studies
-      card_title: social studies subject
+    - card_group: math
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: "Mastery Math: Algebra 1"
+
+    - card_group: math
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: "Mastery Math: Algebra 2"
+
+    - card_group: math
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: "Mastery Math: Geometry"
+
+    - card_group: math
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: "Mastery Math: Pre-Algebra"
+
+    - card_group: math
+      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_title: "Mastery Math: Precalculus"
+
+  - domain: Science
+    domain_cta_label: View all Science
+    domain_cta_url: ""
+    courseCards:
+    - card_group: science
+      card_title: General Biology
       card_img_src: "assets/img/heart_of_darkness.svg"
 
-    - card_group: social-studies
-      card_title: social studies subject
+    - card_group: science
+      card_title: General Chemistry
       card_img_src: "assets/img/heart_of_darkness.svg"
 
-    - card_group: social-studies
-      card_title: social studies subject
+    - card_group: science
+      card_title: General Physics
       card_img_src: "assets/img/heart_of_darkness.svg"
 
-    - card_group: social-studies
-      card_title: social studies subject
+    - card_group: science
+      card_title: Intermediate NGSS
       card_img_src: "assets/img/heart_of_darkness.svg"
 
-    - card_group: social-studies
-      card_title: social studies subject
+    - card_group: science
+      card_title: NGSS Earth and Space Sciences
       card_img_src: "assets/img/heart_of_darkness.svg"
 
-    - card_group: social-studies
-      card_title: social studies subject
+    - card_group: science
+      card_title: NGSS Life Sciences
       card_img_src: "assets/img/heart_of_darkness.svg"
 
-    - card_group: social-studies
-      card_title: social studies subject
+    - card_group: science
+      card_title: NGSS Physical Sciences
       card_img_src: "assets/img/heart_of_darkness.svg"
 
 # Course preview
 - component_name: coursePreview
-  title: Test prep
+  title: K-12 Test Prep
   cta_url: ""
   courseDomains:
   - domain: Advanced Placement®
     domain_description: Optional description for domain here
-    cta_label: View Advanced Placement®
+    cta_label: View all AP® Subjects
     cta_url: ""
     courseCards:
-    - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
-      card_title: ELA subject 1
-
-    - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
-      card_title: ELA subject 2
-
-    - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
-      card_title: ELA subject 2
-
-    - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
-      card_title: ELA subject 2
-
-    - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
-      card_title: ELA subject 2
-
-  - domain: College Entrance
-    cta_label: View College Entrance
-    cta_url: ""
-    courseCards:
-    - card_group: world language
-      card_title: World language subject
+    - card_group: science
+      card_title: AP® Calculus AB-BC
       card_img_src: "assets/img/heart_of_darkness.svg"
 
     - card_group: math
-      card_title: math subject
+      card_title: AP® Calculus AB-BC
       card_img_src: "assets/img/heart_of_darkness.svg"
 
-    - card_group: social-studies
-      card_title: social studies subject
-      card_img_src: "assets/img/heart_of_darkness.svg"
-
-    - card_group: social-studies
-      card_title: social studies subject
-      card_img_src: "assets/img/heart_of_darkness.svg"
-
-    - card_group: social-studies
-      card_title: social studies subject
-      card_img_src: "assets/img/heart_of_darkness.svg"
-
-    - card_group: social-studies
-      card_title: social studies subject
-      card_img_src: "assets/img/heart_of_darkness.svg"
-
-    - card_group: social-studies
-      card_title: social studies subject
-      card_img_src: "assets/img/heart_of_darkness.svg"
+  - domain: College Entrance
+    cta_label: View all AP® Subjects
+    cta_url: ""
+    courseCards:
 
 # Staggered features
 - component_name: stagger
@@ -157,4 +157,16 @@ components:
 
 # Pre footer
 - component_name: preFooter
+  left:
+    img_src: "assets/img/random-img.svg"
+    title: Try Albert for free
+    description: Build confidence and educator buy-in with an Albert trial supported by a dedicated member of our Schools team.
+    cta_label: Apply
+    cta_url: left-cta
+  right:
+    img_src: "assets/img/random-img2.svg"
+    title: Get a consultation
+    description: Explore how Albert can help your school meet its instructional goals with one of our Schools team members.
+    cta_label: Request demo
+    cta_url: right-cta
 ---

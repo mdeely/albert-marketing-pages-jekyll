@@ -4,15 +4,16 @@
 
 <section class="coursePreview coursePreview-{{ index }}">
 	<div class="coursePreview__title">{{ coursePreview.title }}</div>
+	<div class="coursePreview__group-title">{{ coursePreview.group_title }}</div>
 	<div class="tabBar">
 	  	<ul class="tabBar__list">
 			{% if coursePreview.courseDomains.size > 1 %} 
 				{% for domain in coursePreview.courseDomains %}
 					<li class="tabBar__item">
 						{% if forloop.index == 1 %}
-						<a href="#{{ domain.domain | append: index | slugify }}" class="tabBar__anchor active">{{ domain.domain }}</a>
+							<a href="#{{ domain.domain | append: index | slugify }}" class="tabBar__anchor active">{{ domain.domain }}</a>
 						{% else %}
-						<a href="#{{ domain.domain | append: index | slugify }}" class="tabBar__anchor">{{ domain.domain }}</a>
+							<a href="#{{ domain.domain | append: index | slugify }}" class="tabBar__anchor">{{ domain.domain }}</a>
 						{% endif %}
 					</li>
 		  		{% endfor %}
@@ -20,9 +21,9 @@
 	  		<li class="tabBar__actions">
 				{% for domain in coursePreview.courseDomains %}
 					{% if forloop.index == 1 %}
-					<a class="button active" href="{{ domain.cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.cta_label }}</a>
+						<a class="button active" href="{{ domain.domain_cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_cta_label }}</a>
 					{% else %}
-					<a class="button" href="{{ domain.cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.cta_label }}</a>
+						<a class="button" href="{{ domain.domain_cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_cta_label }}</a>
 					{% endif %}
 			  	{% endfor %}
 			</li>
@@ -33,16 +34,16 @@
 
 		{% if domain.domain_description %}
 			{% if forloop.index == 1 %}
-			<p class="coursePreview__group-description active" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_description }}</p>
+				<p class="coursePreview__group-description active" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_description }}</p>
 			{% else %}
-			<p class="coursePreview__group-description" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_description }}</p>
+				<p class="coursePreview__group-description" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_description }}</p>
 			{% endif %}
 		{% endif %}
 
 		{% if forloop.index == 1 %}
-		<ul id="{{ domain.domain | append: index | slugify }}" class="{{ cardListClass | append: ' active' }}">
+			<ul id="{{ domain.domain | append: index | slugify }}" class="{{ cardListClass | append: ' active' }}">
 		{% else %}
-		<ul id="{{ domain.domain | append: index | slugify }}" class="{{ cardListClass }}">
+			<ul id="{{ domain.domain | append: index | slugify }}" class="{{ cardListClass }}">
 		{% endif %}
 			{% for card in domain.courseCards %}
 				<li class="coursePreview__card-item">
@@ -53,15 +54,16 @@
 					<div class="coursePreview__card-item-title">{{ card.card_title }}</div>
 				</li>
 	  		{% endfor %}
+				<li class="coursePreview__card-item" style="opacity: 0;"></li>
 		</ul>
   	{% endfor %}
 
   	<div class="coursePreview__mobile-actions">
 		{% for domain in coursePreview.courseDomains %}
 			{% if forloop.index == 1 %}
-			<a class="button--large active" href="{{ domain.cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.cta_label }}</a>
+				<a class="button--large active" href="{{ domain.domain_cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_cta_label }}</a>
 			{% else %}
-			<a class="button--large" href="{{ domain.cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.cta_label }}</a>
+				<a class="button--large" href="{{ domain.domain_cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_cta_label }}</a>
 			{% endif %}
 	  	{% endfor %}
   	</div>

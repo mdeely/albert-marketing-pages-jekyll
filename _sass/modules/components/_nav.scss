@@ -149,10 +149,11 @@ $nav-padding: rem(20);
 
 	    				li {
 							padding-left: rem(20);
-		    				color: $text_grey;	
+		    				color: $text_grey;
 
 	    					a {
 	    						display: flex;
+	    						cursor: pointer;
 
 	    						&:hover {
 	    							color: $link;

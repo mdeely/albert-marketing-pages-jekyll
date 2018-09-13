@@ -214,11 +214,18 @@ $( document ).ready(function() {
 	// Find graph elements
 	// Get data attribute values on .data__value
 
-	// nav subitems
+
+	// Nav subitems
 	var navSubmenu = ".nav__dropdown";
 
 	// Bind link classes to click event
+	$(navSubmenu).on('mouseenter', checkSubmenuDisplay);
+	// Bind link classes to click event
 	$(navSubmenu).on('click', updateSubmenuDisplay);
+
+	function checkSubmenuDisplay(event) {
+		$(navSubmenu).removeClass("active");
+	}
 
 	function updateSubmenuDisplay(event) {
 
