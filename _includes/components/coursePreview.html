@@ -45,6 +45,7 @@
 		{% else %}
 			<ul id="{{ domain.domain | append: index | slugify }}" class="{{ cardListClass }}">
 		{% endif %}
+			<li class="coursePreview__card-item last" style="opacity: 0;"></li>
 			{% for card in domain.courseCards %}
 				<li class="coursePreview__card-item">
 					<div class="coursePreview__card-item-visual">
@@ -54,16 +55,18 @@
 					<div class="coursePreview__card-item-title">{{ card.card_title }}</div>
 				</li>
 	  		{% endfor %}
-				<li class="coursePreview__card-item" style="opacity: 0;"></li>
+				<li class="coursePreview__card-item first" style="opacity: 0;"></li>
 		</ul>
   	{% endfor %}
 
   	<div class="coursePreview__mobile-actions">
 		{% for domain in coursePreview.courseDomains %}
-			{% if forloop.index == 1 %}
-				<a class="button--large active" href="{{ domain.domain_cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_cta_label }}</a>
-			{% else %}
-				<a class="button--large" href="{{ domain.domain_cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_cta_label }}</a>
+			{% if domain.domain_cta_url %}
+				{% if forloop.index == 1 %}
+					<a class="button--large active" href="{{ domain.domain_cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_cta_label }}</a>
+				{% else %}
+					<a class="button--large" href="{{ domain.domain_cta_url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain_cta_label }}</a>
+				{% endif %}
 			{% endif %}
 	  	{% endfor %}
   	</div>

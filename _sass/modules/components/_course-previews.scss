@@ -83,12 +83,12 @@
 			margin-bottom: rem(20);
 			border: 1px solid $menuBorder;
 
-			&:first-of-type {
-				margin-left: 0;
+			&.first{
+				width: 25vw
 			}
 
-			&:last-of-type {
-				min-width: 50vw;
+			&.last{
+				width: 25vw
 			}
 
 			&:hover {
