@@ -8,17 +8,17 @@ navItems:
       subitems:
       - label: K-12 ELA
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
-        url: k-12-core
+        url: k-12-ela
         icon_url: "assets/img/heart_of_darkness.svg"
         domain: ela
       - label: K-12 Math
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
-        url: k-12-core
+        url: k-12-math
         icon_url: "assets/img/heart_of_darkness.svg"
         domain: math
       - label: K-12 Science
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
-        url: k-12-core
+        url: k-12-science
         icon_url: "assets/img/heart_of_darkness.svg"
         domain: science
 
@@ -26,11 +26,11 @@ navItems:
       subitems:
       - label: K-12 Advanced Placement
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
-        url: k-12-core
+        url: k-12-advanced-placement
         icon_url: "assets/img/heart_of_darkness.svg"
       - label: K-12 College Entrance
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
-        url: k-12-core
+        url: k-12-college-entrance
         icon_url: "assets/img/heart_of_darkness.svg"
 
 
@@ -44,7 +44,7 @@ navItems:
       - label: Results
         url: results
       - label: Case studies
-        url: case-studies
+        url: /case-studies
 
 - label: Pricing
   url: pricing

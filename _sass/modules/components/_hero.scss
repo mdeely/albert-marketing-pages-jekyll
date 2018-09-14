@@ -63,8 +63,12 @@
 				max-width: 50vw;
 				min-width: 40vw;
 
+				.hero__title {
+					max-width: rem(500);
+				}
+
 				.hero__description {
-					max-width: rem(400);
+					max-width: rem(500);
 					line-height: 1.6em;
 				}
 			}

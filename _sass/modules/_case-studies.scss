@@ -1,0 +1,11 @@
+.caseStudies {
+	padding-top: $nav-height;
+
+	.caseStudies__hero {
+		position: relative;
+		padding: rem(100);
+		background-color: $link;
+		color: #FFF;
+		opacity: .5;
+	}
+}

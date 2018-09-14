@@ -1,0 +1,13 @@
+---
+layout: case_studies
+title: case-studies
+---
+<div class="caseStudies">
+	<div class="caseStudies__hero">
+		Hero title
+	</div>
+</div>
+{% for study in site.case-studies %}
+	<h1>{{ study.title }}</h1>
+	<a href="{{ study.url }}">{{ study.title }}</a>
+{% endfor %}

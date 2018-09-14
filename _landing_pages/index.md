@@ -77,7 +77,7 @@ components:
 
   - domain: Science
     domain_cta_label: View all Science
-    domain_cta_url: ""
+    domain_cta_url: ""  
     courseCards:
     - card_group: science
       card_title: General Biology
@@ -109,7 +109,7 @@ components:
 
 # Course preview
 - component_name: coursePreview
-  title: K-12 Test Prep
+  group_title: K-12 Test Prep
   cta_url: ""
   courseDomains:
   - domain: Advanced Placement®
@@ -135,20 +135,14 @@ components:
   staggerItems:
   - supertitle: Albert is…
     title: An instructional companion that personalizes and accelerates learning.
-    cta_label: Learn more
-    cta_url: no-url-set
     img_src: "assets/img/home-illustration-5.svg"
 
   - supertitle: Albert is…
     title: The world’s highest-quality collection of academic practice questions.
-    cta_label: Learn more
-    cta_url: no-url-set
     img_src: "assets/img/home-illustration-5.svg"
 
   - supertitle: Albert is…
     title: "A practice and assessment resource that frees teachers to do what they do best: teach."
-    cta_label: Learn more
-    cta_url: no-url-set
     img_src: "assets/img/home-illustration-5.svg"
 
   - supertitle: Albert is…

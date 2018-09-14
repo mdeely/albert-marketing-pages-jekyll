@@ -32,13 +32,12 @@ collections:
   landing_pages: 
     output: true
     permalink: /:name
-  case_studies:
+  case-studies:
     output: true
-    permalink: /:collection/:path
 
 defaults:
   - scope:
-      path: "" # an empty string here means all files in the project
+      path: "assets/img"
     values:
       layout: "default"
 
