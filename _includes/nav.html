@@ -14,7 +14,7 @@
 				{% for navItem in nav.navItems %}
 
 					{% if navItem.url %}
-			      	<li><a href="{{ navItem.url }}">{{ navItem.label }}</a>
+			      	<li><a href="/{{ navItem.url }}">{{ navItem.label }}</a>
 					{% else %}
 			      	<li class="nav__dropdown">{{ navItem.label }}<i class="fa fa-caret-down"></i>
 			      	{% endif %}
@@ -28,7 +28,7 @@
 									{% endif %}
 					   				 {% for subitem in subitem_group.subitems %}
 						      			<li>
-						      				<a href="{{ subitem.url }}">
+						      				<a href="/{{ subitem.url }}">
 												{% if subitem.icon_url %}
 						      						<div class=" {{ subitem.domain | prepend: 'nav__subitem-visual ' }} "><img src="{{ subitem.icon_url }}"></div>
 							      					<div class="nav__subitem-info-container">

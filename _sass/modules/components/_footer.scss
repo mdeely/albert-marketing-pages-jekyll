@@ -1,4 +1,103 @@
 footer {
 	@include section-spacing;
-	text-align: center;
+	background-color: $bgGrey;
+
+	.footer {
+		font-size: rem(14);
+		margin-left: rem(-40);
+		margin-right: rem(-40);
+
+		.footer__site-links,
+		.footer__social-links ul,
+		.footer__site-details {
+			justify-content: center;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+
+		ul {
+			li {
+				margin-bottom: rem(15);
+			}
+		}
+
+		.footer__site-links ul {
+		    margin-left: rem(40);
+		    margin-right: rem(40);
+			margin-bottom: rem(40);
+			flex: 1;
+
+			&:first-child {
+				li {
+			    	min-width: 100vw;
+			    	text-align: center;
+				}
+			}
+
+			li{
+				.footer__logo {
+					width: auto;
+					max-height: rem(30);
+				}
+
+				&.footer__column-title {
+					color: $text-black--lighter_step_2;
+					font-weight: 600;
+				}
+			}
+		}
+
+		.footer__social-links ul {
+			margin-bottom: rem(30);
+
+			li {
+			    margin-left: rem(40);
+			    margin-right: rem(40);
+			}
+		}
+
+		.footer__site-details {
+			padding-left: rem(40);
+			padding-right: rem(40);
+			padding-top: rem(40);
+			border-top: 1px solid $menuBorder;
+			color: $text-black--lighter_step_2;
+			text-align: center;
+
+			a {
+				color: inherit;
+				margin-left: rem(15);
+			    display: block;
+			    width: 100%;
+			    margin-top: rem(10);
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: $s-viewport) {
+		.footer {
+
+			.footer__site-links ul {
+				flex: unset;
+
+				li:nth-of-type(first) {
+					width: 100%;
+					display: block;
+				}
+			}
+
+			.footer__site-details {
+				a {
+				    display: initial;
+				    width: auto;
+				    margin-top: 0;
+				}
+			}
+		}
+	}
 }

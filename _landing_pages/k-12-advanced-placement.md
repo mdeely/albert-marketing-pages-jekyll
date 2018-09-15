@@ -27,4 +27,21 @@ components:
   - img_src: "assets/img/random-img3.svg"
     title: Organized by standard
     description: Subject guides are organized by College Board® standards, making targeted practice easier and assignment creation quicker.
+
+# - component_name: coursePreview
+
+# - component_name: comicStrip
+
+# - component_name: slideshow
+
+# - component_name: interstitial
+
+# - component_name: slideshow
+
+# - component_name: preFooter
+
+
+
+
+
 ---

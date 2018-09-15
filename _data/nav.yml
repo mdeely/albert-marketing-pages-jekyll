@@ -44,7 +44,7 @@ navItems:
       - label: Results
         url: results
       - label: Case studies
-        url: /case-studies
+        url: case-studies
 
 - label: Pricing
   url: pricing

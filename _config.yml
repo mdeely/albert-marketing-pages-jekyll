@@ -37,7 +37,7 @@ collections:
 
 defaults:
   - scope:
-      path: "assets/img"
+      path: ""
     values:
       layout: "default"
 

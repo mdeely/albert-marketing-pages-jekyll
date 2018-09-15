@@ -24,6 +24,13 @@ components:
     description: Our question formats provide learners with multiple ways to learn and make the content come alive like pencil and paper never could.
     img_src: "assets/img/random-img2.svg"
 
+- component_name: hero
+  title: The best practice content, anywhere
+  description: Our obsession with quality means you can trust that you are getting relevant standards-aligned practice with helpful explanations, every time
+  cta_label: Explore our course library
+  cta_url: https://www.albert.io/test-prep/advanced-placement 
+  img_src: "assets/img/hero-test.svg"
+
 - component_name: slideshow
   title: Instructional flexibility
   slideshowItems:
@@ -77,12 +84,7 @@ components:
     description: As your students learn more deeply while your teachers free up time for personalized instruction, watch test scores, productivity, and engagement improve.
     img_src: "assets/img/random-img3.svg"
 
-- component_name: hero
-  title: The best practice content, anywhere
-  description: Our obsession with quality means you can trust that you are getting relevant standards-aligned practice with helpful explanations, every time
-  cta_label: Explore our course library
-  cta_url: https://www.albert.io/test-prep/advanced-placement 
-  img_src: "assets/img/hero-test.svg"
+
 
 - component_name: preFooter
 ---
