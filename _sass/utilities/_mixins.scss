@@ -71,12 +71,24 @@
 	color: $supertitle-grey;
 }
 
+@mixin fancy-title-large() {
+	@include base-text-styles();
+	@include make-fancy;
+	font-size: rem(40);
+	text-transform: uppercase;
+	line-height: 1.2;
+
+	@media only screen and (min-width: $s-viewport) {
+		font-size: rem(50);
+ 	}
+}
 
 @mixin fancy-title-medium() {
 	@include base-text-styles();
 	@include make-fancy;
 	font-size: rem(22);
 	text-transform: uppercase;
+	line-height: 1.2;
 
 	@media only screen and (min-width: $s-viewport) {
 		font-size: rem(28);

@@ -1,3 +1,11 @@
+.mainNav + .tabBar + .hero {
+	padding-top: 0;
+
+	.hero__content {
+		max-height: rem(700);
+	}	
+}
+
 .hero {
     padding: $nav-height $container-spacing 0 $container-spacing;
     position: relative;

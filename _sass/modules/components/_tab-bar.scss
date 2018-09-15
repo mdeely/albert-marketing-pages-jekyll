@@ -1,3 +1,9 @@
+.mainNav + section.tabBar {
+	padding-top: $nav-height + rem(30);
+	padding-bottom: 0;
+	background-color: #FFFFFF;
+}
+
 section.tabBar {
 	@include section-spacing;
 }
@@ -19,15 +25,8 @@ section.tabBar {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin-left: rem(40);
-
-			&:first-of-type {
-				margin-left: rem(10);
-			}
-
-			&:last-of-type {
-				margin-right: rem(10);
-			}
+			margin-left: rem(20);
+			margin-right: rem(20);
 
 			.tabBar__anchor {
 				@include label-title;

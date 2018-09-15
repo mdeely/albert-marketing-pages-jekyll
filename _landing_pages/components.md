@@ -16,7 +16,8 @@ components:
   component_title: Groundbreaking efficacy research
   component_description: Based on a controlled study, schools that implemented Albert saw a TBD% improvement in test scores and a strong correlation between scores and Albert usage. Learn more about our methodology
   graphs:
-  - title: Improvement over time
+  - graph_title: Improvement over time
+    tab_label: Optional
     data:
     - bar_value: 80
       bar_color: "#DD5566"
@@ -25,7 +26,8 @@ components:
     - bar_value: 20
       group_label: Albert
 
-  - title: Usage vs Performance
+  - graph_title: Usage vs Performance
+    tab_label: "Optional #2"
     data:
     - bar_value: 100
       bar_label: Year 1

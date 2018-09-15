@@ -7,7 +7,7 @@ components:
   description: "Albert is a learning companion built on a simple idea: That learning is best done by doing."
   cta_label: Get started
   cta_url: "no-url-set"
-  img_src: "assets/img/home-hero-illustration.svg"
+  img_src: "assets/img/hero/home-hero.svg"
 
 # Course preview
 - component_name: coursePreview

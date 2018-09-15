@@ -6,7 +6,7 @@ components:
   description: Interactive learning
   cta_label: Get started
   cta_url: https://www.albert.io/signup
-  img_src: "assets/img/hero-test.svg"
+  img_src: "assets/img/hero/features-hero.svg"
 
 - component_name: slideshow
   title: Learn by doing

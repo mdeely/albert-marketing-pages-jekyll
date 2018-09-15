@@ -17,7 +17,7 @@
 	            	{% endif %} 
 					<div class="featureGrid__item-title">{{ featureGridItem.title }}</div>
 	            	{% if featureGridItem.description %} 
-						<div class="featureGrid__item-description">{{ featureGridItem.description }}</div>
+						<p class="featureGrid__item-description">{{ featureGridItem.description }}</p>
 					{% endif %}
 	            	{% if featureGridItem.cta_url %} 
 						<a href="{{ featureGridItem.cta_url }}" class="featureGrid__anchor button">{{ featureGridItem.cta_label }}</a>

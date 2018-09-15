@@ -1,18 +1,22 @@
 .barGraph {
 	@include section-spacing;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 
-	.component__title {
-		@include fancy-title-medium;
-		margin-bottom: rem(20);
-	}
+	.component__info-wrapper {
+		.component__title {
+			@include fancy-title-medium;
+			margin-bottom: rem(20);
+		}
 
-	.component__description {
-		margin-bottom: rem(40);
-		max-width: rem(500);
-    	margin: 0 auto;
-    	line-height: rem(25);
-    	color: $text_grey;
+		.component__description {
+			margin-bottom: rem(40);
+			max-width: rem(500);
+	    	margin: 0 auto;
+	    	line-height: rem(25);
+	    	color: $text_grey;
+		}
 	}
 
 	.graph__wrapper {
@@ -73,6 +77,8 @@
 					@include fancy-title-sm;
 					padding: rem(25) 0 rem(20) 0;
 					border-bottom: 1px solid $iron-grey;
+					background-color: #FFFFFF;
+					box-shadow: 0 0 30px rgba(black, .1);
 				}
 
 				.data__info-container {
@@ -139,14 +145,20 @@
 					    	position: absolute;
 					    	left: 0;
 					    	right: 0;
-					    	color: #FFF;
 					    	font-weight: 600;
-					    	font-size: rem(18);
+					    	font-size: rem(16);
 					    	letter-spacing: rem(1);
-					    	padding-top: rem(15);
 					    	opacity: 0;
+							transform: translateY( rem(-30) );
 							transition: opacity .4s ease-in;
 							transition-delay: .3s;
+    						color: $text-black--lighter_step_3;
+
+						&.inside-bar {
+					    		padding-top: rem(15);
+					    		color: #FFF;
+					    		transform: none;
+							}
 					    }
 
 					    .data__bar {
@@ -164,14 +176,26 @@
 				.data__bar-labels {
 				    display: flex;
 				    justify-content: space-around;
+					position: relative;
+					z-index: 10;
+					background-color: #FFFFFF;
+					box-shadow: 0 0 30px rgba(black, .06);
 
 					> * {
 						margin-top: rem(20);
+					}
+
+					& + .data__group-label {
+						box-shadow: none;
 					}
 				}
 
 				.data__group-label {
 					display: flex;
+					position: relative;
+					z-index: 11;
+					background-color: #FFFFFF;
+					box-shadow: 0 0 30px rgba(black, .06);
 
 					li {
 						@include fancy-title-sm;
@@ -180,6 +204,23 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+@media only screen and (min-width: $m-viewport) {
+	.barGraph {
+		flex-direction: row-reverse;
+
+		.component__info-wrapper {
+			text-align: left;
+			max-width: 40%;
+			width: 100%;
+		}
+
+		.graph__wrapper {
+			margin-top: 0;
+			margin-right: rem(60);
 		}
 	}
 }

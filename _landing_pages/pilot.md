@@ -8,7 +8,7 @@ components:
   description: The Albert Pilot Program (APP) is the only way for high-potential schools to try Albert at no-cost for 60-days.
   cta_label: Submit application
   cta_url: submit-application
-  img_src: "assets/img/pilot-hero.svg"
+  img_src: "assets/img/hero/pilot-program-hero.svg"
 
 - component_name: featureGrid
   featureGridItems:
