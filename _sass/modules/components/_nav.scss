@@ -16,6 +16,16 @@ $nav-padding: rem(20);
 		.mainNav__mobile-toggle {
 			color: $link;
 		}
+
+		header {
+			.mainNav__logo {
+				svg {
+					path {
+						fill: $nav-background-color;
+					}
+				}
+			}
+		}
 	}
 
 	header {
@@ -28,9 +38,10 @@ $nav-padding: rem(20);
     		align-items: center;
     		display: flex;
 
-    		img {
+    		svg {
 				max-height: $nav-height;
 				height: rem(35);
+				width: auto;
     		}
 		}
 

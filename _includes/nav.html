@@ -3,8 +3,9 @@
 <div class="mainNav">
 	<header role="banner">
 		<a href="/" class="mainNav__logo">
-			<img src="{{ baseurl }}/assets/img/logo-combined-white.svg" alt="Albert logo" />
-		</a>
+			{% include {{ baseurl }}/svg/logo-combined-white.svg %}
+<!-- 			<img src="{{ baseurl }}/assets/img/logo-combined-white.svg" alt="Albert logo" />
+ -->		</a>
 		<div class="mainNav__mobile-toggle">
 			<i class="fas fa-bars toggle--open active"></i>
 			<i class="fas fa-times toggle--close"></i>

@@ -23,8 +23,6 @@
 		justify-content: space-evenly;
 
 		.caseStudy__item {
-			margin-left: rem(40);
-			margin-right: rem(40);
 			margin-bottom: rem(80);
 			box-shadow: $shadow_depth_4;
 			border-radius: rem(5);
@@ -82,9 +80,25 @@
 		}
 	}
 
+	@media only screen and (min-width: $s-viewport) {
+		.caseStudy__list {
+			.caseStudy__item {
+				margin-left: rem(20);
+				margin-right: rem(20);
+			}
+		}
+	}
+
 	@media only screen and (min-width: $m-viewport) {
 		.caseStudies__hero {
 			padding: rem(80);
+		}
+
+		.caseStudy__list {
+			.caseStudy__item {
+				margin-left: rem(40);
+				margin-right: rem(40);
+			}
 		}
 	}
 }

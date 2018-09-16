@@ -21,33 +21,59 @@ $( document ).ready(function() {
         }
     });
 
-    $directional_arrow_next.on('click', selectNext);
-    $directional_arrow_previous.on('click', selectPrevious);
+    $directional_arrow_next.on('click', handleDirectionClick);
+    $directional_arrow_previous.on('click', handleDirectionClick);
 
-    function selectNext(event) {
-    	console.log("next was pressed");
+    function handleDirectionClick(event) {
 		event.preventDefault();
-		var directionalElement = event.target;
-		var parent = $(directionalElement).parents("section").attr("class");
+		var element = event.target;
+		var sectionParent = $(element).parents("section");
 
-		var tabBarAnchors = $("."+parent+" .tabBar__anchor");
+		var tabBarAnchors = $(sectionParent).find(".tabBar__anchor");
 		var tabBarAnchorCount = $(tabBarAnchors).length;
 
-		var theActiveOne = $("."+parent+" .tabBar__anchor.active");
+		var $activeAnchor = $(sectionParent).find(".tabBar__anchor.active");
 
-		console.log(tabBarAnchors);
+		var tabBarItem = $activeAnchor.parent(".tabBar__item")
+
+		if ( $(event.target).hasClass("next") ) {
+			selectNext(tabBarItem);
+		}
+		else if ( $(event.target).hasClass("previous") ) {
+			selectPrevious(tabBarItem);
+		}
+    }
+
+    function selectNext(element) {
+    	if ( $(element).next().length > 0 ) {
+	    	var $nextItem = $(element).next();
+			var nextAnchor = $nextItem.children(".tabBar__anchor");
+			$(".tabBar__anchor").removeClass("active");
+
+			updateDisplay(nextAnchor);
+			return
+    	}
+    	return
     };
 
-    function selectPrevious(event) {
-    	console.log("previous was pressed");
-		event.preventDefault();
+    function selectPrevious(element) {
+    	if ( $(element).prev().length > 0 ) {
+	    	var $prevItem = $(element).prev();
+			var prevAnchor = $prevItem.children(".tabBar__anchor");
+			$(".tabBar__anchor").removeClass("active");
+
+			// if activeTab.offsetLeft is equal to or less than the width of the container;
+			updateDisplay(prevAnchor);
+			return
+    	}
+    	return
     };
 
 
 	// define elements to bind click event to
-	var anchor = ".tabBar__anchor";
+	var anchor = ".tabBar__anchor, .slideshow__anchor";
 
-	$(anchor).on('click', updateDisplay);
+	$(anchor).on('click', handleAnchorClick);
 
 	// direction arrow for hero section
 	$directional_arrow_scroll.on('click mouseover', goToNextSection);
@@ -64,7 +90,7 @@ $( document ).ready(function() {
         }, 500);
 	};
 
-	function updateDisplay(anchor) {
+	function handleAnchorClick(anchor) {
 		// prevent default actions
         anchor.stopImmediatePropagation();
 		anchor.preventDefault();
@@ -77,6 +103,10 @@ $( document ).ready(function() {
 			return false;
 		};
 
+		updateDisplay(anchor);
+	}
+
+	function updateDisplay(anchor) {
 		// find object's scope
 		var anchorParent = $(anchor).parents("section");
 		// get that object's href
@@ -97,60 +127,60 @@ $( document ).ready(function() {
 
 
 
-	// TABBAR, COMICSTRIP, and SLIDESHOW
+	// // TABBAR, COMICSTRIP, and SLIDESHOW
 	
-	// Link classes that require this behavior
-	var links = "slideshow__anchor";
-	var slideshowDisplayItem = ".slideshow__display-item";
+	// // Link classes that require this behavior
+	// var links = "slideshow__anchor";
+	// var slideshowDisplayItem = ".slideshow__display-item";
 
-	// Bind link classes to click event
-	$(links).on('click', updateLinkDisplay);
+	// // Bind link classes to click event
+	// $(links).on('click', updateLinkDisplay);
 
-	// Slideshow
-	var timeInterval = 4000;
+	// // Slideshow
+	// var timeInterval = 4000;
 
-	var slideshowContainer = $(".slideshow");
+	// var slideshowContainer = $(".slideshow");
 
-	if ( $(slideshowContainer).length > 0 ) {
-		var slideshowList = $(".slideshow__display-list");
-		var slideshowItemsCount = $(".slideShow__nav-list").children(".slideshow__nav-item").length;
+	// if ( $(slideshowContainer).length > 0 ) {
+	// 	var slideshowList = $(".slideshow__display-list");
+	// 	var slideshowItemsCount = $(".slideShow__nav-list").children(".slideshow__nav-item").length;
 
-		var timeRun = 0
-		var interval = setInterval(function(){
-		    timeRun += 1;
+	// 	var timeRun = 0
+	// 	var interval = setInterval(function(){
+	// 	    timeRun += 1;
 
-		    if (timeRun === slideshowItemsCount) {
-			    $(slideshowList).css({
-			    	"left": "0%"
-			    });
+	// 	    if (timeRun === slideshowItemsCount) {
+	// 		    $(slideshowList).css({
+	// 		    	"left": "0%"
+	// 		    });
 
-				$(".slideShow__nav-list").animate({ scrollLeft: 0 } ,400);
+	// 			$(".slideShow__nav-list").animate({ scrollLeft: 0 } ,400);
 
-		    	var activeSlide = slideshowDisplayItem+":first";
-		    	var activeSlideId = $(activeSlide).attr("id");
+	// 	    	var activeSlide = slideshowDisplayItem+":first";
+	// 	    	var activeSlideId = $(activeSlide).attr("id");
 
-				setLinkFromId(activeSlideId);
+	// 			setLinkFromId(activeSlideId);
 
-			    timeRun = 0;
-			    return
-			} 
-			else if ( timeRun === (slideshowItemsCount - 1) ) { 
-				$(".slideShow__nav-list").animate( { scrollLeft: (($(".slideShow__nav-list").width() / 3) * timeRun) } ,400);
-		    } else {
-		    	console.log( ($(".slideshow__nav-item").outerWidth() * slideshowItemsCount ) );
-				$(".slideShow__nav-list").animate( { scrollLeft: (($(".slideShow__nav-list").width() / 3) * timeRun) } ,400);
-		    };	
+	// 		    timeRun = 0;
+	// 		    return
+	// 		} 
+	// 		else if ( timeRun === (slideshowItemsCount - 1) ) { 
+	// 			$(".slideShow__nav-list").animate( { scrollLeft: (($(".slideShow__nav-list").width() / 3) * timeRun) } ,400);
+	// 	    } else {
+	// 	    	console.log( ($(".slideshow__nav-item").outerWidth() * slideshowItemsCount ) );
+	// 			$(".slideShow__nav-list").animate( { scrollLeft: (($(".slideShow__nav-list").width() / 3) * timeRun) } ,400);
+	// 	    };	
 
 
-		    var activeSlide = slideshowDisplayItem+":nth-of-type("+(timeRun + 1)+")";
-		    var activeSlideId = $(activeSlide).attr("id");
+	// 	    var activeSlide = slideshowDisplayItem+":nth-of-type("+(timeRun + 1)+")";
+	// 	    var activeSlideId = $(activeSlide).attr("id");
 
-			setLinkFromId(activeSlideId);
+	// 		setLinkFromId(activeSlideId);
 
-			setSlideshowPosition(timeRun);
+	// 		setSlideshowPosition(timeRun);
 
-		}, timeInterval);
-	};
+	// 	}, timeInterval);
+	// };
 
 
 	// MOBILE NAV

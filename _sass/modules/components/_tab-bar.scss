@@ -50,6 +50,10 @@ section.tabBar {
 					pointer-events: none;
 				}
 			}
+
+			&:last-child {
+				padding-right: rem(20);
+			}
 		}
 
 		.tabBar__actions {
