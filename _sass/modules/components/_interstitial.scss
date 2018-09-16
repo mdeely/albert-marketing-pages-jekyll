@@ -18,6 +18,8 @@ section.interstitial {
 		margin-top: rem(20);
 		text-align: center;
 		line-height: 1.5em;
+		font-size: rem(15);
+		color: $interstitial-small-text-color;
 	}
 
 	&.interstitial__large {
@@ -33,7 +35,7 @@ section.interstitial {
 
 
 @media only screen and (min-width: $m-viewport) {
-	.interstitial {
+	section.interstitial {
 		flex-direction: row;
 		justify-content: center;
 

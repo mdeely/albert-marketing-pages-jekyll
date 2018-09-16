@@ -46,6 +46,12 @@
 		    width: 100%;
 		    background-position: bottom;
 		    background-size: contain;
+
+		    &.large-visual {
+		    	position: absolute;
+		    	left: 20vw;
+		    	background-size: 70%;
+		    }
 		}
 
 	}

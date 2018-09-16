@@ -2,10 +2,89 @@
 	padding-top: $nav-height;
 
 	.caseStudies__hero {
-		position: relative;
-		padding: rem(100);
-		background-color: $link;
+		padding: rem(40);
+		background-color: $studies-hero-color;
 		color: #FFF;
-		opacity: .5;
+		text-align: center;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+
+		.caseStudies__hero-title {
+			@include title-large;
+		}
+	}
+
+	.caseStudy__list {
+		@include section-spacing;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+
+		.caseStudy__item {
+			margin-left: rem(40);
+			margin-right: rem(40);
+			margin-bottom: rem(80);
+			box-shadow: $shadow_depth_4;
+			border-radius: rem(5);
+			overflow: hidden;
+			width: 100%;
+			max-width: rem(510);
+			min-width: rem(280);
+
+			> * {
+				&:not(.caseStudy__hero) {
+					margin-left: rem(30);
+					margin-right: rem(30);
+					margin-bottom: rem(10);
+				}
+
+				&:last-child {
+					margin-bottom: rem(30);
+				}
+			}
+
+			.caseStudy__hero {
+				width: 100%;
+				height: rem(140);
+				margin-bottom: rem(30);
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			}
+
+			.caseStudy__school-info {
+				display: flex;
+				flex-direction: row;
+				color: $supertitle-light-grey;
+				font-size: rem(14);
+				margin-bottom: rem(20);
+
+				.caseStudy__location {
+				}
+
+				.caseStudy__school-level {
+					margin-left: rem(10);
+					padding-left: rem(10);
+					border-left: 1px solid $menuBorder;
+				}
+			}
+
+			.caseStudy__title {
+				@include title-medium;
+			}
+
+			.caseStudy__description {
+				color: $text-grey;
+				margin-bottom: rem(20);
+			}
+		}
+	}
+
+	@media only screen and (min-width: $m-viewport) {
+		.caseStudies__hero {
+			padding: rem(80);
+		}
 	}
 }

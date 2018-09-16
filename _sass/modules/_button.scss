@@ -1,7 +1,7 @@
 #{$button} {
 	@include button();
-	@include button-color(white, $link);
-	border: 2px solid $link;
+	// @include button-color(white, $link);
+	// border: 2px solid $link;
 
 	.icon {
 		&--left {
@@ -29,4 +29,9 @@
 .button--white {
 	@include button();
 	@include button-color(white, $link);
+}
+
+.button--blue {
+	@include button();
+	@include button-color($link, white);
 }

@@ -36,13 +36,13 @@
 
 	.preFooter__info-container {
 	    width: auto;
-	    max-width: 55vw;
+	    max-width: rem(400);
 	    margin: 0 auto;
 		flex: 1;
 		text-align: center;
 
 		.preFooter__title {
-			@include fancy-title-sm;
+			@include fancy-title-small;
 			color: #FFFFFF;
 			margin-bottom: rem(10);
 			line-height: 1.3em;

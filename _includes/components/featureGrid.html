@@ -10,7 +10,7 @@
 			{% for featureGridItem in featureGrid.featureGridItems %}
 				<li class="featureGrid__item">
 					<div class="featureGrid__item-visual">
-						<img src="{{ featureGridItem.img_src }}">
+						<img src="{{ baseurl }}/{{ featureGridItem.img_src }}">
 					</div>
 	            	{% if featureGridItem.badge %} 
 						<div class="featureGrid__item-badge">{{ featureGridItem.badge }}</div>

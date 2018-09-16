@@ -143,7 +143,7 @@ $nav-padding: rem(20);
 	    				color: $text_grey;
 
 						.nav__subitem-group-title {
-	    					@include fancy-title-sm;
+	    					@include fancy-title-small;
 	    					padding-left: rem(20);
 						}
 

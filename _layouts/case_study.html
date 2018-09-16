@@ -2,7 +2,50 @@
 
 {% include nav.html %}
 
-	<a style="padding-top: 200px; display: block;" href="/case-studies">Back</a>
-	{{ content }}
+	<div class="caseStudy">
+		<div class="caseStudy__hero" style="background-image: url(' {{ page.hero_img_src }} ')">
+			<a class="caseStudy__back button" href="/case-studies"><i class="fa fa-chevron-left"></i>All studies</a>
+			<h1 class="caseStudy__title">{{ page.title }}</h1>
+			<div class="caseStudy__school-info">
+				<div class="caseStudy__location">{{ page.location }}</div>
+				<div class="caseStudy__school-level">{{ page.school_level }}</div>
+			</div>
+		</div>
+
+		<div class="caseStudy__statistics-wrapper">
+			<ul class="statistics__list">
+	  			{% assign stats = page.statistics %}
+	  			{% for stat in stats %}
+					<li class="statstic__item">
+						<div class="statistic__value">{{ stat.value }}</div>
+						<div class="statistic__value-subtitle">{{ stat.value_subtitle }}</div>
+					</li>
+				{% endfor %}
+				<li class="requestDemo">
+					<div class="requestDemo__title">Get started</div>
+					<a class="requestDemo__button button--blue">Request demo</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="caseStudy__info">
+			{% assign sections = page.sections %}
+			{% for section in sections %}
+				<div class="caseStudy__info-title">{{ section.title }}</div>
+				<div class="caseStudy__info-paragraph">{{ section.paragraph | markdownify }}</div>
+				{% if section.citation %}
+					<div class="caseStudy__info-citation">{{ section.citation | markdownify }}</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+
+	  {% assign components = page.components %}
+	  {% for component in components %}
+
+	    {% assign include_file = component.component_name | append: '.html' %}
+	    {% include /components/{{ include_file }} content=component component_index=forloop.index directional_arrow=directional_arrow %}
+
+	  {% endfor %}
 
 {% include footer.html %}

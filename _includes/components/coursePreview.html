@@ -49,7 +49,7 @@
 			{% for card in domain.courseCards %}
 				<li class="coursePreview__card-item">
 					<div class="coursePreview__card-item-visual">
-						<img src="{{ card.card_img_src }}">
+						<img src="{{ baseurl }}/{{ card.card_img_src }}">
 						<div class="coursePreview__card-decoration {{ card.card_group | slugify }}"></div>
 					</div>
 					<div class="coursePreview__card-item-title">{{ card.card_title }}</div>

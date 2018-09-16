@@ -37,7 +37,7 @@ $regent-grey: #979DA1;
 $wild-sand-grey: #F4F4F4;
 $iron-grey: #CDD0D2;
 $oslo-grey: #919799;
-
+$alabaster: #F8F8F8;
 
 /////////////////////////
 /// Color assignments ///
@@ -60,6 +60,7 @@ $bgGrey--darker: #F4F4F4;
 
 // button
 $button-primary: $mountain-meadow-green;
+$button-back-text-color: $abbey-grey;
 
 // text
 $text_black: #4F5355;
@@ -82,6 +83,12 @@ $course-color-map: (
 	science: #9284CE,
 	other: #A99988,
 );
+
+//// case studies
+$studies-hero-color: $st-tropaz;
+
+//// interstitial
+$interstitial-small-text-color: $oslo-grey;
 
 ///////////////////////
 ////// Selectors //////

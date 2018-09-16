@@ -1,23 +1,48 @@
 $( document ).ready(function() {
 
-	var $directional_arrow = $(".directionalArrow");
+	var $directional_arrow_scroll = $(".directionalArrow.scrollTo");
+	var $directional_arrow_next = $(".directionalArrow.next");
+	var $directional_arrow_previous = $(".directionalArrow.previous");
 
 	setTimeout(
 	  function() 
 	  {
 		if ( $(window).scrollTop() < 140 ) {
-        	$directional_arrow.addClass("active");
+        	$directional_arrow_scroll.addClass("active");
 		}
 	  }, 2000);
 
     $(window).scroll(function(){
         if ($(window).scrollTop() < 140){
-        	$directional_arrow.addClass("active");
+        	$directional_arrow_scroll.addClass("active");
         }
         else {
-        	$directional_arrow.removeClass("active");
+        	$directional_arrow_scroll.removeClass("active");
         }
     });
+
+    $directional_arrow_next.on('click', selectNext);
+    $directional_arrow_previous.on('click', selectPrevious);
+
+    function selectNext(event) {
+    	console.log("next was pressed");
+		event.preventDefault();
+		var directionalElement = event.target;
+		var parent = $(directionalElement).parents("section").attr("class");
+
+		var tabBarAnchors = $("."+parent+" .tabBar__anchor");
+		var tabBarAnchorCount = $(tabBarAnchors).length;
+
+		var theActiveOne = $("."+parent+" .tabBar__anchor.active");
+
+		console.log(tabBarAnchors);
+    };
+
+    function selectPrevious(event) {
+    	console.log("previous was pressed");
+		event.preventDefault();
+    };
+
 
 	// define elements to bind click event to
 	var anchor = ".tabBar__anchor";
@@ -25,7 +50,7 @@ $( document ).ready(function() {
 	$(anchor).on('click', updateDisplay);
 
 	// direction arrow for hero section
-	$directional_arrow.on('click mouseover', goToNextSection);
+	$directional_arrow_scroll.on('click mouseover', goToNextSection);
 	var navHeight = $(".mainNav").outerHeight();
 
 	function goToNextSection(event) {

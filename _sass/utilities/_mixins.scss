@@ -37,6 +37,25 @@
 	transition: box-shadow .2s ease-in-out;
 }
 
+@mixin button-back() {
+	@include button-color(transparent, white);
+	padding: rem(10) rem(15);
+	box-shadow: none;
+
+	&:hover,
+	&:focus {
+		box-shadow: none;
+	}
+
+	i {
+		margin-right: rem(10);
+	}
+
+	@media only screen and (min-width: $m-viewport) {
+		@include button-color(white, $button-back-text-color);
+ 	}
+}
+
 
 
 ////////////////
@@ -107,7 +126,7 @@
  	}
 }
 
-@mixin fancy-title-sm() {
+@mixin fancy-title-small() {
 	@include base-text-styles();
 	@include make-fancy;
 	font-size: rem(16);
@@ -115,6 +134,16 @@
 
 	@media only screen and (min-width: $s-viewport) {
 		font-size: rem(20);
+ 	}
+}
+
+@mixin title-large() {
+	@include base-text-styles();
+	font-size: rem(40);
+	line-height: 1.3em;
+
+	@media only screen and (min-width: $s-viewport) {
+		font-size: rem(50);
  	}
 }
 

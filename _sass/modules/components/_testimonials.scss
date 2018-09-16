@@ -65,7 +65,7 @@
 				}
 
 				.testimonial__nameOfPerson {
-					@include fancy-title-sm;
+					@include fancy-title-small;
 					border-top: 1px solid $menuBorder;
 					padding-top: rem(20);
 				}

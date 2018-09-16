@@ -3,7 +3,7 @@
 <div class="mainNav">
 	<header role="banner">
 		<a href="/" class="mainNav__logo">
-			<img src="assets/img/logo-combined-white.svg" alt="Albert logo" />
+			<img src="{{ baseurl }}/assets/img/logo-combined-white.svg" alt="Albert logo" />
 		</a>
 		<div class="mainNav__mobile-toggle">
 			<i class="fas fa-bars toggle--open active"></i>
@@ -30,7 +30,7 @@
 						      			<li>
 						      				<a href="/{{ subitem.url }}">
 												{% if subitem.icon_url %}
-						      						<div class=" {{ subitem.domain | prepend: 'nav__subitem-visual ' }} "><img src="{{ subitem.icon_url }}"></div>
+						      						<div class=" {{ subitem.domain | prepend: 'nav__subitem-visual ' }} "><img src="{{ baseurl }}/{{ subitem.icon_url }}"></div>
 							      					<div class="nav__subitem-info-container">
 							      						<div class="nav__subitem-title">{{ subitem.label }}</div>
 														{% if subitem.description %}
@@ -56,7 +56,7 @@
 
 				<ul class="mainNav__account">
 					<li><a href="#">Log in</a></li>
-					<li class="sign-up""><a class="button button--sign-up" href="#">Sign up</a></li>
+					<li class="sign-up""><a class="button--white button--sign-up" href="#">Sign up</a></li>
 				</ul>
 
 	        {% endif %}

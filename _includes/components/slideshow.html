@@ -30,7 +30,7 @@
 			{% else %}
 				<li id="{{ slideshowItem.title | slugify }}" class="slideshow__display-item">
 			{% endif %}
-				<img src="{{ slideshowItem.img_src }}"/>
+				<img src="{{ baseurl }}/{{ slideshowItem.img_src }}"/>
 			</li>
 		{% endfor %}
 		</ul>
