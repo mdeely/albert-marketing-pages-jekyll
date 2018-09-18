@@ -3,6 +3,7 @@ title: Results
 
 components:
 - component_name: hero
+  supertitle: Results
   title: Acheive better outcomes
   description: Albert challenges students to apply what they learn and make connections between concepts. The results speak for themselves.
   img_src: "assets/img/hero-test.svg"
