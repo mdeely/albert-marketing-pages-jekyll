@@ -18,7 +18,7 @@
 
 	.slideshow__nav {
 		margin-top: rem(60);
-		margin-bottom: rem(60);
+		margin-bottom: rem(30);
 
 		.slideShow__nav-list {
 			display: flex;
@@ -65,8 +65,7 @@
 						}
 
 						.slideshow__nav-item-description {
-							color: $text_grey;
-							opacity: 1;
+							opacity: .6;
 						}	
 					}
 
@@ -111,6 +110,8 @@
 	.slideshow__display {
 		overflow: hidden;
 		padding-bottom: $section-padding;
+		padding-left: rem(10);
+		padding-right: rem(10);
 
 		.slideshow__display-list {
 			display: flex;
@@ -126,9 +127,9 @@
 				img {
 					margin: 0 auto;
 					width: 100%;
-					max-height: rem(400);
-				    height: rem(400);
-				    width: auto;
+					max-width: rem(500);
+				    height: auto;
+				    width: 100%;
 				    border-radius: rem(5);
 				    box-shadow: $shadow_depth_5;
 				}
@@ -145,12 +146,44 @@
 	.slideshow {
 
 		.slideshow__nav {
+			margin-bottom: rem(60);
 
 			.slideShow__nav-list {
 				justify-content: center;
 
 				.slideshow__nav-item {
 					margin-right: rem(20);
+				}
+			}
+		}
+
+		.directionalArrow {
+			$size: 100;
+
+			&.previous,
+			&.next {
+				width: rem($size);
+				height: rem($size);
+
+				i {
+					line-height: rem($size);
+					font-size: rem(30);
+				}
+			}
+
+			&.previous {
+				left: rem(-55);
+
+				i {
+					left: rem(18);
+				}
+			}
+
+			&.next {
+				right: rem(-55);
+
+				i {
+					right: rem(18);
 				}
 			}
 		}

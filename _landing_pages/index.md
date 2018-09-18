@@ -20,35 +20,35 @@ components:
     domain_cta_url: ""
     courseCards:
     - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: Elements of a Sentence
 
     - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: Confused and Misused
 
     - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: Reading Blueprints
 
     - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: Transitional Reading
 
     - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: Leveled Reading in Arts and Culture
 
     - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: Leveled Reading in History, Politics, and Biography
 
     - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: Leveled Reading in Science and Technology
 
     - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: Essential Reading
 
   - domain: Math
@@ -56,23 +56,23 @@ components:
     domain_cta_url: ""
     courseCards:
     - card_group: math
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: "Mastery Math: Algebra 1"
 
     - card_group: math
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: "Mastery Math: Algebra 2"
 
     - card_group: math
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: "Mastery Math: Geometry"
 
     - card_group: math
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: "Mastery Math: Pre-Algebra"
 
     - card_group: math
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: "Mastery Math: Precalculus"
 
   - domain: Science
@@ -81,31 +81,31 @@ components:
     courseCards:
     - card_group: science
       card_title: General Biology
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
 
     - card_group: science
       card_title: General Chemistry
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
 
     - card_group: science
       card_title: General Physics
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
 
     - card_group: science
       card_title: Intermediate NGSS
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
 
     - card_group: science
       card_title: NGSS Earth and Space Sciences
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
 
     - card_group: science
       card_title: NGSS Life Sciences
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
 
     - card_group: science
       card_title: NGSS Physical Sciences
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
 
 # Course preview
 - component_name: coursePreview
@@ -119,11 +119,11 @@ components:
     courseCards:
     - card_group: science
       card_title: AP® Calculus AB-BC
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
 
     - card_group: math
       card_title: AP® Calculus AB-BC
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
 
   - domain: College Entrance
     cta_label: View all AP® Subjects

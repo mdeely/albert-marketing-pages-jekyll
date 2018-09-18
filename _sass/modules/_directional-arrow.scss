@@ -39,6 +39,15 @@ $size: 70;
     	pointer-events: all;
     }
 
+    &.disabled {
+    	pointer-events: none;
+    	box-shadow: $shadow_depth_4;
+
+    	i {
+    		color: $text-grey;
+    	}
+    }
+
     &.next,
     &.previous {
     	position: absolute;
@@ -49,6 +58,10 @@ $size: 70;
 
     	&:hover {
     		opacity: 1;
+    	}
+
+    	&:active {
+    		box-shadow: $shadow_depth_4;
     	}
     }
 

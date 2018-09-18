@@ -131,11 +131,11 @@ components:
     domain_cta_url: ""
     courseCards:
     - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: ELA subject 1
 
     - card_group: ela
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
       card_title: ELA subject 2
 
   - domain: Social Studies
@@ -144,7 +144,7 @@ components:
     courseCards:
     - card_group: social-studies
       card_title: social studies subject
-      card_img_src: "assets/img/heart_of_darkness.svg"
+      card_img_src: "heart_of_darkness.svg"
 
 - component_name: comicStrips
   comicStrips:

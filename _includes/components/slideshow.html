@@ -1,7 +1,7 @@
 {% assign slideshow = include.content %}
 {% assign anchorClass = "tabBar__anchor" %}
 
-<section class="{{ "slideshow slideshow-" | append: include.component_id }}">
+<section class="{{ "slideshow slideshow-" | append: include.component_index }}">
 	<div class="slideshow__title">{{ slideshow.title }}</div>
 	<div class="slideshow__description">{{ slideshow.description }}</div>
 	<div class="slideshow__nav">
@@ -9,7 +9,9 @@
 		{% for slideshowItem in slideshow.slideshowItems %}
 			<li class="slideshow__nav-item">
 				{% if forloop.index == 1 %}
-					<a href="#{{ slideshowItem.title | slugify }}" class="slideshow__anchor active">
+					<a href="#{{ slideshowItem.title | slugify }}" data-index="first" class="slideshow__anchor active">
+				{% elsif forloop.last %}
+					<a href="#{{ slideshowItem.title | slugify }}" data-index="last" class="slideshow__anchor">
 				{% else %}
 					<a href="#{{ slideshowItem.title | slugify }}" class="slideshow__anchor">
 				{% endif %}
@@ -21,9 +23,9 @@
 		</ul>
 	</div>
 	<div class="slideshow__display">
-		<a href="#" class="slideshow__display-next"></a>
-		<a href="#" class="slideshow__display-previous"></a>
 		<ul class="slideshow__display-list">
+		<a class="directionalArrow previous disabled" href="#component_previous"><i class="fa fa-chevron-left"></i></a>
+		<a class="directionalArrow next" href="#component_next"><i class="fa fa-chevron-right"></i></a>
 		{% for slideshowItem in slideshow.slideshowItems %}
 			{% if forloop.index == 1 %}
 				<li id="{{ slideshowItem.title | slugify }}" class="slideshow__display-item active">

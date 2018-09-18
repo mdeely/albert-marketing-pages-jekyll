@@ -21,6 +21,8 @@ $( document ).ready(function() {
         }
     });
 
+    // Slideshow
+
     $directional_arrow_next.on('click', handleDirectionClick);
     $directional_arrow_previous.on('click', handleDirectionClick);
 
@@ -29,43 +31,60 @@ $( document ).ready(function() {
 		var element = event.target;
 		var sectionParent = $(element).parents("section");
 
-		var tabBarAnchors = $(sectionParent).find(".tabBar__anchor");
-		var tabBarAnchorCount = $(tabBarAnchors).length;
+		var tabBarAnchors = $(sectionParent).find("a:not(.next, .previous)");
+		// var tabBarAnchorCount = $(tabBarAnchors).length;
 
-		var $activeAnchor = $(sectionParent).find(".tabBar__anchor.active");
+		var $activeAnchor = $(sectionParent).find("a.active");
 
-		var tabBarItem = $activeAnchor.parent(".tabBar__item")
+		var tabBarItem = $activeAnchor.parent("li")
 
 		if ( $(event.target).hasClass("next") ) {
-			selectNext(tabBarItem);
+			selectNext(tabBarItem, sectionParent);
 		}
 		else if ( $(event.target).hasClass("previous") ) {
-			selectPrevious(tabBarItem);
+			selectPrevious(tabBarItem, sectionParent);
 		}
     }
 
-    function selectNext(element) {
-    	if ( $(element).next().length > 0 ) {
-	    	var $nextItem = $(element).next();
-			var nextAnchor = $nextItem.children(".tabBar__anchor");
-			$(".tabBar__anchor").removeClass("active");
+    function selectNext(element, parent) {
+    	var directionalArrowPrev = $(parent).find(".directionalArrow.previous");
+    	var directionalArrowNext = $(parent).find(".directionalArrow.next");
 
-			updateDisplay(nextAnchor);
+    	console.log( $(element).next().is('[data-index="last"') );
+
+    	if ( $(element).next().is("[data-index='last']") ) {
+    		$(directionalArrowNext).addClass("disabled");
 			return
     	}
-    	return
+
+    	var $nextItem = $(element).next();
+		var nextAnchor = $nextItem.children("a");
+		$(parent).find("a.active").removeClass("active");
+
+		$(directionalArrowNext).removeClass("disabled");
+		$(directionalArrowPrev).removeClass("disabled");
+
+		updateDisplay(nextAnchor);
     };
 
-    function selectPrevious(element) {
+    function selectPrevious(element, parent) {
+    	var directionalArrowPrev = $(parent).find(".directionalArrow.previous");
+    	var directionalArrowNext = $(parent).find(".directionalArrow.next");
+
     	if ( $(element).prev().length > 0 ) {
 	    	var $prevItem = $(element).prev();
-			var prevAnchor = $prevItem.children(".tabBar__anchor");
-			$(".tabBar__anchor").removeClass("active");
+			var prevAnchor = $prevItem.children("a");
+			$(parent).find("a.active").removeClass("active");
+
+    		$(directionalArrowNext).removeClass("disabled");
+    		$(directionalArrowPrev).removeClass("disabled");
 
 			// if activeTab.offsetLeft is equal to or less than the width of the container;
 			updateDisplay(prevAnchor);
+
 			return
     	}
+    	$(directionalArrowPrev).addClass("disabled");
     	return
     };
 
@@ -123,6 +142,11 @@ $( document ).ready(function() {
 		$(anchorHref).addClass("active");
 		// make additional targets active
 		$(additionalTargets).addClass("active");
+
+		if ( $(anchorParent).hasClass("slideshow") ) {
+    		var directionalArrowPrev = $(anchorParent).find(".directionalArrow.previous");
+    		var directionalArrowNext = $(anchorParent).find(".directionalArrow.next");
+		}
 	}
 
 
@@ -285,8 +309,6 @@ $( document ).ready(function() {
 	function updateSubmenuDisplay(event) {
 
 		var linkTarget = event.target;
-
-		console.log( event.type );
 
 		if ( $(linkTarget).is("a") ) {
 			return
