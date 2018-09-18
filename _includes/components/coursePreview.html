@@ -45,21 +45,22 @@
 		{% else %}
 			<ul id="{{ domain.domain | append: index | slugify }}" class="{{ cardListClass }}">
 		{% endif %}
-			<li class="coursePreview__card-item last" style="opacity: 0;"></li>
 			{% for card in domain.courseCards %}
-				<li class="coursePreview__card-item">
+				<li class="coursePreview__card-item {{ card.card_group | slugify }}">
+					<div class="coursePreview__card-item-title">{{ card.card_title }}</div>
+
 					<div class="coursePreview__card-item-visual">
 						<img src="{{ baseurl }}/{{ site.asset_path }}/{{ card.card_img_src }}">
-						<div class="coursePreview__card-decoration {{ card.card_group | slugify }}"></div>
 					</div>
-					<div class="coursePreview__card-item-title">{{ card.card_title }}</div>
 				</li>
 	  		{% endfor %}
-				<li class="coursePreview__card-item first" style="opacity: 0;"></li>
+			<a class="coursePreview__card-item" href="{{ domain.domain_cta_url }}">
+				<div class="coursePreview__card-item-title">{{ domain.domain_cta_label }}</div>
+			</a>
 		</ul>
   	{% endfor %}
 
-  	<div class="coursePreview__mobile-actions">
+<!--   	<div class="coursePreview__mobile-actions">
 		{% for domain in coursePreview.courseDomains %}
 			{% if domain.domain_cta_url %}
 				{% if forloop.index == 1 %}
@@ -69,6 +70,6 @@
 				{% endif %}
 			{% endif %}
 	  	{% endfor %}
-  	</div>
+  	</div> -->
 
 </section>

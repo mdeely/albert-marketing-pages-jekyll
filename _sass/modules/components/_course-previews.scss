@@ -5,6 +5,10 @@
 	align-items: center;
 	flex-direction: column;
 
+	.tabBar {
+		margin-bottom: rem(30);
+	}
+
 	.coursePreview__title {
 		@include fancy-title-medium;
 		text-align: center;
@@ -17,8 +21,7 @@
 	}
 
 	.coursePreview__group-description {
-		margin-top: rem(40);
-		margin-bottom: 0;
+		margin-bottom: rem(20);
 		display: none;
 		text-align: center;
 		padding-left: 4vw;
@@ -31,21 +34,13 @@
 
 	.coursePreview__card-list {
 		display: none;
-		max-width: 100%;
-		overflow-x: scroll;
-		overflow-y: hidden;
-		-webkit-overflow-scrolling: touch;
 		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: rem(1200);
 
 		&.active {
-			display: inline-flex;
-		}
-
-		// adds spacing for scrolling through cards
-		&:after,
-		&:before {
-			content:"";
-			min-width: rem(30);
+			display: flex;
 		}
 
 		&:after {
@@ -63,83 +58,79 @@
 		}
 
 		.coursePreview__card-item {
-			$card-width: rem(150);
-			$card-height: rem(300);
+			$card-width: rem(310);
+			$card-height: rem(100);
 
 			position: relative;
-			background-color: #FFFFFF;
+			color: #FFFFFF;
+			background-color: $link;
 			border-radius: rem(10);
-			box-shadow: $shadow_depth_6;
+			box-shadow: 0 2px 20px rgba($link, .25), $shadow_depth_6; //shadow_depth_5
 			overflow: hidden;
 			position: relative;
-			z-index: 1;
-			color: $text_black;
 			min-width: $card-width;
 			max-width: $card-width;
+			min-height: $card-height;
 			max-height: $card-height;
-			margin-top: rem(40);
-			margin-right: rem(5);
-			margin-left: rem(15);
-			margin-bottom: rem(20);
-			border: 1px solid $menuBorder;
+			margin: rem(15);
+			padding-left: rem(30);
+			padding-right: rem(60);
+			display: flex;
+			align-items: center;
 
-			&.first{
-				width: 25vw
-			}
+			&:last-child {
+				padding: rem(30);
+				text-align: center;
+				transition: transform .1s ease-in-out;
 
-			&.last{
-				width: 25vw
+
+				.coursePreview__card-item-title {
+					transition: transform .1s ease-in-out;
+					width: 100%;
+				}
+
+				&:hover {
+					transform: scale(1.01);
+					transition: transform .1s ease-in-out;
+
+					.coursePreview__card-item-title {
+						transform: scale(1.1);
+						transition: transform .1s ease-in-out;
+					}
+				}
 			}
 
 			&:hover {
 				// if you want the icon to do some fun animation on hover
 			}
 
+			// Generate course color classes
+			@each $course-name, $course-color in $course-color-map {
+				&.#{$course-name} {
+					background-color: $course-color;
+					box-shadow: 0 2px 20px rgba($course-color, .25), $shadow_depth_6; //shadow_depth_5
+				}
+			}
+
 			.coursePreview__card-item-visual {
 				text-align: center;
-				position: relative;
-				z-index: 2;
+				position: absolute;
+				height: rem(140);
+				right: rem(-20);
+				top: rem(-8);
+				opacity: .25;
 
 				img {
-					margin-top: rem(40);
-					height: rem(70);
-				}
-
-				.coursePreview__card-decoration {
-					position: relative;
-					height: rem(40);
-					z-index: -1;
-
-					&:after {
-						content: "";
-						position: absolute;
-						bottom: 0;
-						border-radius: 100%;
-					    left: 50%;
-					    -webkit-transform: translateX(-50%);
-					    transform: translateX(-50%);
-					    width: 250%;
-					    background-color: $link;
-					    z-index: 1;
-					    height: 200px;
-					}
-
-					// Generate course color classes
-					@each $course-name, $course-color in $course-color-map {
-						&.#{$course-name}:after {
-							background-color: $course-color;
-						}
-					}
+					height: 100%;
+					width: auto;
 				}
 			}
 
 			.coursePreview__card-item-title {
-				color: $course-card-title;
-				font-size: rem(18);
-				text-align: center;
-				padding: rem(20) rem(15);
-				width: 100%;
-				line-height: rem(22);
+				@include title-small;
+				line-height: 1.1;
+				text-shadow: 0px 1px 2px rgba(black, .3);
+				color: #FFFFFF;;
 			}
 		}
 	}
@@ -165,32 +156,32 @@
 }
 
 @media only screen and (min-width: $s-viewport) {
-	.coursePreview {
-		> *:not(.coursePreview__card-list) {
-	    	max-width: $container-width-slim;
-	    	margin-right: auto;
-	    	margin-left: auto;
-			padding-left: $container-spacing;
-			padding-right: $container-spacing;
-		}
+	// .coursePreview {
+	// 	> *:not(.coursePreview__card-list) {
+	//     	max-width: $container-width-slim;
+	//     	margin-right: auto;
+	//     	margin-left: auto;
+	// 		padding-left: $container-spacing;
+	// 		padding-right: $container-spacing;
+	// 	}
 
-		.coursePreview__group-description {
-			max-width: rem(600);
-		}
+	// 	.coursePreview__group-description {
+	// 		max-width: rem(600);
+	// 	}
 
-		.coursePreview__card-list {
+	// 	.coursePreview__card-list {
 
-			.coursePreview__card-item {
-				$card-width: rem(250);
+	// 		.coursePreview__card-item {
+	// 			$card-width: rem(250);
 
-				max-width: $card-width;
-				min-width: $card-width;
-				margin-right: rem(15);
+	// 			max-width: $card-width;
+	// 			min-width: $card-width;
+	// 			margin-right: rem(15);
 
-				.coursePreview__card-item-title {
-					padding: rem(40) rem(30);
-				}
-			}
-		}
-	}
+	// 			.coursePreview__card-item-title {
+	// 				padding: rem(40) rem(30);
+	// 			}
+	// 		}
+	// 	}
+	// }
 }

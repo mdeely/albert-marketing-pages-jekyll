@@ -57,7 +57,7 @@ navItems:
       - label: Pilot Program
         url: pilot
       - label: Success Team
-        url: success-team
+        url: success
       - label: Blog
         url: blog
 
