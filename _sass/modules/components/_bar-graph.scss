@@ -210,6 +210,41 @@
 			}
 		}
 	}
+
+	$size: 70;
+	
+    &.next,
+    &.previous {
+    	position: absolute;
+    	top: 0;
+    	bottom: 0;
+    	margin: auto;
+    	opacity: .5;
+
+    	&:hover {
+    		opacity: 1;
+    	}
+
+    	&:active {
+    		box-shadow: $shadow_depth_4;
+    	}
+    }
+
+    &.next {
+    	right: rem(($size/2 * -1)-10);
+
+    	i {
+    		right: rem(20);
+    	}
+    }
+
+    &.previous {
+    	left: rem(($size/2 * -1)-10);
+
+    	i {
+    		left: rem(20);
+    	}
+    }
 }
 
 @media only screen and (min-width: $m-viewport) {

@@ -1,3 +1,21 @@
-<a href="#" class="directionalArrow scrollTo">
-	<i class="fas fa-arrow-down"></i>
-</a>
+{% assign direction = include.direction %}
+{% assign href = include.href %}
+{% assign className = include.className %}
+
+{% if href and direction %}
+	<a href="{{ href }}" class="directionalArrow"{{ className | prepend: " " }}>
+		<i class="fas fa-arrow-{{ direction }}"></i>
+	</a>
+{% elsif href and !direction != true %}
+	<a href="{{ href }}" class="directionalArrow{{ className | prepend: " " }}">
+		<i class="fas fa-arrow-down"></i>
+	</a>
+{% elsif href != true and direction %}
+	<a href="#" class="directionalArrow{{ className | prepend: " " }}">
+		<i class="fas fa-arrow-{{ direction }}"></i>
+	</a>
+{% else %}
+	<a href="#" class="directionalArrow scrollTo">
+		<i class="fas fa-arrow-down"></i>
+	</a>
+{% endif %}

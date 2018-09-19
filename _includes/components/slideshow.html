@@ -2,39 +2,26 @@
 {% assign anchorClass = "tabBar__anchor" %}
 
 <section class="{{ "slideshow slideshow-" | append: include.component_index }}">
+    {% include /components/directionalArrow.html direction="left" className="previous" %}
+    {% include /components/directionalArrow.html direction="right" className="next" %}
 	<div class="slideshow__title">{{ slideshow.title }}</div>
 	<div class="slideshow__description">{{ slideshow.description }}</div>
-	<div class="slideshow__nav">
-		<ul class="slideShow__nav-list">
+	<ul class="slideshow__list">
 		{% for slideshowItem in slideshow.slideshowItems %}
-			<li class="slideshow__nav-item">
-				{% if forloop.index == 1 %}
-					<a href="#{{ slideshowItem.title | slugify }}" data-index="first" class="slideshow__anchor active">
-				{% elsif forloop.last %}
-					<a href="#{{ slideshowItem.title | slugify }}" data-index="last" class="slideshow__anchor">
+			<li class="slideshow__item">
+				{% if forloop.first %}
+				<a href="#{{ forloop.index }}" class="slideshowItem__anchor active">
 				{% else %}
-					<a href="#{{ slideshowItem.title | slugify }}" class="slideshow__anchor">
+				<a href="#{{ forloop.index }}" class="slideshowItem__anchor">
 				{% endif %}
-						<div class="slideshow__nav-item-title">{{ slideshowItem.title }}</div>
-						<div class="slideshow__nav-item-description">{{ slideshowItem.description }}</div>
-					</a>
+					<div class="slideshowItem__title">{{ slideshowItem.title}}</div>
+					<div class="slideshowItem__description">{{ slideshowItem.description}}</div>
+				</a>
+				<div class="slideshowItem__visual">
+					<img src="{{ slideshowItem.img_src}}">
+				</div>
 			</li>
 		{% endfor %}
-		</ul>
-	</div>
-	<div class="slideshow__display">
-		<ul class="slideshow__display-list">
-		<a class="directionalArrow previous disabled" href="#component_previous"><i class="fa fa-chevron-left"></i></a>
-		<a class="directionalArrow next" href="#component_next"><i class="fa fa-chevron-right"></i></a>
-		{% for slideshowItem in slideshow.slideshowItems %}
-			{% if forloop.index == 1 %}
-				<li id="{{ slideshowItem.title | slugify }}" class="slideshow__display-item active">
-			{% else %}
-				<li id="{{ slideshowItem.title | slugify }}" class="slideshow__display-item">
-			{% endif %}
-				<img src="{{ baseurl }}/{{ slideshowItem.img_src }}"/>
-			</li>
-		{% endfor %}
-		</ul>
-	</div>
+	</ul>
+
 </section>

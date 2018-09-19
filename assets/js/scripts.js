@@ -90,7 +90,7 @@ $( document ).ready(function() {
 
 
 	// define elements to bind click event to
-	var anchor = ".tabBar__anchor, .slideshow__anchor";
+	var anchor = ".tabBar__anchor";
 
 	$(anchor).on('click', handleAnchorClick);
 
@@ -287,12 +287,6 @@ $( document ).ready(function() {
 	    	"left": "-"+(positionNum * 100)+"%"
 	    });
 	}
-
-	// Graphs
-
-	// Find graph elements
-	// Get data attribute values on .data__value
-
 
 	// Nav subitems
 	var navSubmenu = ".nav__dropdown";
