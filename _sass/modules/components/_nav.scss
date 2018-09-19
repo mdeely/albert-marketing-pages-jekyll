@@ -160,6 +160,7 @@ $nav-padding: rem(20);
 
 	    				li {
 							padding-left: rem(20);
+							padding-right: rem(20);
 		    				color: $text_grey;
 
 	    					a {
@@ -175,7 +176,7 @@ $nav-padding: rem(20);
     								height: rem(50);
     								max-width: rem(50);
     								min-width: rem(50);
-	    							margin-right: rem(30);
+	    							margin-right: rem(20);
     								border-radius: 50%;
     								background-color: $danube-blue;
     								overflow: hidden;
@@ -209,7 +210,7 @@ $nav-padding: rem(20);
 	    								@include title-xs;
 	    								font-weight: bold;
 	    								line-height: initial;
-	    								margin-bottom: rem(10);	
+	    								margin-bottom: rem(5);	
 	    							}
 
 	    							.nav__subitem-description {

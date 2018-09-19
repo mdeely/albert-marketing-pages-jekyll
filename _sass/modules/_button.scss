@@ -17,7 +17,10 @@
 .button--large {
 	@include button();
 	font-size: rem(20);
-	padding: em(18) em(28);
+
+	@media only screen and (min-width: $xs-viewport) {
+		padding: em(18) em(28);
+ 	}
 }
 
 .button--small {

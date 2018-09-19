@@ -113,7 +113,6 @@ $shadow_depth_5: 0 2px 20px rgba(0,0,0,.2 );
 $shadow_depth_6: 0 7px 20px rgba(0,0,0,.05 );
 
 
-
 ///////////////////////
 /////// z-index ///////
 ///////////////////////
@@ -131,3 +130,9 @@ $m-viewport: 1040px;
 $s-viewport: 780px;
 $xs-viewport: 580px;
 $xxs-viewport: 380px;
+
+
+///////////////////////
+//// iOS Values ////
+///////////////////////
+$safariBarHeight: rem(40);

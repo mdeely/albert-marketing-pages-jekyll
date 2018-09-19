@@ -112,7 +112,7 @@ components:
   group_title: K-12 Test Prep
   cta_url: ""
   courseDomains:
-  - domain: Advanced Placement®
+  - domain: AP®
     domain_description: Optional description for domain here
     cta_label: View all AP® Subjects
     cta_url: ""
