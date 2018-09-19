@@ -1,18 +1,18 @@
 {% assign slideshow = include.content %}
 {% assign anchorClass = "tabBar__anchor" %}
 
-<section class="{{ "slideshow slideshow-" | append: include.component_index }}">
+<section id={{ "slideshow-" | append: include.component_index }}" class="slideshow">
     {% include /components/directionalArrow.html direction="left" className="previous" %}
     {% include /components/directionalArrow.html direction="right" className="next" %}
 	<div class="slideshow__title">{{ slideshow.title }}</div>
 	<div class="slideshow__description">{{ slideshow.description }}</div>
 	<ul class="slideshow__list">
 		{% for slideshowItem in slideshow.slideshowItems %}
-			<li class="slideshow__item">
+			<li id="{{ "slide-" | append: forloop.index }}" class="slideshow__item">
 				{% if forloop.first %}
-				<a href="#{{ forloop.index }}" class="slideshowItem__anchor active">
+					<a href="#{{ forloop.index }}" class="slideshowItem__anchor active">
 				{% else %}
-				<a href="#{{ forloop.index }}" class="slideshowItem__anchor">
+					<a href="#{{ forloop.index }}" class="slideshowItem__anchor">
 				{% endif %}
 					<div class="slideshowItem__title">{{ slideshowItem.title}}</div>
 					<div class="slideshowItem__description">{{ slideshowItem.description}}</div>

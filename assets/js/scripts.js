@@ -1,8 +1,8 @@
 $( document ).ready(function() {
 
 	var $directional_arrow_scroll = $(".directionalArrow.scrollTo");
-	var $directional_arrow_next = $(".directionalArrow.next");
-	var $directional_arrow_previous = $(".directionalArrow.previous");
+	var $directional_arrow_next = $(".graph__wrapper .directionalArrow.next");
+	var $directional_arrow_previous = $(".graph__wrapper .directionalArrow.previous");
 
 	setTimeout(
 	  function() 
@@ -21,7 +21,70 @@ $( document ).ready(function() {
         }
     });
 
-    // Slideshow
+    // slideshow
+
+    var slideshows = $(".slideshow");
+
+    $.each(slideshows, function(index, slideshow) {
+		var timeInterval = 4000;
+
+		var slideshowList = $(slideshow).find("> ul");
+		var slideshowItemsCount =  $(slideshowList).find("> li").length;
+    	var currentPosition = $(slideshowList).css("left").replace("px","");
+    	console.log(currentPosition);
+
+		var timeRun = 0
+		var interval = setInterval(function(){
+		    timeRun += 1;
+
+		    if (timeRun === slideshowItemsCount) {
+			    $(slideshowList).css({
+			    	"left": "0%"
+			    });
+
+			    timeRun = 0;
+			    return
+			} 
+			else if ( timeRun === (slideshowItemsCount - 1) ) { 
+			    $(slideshowList).css({
+			    	"left": ("-"+100*timeRun+"%")
+			    });
+		    } else {
+			    $(slideshowList).css({
+			    	"left": ("-"+100*timeRun+"%")
+			    });
+		    };	
+
+
+		    // var activeSlide = slideshowDisplayItem+":nth-of-type("+(timeRun + 1)+")";
+		    // var activeSlideId = $(activeSlide).attr("id");
+
+		}, timeInterval);
+
+    });
+
+    // var $slideshow_next = $(".slideshow .directionalArrow.next");
+    // var $slideshow_prev = $(".slideshow .directionalArrow.previous");
+
+    // $slideshow_next.on('click', slideshowNext);
+    // $slideshow_prev.on('click', slideshowPrev);
+
+    function slideshowNext(event) {
+    	event.preventDefault();
+
+    	var $parent = $(event.target).parents("section");
+    	var $active = $parent.find("a.active");
+
+    	if ( $active.next().length > 0 ) {
+    		var next = $active.next();
+
+    		$next()
+    	};
+
+    };
+
+
+    // barGraph
 
     $directional_arrow_next.on('click', handleDirectionClick);
     $directional_arrow_previous.on('click', handleDirectionClick);
@@ -152,7 +215,8 @@ $( document ).ready(function() {
 
 
 	// // TABBAR, COMICSTRIP, and SLIDESHOW
-	
+
+
 	// // Link classes that require this behavior
 	// var links = "slideshow__anchor";
 	// var slideshowDisplayItem = ".slideshow__display-item";

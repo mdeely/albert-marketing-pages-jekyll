@@ -117,9 +117,10 @@
 }
 
 @media only screen and (min-width: $m-viewport) {
+	$calcNavHeight: $nav-height*1.3333;
 	.hero {
 		.hero__content {
-			height: calc(100vh - #{$nav-height});
+			height: calc(100vh - #{$calcNavHeight});
 		}
 	}
 }

@@ -11,6 +11,7 @@
 		margin-right: auto;
 		margin-left: auto;
 		max-width: rem(600);
+		left: 0%;
 	}
 
 	.slideshow__description {
@@ -22,12 +23,14 @@
 	}
 
 	.directionalArrow {
+		display: none;
 		position: absolute;
 	    top: $nav-height;
 	    bottom: 0;
 	    margin: auto;
+	    box-shadow: $shadow_depth_3;
 
-	    $distance: 20vw;
+	    $distance: 16vw;
 
 	    &.previous {
 	    	left: $distance;
@@ -42,6 +45,8 @@
 		display: flex;
 		flex-direction: row;
 		position: relative;
+		left: 0%;
+		transition: all 1s ease-in-out;
 
 		.slideshow__item {
 			min-width: 100%;
@@ -108,7 +113,11 @@
 }
 
 @media only screen and (min-width: $m-viewport) {
-
+	.slideshow {
+		.directionalArrow {
+			display: initial;
+		}
+	}
 }
 
 
