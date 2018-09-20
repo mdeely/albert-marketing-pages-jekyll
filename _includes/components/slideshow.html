@@ -1,27 +1,41 @@
 {% assign slideshow = include.content %}
 {% assign anchorClass = "tabBar__anchor" %}
 
-<section id={{ "slideshow-" | append: include.component_index }}" class="slideshow">
-    {% include /components/directionalArrow.html direction="left" className="previous" %}
-    {% include /components/directionalArrow.html direction="right" className="next" %}
-	<div class="slideshow__title">{{ slideshow.title }}</div>
-	<div class="slideshow__description">{{ slideshow.description }}</div>
-	<ul class="slideshow__list">
-		{% for slideshowItem in slideshow.slideshowItems %}
-			<li id="{{ "slide-" | append: forloop.index }}" class="slideshow__item">
+{% assign slideshow_index = include.component_index %}
+
+
+<section id={{ "slideshow-" | append: slideshow_index }}" class="slideshow">
+
+	<div class="slideshow">
+		<ul class="slides">
+			{% for slideshowItem in slideshow.slideshowItems %}
 				{% if forloop.first %}
-					<a href="#{{ forloop.index }}" class="slideshowItem__anchor active">
+					<li id="slideshow-{{slideshow_index}}-slide-{{forloop.index}}" class="slide active">
 				{% else %}
-					<a href="#{{ forloop.index }}" class="slideshowItem__anchor">
+					<li id="slideshow-{{slideshow_index}}-slide-{{forloop.index}}" class="slide">
 				{% endif %}
-					<div class="slideshowItem__title">{{ slideshowItem.title}}</div>
-					<div class="slideshowItem__description">{{ slideshowItem.description}}</div>
-				</a>
-				<div class="slideshowItem__visual">
-					<img src="{{ slideshowItem.img_src}}">
+				<div class="slide__info">
+					<div class="slide__title">{{ slideshowItem.title}}</div>
+					<div class="slide__description">{{ slideshowItem.description}}</div>
+				</div>
+				<div class="slide__visual">
+					<img src="{{ slideshowItem.img_src}}"></img>
 				</div>
 			</li>
-		{% endfor %}
-	</ul>
+			{% endfor %}
+		</ul>
+
+		<div class="slide__nav">
+			{% for slideshowItem in slideshow.slideshowItems %}
+				{% if forloop.first %}
+					<a data-tooltip="{{ slideshowItem.title}}" href="#slideshow-{{slideshow_index}}-slide-{{forloop.index}}" class="slide__link active">
+				{% else %}
+					<a data-tooltip="{{ slideshowItem.title}}" href="#slideshow-{{slideshow_index}}-slide-{{forloop.index}}" class="slide__link">
+				{% endif %}
+					</a>
+			{% endfor %}
+			<a href="#" data-tooltip="Next" class="slide__link next"><i class="fa fa-arrow-right"></i></a>
+		</div>
+	</div>
 
 </section>
