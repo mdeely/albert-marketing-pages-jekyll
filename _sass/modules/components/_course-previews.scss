@@ -33,14 +33,113 @@
 	}
 
 	.coursePreview__card-list {
-		display: none;
+		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 		max-width: rem(1200);
 
+		// max-height: 400px;
+		// overflow: hidden;
+		// $transitionTime: 1.5s;
+
+		// $containerWaitDuration: $transitionTime/3.5;
+		// $nextContainerChangeDuration: $transitionTime/3;
+		// $containerChangeDuration: $transitionTime/2;
+		// $nextElWaitDuration: $containerWaitDuration*2;
+		// $elOutDuration: $containerWaitDuration;
+
+		&:not(.active) {
+			display: none;
+			// max-height: 0;
+			// transition: 
+			// 	max-height $containerChangeDuration linear $containerWaitDuration, 
+			// 	opacity 0s linear $containerWaitDuration;
+
+			// .coursePreview__card-item {
+			// 	opacity: 0;
+			// 	left: rem(-100);
+			// 	transition: 
+			// 		left $elOutDuration ease-in-out 0s, 
+			// 		opacity $elOutDuration ease-in-out 0s, 
+			// 		transform .1s ease-in-out;
+
+			// 	&:nth-child(1n) {
+			// 		left: rem(-110);
+			// 		transition: 
+			// 			left $elOutDuration*.9 ease-in-out .04s, 
+			// 			opacity $elOutDuration*.9 ease-in-out .04s, 
+			// 			transform .1s ease-in-out;
+			// 	}
+
+			// 	&:nth-child(2n) {
+			// 		left: rem(-120);
+			// 		transition: 
+			// 			left $elOutDuration*.8 ease-in-out .03s, 
+			// 			opacity $elOutDuration*.8 ease-in-out .04s, 
+			// 			transform .1s ease-in-out;
+			// 	}
+
+			// 	&:nth-child(2n-3) {
+			// 		left: rem(-130);
+			// 		transition: 
+			// 			left $elOutDuration*.7 ease-in-out .02s, 
+			// 			opacity $elOutDuration*.7 ease-in-out .02s, 
+			// 			transform .1s ease-in-out;
+			// 	}
+			// 	&:nth-child(2n+1) {
+			// 		left: rem(-140);
+			// 		transition: 
+			// 			left $elOutDuration*.8 ease-in-out .035s, 
+			// 			opacity $elOutDuration*.8 ease-in-out .035s, 
+			// 			transform .1s ease-in-out;
+			// 	}
+			// }
+		}
+
 		&.active {
 			display: flex;
+			// max-height: rem(1000);
+			// transition: 
+			// 	max-height $nextContainerChangeDuration ease-in-out $containerWaitDuration;
+
+			// .coursePreview__card-item {
+			// 	opacity: 1;
+			// 	left: 0;
+			// 	transition: 
+			// 		left $elOutDuration ease-in-out $nextElWaitDuration,
+			// 		opacity $elOutDuration ease-in-out $nextElWaitDuration,
+			// 		transform .1s ease-in-out;
+
+			// 	&:nth-child(2n) {
+			// 		transition: 
+			// 			left $elOutDuration*.9 ease-out $nextElWaitDuration*1.03,
+			// 			opacity $elOutDuration*.9 ease-in-out $nextElWaitDuration*1.03,
+			// 			transform .1s ease-in-out;
+			// 	}
+
+			// 	&:nth-child(3n) {
+			// 		transition: 
+			// 			left $elOutDuration*.8 ease-out $nextElWaitDuration*1.02,
+			// 			opacity $elOutDuration*.8 ease-in-out $nextElWaitDuration*1.02,
+			// 			transform .1s ease-in-out;
+			// 	}
+
+			// 	&:nth-child(4n) {
+			// 		transition: 
+			// 			left $elOutDuration*.7 ease-out $nextElWaitDuration*1.01,
+			// 			opacity $elOutDuration*.7 ease-in-out $nextElWaitDuration*1.01,
+			// 			transform .1s ease-in-out;
+			// 	}
+
+			// 	&:nth-child(2n+1) {
+			// 		transition: 
+			// 			left $elOutDuration*.8 ease-out $nextElWaitDuration*1.025,
+			// 			opacity $elOutDuration*.8 ease-in-out $nextElWaitDuration*1.025,
+			// 			transform .1s ease-in-out;
+			// 	}
+			// }
+
 		}
 
 		&:after {
@@ -58,8 +157,8 @@
 		}
 
 		.coursePreview__card-item {
-			$card-width: rem(310);
-			$card-height: rem(100);
+			$card-width: rem(400);
+			$card-height: rem(80);
 
 			position: relative;
 			color: #FFFFFF;
@@ -68,21 +167,19 @@
 			box-shadow: 0 2px 20px rgba($link, .25), $shadow_depth_6; //shadow_depth_5
 			overflow: hidden;
 			position: relative;
-			min-width: $card-width;
+			width: 100%;
 			max-width: $card-width;
 			min-height: $card-height;
 			max-height: $card-height;
-			margin: rem(15);
-			padding-left: rem(30);
-			padding-right: rem(60);
+			margin: rem(5) rem(15);
+			padding-left: rem(20);
+			padding-right: rem(40);
 			display: flex;
 			align-items: center;
 
 			&:last-child {
 				padding: rem(30);
 				text-align: center;
-				transition: transform .1s ease-in-out;
-
 
 				.coursePreview__card-item-title {
 					transition: transform .1s ease-in-out;
@@ -156,32 +253,20 @@
 }
 
 @media only screen and (min-width: $s-viewport) {
-	// .coursePreview {
-	// 	> *:not(.coursePreview__card-list) {
-	//     	max-width: $container-width-slim;
-	//     	margin-right: auto;
-	//     	margin-left: auto;
-	// 		padding-left: $container-spacing;
-	// 		padding-right: $container-spacing;
-	// 	}
+	.coursePreview {
+		.coursePreview__card-list {
+			.coursePreview__card-item {
+				$card-width: rem(310);
+				$card-height: rem(100);
 
-	// 	.coursePreview__group-description {
-	// 		max-width: rem(600);
-	// 	}
-
-	// 	.coursePreview__card-list {
-
-	// 		.coursePreview__card-item {
-	// 			$card-width: rem(250);
-
-	// 			max-width: $card-width;
-	// 			min-width: $card-width;
-	// 			margin-right: rem(15);
-
-	// 			.coursePreview__card-item-title {
-	// 				padding: rem(40) rem(30);
-	// 			}
-	// 		}
-	// 	}
-	// }
+				min-width: $card-width;
+				max-width: $card-width;
+				min-height: $card-height;
+				max-height: $card-height;
+				margin: rem(15);
+				padding-left: rem(30);
+				padding-right: rem(60);
+			}
+		}
+	}
 }

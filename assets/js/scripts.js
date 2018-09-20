@@ -145,6 +145,43 @@ $( document ).ready(function() {
 		// find any additional targets	
 		var additionalTargets = $("[data-additional-target='"+anchorHref+"']");
 
+		// if ( $(anchorParent).hasClass("coursePreview") ) {
+		// 	var activeList = $(anchorParent).find(".coursePreview__card-list.active");
+
+		// 	var sectionHeight = $(anchorParent).outerHeight();
+		// 	var activeListHeight = $(activeList).outerHeight();
+		// 	var targetListHeight = $(anchorHref).outerHeight();
+		// 	var targetSectionHeight = ((sectionHeight - activeListHeight) + targetListHeight);
+
+		// 	$(anchorParent).css("height", sectionHeight+"px");
+
+		// 	// remove .active class from everyting in the parent
+		// 	$(anchorParent).find('.active').removeClass('active');
+		// 	// make anchor active
+		// 	$(anchor).addClass('active');
+
+		// 	$(anchorParent).animate({height: targetSectionHeight+"px"}, 500)
+
+		// 	setTimeout(
+		// 		function() 
+		// 		{
+		// 			$(anchorParent).css("height", targetSectionHeight+"px");
+		// 			// make target active
+		// 			$(anchorHref).addClass("active");
+		// 			// make additional targets active
+		// 			$(additionalTargets).addClass("active");
+		// 		}, 2000);
+
+		// 	setTimeout(
+		// 		function() 
+		// 		{
+		// 			console.log("removing styles");
+		// 			$(anchorParent).attr("style", "");
+		// 		}, 4000);
+
+		// 	return;
+		// };
+
 		// remove .active class from everyting in the parent
 		$(anchorParent).find('.active').removeClass('active');
 
@@ -154,17 +191,12 @@ $( document ).ready(function() {
 		$(anchorHref).addClass("active");
 		// make additional targets active
 		$(additionalTargets).addClass("active");
-
-		if ( $(anchorParent).hasClass("slideshow") ) {
-    		var directionalArrowPrev = $(anchorParent).find(".directionalArrow.previous");
-    		var directionalArrowNext = $(anchorParent).find(".directionalArrow.next");
-		}
 	}
 
 	// slideshow
 	var $slide = $(".slide__link");
 
-	$slide.on('click', updateSlideshowDisplay);
+	$slide.on('click swipeLeft', updateSlideshowDisplay);
 
 	function updateSlideshowDisplay(event) {
 		event.preventDefault();

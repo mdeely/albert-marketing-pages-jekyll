@@ -6,7 +6,10 @@
 
 <section id={{ "slideshow-" | append: slideshow_index }}" class="slideshow">
 
-	<div class="slideshow">
+	<div class="slideshow__title">{{ slideshow.title }}</div>
+	<div class="slideshow__description">{{ slideshow.description }}</div>
+
+	<div class="slideshow__wrapper">
 		<ul class="slides">
 			{% for slideshowItem in slideshow.slideshowItems %}
 				{% if forloop.first %}

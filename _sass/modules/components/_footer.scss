@@ -4,8 +4,7 @@ footer {
 
 	.footer {
 		font-size: rem(14);
-		margin-left: rem(-40);
-		margin-right: rem(-40);
+		max-width: 100%;
 
 		.footer__site-links,
 		.footer__social-links ul,
@@ -23,8 +22,8 @@ footer {
 		}
 
 		.footer__site-links ul {
-		    margin-left: rem(40);
-		    margin-right: rem(40);
+		    margin-left: rem(15);
+		    margin-right: rem(15);
 			margin-bottom: rem(40);
 			flex: 1;
 
@@ -81,8 +80,12 @@ footer {
 
 	@media only screen and (min-width: $s-viewport) {
 		.footer {
+			margin-left: rem(-40);
+			margin-right: rem(-40);
 
 			.footer__site-links ul {
+		    	margin-left: rem(40);
+		   		margin-right: rem(40);
 				flex: unset;
 
 				li:nth-of-type(first) {
