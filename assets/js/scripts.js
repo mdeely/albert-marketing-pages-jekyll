@@ -1,5 +1,12 @@
 $( document ).ready(function() {
 
+	// The following will wrap all restricted marks with a <sup> tag
+	$('body :not(script)').contents().filter(function() {
+	    return this.nodeType === 3;
+	}).replaceWith(function() {
+	    return this.nodeValue.replace(/[™®©]/g, '<sup>$&</sup>');
+	});
+
 	var $directional_arrow_scroll = $(".directionalArrow.scrollTo");
 	var $directional_arrow_next = $(".graph__wrapper .directionalArrow.next");
 	var $directional_arrow_previous = $(".graph__wrapper .directionalArrow.previous");

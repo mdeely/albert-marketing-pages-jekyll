@@ -231,15 +231,26 @@
 /////////////////
 //   Spacing   //
 /////////////////
-@mixin section-spacing() {
-	padding-top: $section-padding-mobile;
-	padding-bottom: $section-padding-mobile;
-	padding-left: $container-spacing;
-	padding-right: $container-spacing;
+@mixin section-spacing($sides: true) {
+	@if $sides == false {
+		padding-top: $section-padding-mobile;
+		padding-bottom: $section-padding-mobile;
 
-	@media only screen and (min-width: $s-viewport) {
-		padding-top: $section-padding;
-		padding-bottom: $section-padding;
+		@media only screen and (min-width: $s-viewport) {
+			padding-top: $section-padding;
+			padding-bottom: $section-padding;
+		}
+
+	} @else {
+		padding-top: $section-padding-mobile;
+		padding-bottom: $section-padding-mobile;
+		padding-left: $container-spacing;
+		padding-right: $container-spacing;
+
+		@media only screen and (min-width: $s-viewport) {
+			padding-top: $section-padding;
+			padding-bottom: $section-padding;
+		}
 	}
 }
 

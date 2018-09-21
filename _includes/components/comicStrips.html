@@ -12,7 +12,7 @@
 			      		<a href="#{{ comicStrip.teacher_name | slugify }}" class="tabBar__anchor">
 					{% endif %}
 			      {% if comicStrip.teacher_img_src %} 
-			      	<img src="{{ baseurl }}/{{ comicStrip.teacher_img_src }}">
+			      	<img src="/assets/img/teacher_portraits/{{ comicStrip.teacher_img_src }}">
 			      {% endif %}
 			      {{ comicStrip.teacher_name }}
 			      	</a>

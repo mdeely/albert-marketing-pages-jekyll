@@ -40,14 +40,21 @@ section.tabBar {
 				&.active {
 					box-shadow: 0 -5px 0 $link inset;
 					color: $link;
+
+					img {
+						filter: grayscale(0);
+					}
 				}
 
 				img {
 					display: block;
 					max-width: 100%;
 					height: rem(70);
+					margin-left: auto;
+					margin-right: auto;
 					margin-bottom: rem(15);
 					pointer-events: none;
+					filter: grayscale(1);
 				}
 			}
 

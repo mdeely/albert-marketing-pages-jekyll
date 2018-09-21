@@ -1,7 +1,5 @@
 section.interstitial {
 	@include section-spacing;
-	padding-left: $section-padding;
-	padding-right: $section-padding;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -38,6 +36,8 @@ section.interstitial {
 	section.interstitial {
 		flex-direction: row;
 		justify-content: center;
+		padding-left: $section-padding;
+		padding-right: $section-padding;
 
 		.interstitial__description {
 			margin-top: 0;
