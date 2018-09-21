@@ -18,7 +18,7 @@ components:
 
   - title: Personalization
     description: Learners can customize their learning experience to fit their needs and interests to always stay motivated and engaged. 
-    img_src: "assets/img/random-img3.svg"
+    img_src: "assets/img/random-img2.svg"
 
   - title: Engaging formats
     description: Our question formats provide learners with multiple ways to learn and make the content come alive like pencil and paper never could.
@@ -40,30 +40,30 @@ components:
 
   - title: Powerful content search
     description: Search content by keyword, content tags, or learning standards to find exactly what you want to teach or assess 
-    img_src: "assets/img/random-img3.svg"
+    img_src: "assets/img/random-img2.svg"
 
   - title: Assignments your way
     description: Enjoy full control over all aspects of assigned work and differentiate content between students. Your customizations are reusable and shareable.
     img_src: "assets/img/random-img2.svg"
 
 - component_name: slideshow
-  title: Data insights
+  title: Meaningful insights to inform instruction
   slideshowItems:
-  - title: "??"
-    description: Meaningful insights to inform instruction
+  - title: Maximize impact
+    description: Quickly identify which learners need more attention.
     img_src: "assets/img/hero-test.svg"
 
-  - title: "??"
-    description: Meaningful mastery metrics that enable goal-based instruction 
-    img_src: "assets/img/random-img3.svg"
-
-  - title: "??"
-    description: Powerful content analytics that allow teachers to identify areas to re-teach
+  - title: Track progress
+    description: Help learners move toward mastery over time. 
     img_src: "assets/img/random-img2.svg"
 
-  - title: "??"
-    description: Detailed individual student reports that inform differentiated instruction. 
-    img_src: "assets/img/random-img3.svg"
+  - title: Teach the right content
+    description: Target your instruction to address the most common misconceptions.
+    img_src: "assets/img/random-img2.svg"
+
+  - title: Understand the whole learner
+    description: Access detailed individual student reports to enable differentiated instruction. 
+    img_src: "assets/img/random-img2.svg"
 
 - component_name: slideshow
   title: A complete administrator experience
@@ -74,7 +74,7 @@ components:
 
   - title: Complete insights
     description: Our comprehensive reporting tools provide detailed insights into classes, teachers, students, and subjects for a complete view of your data. 
-    img_src: "assets/img/random-img3.svg"
+    img_src: "assets/img/random-img2.svg"
 
   - title: Drive instructional value
     description: User Albert’s data insights to drive engagement across teachers and class to supercharge learning at your school. 
@@ -82,9 +82,7 @@ components:
 
   - title: Measurable outcomes
     description: As your students learn more deeply while your teachers free up time for personalized instruction, watch test scores, productivity, and engagement improve.
-    img_src: "assets/img/random-img3.svg"
-
-
+    img_src: "assets/img/random-img2.svg"
 
 - component_name: preFooter
 ---

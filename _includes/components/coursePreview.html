@@ -54,9 +54,11 @@
 					</div>
 				</li>
 	  		{% endfor %}
+	  		{% if domain.domain_cta_label %}
 			<a class="coursePreview__card-item" href="{{ domain.domain_cta_url }}">
 				<div class="coursePreview__card-item-title">{{ domain.domain_cta_label }}</div>
 			</a>
+			{% endif %}
 		</ul>
   	{% endfor %}
 

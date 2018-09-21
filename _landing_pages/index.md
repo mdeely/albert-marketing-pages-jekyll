@@ -3,11 +3,11 @@ title: Practice. Assess. Improve.
 components:
 # Hero
 - component_name: hero
+  img_src: "assets/img/hero/home-hero.svg"
   title: Practice. Assess. Improve.
   description: "Albert is a learning companion built on a simple idea: That learning is best done by doing."
   cta_label: Get started
-  cta_url: "no-url-set"
-  img_src: "assets/img/hero/home-hero.svg"
+  cta_url: https://www.albert.io/signup
 
 # Course preview
 - component_name: coursePreview
@@ -25,19 +25,7 @@ components:
 
     - card_group: ela
       card_img_src: "heart_of_darkness.svg"
-      card_title: Confused and Misused
-
-    - card_group: ela
-      card_img_src: "heart_of_darkness.svg"
       card_title: Reading Blueprints
-
-    - card_group: ela
-      card_img_src: "heart_of_darkness.svg"
-      card_title: Transitional Reading
-
-    - card_group: ela
-      card_img_src: "heart_of_darkness.svg"
-      card_title: Leveled Reading in Arts and Culture
 
     - card_group: ela
       card_img_src: "heart_of_darkness.svg"
@@ -49,7 +37,7 @@ components:
 
     - card_group: ela
       card_img_src: "heart_of_darkness.svg"
-      card_title: Essential Reading
+      card_title: Essential Readings
 
   - domain: Math
     domain_cta_label: View all Math
@@ -103,32 +91,81 @@ components:
       card_title: NGSS Life Sciences
       card_img_src: "heart_of_darkness.svg"
 
-    - card_group: science
-      card_title: NGSS Physical Sciences
-      card_img_src: "heart_of_darkness.svg"
-
 # Course preview
 - component_name: coursePreview
   group_title: K-12 Test Prep
-  cta_url: ""
+  cta_url: "https://www.albert.io/test-prep/advanced-placement"
   courseDomains:
   - domain: AP®
-    domain_description: Optional description for domain here
+    domain_description: "Coverage of 33 AP® subjects"
+    cta_label: View all AP® Subjects
+    cta_url: "https://www.albert.io/test-prep/advanced-placement"
+    courseCards:
+    - card_group: science
+      card_title: AP® Computer Science Principles
+      card_img_src: "heart_of_darkness.svg"
+
+    - card_group: math
+      card_title: AP® English Language
+      card_img_src: "heart_of_darkness.svg"
+
+    - card_group: math
+      card_title: AP® Physics 1 & 2
+      card_img_src: "heart_of_darkness.svg"
+
+    - card_group: math
+      card_title: AP® US Government
+      card_img_src: "heart_of_darkness.svg"
+
+    - card_group: math
+      card_title: AP® US History
+      card_img_src: "heart_of_darkness.svg"
+
+  - domain: SAT
+    domain_description: "Coverage of all SAT and SAT subject tests"
+    cta_label: View all SAT subjects
+    cta_url: ""
+    courseCards:
+    - card_group: science
+      card_title: SAT® Math
+      card_img_src: "heart_of_darkness.svg"
+
+    - card_group: science
+      card_title: SAT® Reading
+
+      card_img_src: "heart_of_darkness.svg"
+
+    - card_group: science
+      card_title: SAT® Writing
+      card_img_src: "heart_of_darkness.svg"
+
+    - card_group: science
+      card_title: SAT® Subject Test in Math 1 & 2
+      card_img_src: "heart_of_darkness.svg"
+
+    - card_group: science
+      card_title: SAT® Subject Test in U.S. History
+      card_img_src: "heart_of_darkness.svg"
+
+  - domain: ACT®
     cta_label: View all AP® Subjects
     cta_url: ""
     courseCards:
     - card_group: science
-      card_title: AP® Calculus AB-BC
+      card_title: ACT® English
       card_img_src: "heart_of_darkness.svg"
 
-    - card_group: math
-      card_title: AP® Calculus AB-BC
+    - card_group: science
+      card_title: ACT® Math
       card_img_src: "heart_of_darkness.svg"
 
-  - domain: College Entrance
-    cta_label: View all AP® Subjects
-    cta_url: ""
-    courseCards:
+    - card_group: science
+      card_title: ACT® Reading
+      card_img_src: "heart_of_darkness.svg"
+
+    - card_group: science
+      card_title: ACT® Science
+      card_img_src: "heart_of_darkness.svg"
 
 # Staggered features
 - component_name: stagger
@@ -162,5 +199,5 @@ components:
     title: Get a consultation
     description: Explore how Albert can help your school meet its instructional goals with one of our Schools team members.
     cta_label: Request demo
-    cta_url: right-cta
+    cta_url: "https://www.albert.io/schools/request-demo"
 ---

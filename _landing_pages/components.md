@@ -4,6 +4,7 @@ meta:
   ogTitle: Test og title?
   
 components:
+## Hero
 - component_name: hero
   supertitle: Hero supertitle
   title: Hero title for everyone
@@ -12,6 +13,7 @@ components:
   cta_url: hero-url
   img_src: "assets/img/hero-test.svg"
 
+## Graph
 - component_name: barGraph
   component_title: Groundbreaking efficacy research
   component_description: Based on a controlled study, schools that implemented Albert saw a TBD% improvement in test scores and a strong correlation between scores and Albert usage. Learn more about our methodology
@@ -43,6 +45,7 @@ components:
     - bar_value: 90
       bar_label: Year 4
 
+#Testimonial
 - component_name: testimonials
   title: testimonials
   testimonialItems:
@@ -62,6 +65,8 @@ components:
     teacher_level: Teacher level 2
     location: Chicago, IL 2
 
+
+## Stagger grid
 - component_name: stagger
   title: Optional title for stagger components
   staggerItems:
@@ -83,6 +88,7 @@ components:
   cta_link: ""
   description: Lorem ipsum this is a description of the area such as Request a demo to learn more about Albert.io
 
+## Sales Roster
 - component_name: salesRoster
   title: Meet the team
   description: As former educators, our School Success team intimately understand what makes for a successful Albert implementation, both within the classroom and across a school.
@@ -98,6 +104,7 @@ components:
   - profile_img: "assets/img/random-img3.svg"
     name: Marcus Aurelious
 
+## Feature Grid
 - component_name: featureGrid
   card_layout: true
   title: Grid title
@@ -120,6 +127,7 @@ components:
     cta_label: Third grid CTA
     cta_url: third-grid-cta
 
+## Course preview
 - component_name: coursePreview
   title: Learn anything
   group_title: K-12 Core
@@ -146,9 +154,10 @@ components:
       card_title: social studies subject
       card_img_src: "heart_of_darkness.svg"
 
+## Comic strip
 - component_name: comicStrips
   comicStrips:
-    - teacher_name: Mr. Deely
+    - teacher_name: Mr. Zakaria
       teacher_img_src: "assets/img/random-img2.svg"
       comicPanels:
       - img_src: "assets/img/comic_1.png"
@@ -193,6 +202,7 @@ components:
       - img_src: "assets/img/comic_2.png"
         caption: Second panel of FIRST strip. Lorem ipsum lots of text would go here so that we can see an accurate representation of the amount of text that would display here.
 
+## Hero
 - component_name: hero
   title: Second title
   description: Second description
@@ -200,6 +210,7 @@ components:
   cta_url: hero-url
   img_src: "assets/img/random-img3.svg"
 
+## Tab bar
 - component_name: tabBar
   tabBarItems:
   - img_src: "assets/img/random-img3.svg"
@@ -209,6 +220,7 @@ components:
   - img_src: "assets/img/hero-test.svg"
     label: Item 2
 
+## Slideshow
 - component_name: slideshow
   title: Learn by doing
   description: Slideshow description
@@ -225,6 +237,7 @@ components:
     description: Our question formats provide learners with multiple ways to learn and make the content come alive like pencil and paper never could.
     img_src: "assets/img/random-img2.svg"
 
+## Prefooter
 - component_name: preFooter
   # left:
   #   img_src: "assets/img/random-img.svg"
