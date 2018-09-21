@@ -50,7 +50,7 @@ components:
   title: testimonials
   testimonialItems:
   - title: Title 1
-    quote: quote 1 lorem ipsum ipsum lorem ipsum ipsum random text here that would be the quote
+    quote: Based on a Based on a controlled study, schools that implemented Albert saw a TBD% improvement in test scores and a strong correlation between scores and Albert usage. Learn more about our methodology controlled study, schools that implemented Albert saw a TBD% improvement in test scores and a strong correlation between scores and Albert usage. Learn more about our methodology
     teacher_name: Name 1
     teacher_img_src: "assets/img/random-img3.svg"
     teacher_type: Teacher type 1
