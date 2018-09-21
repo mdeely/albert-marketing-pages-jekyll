@@ -28,15 +28,17 @@
 			</ul>
 		</div>
 
+
 		<div class="caseStudy__info">
-			{% assign sections = page.sections %}
+			{{ content | markdownify }}
+<!-- 			{% assign sections = page.sections %}
 			{% for section in sections %}
 				<div class="caseStudy__info-title">{{ section.title }}</div>
 				<div class="caseStudy__info-paragraph">{{ section.paragraph | markdownify }}</div>
 				{% if section.citation %}
 					<div class="caseStudy__info-citation">{{ section.citation | markdownify }}</div>
 				{% endif %}
-			{% endfor %}
+			{% endfor %} -->
 		</div>
 	</div>
 

@@ -145,14 +145,24 @@
 		max-width: rem(1000);
 		margin: 0 auto;
 
+		h1,
 		.caseStudy__info-title {
 			@include fancy-title-medium;
-			margin-bottom: rem(20);
+			margin-bottom: rem(30);
+			margin-top: rem(100);
 			text-align: center;
+
+			&:first-child {
+				margin-top: 0;
+			}
 		}
 
+		p,
 		.caseStudy__info-paragraph {
-			margin-bottom: rem(80);
+			font-size: rem(17);
+			line-height: 1.8;
+			color: $text-black--lighter_step_2;
+			white-space: pre-wrap;
 
 			p {
 				font-size: rem(17);
@@ -162,11 +172,30 @@
 			}
 		}
 
+		.citation,
 		.caseStudy__info-citation {
 			white-space: pre-wrap;
 			color: $text-black--lighter_step_2;
 			font-style: italic;
+			font-size: rem(15);
+			max-width: 90%;
+			margin: rem(20) auto 0 auto;
 		}
+	}
+
+	blockquote {
+	    background-color: $bgGrey;
+	    border-radius: rem(10);
+	    font-style: italic;
+	    padding: rem(20);
+	    text-align: center;
+	    max-width: rem(500);
+	    margin: 0 auto rem(30) auto;
+
+	    p {
+	    	margin: 0;
+
+	    }
 	}
 }
 
