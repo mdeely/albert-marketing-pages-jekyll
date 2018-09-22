@@ -1,66 +1,98 @@
 .salesRoster {
 	@include section-spacing;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
 
-	.salesRoster__info {
-		margin-bottom: rem(40);
 
-		.salesRoster__title {
-			@include title-medium;
+	.salesRoster__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		max-width: $xl-viewport;
+		margin-right: auto;
+		margin-left: auto;
+
+		.salesRoster__info {
 			margin-bottom: rem(40);
-			color: $text_grey;
+			text-align: center;
+
+			.salesRoster__title {
+				@include title-large;
+				margin-bottom: rem(40);
+				color: $text_grey;
+			}
+
+			.salesRoster__description {
+				margin-bottom: rem(40);
+				max-width: rem(400);
+				line-height: 1.5em;
+				color: $interstitial-small-text-color;
+			}
+
+			.salesRoster__anchor {
+
+			}
 		}
 
-		.salesRoster__description {
-			margin-bottom: rem(40);
-			max-width: rem(400);
-		}
+		.salesRoster__visuals {
+			margin-top: rem(40);
 
-		.salesRoster__anchor {
+			.salesRoster__list {
+				display: flex;
+				flex-direction: row;
+			    flex-wrap: wrap;
+			    max-width: rem(600);
+			    justify-content: center;
 
-		}
-	}
+				.salesRoster__item {
+					margin-bottom: rem(25);
+					margin-top: rem(25);
 
-	.salesRoster__visuals {
-		.salesRoster__list {
-			display: flex;
-			flex-direction: row;
-			overflow: scroll;
+					.salesRoster__profile {
+						.salesRoster__profile-img {
 
-			.salesRoster__item {
-				.salesRoster__profile {
-					.salesRoster__profile-img {
-
-					}
-					.salesRoster__caption {
-						
+						}
+						.salesRoster__caption {
+							
+						}
 					}
 				}
+			}
+		}	
+	}
+}
+
+@media only screen and (min-width: $s-viewport) {
+	.salesRoster {
+
+		.salesRoster__wrapper {
+
+			.salesRoster__info {
+				width: 50%;
 			}
 		}
 	}
 }
 
-@media only screen and (min-width: $s-viewport) {
-.salesRoster {
-	flex-direction: row;
+@media only screen and (min-width: $m-viewport) {
+	.salesRoster {
 
-	.salesRoster__info {
-		text-align: left;
-		width: 40%;
-	}
+		.salesRoster__wrapper {
+			flex-direction: row;
 
-	.salesRoster__visuals {
-		width: 50%;
-		margin-left: auto;
+			.salesRoster__info {
+				text-align: left;
+			}
 
-		.salesRoster__list {
-			flex-wrap: wrap;
-			justify-content: space-evenly;
+			.salesRoster__visuals {
+				margin-top: 0;
+				width: 50%;
+				margin-left: auto;
+
+				.salesRoster__list {
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+			}
 		}
 	}
-}
 }

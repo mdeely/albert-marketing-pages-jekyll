@@ -156,6 +156,7 @@ $nav-padding: rem(20);
 						.nav__subitem-group-title {
 	    					@include fancy-title-small;
 	    					padding-left: rem(20);
+	    					pointer-events: none;
 						}
 
 	    				li {
@@ -217,7 +218,6 @@ $nav-padding: rem(20);
     								border-radius: 50%;
     								background-color: $danube-blue;
     								overflow: hidden;
-    								margin-top: rem(20);
 
 
 	    							img {
@@ -235,7 +235,6 @@ $nav-padding: rem(20);
 
 	    						.nav__subitem-info-container {
 	    							pointer-events: none;
-    								margin-top: rem(20);
     								margin-bottom: rem(20);
 
 	    							.nav__subitem-title {

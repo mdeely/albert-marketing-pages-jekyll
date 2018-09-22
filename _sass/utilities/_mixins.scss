@@ -143,6 +143,10 @@
 	@media only screen and (min-width: $s-viewport) {
 		font-size: rem(20);
  	}
+
+	@media only screen and (min-width: $xl-viewport) {
+		font-size: rem(24);
+ 	}
 }
 
 @mixin title-large() {

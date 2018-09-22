@@ -38,7 +38,7 @@
 	}
 
 	.comicStrip__list {
-		max-width: $xxl-viewport;
+		max-width: rem(2200);
 		padding-left: $container-spacing;
 		padding-right: $container-spacing;
 
@@ -74,6 +74,12 @@
 
 					&:hover {
 						filter: grayscale(0%);
+
+						.comicPanel__link {
+							.comicPanel__caption {
+								background-color: rgba(white, .95);
+							}
+						}
 					}
 
 					&:last-child {
@@ -110,6 +116,24 @@
 						    bottom: rem(20);
 						    margin: auto;
 							transition: background-color .2s ease-in-out;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $xxl-viewport) {
+	.comicStrip {
+		.comicStrip__list {
+			.comicStrip__item {
+				.comicPanel__list {
+					.comicPanel__item {
+						.comicPanel__link {
+							.comicPanel__caption {
+						    	font-size: rem(18);
+							}
 						}
 					}
 				}

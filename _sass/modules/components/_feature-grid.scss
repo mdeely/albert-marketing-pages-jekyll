@@ -45,7 +45,6 @@
 				margin-bottom: 0;
 				color: $text-black--lighter_step_2;
 				font-size: rem(14);
-				line-height: 1.8;
 			}
 		}
 	}
@@ -131,6 +130,20 @@
     					max-width: 100%;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $xxl-viewport) {
+	.featureGrid {
+		.featureGrid__list {
+			max-width: 100%;
+
+			.featureGrid__item {
+				flex: 1 0 rem(360);
+				margin-left: 3%;
+				margin-right: 3%;
 			}
 		}
 	}

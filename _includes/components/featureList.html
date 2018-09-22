@@ -1,8 +1,11 @@
 {% assign featureList = include.content %}
 
 <section class="featureList">
-	{% if featreList.title %}
+	{% if featureList.title %}
 		<div class="featureList__title">{{ featureList.title }}</div>
+	{% endif %}
+	{% if featureList.description %}
+		<div class="featureList__description">{{ featureList.description }}</div>
 	{% endif %}
 	<ul class="featureList__list">
 		{% for feature in featureList.staggerItems %}
