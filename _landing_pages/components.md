@@ -66,8 +66,8 @@ components:
     location: Chicago, IL 2
 
 
-## Stagger grid
-- component_name: stagger
+## Feature list
+- component_name: featureList
   title: Optional title for stagger components
   staggerItems:
   - supertitle: supertitle 1

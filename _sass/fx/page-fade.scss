@@ -1,0 +1,63 @@
+body {
+	.hero {
+		$transitionDuration: .8s;
+
+		.hero__content {
+
+			.hero__info-container {
+				> * {
+					opacity: 1;
+	    			transition: opacity $transitionDuration, left $transitionDuration;
+				}
+				.hero__supertitle,
+				.hero__cta {
+					transition-delay: $transitionDuration;
+				}
+
+				.hero__title {
+
+					position: relative;
+					left: 0;
+				}
+				.hero__description {
+					position: relative;
+					left: 0;
+					transition-delay: .3s;
+				}
+			}
+
+			.hero__visual {
+				opacity: 1;
+	    		transition: opacity $transitionDuration;
+				transition-delay: 1s;
+			}
+		}
+	}
+
+	&.fade-out {
+		.hero {
+			.hero__content {
+				.hero__info-container {
+
+					> * {
+		    			opacity: 0;
+		    			transition: none;
+					}
+
+					.hero__title {
+						left: 100px;
+					}
+
+					.hero__description {
+						left: 100px;
+					}
+				}
+
+				.hero__visual {
+		    		opacity: 0;
+		    		transition: none;
+				}
+			}
+		}
+	}
+}

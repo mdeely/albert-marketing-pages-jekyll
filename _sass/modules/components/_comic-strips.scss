@@ -26,6 +26,10 @@
 							transition: transform .2s ease-in-out;
 						}
 					}
+
+					&:hover {
+						color: $link;
+					}
 				}
 			}
 		}
@@ -51,6 +55,13 @@
 				box-shadow: $shadow_depth_6;
 				flex-wrap: wrap;
 
+				&:hover {
+					.comicPanel__item {
+						filter: grayscale(100%);
+						transition: filter .2s ease-in-out;	
+					}
+				}
+
 				.comicPanel__item {
 					width: 25%;
 					text-align: center;
@@ -58,24 +69,13 @@
 					min-width: rem(250);
 					flex: 1;
 
+					&:hover {
+						filter: grayscale(0%);
+					}
 
 					&:last-child {
 						margin-right: 0;
 						border-right: 0px solid transparent;
-					}
-
-					&:hover {
-						.comicPanel__link {
-							.comicPanel__img {
-								filter: grayscale(0%);
-								transition: filter .2s ease-in-out;
-							}
-
-							.comicPanel__caption {
-								background-color: rgba(white, .95);
-								transition: all .2s ease-in-out;
-							}
-						}
 					}
 
 					.comicPanel__link {
@@ -87,9 +87,6 @@
 						.comicPanel__img {
 							width: 100%;
 							height: auto;
-							// filter: grayscale(50%);
-							// transition: all .2s ease-in-out;
-
 						}
 
 						.comicPanel__caption {

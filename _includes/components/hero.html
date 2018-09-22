@@ -1,6 +1,11 @@
 {% assign hero = include.content %}
 
+{% if include.component_index == 1 %}
+<section class="hero main">
+{% else %}
 <section class="hero">
+{% endif %}
+
     <div class="hero__content">
         <div class="hero__info-container">
         

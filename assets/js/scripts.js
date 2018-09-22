@@ -1,5 +1,9 @@
 $( document ).ready(function() {
 
+	$(function() {
+	    $('body').removeClass('fade-out');
+	});
+
 	// The following will wrap all restricted marks with a <sup> tag
 	$('body :not(script)').contents().filter(function() {
 	    return this.nodeType === 3;
@@ -7,6 +11,7 @@ $( document ).ready(function() {
 	    return this.nodeValue.replace(/[™®©]/g, '<sup>$&</sup>');
 	});
 
+	// Scroll down arrow from Hero
 	var $directional_arrow_scroll = $(".directionalArrow.scrollTo");
 	var $directional_arrow_next = $(".graph__wrapper .directionalArrow.next");
 	var $directional_arrow_previous = $(".graph__wrapper .directionalArrow.previous");
@@ -17,7 +22,7 @@ $( document ).ready(function() {
 		if ( $(window).scrollTop() < 140 ) {
         	$directional_arrow_scroll.addClass("active");
 		}
-	  }, 2000);
+	  }, 4000);
 
     $(window).scroll(function(){
         if ($(window).scrollTop() < 140){

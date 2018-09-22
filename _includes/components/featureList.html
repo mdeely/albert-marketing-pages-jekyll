@@ -1,0 +1,23 @@
+{% assign featureList = include.content %}
+
+<section class="featureList">
+	<div class="featureList__title">{{ featureList.title }}</div>
+	<ul class="featureList__list">
+		{% for feature in featureList.staggerItems %}
+		<li class="featureList__item">
+			<div class="featureList__item-info">
+				<div class="featureList__item-supertitle">{{ feature.supertitle}}</div>
+				<div class="featureList__item-title">{{ feature.title}}</div>
+
+				{% if feature.cta_url %}
+				<a href="{{ staggerItem.cta_url }}" class="featureList__item-anchor button">{{ feature.cta_label}}</a>
+				{% endif %}
+				
+			</div>
+			<div class="featureList__item-visual">
+            	<img src="{{ baseurl }}/{{ feature.img_src }}"/>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+</section>

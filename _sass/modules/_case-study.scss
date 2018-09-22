@@ -172,13 +172,20 @@
 			}
 		}
 
+		img {
+			max-width: rem(600);
+			display: block;
+			margin: 0 auto;
+			height: auto;
+			max-height: rem(500);
+		}
+
 		.citation,
 		.caseStudy__info-citation {
 			white-space: pre-wrap;
-			color: $text-black--lighter_step_2;
+			color: lighten($text-black--lighter_step_2, 20%);
 			font-style: italic;
 			font-size: rem(15);
-			max-width: 90%;
 			margin: rem(20) auto 0 auto;
 		}
 	}
@@ -191,10 +198,19 @@
 	    text-align: center;
 	    max-width: rem(500);
 	    margin: 0 auto rem(30) auto;
+	    box-shadow: $shadow_depth_3;
 
 	    p {
 	    	margin: 0;
 
+			&::before {
+				content: open-quote;
+				font-family: serif;
+				font-size: 3em;
+				line-height: 0;
+				display: inline;
+				margin: 0 0 20px 0;
+			}
 	    }
 	}
 }

@@ -1,43 +1,43 @@
-.stagger {
+.featureList {
 	@include section-spacing;
 	margin: 0 auto;
 	max-width: $xxs-viewport;
 
-	.stagger__title {
+	.featureList__title {
 		@include fancy-title-medium;
 		text-align: center;
 		margin-bottom: rem(80);
 	}
 
-	.stagger__list {
+	.featureList__list {
 		display: flex;
 		flex-direction: column;
 
-		.stagger__item {
+		.featureList__item {
 			display: flex;
 			flex-direction: column-reverse;
 			align-items: center;
 			margin-bottom: rem(60);
 			padding: rem(30) 0;
 
-			.stagger__item-info {
+			.featureList__item-info {
 				text-align: center;
 
-				.stagger__item-supertitle {
+				.featureList__item-supertitle {
 					@include fancy-title-xs;
 					margin-bottom: rem(10);
 				}
 
-				.stagger__item-title {
+				.featureList__item-title {
 					@include title-medium;
 				}
 
-				.stagger__item-anchor{
+				.featureList__item-anchor{
 					margin-top: rem(30);
 				}
 			}
 
-			.stagger__item-visual {
+			.featureList__item-visual {
 				margin-bottom: rem(20);
 				max-width: rem(150);
 				width: rem(150);
@@ -53,44 +53,44 @@
 }
 
 @media only screen and (min-width: $s-viewport) {
-	.stagger {
+	.featureList {
 		max-width: $xxl-viewport;
 
-		.stagger__title {
+		.featureList__title {
 			margin-bottom: rem(80);
 		}
 
-		.stagger__list {
+		.featureList__list {
 
-			.stagger__item {
+			.featureList__item {
 				flex-direction: row-reverse;
 				margin-bottom: rem(80);
 
 				&:nth-child(even) {
 					flex-direction: row;
 
-					.stagger__item-info {
+					.featureList__item-info {
 						margin-right: rem(80);
 					}
 				}
 
-				.stagger__item-info {
+				.featureList__item-info {
 					flex: 1;
 					text-align: left;
 					margin-left: rem(80);
 
-					.stagger__item-supertitle {
+					.featureList__item-supertitle {
 					}
 
-					.stagger__item-title {
+					.featureList__item-title {
 					}
 
-					.stagger__item-anchor{
+					.featureList__item-anchor{
 						margin-top: rem(50);
 					}
 				}
 
-				.stagger__item-visual {
+				.featureList__item-visual {
 					flex: 1;
 					width: rem(450);
 					max-width: rem(600);

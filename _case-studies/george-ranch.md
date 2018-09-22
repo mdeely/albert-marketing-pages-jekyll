@@ -51,6 +51,8 @@ Mrs. Wilkening explained, “Our students really liked the extra practice and sa
 
 Overall, George Ranch has seen an increase in scores and pass rates in 19 different AP® courses since adopting Albert. They have also been able to expand their AP® program by increasing the number of students taking Advanced Placement® exams, and have also added 3 new AP® courses. 
 
+![An image](/assets/img/comic_1.png)
+
 # Reflection
 A multitude of cognitive studies have illustrated the importance of receiving feedback on learning and retention.  However, it has been proven that immediate feedback on practice exams (received right after a question is answered) is much more effective than delayed feedback (given all at once at the end of the practice exam) (Kulick & Kulick, 1988).  When comparing test performance, students who received immediate feedback demonstrated significantly higher scores than students who received delayed feedback (Epstein et al., 2002). Results of this study indicated that immediate feedback actively engages students and promotes correction of initially incorrect responses (Epstein et al., 2002).  At George Ranch High School, teachers were able to promote retention of advanced material through the use of rigorous and curriculum aligned AP® questions on Albert.
 

@@ -1,7 +1,7 @@
 .slideshow {
 	text-align: center;
-	padding-top: $section-padding;
-	padding-bottom: $section-padding;
+	padding-top: $container-spacing;
+	padding-bottom: $container-spacing;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -9,7 +9,6 @@
 	justify-content: center;
 
 	.slideshow__title {
-		margin-top: $section-padding;
 		@include fancy-title-medium;
 		margin-bottom: rem(15);
 		max-width: rem(500);
@@ -34,7 +33,7 @@
 		flex-direction: column;
 		z-index: 1;
 		max-width: rem(600);
-		padding-lefT: 4vw;
+		padding-left: 4vw;
 		padding-right: 4vw;
 
 		.slide {
@@ -69,7 +68,7 @@
 
 				.slide__visual{
 					transition: left .5s ease-in-out, opacity 1s ease-in-out;
-					transition-delay: .5s
+					transition-delay: .4s
 				}
 			}
 
@@ -141,6 +140,7 @@
     		box-shadow: $boxShadowDefault;
 			transition: box-shadow .1s ease-in-out;
 			border: 1px solid lighten($menuBorder, 5);
+			background-color: #FFFFFF;
 
 			&:before {
     			content: attr(data-tooltip);
@@ -192,7 +192,14 @@
 		}
 	}
 
-	@media only screen and (min-width: $m-viewport) {
+	// if directly below hero, flip
+	// if directly below hero and directly below another slideshow, normal
+	// if another slideshow follows, flip
+
+}
+
+@media only screen and (min-width: $m-viewport) {
+	.slideshow {
 		.slideshow__wrapper {
 			margin-top: rem(100);
 			max-width: initial;
@@ -221,9 +228,9 @@
 		}
 
 		.slide__nav {
-    		position: absolute;
+			position: absolute;
 
-    		.slide__link {
+			.slide__link {
 				$linkSize: 40;
 				width: rem($linkSize);
 				height: rem($linkSize);
@@ -237,8 +244,39 @@
 						bottom: rem($linkSize+10);
 					}
 				}
-    		}
+			}
 		}
 	}
-
 }
+
+//
+// Rules for flipping the display of the slideshow based on elements around it
+//
+
+@mixin slideshowDisplayFlip() {
+	.slideshow__wrapper {
+		.slide {
+			flex-direction: row-reverse;
+
+			.slide__info {
+				margin-right: 0;
+				margin-left: rem(100);
+			}
+		}
+
+		.slide__nav {
+			left: rem(600);
+		}
+	}
+}
+
+.slideshow {
+	&:nth-of-type(even) {
+		@include slideshowDisplayFlip();
+	}
+}
+
+.hero + .slideshow {
+	@include slideshowDisplayFlip();
+	background-color: $bgGrey;
+ }

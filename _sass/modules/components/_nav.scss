@@ -169,13 +169,34 @@ $nav-padding: rem(20);
 
 	    						&:hover {
 	    							color: $link;
+	    							transition: all 1s ease-in-out;
+
+	    							.nav__subitem-visual {
+    									background-color: $link;
+
+									    img {
+											width: 70%;
+									    	transition: width .1s ease-in-out;
+									    }
+	    							}
+
+		    						.nav__subitem-info-container {
+
+		    							.nav__subitem-title {
+		    								color: $link;	
+		    							}
+
+		    							.nav__subitem-description {
+		    								color: $text_grey;
+		    							}
+	    							}
 	    						}
 
     							.nav__subitem-visual {
 	    							position: relative;
-    								height: rem(50);
-    								max-width: rem(50);
-    								min-width: rem(50);
+    								height: rem(40);
+    								max-width: rem(40);
+    								min-width: rem(40);
 	    							margin-right: rem(20);
     								border-radius: 50%;
     								background-color: $danube-blue;
@@ -191,13 +212,14 @@ $nav-padding: rem(20);
 
 	    							img {
 									    max-height: 100%;
-									    width: 70%;
+									    width: 58%;
 									    margin: auto;
 									    top: 0;
 									    left: 0;
 									    right: 0;
 									    bottom: 0;
 									    position: absolute;
+									    transition: width .1s ease-in-out;
 	    							}
     							}
 
@@ -216,7 +238,7 @@ $nav-padding: rem(20);
 	    							.nav__subitem-description {
 	    								line-height: initial;
 	    								font-size: rem(13);
-	    								color: $oslo-grey;
+	    								color: $text_light_grey;
 	    							}
     							}
 	    					}
@@ -419,7 +441,7 @@ $nav-padding: rem(20);
 
 
 	    					> * {
-	    						padding: rem(40);
+	    						padding: rem(30) rem(35);
 
 	    						&:not(:first-child) {
 	    							border-left: 1px solid $iron-grey;
@@ -428,6 +450,8 @@ $nav-padding: rem(20);
 
 	    					.nav__subitem-group-title {
 	    						padding-left: 0;
+								border-bottom: 1px solid $menuBorder;
+								margin-bottom: rem(30);
 	    					}
 
 	    					li {
@@ -459,23 +483,6 @@ $nav-padding: rem(20);
 
 		    							.nav__subitem-description {
 		    								font-size: rem(14);
-		    							}
-	    							}
-
-	    							&:hover {
-	    								.nav__subitem-visual {
-	    									background-color: $link;
-	    								}
-
-			    						.nav__subitem-info-container {
-
-			    							.nav__subitem-title {
-			    								color: $link;	
-			    							}
-
-			    							.nav__subitem-description {
-			    								color: $link;
-			    							}
 		    							}
 	    							}
 	    						}

@@ -167,8 +167,8 @@ components:
       card_title: ACT® Science
       card_img_src: "heart_of_darkness.svg"
 
-# Staggered features
-- component_name: stagger
+# Feature List features
+- component_name: featureList
   staggerItems:
   - supertitle: Albert is…
     title: An instructional companion that personalizes and accelerates learning.
@@ -188,16 +188,4 @@ components:
 
 # Pre footer
 - component_name: preFooter
-  left:
-    img_src: "assets/img/random-img.svg"
-    title: Try Albert for free
-    description: Build confidence and educator buy-in with an Albert trial supported by a dedicated member of our Schools team.
-    cta_label: Apply
-    cta_url: left-cta
-  right:
-    img_src: "assets/img/random-img2.svg"
-    title: Get a consultation
-    description: Explore how Albert can help your school meet its instructional goals with one of our Schools team members.
-    cta_label: Request demo
-    cta_url: "https://www.albert.io/schools/request-demo"
 ---
