@@ -150,17 +150,22 @@
 					    	right: 0;
 					    	font-weight: 600;
 					    	font-size: rem(16);
-					    	letter-spacing: rem(1);
 					    	opacity: 0;
 							transform: translateY( rem(-30) );
 							transition: opacity .3s ease-in;
 							transition-delay: .2s;
     						color: $text-black--lighter_step_3;
 
+
 						&.inside-bar {
 					    		padding-top: rem(15);
 					    		color: #FFF;
 					    		transform: none;
+							    left: 0;
+							    right: 0;
+							    max-width: 106px;
+							    margin: auto;
+							    opacity: 1;
 							}
 					    }
 

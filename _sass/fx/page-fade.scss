@@ -1,5 +1,5 @@
 body {
-	.hero {
+	.hero.main {
 		$transitionDuration: .8s;
 
 		.hero__content {
@@ -35,7 +35,7 @@ body {
 	}
 
 	&.fade-out {
-		.hero {
+		.hero.main {
 			.hero__content {
 				.hero__info-container {
 

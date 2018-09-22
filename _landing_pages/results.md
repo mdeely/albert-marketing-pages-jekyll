@@ -16,6 +16,7 @@ components:
     tab_label: English
     data:
     - bar_value: 55
+      bar_value_label: Custom label
       bar_color: "#DD5566"
       group_label: National
 

@@ -1,7 +1,6 @@
 .featureList {
 	@include section-spacing;
 	margin: 0 auto;
-	max-width: $xxs-viewport;
 
 	.featureList__title {
 		@include fancy-title-medium;
@@ -12,6 +11,9 @@
 	.featureList__list {
 		display: flex;
 		flex-direction: column;
+		max-width: $xxs-viewport;
+		margin-left: auto;
+		margin-right: auto;
 
 		.featureList__item {
 			display: flex;
@@ -54,13 +56,13 @@
 
 @media only screen and (min-width: $s-viewport) {
 	.featureList {
-		max-width: $xxl-viewport;
 
 		.featureList__title {
 			margin-bottom: rem(80);
 		}
 
 		.featureList__list {
+			max-width: $xl-viewport;
 
 			.featureList__item {
 				flex-direction: row-reverse;

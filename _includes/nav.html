@@ -29,9 +29,9 @@
 									{% endif %}
 					   				 {% for subitem in subitem_group.subitems %}
 						      			<li>
-						      				<a href="/{{ subitem.url }}">
+						      				<a class="{{ subitem.domain | prepend: 'nav__subitem-anchor ' }}" href="/{{ subitem.url }}">
 												{% if subitem.icon_url %}
-						      						<div class=" {{ subitem.domain | prepend: 'nav__subitem-visual ' }} ">
+						      						<div class="nav__subitem-visual">
 						      							<img src="{{ baseurl }}/{{ site.asset_path }}/{{ subitem.icon_url }}">
 						      						</div>
 							      					<div class="nav__subitem-info-container">

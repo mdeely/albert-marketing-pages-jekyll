@@ -39,10 +39,17 @@
 						{% for data in graph.data %}
 				  			<div class="data__value-wrapper">
 				  				<div class="data__bar" style="background-color: {{ data.bar_color }}; height: {{ data.bar_value | append: '%' }}">
+
+				  					{% assign bar_value = data.bar_value | append: '%' %}
+
+			  						{% if data.bar_value_label %}
+			  							{% assign bar_value = data.bar_value_label %}
+			  						{% endif %}
+
 				  					{% if data.bar_value > 84 %}
-				  						<div class="data__value inside-bar">{{ data.bar_value | append: '%' }}</div>
-				  					{% else %}
-				  						<div class="data__value">{{ data.bar_value | append: '%' }}</div>
+				  						<div class="data__value inside-bar">{{ bar_value }}</div>
+				  					{% else %} 
+				  						<div class="data__value custom">{{ bar_value }}</div>
 				  					{% endif %}
 				  				</div>
 				  			</div>

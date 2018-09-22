@@ -163,7 +163,7 @@ $nav-padding: rem(20);
 							padding-right: rem(20);
 		    				color: $text_grey;
 
-	    					a {
+	    					.nav__subitem-anchor {
 	    						display: flex;
 	    						cursor: pointer;
 
@@ -192,6 +192,22 @@ $nav-padding: rem(20);
 	    							}
 	    						}
 
+								// Generate course color classes
+								@each $course-name, $course-color in $course-color-map {
+									&.#{$course-name} {
+
+										.nav__subitem-visual {
+											background-color: $course-color;
+										}
+
+										.nav__subitem-info-container {
+											.nav__subitem-title {
+												color: $course-color;
+											}
+										}
+									}
+								}
+
     							.nav__subitem-visual {
 	    							position: relative;
     								height: rem(40);
@@ -203,12 +219,6 @@ $nav-padding: rem(20);
     								overflow: hidden;
     								margin-top: rem(20);
 
-									// Generate course color classes
-									@each $course-name, $course-color in $course-color-map {
-										&.#{$course-name} {
-											background-color: $course-color;
-										}
-									}
 
 	    							img {
 									    max-height: 100%;
@@ -232,7 +242,8 @@ $nav-padding: rem(20);
 	    								@include title-xs;
 	    								font-weight: bold;
 	    								line-height: initial;
-	    								margin-bottom: rem(5);	
+	    								margin-bottom: rem(5);
+	    								color: $danube-blue;	
 	    							}
 
 	    							.nav__subitem-description {

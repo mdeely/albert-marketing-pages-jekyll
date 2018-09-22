@@ -1,8 +1,10 @@
 .comicStrip {
 	@include section-spacing($sides: false);
-	max-width: $xxl-viewport;
 	margin-left: auto;
 	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	.tabBar {
 		box-shadow: none;
@@ -36,6 +38,7 @@
 	}
 
 	.comicStrip__list {
+		max-width: $xxl-viewport;
 		padding-left: $container-spacing;
 		padding-right: $container-spacing;
 

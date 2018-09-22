@@ -1,6 +1,5 @@
 .featureGrid {
 	@include section-spacing;
-	max-width: $xxl-viewport;
 	margin: 0 auto;
 
 	.featureGrid__title {
@@ -21,7 +20,6 @@
 		    margin: 0 auto;
 			padding: rem(20);
 			border-radius: rem(10);
-			background-color: #FFFFFF;
 			margin-bottom: rem(40);
 
 			&:nth-child(odd) {
@@ -121,7 +119,7 @@
 				margin-right: 5%;
 
 				&:nth-child(odd) {
-					background-color: #FFFFFF;
+					background-color: transparent;
 				}
 
 				.featureGrid__item-visual {
