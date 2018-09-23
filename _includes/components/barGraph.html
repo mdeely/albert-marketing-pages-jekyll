@@ -3,7 +3,9 @@
 <section class="barGraph">
 	<div class="component__info-wrapper">
 		<div class="component__title">{{ graph.component_title }}</div>
-		<div class="component__description">{{ graph.component_description }}</div>
+		{% if graph.component_description %}
+			<div class="component__description">{{ graph.component_description }}</div>
+		{% endif %}
 	</div>
 
 	<div class="graph__wrapper">
@@ -15,9 +17,9 @@
 					{% for graph in graph.graphs %}
 						<li class="tabBar__item">
 					         {% if forloop.index == 1 %}
-								<a href="#{{ graph.tab_label | slugify }}" class="tabBar__anchor active">{{ graph.tab_label}}</a>
+								<a href="#{{ graph.tab_label | append: include.component_index | slugify }}" class="tabBar__anchor active">{{ graph.tab_label}}</a>
 					         {% else %}
-								<a href="#{{ graph.tab_label | slugify }}" class="tabBar__anchor">{{ graph.tab_label}}</a>
+								<a href="#{{ graph.tab_label | append: include.component_index | slugify }}" class="tabBar__anchor">{{ graph.tab_label}}</a>
 					         {% endif %}
 						</li>
 			  		{% endfor %}
@@ -27,9 +29,9 @@
 	  	<ul class="graphs">
 			{% for graph in graph.graphs %}
 				{% if forloop.index == 1 %}
-					<li id="{{ graph.tab_label | slugify }}" class="graph__item active">
+					<li id="{{ graph.tab_label | append: include.component_index | slugify }}" class="graph__item active">
 				{% else %}
-					<li id="{{ graph.tab_label | slugify }}" class="graph__item">
+					<li id="{{ graph.tab_label | append: include.component_index | slugify }}" class="graph__item">
 				{% endif %}
 					<div class="data__title">{{ graph.graph_title }}</div>
 			  		<div class="data__info-container">

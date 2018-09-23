@@ -6,11 +6,21 @@
     {% for tabBar in tabBar.tabBarItems %}
       <li class="tabBar__item">
         {% if tabBar.url %} 
-          {% if forloop.index == 1 %}
+
+        {% if tabBar.status %}
+          {% if tabBar.status == "active" %}
             <a href="{{ tabBar.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% else %}
+            <a href="{{ tabBar.url }}" class="{{ anchorClass }}" >
+          {% endif %}
+        {% else %}
+          {% if forloop.index == 1 %}
+            <a href="{{ tabBar.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+            {% else %}
             <a href="{{ tabBar.url }}" class="{{ anchorClass }}">
           {% endif %}
+        {% endif %}
+
         {% else %}
           {% if forloop.index == 1 %}
             <a href="#{{ tabBar.label | slugify }}" class="{{ anchorClass | append: " " | append: "active" }}" >

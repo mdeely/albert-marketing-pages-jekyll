@@ -20,23 +20,23 @@ components:
     domain_cta_url: ""
     courseCards:
     - card_group: ela
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/heart_of_darkness.svg"
       card_title: Elements of a Sentence
 
     - card_group: ela
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/1984.svg"
       card_title: Reading Blueprints
 
     - card_group: ela
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/acvanced_placement_physics.svg"
       card_title: Leveled Reading in History, Politics, and Biography
 
     - card_group: ela
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_biology.svg"
       card_title: Leveled Reading in Science and Technology
 
     - card_group: ela
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_computer_science_p.svg"
       card_title: Essential Readings
 
   - domain: Math
@@ -44,23 +44,23 @@ components:
     domain_cta_url: ""
     courseCards:
     - card_group: math
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/bret_harte.svg"
       card_title: "Mastery Math: Algebra 1"
 
     - card_group: math
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/all_quiet_on_the_western_front.svg"
       card_title: "Mastery Math: Algebra 2"
 
     - card_group: math
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_psychology.svg"
       card_title: "Mastery Math: Geometry"
 
     - card_group: math
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_microeconomics.svg"
       card_title: "Mastery Math: Pre-Algebra"
 
     - card_group: math
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_french_language.svg"
       card_title: "Mastery Math: Precalculus"
 
   - domain: Science
@@ -69,27 +69,27 @@ components:
     courseCards:
     - card_group: science
       card_title: General Biology
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/heart_of_darkness.svg"
 
     - card_group: science
       card_title: General Chemistry
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/heart_of_darkness.svg"
 
     - card_group: science
       card_title: General Physics
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/heart_of_darkness.svg"
 
     - card_group: science
       card_title: Intermediate NGSS
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/heart_of_darkness.svg"
 
     - card_group: science
       card_title: NGSS Earth and Space Sciences
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/heart_of_darkness.svg"
 
     - card_group: science
       card_title: NGSS Life Sciences
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/heart_of_darkness.svg"
 
 # Course preview
 - component_name: coursePreview
@@ -103,23 +103,23 @@ components:
     courseCards:
     - card_group: science
       card_title: AP® Computer Science Principles
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_computer_science_p.svg"
 
     - card_group: math
       card_title: AP® English Language
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_microeconomics.svg"
 
     - card_group: math
       card_title: AP® Physics 1 & 2
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_psychology.svg"
 
     - card_group: math
       card_title: AP® US Government
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_world_history.svg"
 
     - card_group: math
       card_title: AP® US History
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_french_language.svg"
 
   - domain: SAT
     domain_description: "Coverage of all SAT and SAT subject tests"
@@ -128,24 +128,24 @@ components:
     courseCards:
     - card_group: science
       card_title: SAT® Math
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/acvanced_placement_physics.svg"
 
     - card_group: science
       card_title: SAT® Reading
 
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_biology.svg"
 
     - card_group: science
       card_title: SAT® Writing
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_computer_science_p.svg"
 
     - card_group: science
       card_title: SAT® Subject Test in Math 1 & 2
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_french_language.svg"
 
     - card_group: science
       card_title: SAT® Subject Test in U.S. History
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_microeconomics.svg"
 
   - domain: ACT®
     cta_label: View all AP® Subjects
@@ -153,19 +153,19 @@ components:
     courseCards:
     - card_group: science
       card_title: ACT® English
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/acvanced_placement_physics.svg"
 
     - card_group: science
       card_title: ACT® Math
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_microeconomics.svg"
 
     - card_group: science
       card_title: ACT® Reading
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_french_language.svg"
 
     - card_group: science
       card_title: ACT® Science
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "assets/img/subject_icons/advanced_placement_biology.svg"
 
 # Feature List 
 - component_name: featureList

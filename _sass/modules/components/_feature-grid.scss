@@ -1,5 +1,6 @@
 .featureGrid {
 	@include section-spacing;
+	// padding-bottom: 0;
 	margin: 0 auto;
 
 	.featureGrid__title {
@@ -20,7 +21,8 @@
 		    margin: 0 auto;
 			padding: rem(20);
 			border-radius: rem(10);
-			margin-bottom: rem(40);
+			margin-bottom: rem(20);
+			margin-top: rem(20);
 			background-color: #FFFFFF;
 
 			&:nth-child(odd) {
@@ -144,6 +146,18 @@
 			.featureGrid__list {
 				.featureCards__item {
 					background-color: #FFFFFF;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $s-viewport) {
+	.featureGrid {
+		.featureGrid__list {
+			.featureGrid__item {
+				&:nth-child(odd) {
+					background-color: transparent;
 				}
 			}
 		}

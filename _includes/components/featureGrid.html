@@ -5,7 +5,9 @@
 {% else %}
 <section class="featureGrid">
 {% endif %}
+	{% if featureGrid.title %}
 	<div class="featureGrid__title">{{ featureGrid.title }}</div>
+	{% endif %}
 		<ul class="featureGrid__list">
 			{% for featureGridItem in featureGrid.featureGridItems %}
 				<li class="featureGrid__item">

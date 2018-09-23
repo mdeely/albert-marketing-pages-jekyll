@@ -10,6 +10,7 @@ components:
   cta_url: submit-application
   img_src: "assets/img/hero/pilot-program-hero.svg"
 
+# Feature Grid
 - component_name: featureGrid
   featureGridItems:
   - img_src: "assets/img/random-img3.svg"

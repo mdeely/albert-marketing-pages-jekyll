@@ -7,7 +7,7 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		max-width: $xl-viewport;
+		max-width: $m-viewport;
 		margin-right: auto;
 		margin-left: auto;
 
@@ -18,7 +18,7 @@
 			.salesRoster__title {
 				@include title-large;
 				margin-bottom: rem(40);
-				color: $text_grey;
+				color: $link;
 			}
 
 			.salesRoster__description {
@@ -55,17 +55,18 @@
 			    }
 
 				.salesRoster__item {
-					margin-bottom: rem(50);
-					margin-top: rem(25);
+					margin-bottom: rem(40);
+					margin-top: rem(20);
 				    margin-left: rem(30);
 				    margin-right: rem(30);
 
 				    &:hover {
 						.salesRoster__profile {
-							.salesRoster__profile-img {
-								box-shadow: $shadow_depth_4, $shadow_depth_6;
-								transform: scale(1.2);
+							.salesRoster__profile-visual {
+								box-shadow: $shadow_depth_4, $shadow_depth_6, $shadow_depth_6;
+								transform: scale(1.22);
 								transition: all .2s ease-in-out;
+								background-size: 110%;
 							}
 
 							.salesRoster__caption {
@@ -77,17 +78,19 @@
 				    }
 
 					.salesRoster__profile {
-						.salesRoster__profile-img {
+						.salesRoster__profile-visual {
 							width: rem(120);
-							height: auto;
+							height: rem(120);
 							border-radius: 100%;
-							box-shadow: $shadow_depth_2, $shadow_depth_6;
+							box-shadow: $shadow_depth_2, $shadow_depth_4, $shadow_depth_6;
 							transform: scale(1);
 							transition: all .1s ease-in-out;
+							background-position: center;
+							background-size: 100%;
 						}
 
 						.salesRoster__caption {
-							margin-top: rem(20);
+							margin-top: rem(25);
 							font-weight: 400;
 							color: $text-black--lighter_step_2;
 						}

@@ -68,7 +68,7 @@
 
 				.slide__visual{
 					transition: left .5s ease-in-out, opacity 1s ease-in-out;
-					transition-delay: .4s
+					transition-delay: .3s
 				}
 			}
 
@@ -157,7 +157,6 @@
 				border-radius: rem(5);
 				opacity: 0;
 				white-space: nowrap;
-				font-weight: 200;
     			box-shadow: $shadow_depth_4;
     			pointer-events: none;
 			}

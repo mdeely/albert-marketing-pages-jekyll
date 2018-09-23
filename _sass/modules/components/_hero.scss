@@ -1,9 +1,30 @@
-.mainNav + .tabBar + .hero {
+@mixin smallHero() {
 	padding-top: 0;
+	padding-bottom: 0;
+	// box-shadow: 0 1px 40px rgba(black, 0.1);
 
 	.hero__content {
-		max-height: rem(700);
-	}	
+		height: auto;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		justify-content: center;
+
+		.hero__info-container {
+			margin-top: 0;
+		}
+	}
+
+	.hero__visual {
+		max-width: rem(600);
+
+		@media only screen and (min-width: $s-viewport) {
+    		min-height: rem(400);
+		}
+	}
+}
+
+.mainNav + .tabBar + .hero {
+	@include smallHero();
 }
 
 .hero {
@@ -61,30 +82,18 @@
 	}
 
 	&:not(.main) {
-		padding-top: 0;
-		padding-bottom: 0;
-		// box-shadow: 0 1px 40px rgba(black, 0.1);
+		@include smallHero();
+	}
 
+	& + .hero {
 		.hero__content {
-			height: auto;
-   			padding-top: 5rem;
-    		padding-bottom: 5rem;
-    		justify-content: center;
+			flex-direction: row-reverse;
 
-			.hero__info-container {
-				margin-top: 0;
-			}
-		}
-
-		.hero__visual {
-    		max-width: rem(600);
-
-			@media only screen and (min-width: $s-viewport) {
-	    		min-height: rem(400);
+			.hero__visual {
+    			margin-right: rem(100);
 			}
 		}
 	}
-
 }
 
 @media only screen and (min-width: $xs-viewport) {
@@ -145,18 +154,8 @@
 	}
 }
 
-// @media only screen and (min-width: $m-viewport) {
-// 	$calcNavHeight: $nav-height*1.3333;
-// 	.hero {
-// 		.hero__content {
-// 			height: calc(100vh - #{$calcNavHeight});
-// 		}
-// 	}
-// }
-
 @media only screen and (min-width: $xxl-viewport) {
 	.hero {
-
 		.hero__content {
 			.hero__info-container {
 				.hero__title {

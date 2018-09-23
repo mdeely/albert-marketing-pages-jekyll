@@ -114,7 +114,7 @@ $( document ).ready(function() {
 
 
 	// define elements to bind click event to
-	var anchor = ".tabBar__anchor";
+	var anchor = ".tabBar__anchor[href*='#']";
 
 	$(anchor).on('click', handleAnchorClick);
 
@@ -152,10 +152,16 @@ $( document ).ready(function() {
 	function updateDisplay(anchor) {
 		// find object's scope
 		var anchorParent = $(anchor).parents("section");
+		var parentList = $(anchor).parents(".tabBar__list");
+
 		// get that object's href
 		var anchorHref = $(anchor).attr("href");
 		// find any additional targets	
 		var additionalTargets = $("[data-additional-target='"+anchorHref+"']");
+
+		var myScrollPos = $(anchor).offset().left + $(anchor).outerWidth(true)/2 + $(parentList).scrollLeft() - $(parentList).width()/2;
+
+		$(parentList).animate({scrollLeft: myScrollPos}, 300);
 
 		// if ( $(anchorParent).hasClass("coursePreview") ) {
 		// 	var activeList = $(anchorParent).find(".coursePreview__card-list.active");

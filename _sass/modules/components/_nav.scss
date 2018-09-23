@@ -171,7 +171,12 @@ $nav-padding: rem(20);
 
 	    						&:hover {
 	    							color: $link;
-	    							transition: all 1s ease-in-out;
+	    							// transition: all 1s ease-in-out;
+
+	    							a {
+	    								color: $link;
+	    								
+	    							}
 
 	    							.nav__subitem-visual {
     									background-color: $link;

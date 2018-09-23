@@ -69,6 +69,7 @@
 
 @mixin make-fancy {
 	font-family: 'All Round Gothic', 'Futura';
+	color: $link !important;
 }
 
 @mixin page-title() {

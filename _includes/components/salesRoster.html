@@ -13,11 +13,10 @@
 		</div>
 		<div class="salesRoster__visuals">
 			<ul class="salesRoster__list">
-
 				{% for person in salesRoster.salesRosterItems %}
 				<li class="salesRoster__item">
 					<figure class="salesRoster__profile">
-						<img src="{{ baseurl }}/{{ person.profile_img }}" class="salesRoster__profile-img"></img>
+						<div style="background-image: url('../{{ person.profile_img }}')" class="salesRoster__profile-visual"></div>
 						<figcaption class="salesRoster__caption">{{ person.name }}</figcaption>
 					</figure>
 				</li>
