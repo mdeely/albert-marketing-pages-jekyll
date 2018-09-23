@@ -7,7 +7,10 @@
 <section id={{ "slideshow-" | append: slideshow_index }}" class="slideshow">
 
 	<div class="slideshow__title">{{ slideshow.title }}</div>
+
+	{% if slideshow.description %}
 	<div class="slideshow__description">{{ slideshow.description }}</div>
+	{% endif %}
 
 	<div class="slideshow__wrapper">
 		<ul class="slides">

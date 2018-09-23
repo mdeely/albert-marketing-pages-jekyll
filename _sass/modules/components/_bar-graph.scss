@@ -15,10 +15,9 @@
 		}
 
 		.component__description {
-			margin-bottom: rem(40);
-	    	margin: 0 auto;
-	    	line-height: rem(25);
-	    	color: $text_grey;
+			@include component-description;
+			text-align: left;
+			margin-left: 0;
 		}
 	}
 

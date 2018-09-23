@@ -69,7 +69,6 @@
 
 @mixin make-fancy {
 	font-family: 'All Round Gothic', 'Futura';
-	color: $link !important;
 }
 
 @mixin page-title() {
@@ -198,30 +197,15 @@
 }
 
 
-// @mixin large-title() {
-// 	@include base-text-styles();
-// 	font-size: em(28);
-// }
-
-// @mixin medium-title() {
-// 	@include base-text-styles();
-// 	font-size: em(24);
-// }
-
-// @mixin label-title() {
-// 	@include base-text-styles();
-// 	@include make-fancy();
-// 	color: $text-black--lighter_step_1;
-// 	font-weight: 600;
-// 	line-height: em(64);
-// 	font-size: em(20);
-// 	text-transform: uppercase;
-// 	letter-spacing: .65px;
-
-// 	@media only screen and (max-width: $s-viewport) {
-// 		font-size: rem(16);
-// 	}
-// }
+@mixin component-description {
+	text-align: center;
+	max-width: rem(500);
+	line-height: 1.5em;
+	color: lighten($text-black, 30%);
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: rem(80);
+}
 
 @mixin paragraph-small() {
 	font-size: em(14);

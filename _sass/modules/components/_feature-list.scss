@@ -13,9 +13,7 @@
 	}
 
 	.featureList__description {
-		max-width: rem(500);
-		text-align: center;
-		line-height: 1.5em;
+		@include component-description;
 	}
 
 	.featureList__list {
@@ -24,7 +22,6 @@
 		max-width: $xxs-viewport;
 		margin-left: auto;
 		margin-right: auto;
-   		margin-top: rem(80);
 
 		.featureList__item {
 			display: flex;

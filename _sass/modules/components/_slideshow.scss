@@ -10,13 +10,16 @@
 
 	.slideshow__title {
 		@include fancy-title-medium;
-		margin-bottom: rem(15);
+		margin-bottom: rem(80);
 		max-width: rem(500);
+
+		& + .slideshow__description {
+			margin-top: rem(-40);
+		}
 	}
 
 	.slideshow__description {
-		margin-bottom: (15);
-		max-width: rem(500);
+		@include component-description;
 	}
 
 	.slideshow__wrapper {
@@ -202,7 +205,6 @@
 @media only screen and (min-width: $m-viewport) {
 	.slideshow {
 		.slideshow__wrapper {
-			margin-top: rem(100);
 			max-width: initial;
 		}
 

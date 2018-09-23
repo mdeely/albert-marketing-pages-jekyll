@@ -43,7 +43,9 @@
 		padding-right: $container-spacing;
 
 		.comicStrip__item {
-			margin: rem(20) 0;
+			margin-top: rem(20);
+			margin-left: 0;
+			margin-right: 0;
 			display: none;
 
 			&.active {

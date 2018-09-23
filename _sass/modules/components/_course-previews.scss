@@ -22,11 +22,9 @@
 	}
 
 	.coursePreview__group-description {
+		@include component-description;
 		margin-bottom: rem(20);
 		display: none;
-		text-align: center;
-		padding-left: 4vw;
-		padding-right: 4vw;
 
 		&.active {
 			display: block;

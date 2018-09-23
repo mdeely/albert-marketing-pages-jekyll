@@ -2,12 +2,20 @@
 
 {% if interstitial.component_large == true %}
 <section class="interstitial interstitial__large">
-	<div class="interstitial__title">{{ interstitial.title }}</div>
-	<a class="interstitial__anchor button">{{ interstitial.cta_label}}</a>
+	{% if interstitial.title %}
+		<div class="interstitial__title">{{ interstitial.title }}</div>
+	{% endif %}
+	{% if interstitial.cta_label %}
+		<a class="interstitial__anchor button">{{ interstitial.cta_label}}</a>
+	{% endif %}
 {% else %}
 <section class="interstitial interstitial__small">
-	<a class="interstitial__anchor button--blue">{{ interstitial.cta_label}}</a>
-	<div class="interstitial__description">{{ interstitial.description }}</div>
+	{% if interstitial.cta_label %}
+		<a class="interstitial__anchor button--blue">{{ interstitial.cta_label}}</a>
+	{% endif %}
+	{% if interstitial.description %}
+		<div class="interstitial__description">{{ interstitial.description }}</div>
+	{% endif %}
 {% endif %}
 
 </section>

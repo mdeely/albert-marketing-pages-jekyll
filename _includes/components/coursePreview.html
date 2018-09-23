@@ -3,7 +3,9 @@
 {% assign cardListClass = "coursePreview__card-list" %}
 
 <section class="coursePreview coursePreview-{{ index }}">
+	{% if coursePreview.title %}
 	<div class="coursePreview__title">{{ coursePreview.title }}</div>
+	{% endif %}
 	<div class="coursePreview__group-title">{{ coursePreview.group_title }}</div>
 	<div class="tabBar">
 	  	<ul class="tabBar__list">
