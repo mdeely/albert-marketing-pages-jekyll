@@ -342,7 +342,7 @@ $( document ).ready(function() {
 	var navSubmenu = ".nav__dropdown";
 
 	// Bind link classes to click event
-	$(navSubmenu).on('mouseenter', checkSubmenuDisplay);
+	// $(navSubmenu).on('mouseenter', checkSubmenuDisplay);
 	// Bind link classes to click event
 	$(navSubmenu).on('click', updateSubmenuDisplay);
 

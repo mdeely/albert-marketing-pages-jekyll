@@ -86,6 +86,7 @@ $nav-padding: rem(20);
 			flex-direction: column;
 			overflow-y: scroll;
   			-webkit-overflow-scrolling: touch;
+  			overflow: visible;
 
 		    &.active {
 		    	display: flex;
@@ -153,6 +154,7 @@ $nav-padding: rem(20);
 						margin-left: rem(-20);
     					pointer-events: none;
 	    				color: $text_grey;
+	    				z-index: $nav-index;
 
 						.nav__subitem-group-title {
 	    					@include fancy-title-small;

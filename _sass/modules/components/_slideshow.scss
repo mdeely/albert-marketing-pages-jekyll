@@ -94,7 +94,7 @@ $topOffset: 50;
 				.slide__title {
 					@include title-medium;
 					pointer-events: none;
-					font-weight: 800;
+					font-weight: 400;
 				}
 
 				.slide__description {
@@ -117,6 +117,7 @@ $topOffset: 50;
 				transition: left .5s ease-in-out, opacity 1s ease-in-out;
 				margin: rem(40) 0;
 				width: 100%;
+				min-height: rem(400);
 
 				&.strip_styling {
 					border-radius: 0;
@@ -246,7 +247,6 @@ $topOffset: 50;
 					margin-right: rem(100);
 					min-width: rem(400);
 					max-width: rem(400);
-					transform: translateY( rem($topOffset) );
 
 					.slide__description {
 						text-align: left;
@@ -272,6 +272,16 @@ $topOffset: 50;
 						bottom: rem($linkSize+10);
 					}
 				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $l-viewport) {
+	.slideshow {
+		.slides {
+			.slide_info {
+				transform: translateY( rem($topOffset) );
 			}
 		}
 	}

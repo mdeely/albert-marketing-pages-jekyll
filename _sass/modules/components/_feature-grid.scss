@@ -121,11 +121,6 @@
 
 @media only screen and (min-width: $s-viewport) {
 	.featureGrid {
-
-		.featureGrid__title {
-			margin-bottom: rem(140);
-		}
-
 		.featureGrid__list {
 			flex-direction: row;
 			justify-content: center;
@@ -167,10 +162,12 @@
 
 @media only screen and (min-width: $m-viewport) {
 	.featureGrid {
+		padding-bottom: 0;
+
 		.featureGrid__list {
 			.featureGrid__item {
-				margin-left: 10%;
-				margin-right: 10%;
+				margin-left: 8%;
+				margin-right: 8%;
 			}
 		}
 	}
@@ -179,6 +176,7 @@
 
 @media only screen and (min-width: $xxl-viewport) {
 	.featureGrid {
+
 		.featureGrid__list {
 			max-width: 100%;
 
