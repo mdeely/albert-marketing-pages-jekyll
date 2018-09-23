@@ -13,8 +13,8 @@ $( document ).ready(function() {
 
 	// Scroll down arrow from Hero
 	var $directional_arrow_scroll = $(".directionalArrow.scrollTo");
-	var $directional_arrow_next = $(".graph__wrapper .directionalArrow.next");
-	var $directional_arrow_previous = $(".graph__wrapper .directionalArrow.previous");
+	// var $directional_arrow_next = $(".graph__wrapper .directionalArrow.next");
+	// var $directional_arrow_previous = $(".graph__wrapper .directionalArrow.previous");
 
 	setTimeout(
 	  function() 
@@ -49,68 +49,68 @@ $( document ).ready(function() {
 
     // barGraph
 
-    $directional_arrow_next.on('click', handleDirectionClick);
-    $directional_arrow_previous.on('click', handleDirectionClick);
+    // $directional_arrow_next.on('click', handleDirectionClick);
+    // $directional_arrow_previous.on('click', handleDirectionClick);
 
-    function handleDirectionClick(event) {
-		event.preventDefault();
-		var element = event.target;
-		var sectionParent = $(element).parents("section");
+  //   function handleDirectionClick(event) {
+		// event.preventDefault();
+		// var element = event.target;
+		// var sectionParent = $(element).parents("section");
 
-		var tabBarAnchors = $(sectionParent).find("a:not(.next, .previous)");
-		// var tabBarAnchorCount = $(tabBarAnchors).length;
+		// var tabBarAnchors = $(sectionParent).find("a:not(.next, .previous)");
+		// // var tabBarAnchorCount = $(tabBarAnchors).length;
 
-		var $activeAnchor = $(sectionParent).find("a.active");
+		// var $activeAnchor = $(sectionParent).find("a.active");
 
-		var tabBarItem = $activeAnchor.parent("li")
+		// var tabBarItem = $activeAnchor.parent("li")
 
-		if ( $(event.target).hasClass("next") ) {
-			selectNext(tabBarItem, sectionParent);
-		}
-		else if ( $(event.target).hasClass("previous") ) {
-			selectPrevious(tabBarItem, sectionParent);
-		}
-    }
+		// if ( $(event.target).hasClass("next") ) {
+		// 	selectNext(tabBarItem, sectionParent);
+		// }
+		// else if ( $(event.target).hasClass("previous") ) {
+		// 	selectPrevious(tabBarItem, sectionParent);
+		// }
+  //   }
 
-    function selectNext(element, parent) {
-    	var directionalArrowPrev = $(parent).find(".directionalArrow.previous");
-    	var directionalArrowNext = $(parent).find(".directionalArrow.next");
+  //   function selectNext(element, parent) {
+  //   	var directionalArrowPrev = $(parent).find(".directionalArrow.previous");
+  //   	var directionalArrowNext = $(parent).find(".directionalArrow.next");
 
-    	if ( $(element).next().is("[data-index='last']") ) {
-    		$(directionalArrowNext).addClass("disabled");
-			return
-    	}
+  //   	if ( $(element).next().is("[data-index='last']") ) {
+  //   		$(directionalArrowNext).addClass("disabled");
+		// 	return
+  //   	}
 
-    	var $nextItem = $(element).next();
-		var nextAnchor = $nextItem.children("a");
-		$(parent).find("a.active").removeClass("active");
+  //   	var $nextItem = $(element).next();
+		// var nextAnchor = $nextItem.children("a");
+		// $(parent).find("a.active").removeClass("active");
 
-		$(directionalArrowNext).removeClass("disabled");
-		$(directionalArrowPrev).removeClass("disabled");
+		// $(directionalArrowNext).removeClass("disabled");
+		// $(directionalArrowPrev).removeClass("disabled");
 
-		updateDisplay(nextAnchor);
-    };
+		// updateDisplay(nextAnchor);
+  //   };
 
-    function selectPrevious(element, parent) {
-    	var directionalArrowPrev = $(parent).find(".directionalArrow.previous");
-    	var directionalArrowNext = $(parent).find(".directionalArrow.next");
+   //  function selectPrevious(element, parent) {
+   //  	var directionalArrowPrev = $(parent).find(".directionalArrow.previous");
+   //  	var directionalArrowNext = $(parent).find(".directionalArrow.next");
 
-    	if ( $(element).prev().length > 0 ) {
-	    	var $prevItem = $(element).prev();
-			var prevAnchor = $prevItem.children("a");
-			$(parent).find("a.active").removeClass("active");
+   //  	if ( $(element).prev().length > 0 ) {
+	  //   	var $prevItem = $(element).prev();
+			// var prevAnchor = $prevItem.children("a");
+			// $(parent).find("a.active").removeClass("active");
 
-    		$(directionalArrowNext).removeClass("disabled");
-    		$(directionalArrowPrev).removeClass("disabled");
+   //  		$(directionalArrowNext).removeClass("disabled");
+   //  		$(directionalArrowPrev).removeClass("disabled");
 
-			// if activeTab.offsetLeft is equal to or less than the width of the container;
-			updateDisplay(prevAnchor);
+			// // if activeTab.offsetLeft is equal to or less than the width of the container;
+			// updateDisplay(prevAnchor);
 
-			return
-    	}
-    	$(directionalArrowPrev).addClass("disabled");
-    	return
-    };
+			// return
+   //  	}
+   //  	$(directionalArrowPrev).addClass("disabled");
+   //  	return
+   //  };
 
 
 	// define elements to bind click event to
@@ -214,9 +214,10 @@ $( document ).ready(function() {
 	// slideshow
 	var $slide = $(".slide__link");
 
-	$slide.on('click swipeLeft', updateSlideshowDisplay);
+	$slide.on('click', updateSlideshowDisplay);
 
 	function updateSlideshowDisplay(event) {
+		console.log("swiped");
 		event.preventDefault();
 
 		var $link = $(event.target);

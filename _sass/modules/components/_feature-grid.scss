@@ -24,6 +24,14 @@
 			margin-top: rem(20);
 			background-color: #FFFFFF;
 
+			&:hover {
+				.featureGrid__item-visual {
+					transform: scale(1.05);
+					transition: transform .2s ease-in-out;
+				}
+			}
+
+
 			&:nth-child(odd) {
 				background-color: $bgGrey;
 			}
@@ -31,6 +39,7 @@
 			.featureGrid__item-visual {
 				height: rem(120);
 				margin-bottom: rem(50);
+				transition: transform .2s ease-in-out;
 
 				img {
 					height: 100%;
@@ -57,7 +66,7 @@
 
 	&.featureCards {
 
-		$imgHeight: 150;
+		$imgHeight: 120;
 
 		.featureGrid__title {
 			text-align: center;
@@ -85,9 +94,9 @@
 					border-radius: 50%;
 					overflow: hidden;
 					background-color: #FFFFFF;
-					box-shadow: $shadow_depth_4;
-					width: rem($imgHeight);
 					height: rem($imgHeight);
+					width: rem($imgHeight);
+					box-shadow: $shadow_depth_4;
 					top: rem(-($imgHeight/2));
 					left: 0;
 					right: 0;
@@ -109,6 +118,7 @@
 	}
 }
 
+
 @media only screen and (min-width: $s-viewport) {
 	.featureGrid {
 
@@ -129,9 +139,9 @@
 				margin-right: 5%;
 				background-color: transparent;
 
-				// &:nth-child(odd) {
-				// 	background-color: transparent;
-				// }
+				&:nth-child(odd) {
+					background-color: transparent;
+				}
 
 				.featureGrid__item-visual {
 					height: rem(160);
@@ -155,17 +165,17 @@
 	}
 }
 
-@media only screen and (min-width: $s-viewport) {
+@media only screen and (min-width: $m-viewport) {
 	.featureGrid {
 		.featureGrid__list {
 			.featureGrid__item {
-				&:nth-child(odd) {
-					background-color: transparent;
-				}
+				margin-left: 10%;
+				margin-right: 10%;
 			}
 		}
 	}
 }
+
 
 @media only screen and (min-width: $xxl-viewport) {
 	.featureGrid {

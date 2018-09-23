@@ -68,7 +68,7 @@
 }
 
 @mixin make-fancy {
-	font-family: 'All Round Gothic', 'Futura';
+	font-family: all_round_gothic, 'Futura';
 }
 
 @mixin page-title() {
@@ -119,6 +119,10 @@
 
 	@media only screen and (min-width: $s-viewport) {
 		font-size: rem(28);
+ 	}
+
+	@media only screen and (min-width: $xl-viewport) {
+		font-size: rem(34);
  	}
 }
 

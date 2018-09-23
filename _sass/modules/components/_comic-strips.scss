@@ -13,6 +13,7 @@
 			justify-content: left;
 			padding-top: rem(20);
 			padding-bottom: rem(20);
+			padding-left: $container-spacing;
 
 			.tabBar__item {
 				.tabBar__anchor {
@@ -39,8 +40,8 @@
 
 	.comicStrip__list {
 		max-width: rem(2200);
-		padding-left: $container-spacing;
-		padding-right: $container-spacing;
+		padding-left: $container-spacing/2;
+		padding-right: $container-spacing/2;
 
 		.comicStrip__item {
 			margin-top: rem(20);
@@ -70,7 +71,7 @@
 				.comicPanel__item {
 					width: 25%;
 					text-align: center;
-					border-right: 1px solid $text_light_grey;
+					border-bottom: 2px solid $text_light_grey;
 					min-width: rem(250);
 					flex: 1;
 
@@ -86,6 +87,7 @@
 
 					&:last-child {
 						margin-right: 0;
+						border-bottom: 0px solid transparent;
 						border-right: 0px solid transparent;
 					}
 
@@ -125,6 +127,31 @@
 		}
 	}
 }
+
+@media only screen and (min-width: $xs-viewport) {
+	.comicStrip {
+		.comicStrip__list {
+			.comicStrip__item {
+				.comicPanel__list {
+					.comicPanel__item {
+						border-bottom: 0px solid transparent;
+						border-right: 1px solid $text_light_grey;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $m-viewport) {
+	.comicStrip {
+		.comicStrip__list {
+			padding-left: $container-spacing;;
+			padding-right: $container-spacing;
+		}
+	}
+}
+
 
 @media only screen and (min-width: $xxl-viewport) {
 	.comicStrip {

@@ -47,6 +47,7 @@
 				@include super-title;
 				margin-bottom: rem(10);
 				letter-spacing: rem(.8);
+				color: lighten($secondary_blue, 30%);
 			}
 
 			.hero__title {
@@ -164,6 +165,10 @@
 				.hero__description {
 					max-width: rem(700);
 					font-size: rem(24);
+				}
+
+				.hero__cta {
+					margin-top: rem(100);
 				}
 			}
 		}

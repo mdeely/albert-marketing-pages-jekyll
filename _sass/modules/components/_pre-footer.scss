@@ -9,8 +9,8 @@
     	background-color: $primary-green;
     	padding-left: $container-spacing;
     	padding-right: $container-spacing;
-    	padding-top: $section-padding;
-    	padding-bottom: $section-padding;
+    	padding-top: $section-padding-mobile;
+    	padding-bottom: $section-padding-mobile;
     	display: flex;
     	flex-direction: column;
     }
@@ -66,6 +66,8 @@
 	    .preFooter__right {
 	    	flex-direction: row;
 	    	align-self: normal;
+	    	padding-top: $section-padding;
+	    	padding-bottom: $section-padding;
 
 			.preFooter__visual {
 				height: rem(100);

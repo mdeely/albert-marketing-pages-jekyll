@@ -24,7 +24,11 @@
 					<div class="slide__title">{{ slideshowItem.title}}</div>
 					<div class="slide__description">{{ slideshowItem.description}}</div>
 				</div>
-				<div class="slide__visual">
+				{% if slideshowItem.strip_styling %}
+					<div class="slide__visual strip_styling">
+				{% else %}
+					<div class="slide__visual">
+				{% endif %}
 					<img src="{{ slideshowItem.img_src}}"></img>
 				</div>
 			</li>

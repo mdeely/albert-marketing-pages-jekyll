@@ -10,14 +10,20 @@
 				<img src="{{ testimonialItem.teacher_img_src }}">
 			</div>
 			<div class="testimonial__info">
-				<div class="testimonial__quote">{{ testimonialItem.quote }}</div>
-				<div class="testimonial__nameOfPerson">{{ testimonialItem.teacher_name }}</div>
-				<div class="testimonial__teacher-type">{{ testimonialItem.teacher_type }}
-					<span class="testimonial__teacher-level">{{ testimonialItem.teacher_level | prepend: ", " }}</span>
+				<div class="testimonial__quote">
+					<i class="fa fa-quote-left"></i>
+					<i class="fa fa-quote-right"></i>
+					{{ testimonialItem.quote }}
 				</div>
-				{% if testimonialItem.teacher_location %}
-					<div class="testimonial__location">{{ testimonialItem.teacher_location }}</div>
-				{% endif %}
+				<div class="testimonial__details">
+					<div class="testimonial__nameOfPerson">{{ testimonialItem.teacher_name }}</div>
+					<div class="testimonial__teacher-type">{{ testimonialItem.teacher_type }}
+						<span class="testimonial__teacher-level">{{ testimonialItem.teacher_level | prepend: ", " }}</span>
+					</div>
+					{% if testimonialItem.teacher_location %}
+						<div class="testimonial__location">{{ testimonialItem.teacher_location }}</div>
+					{% endif %}
+				</div>
 			</div>
 		</li>
 		{% endfor %}

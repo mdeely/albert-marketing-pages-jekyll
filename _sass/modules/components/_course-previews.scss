@@ -1,6 +1,6 @@
 .coursePreview {
-	padding-top: $section-padding;
-	padding-bottom: $section-padding;
+	padding-top: $section-padding-mobile;
+	padding-bottom: $section-padding-mobile;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -253,6 +253,9 @@
 
 @media only screen and (min-width: $s-viewport) {
 	.coursePreview {
+		padding-top: $section-padding;
+		padding-bottom: $section-padding;
+
 		.coursePreview__card-list {
 			.coursePreview__card-item {
 				$card-width: rem(310);

@@ -99,18 +99,22 @@ components:
   - title: Thought-provoking, skills-based questions
     description: Albert questions go beyond recall and identification. They ask students to apply their knowledge to understand underlying concepts
     img_src: "assets/img/k_12_advanced_placement/thought-provoking-skills.png"
+    strip_styling: true
 
   - title: Rich supplements
     description: From primary source stimuli to realistic data charts, Albert’s question supplements provide additional authenticity to our questions.
     img_src: "assets/img/k_12_advanced_placement/thought-provoking-skills.png"
+    strip_styling: true
 
   - title: Realistic distractors
     description: We research the minutiae of the official exam’s distractor standards to produce the most realistic experience available.
     img_src: "assets/img/k_12_advanced_placement/realistic-distractors.png"
+    strip_styling: true
 
   - title: Scaffolded explanations
     description: Meticulous explanations incorporate broader course concepts with detailed solutions to support all levels of learners. Every question becomes a learning opportunity.
     img_src: "assets/img/k_12_advanced_placement/explanations-that-actually-explain.png"
+    strip_styling: true
 
   - title: Authentic questions
     description: Don’t worry about having to explain every question to every student. Let Albert’s thorough and approachable question solutions reinforce skills and fill in the content knowledge assessed on the exam.

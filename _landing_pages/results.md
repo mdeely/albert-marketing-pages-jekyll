@@ -143,16 +143,25 @@ components:
   cta_url: /case-studies
   img_src: "assets/img/hero-test.svg"
 
+# Testimonials
 - component_name: testimonials
   title: testimonials
   testimonialItems:
   - title: Title 1
-    quote: quote 1 lorem ipsum ipsum lorem ipsum ipsum random text here that would be the quote
-    teacher_name: Name 1
+    quote: I’m a success today because I had a friend who believed in me and I didn’t have the heart to let him down.
+    teacher_name: Abraham Lincoln
     teacher_img_src: "assets/img/testimonials/Phelps, David_square_sm.jpg"
     teacher_type: Teacher type 1
     teacher_level: Teacher level 1
     teacher_location: Chicago, IL 1
+
+  - title: Title 2
+    quote: quote 2 lorem ipsum ipsum lorem ipsum ipsum random text here that would be the quote
+    teacher_img_src: "assets/img/testimonials/Gilezan, Lauren_square_sm.jpg"
+    teacher_name: Name 2
+    teacher_type: Teacher type 2
+    teacher_level: Teacher level 2
+    location: Chicago, IL 2
 
   - title: Title 2
     quote: quote 2 lorem ipsum ipsum lorem ipsum ipsum random text here that would be the quote
