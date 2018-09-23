@@ -167,24 +167,24 @@ components:
       card_title: ACT® Science
       card_img_src: "heart_of_darkness.svg"
 
-# Feature List features
+# Feature List 
 - component_name: featureList
   staggerItems:
   - supertitle: Albert is…
     title: An instructional companion that personalizes and accelerates learning.
-    img_src: "assets/img/home-illustration-5.svg"
+    img_src: "assets/img/homepage/home-illustration-1.svg"
 
   - supertitle: Albert is…
     title: The world’s highest-quality collection of academic practice questions.
-    img_src: "assets/img/home-illustration-5.svg"
+    img_src: "assets/img/homepage/home-illustration-2.svg"
 
   - supertitle: Albert is…
     title: "A practice and assessment resource that frees teachers to do what they do best: teach."
-    img_src: "assets/img/home-illustration-5.svg"
+    img_src: "assets/img/homepage/home-illustration-3.svg"
 
   - supertitle: Albert is…
     title: The one-on-one tutor students can take wherever they go.
-    img_src: "assets/img/home-illustration-5.svg"
+    img_src: "assets/img/homepage/home-illustration-4.svg"
 
 # Pre footer
 - component_name: preFooter

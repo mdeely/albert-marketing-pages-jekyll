@@ -49,7 +49,7 @@
 				  					{% if data.bar_value > 84 %}
 				  						<div class="data__value inside-bar">{{ bar_value }}</div>
 				  					{% else %} 
-				  						<div class="data__value custom">{{ bar_value }}</div>
+				  						<div class="data__value custom" style="bottom: {{ data.bar_value | plus: 3 | append: '%'  }}">{{ bar_value }}</div>
 				  					{% endif %}
 				  				</div>
 				  			</div>

@@ -21,6 +21,7 @@ components:
       group_label: National
 
     - bar_value: 70
+      bar_value_label: Custom value would gohere
       group_label: Albert
 
     - bar_value: 15
@@ -117,14 +118,14 @@ components:
   - title: Title 1
     quote: quote 1 lorem ipsum ipsum lorem ipsum ipsum random text here that would be the quote
     teacher_name: Name 1
-    teacher_img_src: "assets/img/random-img3.svg"
+    teacher_img_src: "assets/img/testimonials/Phelps, David_square_sm.jpg"
     teacher_type: Teacher type 1
     teacher_level: Teacher level 1
     teacher_location: Chicago, IL 1
 
   - title: Title 2
     quote: quote 2 lorem ipsum ipsum lorem ipsum ipsum random text here that would be the quote
-    teacher_img_src: "assets/img/random-img2.svg"
+    teacher_img_src: "assets/img/testimonials/Gilezan, Lauren_square_sm.jpg"
     teacher_name: Name 2
     teacher_type: Teacher type 2
     teacher_level: Teacher level 2

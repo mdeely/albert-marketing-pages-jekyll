@@ -11,20 +11,20 @@ components:
   cta_label: Contact us
   cta_url: ""
   salesRosterItems:
-  - profile_img: "assets/img/random-img3.svg"
-    name: Marc Deely
+  - profile_img: "assets/img/testimonials/Gilezan, Lauren_square_sm.jpg"
+    name: Lauren Gilezan
 
-  - profile_img: "assets/img/random-img3.svg"
-    name: Marcus Deely
+  - profile_img: "assets/img/testimonials/Gilezan, Lauren_square_sm.jpg"
+    name: Lauren Gilezan
 
-  - profile_img: "assets/img/random-img3.svg"
-    name: Marcus Aurelious
+  - profile_img: "assets/img/testimonials/Phelps, David_square_sm.jpg"
+    name: David Phelps, Sr
 
-  - profile_img: "assets/img/random-img3.svg"
-    name: Marc Deely
+  - profile_img: "assets/img/testimonials/Phelps, David_square_sm.jpg"
+    name: David Phelps, Jr
 
-  - profile_img: "assets/img/random-img3.svg"
-    name: Marcus Deely
+  - profile_img: "assets/img/testimonials/Gilezan, Lauren_square_sm.jpg"
+    name: Lauren Gilezan
 
 # Feature List 
 - component_name: featureList

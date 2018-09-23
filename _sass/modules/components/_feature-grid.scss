@@ -21,6 +21,7 @@
 			padding: rem(20);
 			border-radius: rem(10);
 			margin-bottom: rem(40);
+			background-color: #FFFFFF;
 
 			&:nth-child(odd) {
 				background-color: $bgGrey;
@@ -46,6 +47,10 @@
 				color: $text-black--lighter_step_2;
 				font-size: rem(14);
 			}
+
+			.featureGrid__anchor  {
+				margin-top: rem(40);
+			}
 		}
 	}
 
@@ -65,9 +70,10 @@
 				box-shadow: $shadow_depth_4;
 				border-radius: rem(10);
 				padding: rem(30);
-				margin-bottom: rem(100+($imgHeight/2));
+				margin-bottom: rem(100+($imgHeight/4));
 				padding-top: rem(100);
 				position: relative;
+				width: 100%;
 
 				.featureGrid__item-visual {
 					position: absolute;
@@ -107,7 +113,7 @@
 
 		.featureGrid__list {
 			flex-direction: row;
-			justify-content: space-evenly;
+			justify-content: center;
 			max-width: rem(1200);
 			margin: 0 auto;
 
@@ -116,10 +122,11 @@
 				flex: 0 1 300px;
 				margin-left: 5%;
 				margin-right: 5%;
+				background-color: transparent;
 
-				&:nth-child(odd) {
-					background-color: transparent;
-				}
+				// &:nth-child(odd) {
+				// 	background-color: transparent;
+				// }
 
 				.featureGrid__item-visual {
 					height: rem(160);
@@ -132,6 +139,14 @@
 				}
 			}
 		}
+
+		&.featureCards {
+			.featureGrid__list {
+				.featureCards__item {
+					background-color: #FFFFFF;
+				}
+			}
+		}
 	}
 }
 
@@ -141,7 +156,7 @@
 			max-width: 100%;
 
 			.featureGrid__item {
-				flex: 1 0 rem(360);
+				flex: 1;
 				margin-left: 3%;
 				margin-right: 3%;
 			}

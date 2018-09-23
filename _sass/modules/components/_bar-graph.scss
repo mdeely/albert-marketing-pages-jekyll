@@ -151,10 +151,13 @@
 					    	font-weight: 600;
 					    	font-size: rem(16);
 					    	opacity: 0;
-							transform: translateY( rem(-30) );
+							// transform: translateY( rem(-30) );
 							transition: opacity .3s ease-in;
 							transition-delay: .2s;
     						color: $text-black--lighter_step_3;
+							max-width: rem(200);
+							margin-right: auto;
+							margin-left: auto;
 
 
 						&.inside-bar {

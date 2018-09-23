@@ -85,6 +85,7 @@ $nav-padding: rem(20);
 		    border-top: 1px solid rgba(white, .25);
 			flex-direction: column;
 			overflow-y: scroll;
+  			-webkit-overflow-scrolling: touch;
 
 		    &.active {
 		    	display: flex;
@@ -185,10 +186,12 @@ $nav-padding: rem(20);
 
 		    							.nav__subitem-title {
 		    								color: $link;	
+		    								transition: color .1s ease-in-out;
 		    							}
 
 		    							.nav__subitem-description {
 		    								color: $text_grey;
+		    								transition: color .1s ease-in-out;
 		    							}
 	    							}
 	    						}

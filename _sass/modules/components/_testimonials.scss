@@ -15,6 +15,7 @@
 		flex-direction: row;
 		justify-content: center;
 		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
 
 		.testimonial__item {
 			box-shadow: $shadow_depth_4;
@@ -38,6 +39,7 @@
 				overflow: hidden;
 				margin: 0 auto;
 				background-color: #FFFFFF;
+				border: 7px solid #FFFFFF;
 
 				img {
 					height: 100%;
@@ -65,22 +67,27 @@
 				}
 
 				.testimonial__nameOfPerson {
-					@include fancy-title-small;
+					@include fancy-title-xs;
 					border-top: 1px solid $menuBorder;
 					padding-top: rem(20);
+					color: $text_grey;
+					font-size: rem(17);
 				}
 
 				.testimonial__teacher-type {
 					margin-top: rem(10);
 					color: $regent-grey;
+					font-size: rem(13);
 				}
 
 				.testimonial__teacher-level {
+					font-size: rem(13);
 				}
 
 				.testimonial__location {
 					margin-top: rem(10);
 					color: $link;
+					font-size: rem(13);
 				}
 
 			}
