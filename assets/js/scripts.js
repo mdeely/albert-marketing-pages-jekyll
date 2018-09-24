@@ -54,23 +54,31 @@ $( document ).ready(function() {
 	    return this.nodeValue.replace(/[™®©]/g, '<sup>$&</sup>');
 	});
 
-	  $('.comicPanel__item').appear();
+	//
+	// The following will highlight comic panels as they come in to view on mobile
+	//
 
-	  $(document.body).on('appear', '.comicPanel__item', function(e, $affected) {
-	    $affected.each(function() {
-	    $(this).removeClass("active");
-	    })
+	if ( $("section.comicStrip").length > 0 ) {
+		console.log("there isa  comic strip on this page");
+		$('.comicPanel__item').appear();
 
-	    $(this).addClass("active");
-	  });
+		$(document.body).on('appear', '.comicPanel__item', function(e, $affected) {
+		$affected.each(function() {
+		$(this).removeClass("active");
+		})
 
-	  $(document.body).on('disappear', '.comicPanel__item', function(e, $affected) {
-	    $affected.each(function() {
-	      $(this).removeClass('active');
-	    })
+		$(this).addClass("active");
+		});
 
-	    $(this).removeClass("active");
-	  });
+		$(document.body).on('disappear', '.comicPanel__item', function(e, $affected) {
+		$affected.each(function() {
+		  $(this).removeClass('active');
+		})
+
+		$(this).removeClass("active");
+		});
+	}
+
 
 	//
 	//
