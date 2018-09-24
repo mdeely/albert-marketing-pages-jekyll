@@ -151,8 +151,14 @@
 						}
 					}
 					.comicPanel__item {
+						&.active:hover,
 						&:hover {
 							filter: grayscale(0%);
+							.comicPanel__link {
+								.comicPanel__caption {
+									background-color: rgba(white, .95);
+								}
+							}
 						}
 						
 						filter: grayscale(0%);
