@@ -31,9 +31,9 @@
 				<ul class="comicPanel__list">
 					{% for comicPanel in comicStrip.comicPanels %}
 						{% if forloop.index == 1 %}
-							<li class="comicPanel__item active" data-appear-top-offset="-400">
+							<li class="comicPanel__item active" data-appear-top-offset="-300">
 						{% else %}
-							<li class="comicPanel__item" data-appear-top-offset="-400">
+							<li class="comicPanel__item" data-appear-top-offset="-300">
 						{% endif %}
 							<figure class="comicPanel__link">
 								<img src="{{ baseurl }}/{{ comicPanel.img_src }}" class="comicPanel__img"/>

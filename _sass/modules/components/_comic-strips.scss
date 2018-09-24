@@ -74,7 +74,11 @@
 					border-bottom: 2px solid $text_light_grey;
 					min-width: rem(250);
 					flex: 1;
+					filter: grayscale(100%);
+					transition: .2s ease-in-out;
 
+
+					&.active,
 					&:hover {
 						filter: grayscale(0%);
 
@@ -141,7 +145,17 @@
 		.comicStrip__list {
 			.comicStrip__item {
 				.comicPanel__list {
+					&:hover {
+						.comicPanel__item {
+							filter: grayscale(100%);
+						}
+					}
 					.comicPanel__item {
+						&:hover {
+							filter: grayscale(0%);
+						}
+						
+						filter: grayscale(0%);
 						border-bottom: 0px solid transparent;
 						border-right: 1px solid $text_light_grey;
 
