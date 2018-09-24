@@ -10,8 +10,7 @@ components:
   description: Albert is the established industry leader in Advanced Placement. With the largest library of standards-aligned and fully-explained questions in the world, students who use Albert will be thoroughly prepared for their exams.
   cta_label: Get started
   cta_url: https://www.albert.io/signup
-  img_src: "assets/img/hero/k-12-advanced-placement-hero.svg"
-
+  hero_img: "assets/img/hero/k-12-advanced-placement-hero.svg"
 
 ## Feature Grid
 - component_name: featureGrid

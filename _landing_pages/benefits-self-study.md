@@ -17,7 +17,7 @@ components:
 - component_name: hero
   supertitle: Benefits for Self Study
   title: A better way to practice and assess
-  img_src: "assets/img/hero/benefits-hero.svg"
+  hero_img: "assets/img/hero/benefits-hero.svg"
     
 - component_name: preFooter
 ---

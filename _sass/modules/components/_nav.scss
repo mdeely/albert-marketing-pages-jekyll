@@ -84,9 +84,8 @@ $nav-padding: rem(20);
 		    top: $nav-height;
 		    border-top: 1px solid rgba(white, .25);
 			flex-direction: column;
-			overflow-y: scroll;
+			overflow-x: scroll;
   			-webkit-overflow-scrolling: touch;
-  			overflow: visible;
 
 		    &.active {
 		    	display: flex;

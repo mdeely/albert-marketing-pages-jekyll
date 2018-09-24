@@ -32,45 +32,30 @@
 			<ul>
 				<li class="footer__column-title">Contact us</li>
 				<li><a href="">hello@albert.io</a></li>
-				<li><a href="">(800) 554-8115 ext. 0</a></li>
-				<li><a href="">(800) 554-8115</a></li>
+				<li><a href="">{{ info.contact.support_phone }}</a></li>
 			</ul>
 			<ul>
 				<li class="footer__column-title">Sales</li>
 				<li><a href="">schools@albert.io</a></li>
-				<li><a href="">(800) 554-8115 ext. 1</a></li>
-				<li><a href="">(800) 554-8115</a></li>
+				<li><a href="">{{ info.contact.sales_phone }}</a></li>
 			</ul>
 	</div>
 		<div class="footer__social-links">
 			<ul>
-				<li><a href="">Facebook</a></li>
-				<li><a href="">Twitter</a></li>
+				<li><a href="https://www.facebook.com/{{ info.social.facebook }}">Facebook</a></li>
+				<li><a href="https://www.twitter.com/{{ info.social.twitter }}">Twitter</a></li>
 			</ul>
 		</div>
 		<div class="footer__site-details">
-			<p class="footer__copyright">Copyright 2018 Learn By Doing, Inc.<a href="#">Privacy Policy</a><a href="#">Terms of Use</a></p>
+			<p class="footer__copyright">&copy;{{ 'now' | date: "%Y" }} Learn By Doing, Inc.<a href="#">Privacy Policy</a><a href="#">Terms of Use</a></p>
 			<p class="footer__legal">AP® and Advanced Placement® are registered trademarks of the College Board, which was not involved in the production of, and does not endorse, this product.</p>
 		</div>
 	</div>
-
-<!-- 	<p>
-	  {% if site.title %}{{ site.title }}<br />{% endif %}
-	  <br />
-	  {% if info.address_1 %}{{ info.address_1 }}<br />{% endif %}
-	  {% if info.address_2 %}{{ info.address_2 }}<br />{% endif %}
-	  {% if info.country and info.state and info.city %}
-	  {{ info.city }}, {{ info.state }}, {{ info.country }}<br />
-	  {% endif %}
-	  <br />
-	  {% if info.phone %}<a href="tel:{{ info.phone }}" title="{{ info.phone }}">{{ info.phone }}</a><br />{% endif %}
-	  {% if info.email %}<a href="mailto:{{ info.email }}" title="{{ info.email }}">{{ info.email }}</a>{% endif %}
-	</p> -->
-
 {% endif %}
 </footer>
 
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="{{ site.baseUrl }}/assets/js/appear.js"></script>
 	<script src="{{ site.baseUrl }}/assets/js/scripts.js"></script>
 </html>

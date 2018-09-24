@@ -137,7 +137,7 @@ $topOffset: 50;
 	.slide__nav {
 		display: flex;
 	    left: 0;
-	    top: rem(240 + $topOffset);
+	    top: rem(190 + $topOffset);
 	    z-index: 2;
 
 		.slide__link {
@@ -277,33 +277,33 @@ $topOffset: 50;
 	}
 }
 
-@media only screen and (min-width: $l-viewport) {
-	.slideshow {
-		.slides {
-			.slide_info {
-				transform: translateY( rem($topOffset) );
-			}
-		}
-	}
-}
+// @media only screen and (min-width: $l-viewport) {
+// 	.slideshow {
+// 		.slides {
+// 			.slide_info {
+// 				transform: translateY( rem($topOffset) );
+// 			}
+// 		}
+// 	}
+// }
 
-@media only screen and (min-width: $xxl-viewport) {
-	.slideshow {
-		.slides {
-			max-width: 100%;
+// @media only screen and (min-width: $xxl-viewport) {
+// 	.slideshow {
+// 		.slides {
+// 			max-width: 100%;
 
-			.slide {
-				.slide__info {
-					margin-right: rem(300);
-				}
-				.slide__visual {
-					width: rem(800);
-					max-width: initial;
-				}
-			}
-		}
-	}
-}
+// 			.slide {
+// 				.slide__info {
+// 					margin-right: rem(300);
+// 				}
+// 				.slide__visual {
+// 					width: rem(800);
+// 					max-width: initial;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
 //
 // Rules for flipping the display of the slideshow based on elements around it
@@ -343,54 +343,34 @@ $topOffset: 50;
 	}
 }
 
-@mixin slideshowDisplayFlipLarge() {
-	.slideshow__wrapper {
-		.slide {
-			flex-direction: row-reverse;
+// @mixin slideshowDisplayFlipLarge() {
+// 	.slideshow__wrapper {
+// 		.slide {
+// 			flex-direction: row-reverse;
 
-			.slide__info {
-				margin-right: 0;
-				margin-left: rem(300);
-			}
-		}
+// 			.slide__info {
+// 				margin-right: 0;
+// 				margin-left: rem(100);
+// 			}
+// 		}
 
-		.slide__nav {
-			left: rem(1100);
-		}
-	}
-}
+// 		.slide__nav {
+// 			left: rem(600);
+// 		}
+// 	}
+// }
 
 .slideshow {
+	.hero + &,
 	&:nth-of-type(even) {
 		@include slideshowDisplayFlipMobile();
-	}
-}
 
-.hero + .slideshow {
-	@include slideshowDisplayFlipMobile();
-	background-color: $bgGrey;
- }
-
- @media only screen and (min-width: $m-viewport) {
-	.slideshow {
-		&:nth-of-type(even) {
+		@media only screen and (min-width: $m-viewport) {
 			@include slideshowDisplayFlip();
 		}
-	}
 
-	.hero + .slideshow {
-		@include slideshowDisplayFlip();
-	}
-}
-
- @media only screen and (min-width: $xl-viewport) {
-	.slideshow {
-		&:nth-of-type(even) {
-			@include slideshowDisplayFlipLarge();
-		}
-	}
-
-	.hero + .slideshow {
-		@include slideshowDisplayFlipLarge();
+		 // @media only screen and (min-width: $xl-viewport) {
+			// @include slideshowDisplayFlipLarge();
+		 // }
 	}
 }

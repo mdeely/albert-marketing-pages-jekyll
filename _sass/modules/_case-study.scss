@@ -67,11 +67,6 @@
 	.caseStudy__statistics-wrapper {
 		background-color: $alabaster;
 
-		> * {
-			margin-left: $container-spacing;
-			margin-right: $container-spacing;
-		}
-
 		.statistics__list {
 			display: flex;
 			flex-direction: row;
@@ -90,7 +85,8 @@
 				width: rem(120);
 				height: rem(120);
 				text-align: center;
-				margin-right: rem(10);
+				margin-left: rem(5);
+				margin-right: rem(5);
 				margin-top: rem(10);
 				margin-bottom: rem(10);
 
@@ -126,6 +122,8 @@
 				margin-top: rem(20);
 				margin-bottom: rem(20);
 				width: 100%;
+				margin-left: rem(20);
+				margin-right: rem(20);
 
 				.requestDemo__title {
 					display: none;
@@ -173,7 +171,7 @@
 		}
 
 		img {
-			max-width: rem(600);
+			max-width: 100%;
 			display: block;
 			margin: 0 auto;
 			height: auto;
@@ -215,16 +213,8 @@
 	}
 }
 
-@media only screen and (min-width: $m-viewport) {
+@media only screen and (min-width: $s-viewport) {
 	.caseStudy {
-		.caseStudy__statistics-wrapper {
-			.statistics__list {
-				.statstic__item { 
-					margin-right: rem(20);
-				}
-			}
-		}
-
 		.caseStudy__statistics-wrapper {
 			.statistics__list {
 				.requestDemo {
@@ -233,10 +223,25 @@
 					width: 100%;
 					box-shadow: $shadow_depth_2;
 					width: auto;
+					margin-right: rem(10);
+					margin-left: rem(10);
 
 					.requestDemo__title {
 						display: initial;
 					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $m-viewport) {
+	.caseStudy {
+		.caseStudy__statistics-wrapper {
+			.statistics__list {
+				.statstic__item { 
+					margin-right: rem(10);
+					margin-left: rem(10);
 				}
 			}
 		}
@@ -255,7 +260,6 @@
 				left: 0;
 				margin-left: rem(40);
 				margin-top: rem(40);
-
 			}
 		}
 
@@ -264,7 +268,8 @@
 				.statstic__item {
 					width: rem(165);
 					height: rem(165);
-					margin-right: rem(40);
+					margin-right: rem(20);
+					margin-left: rem(20);
 					margin-top: rem(40);
 					margin-bottom: rem(40);
 
@@ -281,11 +286,17 @@
 				.requestDemo {
 					margin-top: rem(40);
 					margin-bottom: rem(40);
+					margin-right: rem(40);
+					margin-left: rem(40);
 				}
 			}
 		}
 
 		.caseStudy__info {
+			img {
+				max-width: rem(600);
+			}
+
 			.caseStudy__info-paragraph {
 				p {
 					font-size: rem(20);

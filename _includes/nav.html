@@ -4,8 +4,7 @@
 	<header role="banner">
 		<a href="/" class="mainNav__logo">
 			{% include {{ baseurl }}/svg/logo-combined-white.svg %}
-<!-- 			<img src="{{ baseurl }}/assets/img/logo-combined-white.svg" alt="Albert logo" />
- -->		</a>
+		</a>
 		<div class="mainNav__mobile-toggle">
 			<i class="fas fa-bars toggle--open active"></i>
 			<i class="fas fa-times toggle--close"></i>
@@ -20,14 +19,14 @@
 			      	<li class="nav__dropdown">{{ navItem.label }}<i class="fa fa-caret-down"></i>
 			      	{% endif %}
 
-	                {% if navItem.subitem_groups[0] %}
+	                {% if navItem.submenu %}
 		                <ul>
-				   			{% for subitem_group in navItem.subitem_groups %}
+				   			{% for submenu in navItem.submenu %}
 								<div>
-									{% if subitem_group.group_title %}
-				   						<div class="nav__subitem-group-title">{{ subitem_group.group_title }}</div>
+									{% if submenu.group_title %}
+				   						<div class="nav__subitem-group-title">{{ submenu.group_title }}</div>
 									{% endif %}
-					   				 {% for subitem in subitem_group.subitems %}
+					   				 {% for subitem in submenu.subitems %}
 						      			<li>
 						      				<a class="{{ subitem.domain | prepend: 'nav__subitem-anchor ' }}" href="/{{ subitem.url }}">
 												{% if subitem.icon_url %}
@@ -55,13 +54,11 @@
 				{% endfor %}
 			</ul>
 	        
-	        {% if nav.accountItems[0] %}
-
+	        {% if nav.accountItems %}
 				<ul class="mainNav__account">
 					<li><a href="#">Log in</a></li>
 					<li class="sign-up""><a class="button--white button--sign-up" href="#">Sign up</a></li>
 				</ul>
-
 	        {% endif %}
 
 		</nav>

@@ -15,15 +15,15 @@ components:
 # - component_name: hero
 #   supertitle: Benefits for Educators
 #   title: A better way to practice and assess
-#   img_src: "assets/img/hero/benefits-hero.svg"
+#   hero_img: "assets/img/hero/benefits-hero.svg"
 
 # Hero
 - component_name: hero
   title: A teacher's dream
   description: With coverage of all core curriculum and standardized exams, Albert is a powerful curriculum supplement that your entire school can leverage.
-  img_src: "assets/img/hero/benefits-hero.svg"
   cta_label: Learn more
   cta_url: aurl
+  hero_img: "assets/img/hero/benefits-hero.svg"
 
 # Feature Grid
 - component_name: featureGrid
@@ -45,9 +45,9 @@ components:
 - component_name: hero
   title: A teacher's dream
   description: With coverage of all core curriculum and standardized exams, Albert is a powerful curriculum supplement that your entire school can leverage.
-  img_src: "assets/img/hero/benefits-hero.svg"
   cta_label: Learn more
   cta_url: aurl
+  hero_img: "assets/img/hero/benefits-hero.svg"
 
 # Feature Grid
 - component_name: featureGrid

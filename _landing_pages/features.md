@@ -6,7 +6,7 @@ components:
   description: Interactive learning
   cta_label: Get started
   cta_url: https://www.albert.io/signup
-  img_src: "assets/img/hero/features-hero.svg"
+  hero_img: "assets/img/hero/features-hero.svg"
 
 - component_name: slideshow
   title: Learn by doing
@@ -29,7 +29,7 @@ components:
   description: Our obsession with quality means you can trust that you are getting relevant standards-aligned practice with helpful explanations, every time
   cta_label: Explore our course library
   cta_url: https://www.albert.io/test-prep/advanced-placement 
-  img_src: "assets/img/hero-test.svg"
+  hero_img: "assets/img/hero-test.svg"
 
 - component_name: slideshow
   title: Instructional flexibility

@@ -6,7 +6,7 @@ components:
   supertitle: Results
   title: Acheive better outcomes
   description: Albert challenges students to apply what they learn and make connections between concepts. The results speak for themselves.
-  img_src: "assets/img/hero-test.svg"
+  hero_img: "assets/img/hero-test.svg"
 
 - component_name: barGraph
   component_title: Groundbreaking efficacy research
@@ -141,7 +141,7 @@ components:
   description: See how Albert has helped schools significantly improve learning outcomes and boost teacher productivity.
   cta_label: Explore case studies
   cta_url: /case-studies
-  img_src: "assets/img/hero-test.svg"
+  hero_img: "assets/img/hero-test.svg"
 
 # Testimonials
 - component_name: testimonials

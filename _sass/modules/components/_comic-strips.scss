@@ -85,6 +85,14 @@
 						}
 					}
 
+					&.active {
+						.comicPanel__link {
+							.comicPanel__caption {
+								background-color: rgba(white, .95);
+							}
+						}
+					}
+
 					&:last-child {
 						margin-right: 0;
 						border-bottom: 0px solid transparent;
@@ -136,6 +144,14 @@
 					.comicPanel__item {
 						border-bottom: 0px solid transparent;
 						border-right: 1px solid $text_light_grey;
+
+						&.active {
+							.comicPanel__link {
+								.comicPanel__caption {
+									background-color: rgba(white, .65);
+								}
+							}
+						}
 					}
 				}
 			}

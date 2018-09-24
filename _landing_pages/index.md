@@ -3,11 +3,11 @@ title: Practice. Assess. Improve.
 components:
 # Hero
 - component_name: hero
-  img_src: "assets/img/hero/home-hero.svg"
   title: Practice. Assess. Improve.
   description: "Albert is a learning companion built on a simple idea: That learning is best done by doing."
   cta_label: Get started
   cta_url: https://www.albert.io/signup
+  hero_img: "assets/img/hero/home-hero.svg"
 
 # Course preview
 - component_name: coursePreview

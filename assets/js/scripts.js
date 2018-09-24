@@ -54,6 +54,24 @@ $( document ).ready(function() {
 	    return this.nodeValue.replace(/[™®©]/g, '<sup>$&</sup>');
 	});
 
+	  $('.comicPanel__item').appear();
+
+	  $(document.body).on('appear', '.comicPanel__item', function(e, $affected) {
+	    $affected.each(function() {
+	    $(this).removeClass("active");
+	    })
+
+	    $(this).addClass("active");
+	  });
+
+	  $(document.body).on('disappear', '.comicPanel__item', function(e, $affected) {
+	    $affected.each(function() {
+	      $(this).removeClass('active');
+	    })
+
+	    $(this).removeClass("active");
+	  });
+
 	//
 	//
 	// Functions

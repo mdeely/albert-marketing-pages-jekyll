@@ -42,30 +42,6 @@ h6 {
 	@include base-text-styles;
 }
 
-// h1 {
-// 	@include x-large-title;
-// }
-
-// h2 {
-// 	@include large-title;
-// }
-
-// h3 {
-// 	@include medium-title;
-// }
-
-// h4 {
-// 	@include title-small;
-// }
-
-// h5 {
-// 	@include x-title-small;
-// }
-
-// h6 {
-// 	@include label-title;
-// }
-
 hr {
 	margin-top: em(40);
 	border: 0px solid transparent;

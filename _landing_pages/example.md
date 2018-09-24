@@ -1,20 +1,20 @@
 ---
-title: Components page
-meta:
-  ogTitle: Test og title?
-  
+title: Your page title
+description: Your page description
+
+# Being listing your components
 components:
-  
-## Hero
+
+## Hero component
 - component_name: hero
   supertitle: Hero supertitle
   title: Hero title for everyone
   description: Hero description lorem ipsum carpe diem etc.
   cta_label: Hero CTA
   cta_url: hero-url
-  img_src: "assets/img/hero-test.svg"
+  hero_img: "assets/img/hero-test.svg"
 
-## Graph
+## Bar graph component
 - component_name: barGraph
   component_title: Groundbreaking efficacy research
   component_description: Based on a controlled study, schools that implemented Albert saw a TBD% improvement in test scores and a strong correlation between scores and Albert usage. Learn more about our methodology
@@ -46,7 +46,7 @@ components:
     - bar_value: 90
       bar_label: Year 4
 
-#Testimonial
+# Testimonial components
 - component_name: testimonials
   title: testimonials
   testimonialItems:
@@ -67,7 +67,7 @@ components:
     location: Chicago, IL 2
 
 
-## Feature list
+# Feature list component
 - component_name: featureList
   title: Optional title for stagger components
   staggerItems:
@@ -83,13 +83,14 @@ components:
     cta_url: cta-2
     img_src: "assets/img/random-img2.svg"
 
+# Interstitial component
 - component_name: interstitial
   component_large: true
   cta_label: Request demo
   cta_link: ""
   description: Lorem ipsum this is a description of the area such as Request a demo to learn more about Albert.io
 
-## Sales Roster
+# Sales roster component
 - component_name: salesRoster
   title: Meet the team
   description: As former educators, our School Success team intimately understand what makes for a successful Albert implementation, both within the classroom and across a school.
@@ -105,7 +106,7 @@ components:
   - profile_img: "assets/img/random-img3.svg"
     name: Marcus Aurelious
 
-## Feature Grid
+# Feature grid component
 - component_name: featureGrid
   card_layout: true
   title: Grid title
@@ -128,7 +129,7 @@ components:
     cta_label: Third grid CTA
     cta_url: third-grid-cta
 
-## Course preview
+# Course preview component
 - component_name: coursePreview
   title: Learn anything
   group_title: K-12 Core
@@ -155,7 +156,7 @@ components:
       card_title: social studies subject
       card_img_src: "heart_of_darkness.svg"
 
-## Comic strip
+# Comic strip component
 - component_name: comicStrips
   comicStrips:
     - teacher_name: Mr. Zakaria
@@ -203,15 +204,15 @@ components:
       - img_src: "assets/img/comic_2.png"
         caption: Second panel of FIRST strip. Lorem ipsum lots of text would go here so that we can see an accurate representation of the amount of text that would display here.
 
-## Hero
+## Hero component
 - component_name: hero
   title: Second title
   description: Second description
   cta_label: Hero CTA
   cta_url: hero-url
-  img_src: "assets/img/random-img3.svg"
+  hero_img: "assets/img/random-img3.svg"
 
-## Tab bar
+# Tab bar component
 - component_name: tabBar
   tabBarItems:
   - img_src: "assets/img/random-img3.svg"
@@ -221,7 +222,7 @@ components:
   - img_src: "assets/img/hero-test.svg"
     label: Item 2
 
-## Slideshow
+# Slideshow component
 - component_name: slideshow
   title: Learn by doing
   description: Slideshow description
@@ -238,18 +239,21 @@ components:
     description: Our question formats provide learners with multiple ways to learn and make the content come alive like pencil and paper never could.
     img_src: "assets/img/random-img2.svg"
 
-## Prefooter
+# Prefooter component
 - component_name: preFooter
-  # left:
-  #   img_src: "assets/img/random-img.svg"
-  #   title: Left title
-  #   description: Left description
-  #   cta_label: Left CTA
-  #   cta_url: left-cta
-  # right:
-  #   img_src: "assets/img/random-img2.svg"
-  #   title: Right title
-  #   description: Right description
-  #   cta_label: Right CTA
-  #   cta_url: right-cta
+  # For the preFooter, only define the 
+  # information below if you want to
+  # overwrite the defaults
+  left:
+    img_src: "assets/img/random-img.svg"
+    title: Custom left title
+    description: Custom description
+    cta_label: Custom CTA
+    cta_url: left-cta
+  right:
+    img_src: "assets/img/random-img2.svg"
+    title: Custom right title
+    description: Custom description
+    cta_label: Custom CTA
+    cta_url: right-cta
 ---
