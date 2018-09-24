@@ -1,6 +1,6 @@
 .featureGrid {
 	@include section-spacing;
-	// padding-bottom: 0;
+	padding-bottom: 0;
 	margin: 0 auto;
 
 	.featureGrid__title {
@@ -65,7 +65,6 @@
 	}
 
 	&.featureCards {
-
 		$imgHeight: 120;
 
 		.featureGrid__title {
@@ -121,6 +120,10 @@
 
 @media only screen and (min-width: $s-viewport) {
 	.featureGrid {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+
 		.featureGrid__list {
 			flex-direction: row;
 			justify-content: center;
@@ -162,8 +165,6 @@
 
 @media only screen and (min-width: $m-viewport) {
 	.featureGrid {
-		padding-bottom: 0;
-
 		.featureGrid__list {
 			.featureGrid__item {
 				margin-left: 8%;

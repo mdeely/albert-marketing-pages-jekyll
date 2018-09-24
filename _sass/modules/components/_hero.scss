@@ -47,7 +47,6 @@
 				@include super-title;
 				margin-bottom: rem(10);
 				letter-spacing: rem(.8);
-				color: lighten($secondary_blue, 30%);
 			}
 
 			.hero__title {
@@ -109,11 +108,15 @@
 					margin-bottom: rem(40);
 				}
 			}
+
+			.hero__visual {
+				min-height: rem(400);
+			}
 		}
 	}
 }
 
-@media only screen and (min-width: $s-viewport) {
+@media only screen and (min-width: $m-viewport) {
 	.hero {
 	    display: flex;
 	    flex-direction: column;
@@ -165,10 +168,6 @@
 				.hero__description {
 					max-width: rem(700);
 					font-size: rem(24);
-				}
-
-				.hero__cta {
-					margin-top: rem(100);
 				}
 			}
 		}

@@ -4,6 +4,7 @@ meta:
   ogTitle: Test og title?
   
 components:
+  
 ## Hero
 - component_name: hero
   supertitle: Hero supertitle

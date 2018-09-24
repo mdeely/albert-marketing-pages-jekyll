@@ -1,11 +1,25 @@
-phone: "555-123-4567"
-email: albert@albert.com
-address_1: 123 Address Ln
-address_2: ''
-city: Chicago
-state: IL
-postal_code: 12345
-country: US
-twitter: alberttwitter
-facebook: albertfacebook
+contact:
+  support_phone: "(312) 470-2290 ext. 0"
+  support_email: "hello@albert.io"
+  sales_phone: "(312) 470-2290 ext. 1"
+  sales_email: "schools@albert.io"
+
+address:
+  address_1: 11 E Jackson
+  address_2: St 4
+  city: Chicago
+  state: IL
+  postal_code: 60601
+  country: US
+
+social: 
+  twitter: alberttwitter
+  facebook: learnwithalbert
+
+page:
+  title: Learn By Doing
+  tagline: Learn By Doing
+  description: "Acheive mastery with world-class learning content on Albert."
+  logo_path: "/assets/img/logo_combined_blue.svg"
+  base_url: https://www.albert.io
 
