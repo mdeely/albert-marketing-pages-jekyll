@@ -42,11 +42,14 @@ section.tabBar {
 				padding-bottom: rem(20);
 				cursor: pointer;
 				white-space: nowrap;
+				box-shadow: 0 0 0 $link inset;
+				transition: box-shadow .3s ease-in-out;
 
 				&.active {
 					box-shadow: 0 -5px 0 $link inset;
 					color: $link;
 					pointer-events: none;
+					transition: box-shadow .3s ease-in-out;
 
 					img {
 						filter: grayscale(0);
