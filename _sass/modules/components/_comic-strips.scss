@@ -20,11 +20,17 @@
 					text-transform: none;
 
 					&.active {
+    					-webkit-backface-visibility: hidden;
+						-webkit-transform: scale(1.2);
+						-moz-transform: scale(1.2);
 						transform: scale(1.2);
 						transition: transform .2s ease-in-out;
 						box-shadow: none;
 
 						img {
+    						-webkit-backface-visibility: hidden;
+							-webkit-transform: scale(1.2);
+							-moz-transform: scale(1.2);
 							transform: scale(1.2);
 							transition: transform .2s ease-in-out;
 						}

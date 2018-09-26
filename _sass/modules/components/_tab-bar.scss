@@ -58,12 +58,14 @@ section.tabBar {
 				img {
 					display: block;
 					max-width: 100%;
+					width: auto;
 					height: rem(70);
 					margin-left: auto;
 					margin-right: auto;
 					margin-bottom: rem(15);
 					pointer-events: none;
 					filter: grayscale(1);
+    				-webkit-backface-visibility: hidden;
 				}
 			}
 
