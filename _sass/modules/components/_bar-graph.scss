@@ -229,7 +229,7 @@
 	//     	position: absolute;
 	//     	top: 0;
 	//     	bottom: 0;
-	//     	margin: auto;
+	//     	margin: auto;var
 	//     	opacity: .5;
 
 	//     	&:hover {
@@ -265,8 +265,7 @@
 		.graph__wrapper {
 			width: 80vw;
 			max-width: rem(800);
-			margin-top: rem(80);
-			margin-left: $container-spacing;
+			margin-top: rem(40);
 		}
 
 		.component__info-wrapper {
@@ -282,11 +281,18 @@
 @media only screen and (min-width: $m-viewport) {
 	.barGraph {
 		flex-direction: row-reverse;
+		justify-content: center;
+
+		.graph__wrapper {
+			margin-left: $container-spacing;
+		}
 
 		.component__info-wrapper {
 			text-align: left;
 			max-width: 40%;
-			width: 100%;
+			width: rem(700);
+			margin-right: $container-spacing;
+			margin-left: 0;
 
 			.component__description {
 				text-align: left;

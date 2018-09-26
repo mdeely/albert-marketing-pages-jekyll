@@ -20,6 +20,12 @@ footer {
 			margin-right: auto;
 			display: block;
 			margin-bottom: rem(40);
+
+
+			svg {
+   	 			max-width: 100%;
+   	 			height: auto;
+			 }
 		}
 
 		.footer__site-links {

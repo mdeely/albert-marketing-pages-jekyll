@@ -6,13 +6,13 @@ $( document ).ready(function() {
 	$(function() {
 	    $('body').removeClass('fade-out');
 	});
-
 	//
 	// Gather elements
 	//
 	var navSubmenu = ".nav__dropdown";
 	var $directional_arrow_scroll = $(".directionalArrow.scrollTo");
 	var anchor = ".tabBar__anchor[href*='#']";
+	var mainNav = $(".mainNav");
 	var navHeight = $(".mainNav").outerHeight();
 	var $slide = $(".slide__link");
 	var $mobileNavMenu = $(".mainNav__mobile-toggle");
@@ -55,11 +55,28 @@ $( document ).ready(function() {
 	});
 
 	//
+	// Hide nav when user scroll up, show when user scroll down
+	//
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	  var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+	   		$(mainNav).css("top", 0);
+	  } else if ( currentScrollPos < 200 ) {
+	   		$(mainNav).css("top", 0);
+	  }
+ 		else {
+	   		$(mainNav).css("top", -navHeight);
+	  }
+	  prevScrollpos = currentScrollPos;
+	}
+
+	//
 	// The following will highlight comic panels as they come in to view on mobile
 	//
 
-	if ( $("section.comicStrip").length > 0 ) {
-		console.log("there isa  comic strip on this page");
+	if ( $("section.comicStrip").length > 0 ) {	
+
 		$('.comicPanel__item').appear();
 
 		$(document.body).on('appear', '.comicPanel__item', function(e, $affected) {

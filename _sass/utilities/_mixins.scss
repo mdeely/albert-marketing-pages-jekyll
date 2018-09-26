@@ -171,6 +171,9 @@
 	@media only screen and (min-width: $s-viewport) {
 		font-size: rem(30);
  	}
+	@media only screen and (min-width: $xl-viewport) {
+		font-size: rem(34);
+ 	}
 }
 
 @mixin title-small() {

@@ -46,49 +46,49 @@ components:
     - teacher_name: Mr. Zakaria
       teacher_img_src: zakaria.png
       comicPanels:
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-1-1.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-1-1.jpeg"
         caption: Mr. Zakaria’s AP English students need a lot of writing practice.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-1-2.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-1-2.jpeg"
         caption: Mr. Zakaria uses Albert’s FRQ prompts to familiarize students with the hard work of literary analysis.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-1-3.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-1-3.jpeg"
         caption: Students compare their essays to the Albert sample responses and discuss what makes them perfect exemplars.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-1-4.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-1-4.jpeg"
         caption: Students write multiple drafts of FRQs and critique them together in class.
     ## Comic strip #2
     - teacher_name: Mr. Chen
       teacher_img_src: chen.png
       comicPanels:
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-2-1.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-2-1.jpeg"
         caption: Mr. Chen’s AP US History students prep for tomorrow’s lesson with some pre-reading.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-2-2.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-2-2.jpeg"
         caption: To get a sense of how much they understood from reading, Mr. Chen gives a short assignment at the beginning of class on Albert.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-2-3.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-2-3.jpeg"
         caption: During class, he chooses topics to focus on based on the results.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-2-4.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-2-4.jpeg"
         caption: At the end of class, his exit ticket provides mastery data of how much the students learned in that lesson.
     ## Comic strip #3
     - teacher_name: Ms. Albertini
       teacher_img_src: albertini.png
       comicPanels:
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-3-1.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-3-1.jpeg"
         caption: Students in Ms. Albertini’s AP Calculus class practice difficult calculus problems on Albert at home.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-3-2.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-3-2.jpeg"
         caption: In the class the next day, students discuss their misconceptions in groups.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-3-3.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-3-3.jpeg"
         caption: Ms. Albertini likes to bring the whole class back together to discuss a problem the students haven’t seen yet.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-3-4.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-3-4.jpeg"
         caption: Based on how individual students contribute, she can give custom assignments for each student on Albert.
     ## Comic strip #4
     - teacher_name: Ms. Whiteeagle
       teacher_img_src: whiteeagle.png
       comicPanels:
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-4-1.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-4-1.jpeg"
         caption: Ms. Whiteeagle is worried that her new class schedule won’t leave time to include all the AP Biology topics she needs to cover.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-4-2.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-4-2.jpeg"
         caption: She decides to include Albert for daily practice and weekly quizzes.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-4-3.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-4-3.jpeg"
         caption: The data analytics that are provided for each standard help Ms. Whiteeagle decide where to prioritize her teaching time.
-      - img_src: "assets/img/k_12_advanced_placement/comics/1-4-4.png"
+      - img_src: "assets/img/k_12_advanced_placement/comics/1-4-4.jpeg"
         caption: At the end of the year, Albert’s full-length practice exams show her students are ready for the AP exam in May!
 
 ## Slideshow
