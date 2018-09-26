@@ -18,92 +18,92 @@ components:
     - bar_value: 55
       bar_value_label: Custom label
       bar_color: "#DD5566"
-      group_label: National
+      bottom_label: National
 
     - bar_value: 70
       bar_value_label: Custom value would gohere
-      group_label: Albert
+      bottom_label: Albert
 
     - bar_value: 15
-      group_label: Difference
+      bottom_label: Difference
 
   - graph_title: 2 Year Averages
     tab_label: History
     data:
     - bar_value: 53
       bar_color: "#DD5566"
-      group_label: National
+      bottom_label: National
 
     - bar_value: 66
-      group_label: Albert
+      bottom_label: Albert
 
     - bar_value: 13
-      group_label: Difference
+      bottom_label: Difference
 
   - graph_title: 2 Year Averages
     tab_label: Social Studies
     data:
     - bar_value: 57
       bar_color: "#DD5566"
-      group_label: National
+      bottom_label: National
 
     - bar_value: 73
-      group_label: Albert
+      bottom_label: Albert
 
     - bar_value: 16
-      group_label: Difference
+      bottom_label: Difference
 
   - graph_title: 2 Year Averages
     tab_label: Languages
     data:
     - bar_value: 85
       bar_color: "#DD5566"
-      group_label: National
+      bottom_label: National
 
     - bar_value: 87
-      group_label: Albert
+      bottom_label: Albert
 
     - bar_value: 2
-      group_label: Difference
+      bottom_label: Difference
 
   - graph_title: 2 Year Averages
     tab_label: Math
     data:
     - bar_value: 63
       bar_color: "#DD5566"
-      group_label: National
+      bottom_label: National
 
     - bar_value: 70
-      group_label: Albert
+      bottom_label: Albert
 
     - bar_value: 8
-      group_label: Difference
+      bottom_label: Difference
 
   - graph_title: 2 Year Averages
     tab_label: Science
     data:
     - bar_value: 55
       bar_color: "#DD5566"
-      group_label: National
+      bottom_label: National
 
     - bar_value: 68
-      group_label: Albert
+      bottom_label: Albert
 
     - bar_value: 13
-      group_label: Difference
+      bottom_label: Difference
 
   - graph_title: 2 Year Averages
     tab_label: Comp Sci
     data:
     - bar_value: 68
       bar_color: "#DD5566"
-      group_label: National
+      bottom_label: National
 
     - bar_value: 80
-      group_label: Albert
+      bottom_label: Albert
 
     - bar_value: 12
-      group_label: Difference
+      bottom_label: Difference
 
 - component_name: barGraph
   component_title: Groundbreaking research
@@ -114,27 +114,27 @@ components:
     - bar_value: 55
       bar_value_label: Custom label
       bar_color: "#DD5566"
-      group_label: National
+      bottom_label: National
 
     - bar_value: 70
       bar_value_label: Custom value would gohere
-      group_label: Albert
+      bottom_label: Albert
 
     - bar_value: 15
-      group_label: Difference
+      bottom_label: Difference
 
   - graph_title: 2 Year Averages
     tab_label: History
     data:
     - bar_value: 53
       bar_color: "#DD5566"
-      group_label: National
+      bottom_label: National
 
     - bar_value: 66
-      group_label: Albert
+      bottom_label: Albert
 
     - bar_value: 13
-      group_label: Difference
+      bottom_label: Difference
 
 - component_name: hero
   title: Case studies
