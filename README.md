@@ -56,12 +56,6 @@ Data > nav.yml (More to come on this)
 ### Site information
 Data > information (More to come on this)
 
-## Built With
+## Author
 
-* [Jekly](https://jekyllrb.com/) - The web framework used
-
-
-
-## Authors
-
-* **Marc Deely** - [Portfolio website](http://www.marcdeely.com/)
+**Marc Deely**
