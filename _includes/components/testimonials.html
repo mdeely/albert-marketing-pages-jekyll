@@ -7,7 +7,7 @@
 		{% for testimonialItem in testimonials.testimonialItems %}
 		<li class="testimonial__item">
 			<div class="testimonial__visual">
-				<img src="{{ testimonialItem.teacher_img_src }}">
+				<img src="{{ site.asset_path }}{{ testimonialItem.teacher_img_src }}">
 			</div>
 			<div class="testimonial__info">
 				<div class="testimonial__quote">

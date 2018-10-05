@@ -12,7 +12,7 @@
 			      		<a href="#{{ comicStrip.teacher_name | slugify }}" class="tabBar__anchor">
 					{% endif %}
 			      {% if comicStrip.teacher_img_src %} 
-			      	<img src="/assets/img/teacher_portraits/{{ comicStrip.teacher_img_src }}">
+			      	<img src="{{ site.asset_path }}{{ comicStrip.teacher_img_src }}">
 			      {% endif %}
 			      {{ comicStrip.teacher_name }}
 			      	</a>
@@ -36,7 +36,7 @@
 							<li class="comicPanel__item" data-appear-top-offset="-300">
 						{% endif %}
 							<figure class="comicPanel__link">
-								<img src="{{ baseurl }}/{{ comicPanel.img_src }}" class="comicPanel__img"/>
+								<img src="{{ site.asset_path }}{{ comicPanel.img_src }}" class="comicPanel__img"/>
 								<figcaption class="comicPanel__caption">{{ comicPanel.caption }}</figcaption>
 							</figure>
 						</li>

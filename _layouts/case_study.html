@@ -3,7 +3,7 @@
 {% include nav.html %}
 
 	<div class="caseStudy">
-		<div class="caseStudy__hero" style="background-image: url(' {{ page.hero_img_src }} ')">
+		<div class="caseStudy__hero" style="background-image: url(' {{ site.asset_path }}{{ page.hero_img_src }} ')">
 			<a class="caseStudy__back button" href="/case-studies"><i class="fa fa-chevron-left"></i>All studies</a>
 			<h1 class="caseStudy__title">{{ page.title }}</h1>
 			<div class="caseStudy__school-info">

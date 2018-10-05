@@ -1,0 +1,23 @@
+.errorPage {
+	padding-top: $nav-height;
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+
+  h1 {
+    padding-top: $nav-height *1.25;
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+
+  h2 {
+  	margin-bottom: rem(40);
+  }
+
+  a {
+  	display: block;
+    margin-bottom: rem(100);
+  }
+}

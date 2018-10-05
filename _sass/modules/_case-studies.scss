@@ -2,13 +2,41 @@
 	padding-top: $nav-height;
 
 	.caseStudies__hero {
-		padding: rem(40);
 		background-color: $studies-hero-color;
 		color: #FFF;
 		text-align: center;
 	    background-position: center;
 	    background-repeat: no-repeat;
 	    background-size: cover;
+		padding-top: rem(40);
+		padding-bottom: rem(40);
+		position: relative;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    background-attachment: fixed;
+	    overflow: hidden;
+	    max-width: 100%;
+
+		&:after {
+			content: "";
+			max-width: 100%;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: .9;
+			background-color: $studies-hero-color;
+		}
+
+		> * {
+			margin-left: $container-spacing;
+			margin-right: $container-spacing;
+			position: relative;
+			z-index: 2;
+		}
 
 		.caseStudies__hero-title {
 			@include title-large;

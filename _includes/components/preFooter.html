@@ -14,7 +14,7 @@
 <section class="preFooter">
     <div class="preFooter__left">
         <div class="preFooter__visual">
-            <img src="{{ baseurl }}/{{ preFooter.left.img_src | default: 'assets/img/random-img.svg' }}"/>
+            <img src="{{ site.asset_path }}{{ preFooter.left.img_src | default: "{{ site.asset_path }}random-img.svg" }}"/>
         </div>
         <div class="preFooter__info-container">
             <div class="preFooter__title">{{ preFooter.left.title | default: left_title  }}</div>
@@ -24,7 +24,7 @@
     </div>
     <div class="preFooter__right">
         <div class="preFooter__visual">
-            <img src="{{ baseurl }}/{{ preFooter.right.img_src | default: 'assets/img/random-img.svg' }}"/>
+            <img src="{{ site.asset_path }}{{ preFooter.right.img_src | default: "{{ site.asset_path }}random-img.svg" }}"/>
         </div>
         <div class="preFooter__info-container">
             <div class="preFooter__title">{{ preFooter.right.title | default: right_title  }}</div>

@@ -29,7 +29,7 @@
 				{% else %}
 					<div class="slide__visual">
 				{% endif %}
-					<img src="{{ slideshowItem.img_src}}"></img>
+					<img src="{{ site.asset_path }}{{ slideshowItem.img_src}}"></img>
 				</div>
 			</li>
 			{% endfor %}

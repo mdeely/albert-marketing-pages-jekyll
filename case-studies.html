@@ -3,13 +3,13 @@ layout: case_studies
 title: Explore case studies
 ---
 <div class="caseStudies">
-	<div class="caseStudies__hero">
+	<div class="caseStudies__hero" style="background-image: url(' {{ site.asset_path }}hero/home-hero.svg ')">
 		<h1 class=caseStudies__hero-title>{{ page.title }}</h1>
 	</div>
 	<ul class="caseStudy__list">
 		{% for study in site.case-studies %}
 			<li class="caseStudy__item">
-        		<div class="caseStudy__hero" style="background-image: url(' {{ study.hero_img_src }} ')"></div>
+        		<div class="caseStudy__hero" style="background-image: url(' {{ site.asset_path }}{{ study.hero_img_src }} ')"></div>
 				<div class="caseStudy__title">{{ study.title }}</div>
         		<div class="caseStudy__school-info">
 					<div class="caseStudy__location">{{ study.location }}</div>

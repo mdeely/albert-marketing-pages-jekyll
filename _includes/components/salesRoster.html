@@ -16,7 +16,7 @@
 				{% for person in salesRoster.salesRosterItems %}
 				<li class="salesRoster__item">
 					<figure class="salesRoster__profile">
-						<div style="background-image: url('../{{ person.profile_img }}')" class="salesRoster__profile-visual"></div>
+						<div style="background-image: url('..{{ site.asset_path }}{{ person.profile_img }}')" class="salesRoster__profile-visual"></div>
 						<figcaption class="salesRoster__caption">{{ person.name }}</figcaption>
 					</figure>
 				</li>

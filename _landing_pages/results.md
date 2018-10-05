@@ -6,7 +6,7 @@ components:
   supertitle: Results
   title: Acheive better outcomes
   description: Albert challenges students to apply what they learn and make connections between concepts. The results speak for themselves.
-  hero_img: "assets/img/hero-test.svg"
+  hero_img: "hero-test.svg"
 
 - component_name: barGraph
   component_title: Groundbreaking efficacy research
@@ -141,7 +141,7 @@ components:
   description: See how Albert has helped schools significantly improve learning outcomes and boost teacher productivity.
   cta_label: Explore case studies
   cta_url: /case-studies
-  hero_img: "assets/img/hero-test.svg"
+  hero_img: "hero-test.svg"
 
 # Testimonials
 - component_name: testimonials
@@ -150,14 +150,14 @@ components:
   - title: Title 1
     quote: I’m a success today because I had a friend who believed in me and I didn’t have the heart to let him down.
     teacher_name: Abraham Lincoln
-    teacher_img_src: "assets/img/testimonials/Phelps, David_square_sm.jpg"
+    teacher_img_src: "testimonials/Phelps, David_square_sm.jpg"
     teacher_type: Teacher type 1
     teacher_level: Teacher level 1
     teacher_location: Chicago, IL 1
 
   - title: Title 2
     quote: quote 2 lorem ipsum ipsum lorem ipsum ipsum random text here that would be the quote
-    teacher_img_src: "assets/img/testimonials/Gilezan, Lauren_square_sm.jpg"
+    teacher_img_src: "testimonials/Gilezan, Lauren_square_sm.jpg"
     teacher_name: Name 2
     teacher_type: Teacher type 2
     teacher_level: Teacher level 2
@@ -165,7 +165,7 @@ components:
 
   - title: Title 2
     quote: quote 2 lorem ipsum ipsum lorem ipsum ipsum random text here that would be the quote
-    teacher_img_src: "assets/img/testimonials/Gilezan, Lauren_square_sm.jpg"
+    teacher_img_src: "testimonials/Gilezan, Lauren_square_sm.jpg"
     teacher_name: Name 2
     teacher_type: Teacher type 2
     teacher_level: Teacher level 2

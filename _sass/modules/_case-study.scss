@@ -155,6 +155,12 @@
 			}
 		}
 
+		h1 {
+			max-width: rem(500);
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 		p,
 		.caseStudy__info-paragraph {
 			font-size: rem(17);

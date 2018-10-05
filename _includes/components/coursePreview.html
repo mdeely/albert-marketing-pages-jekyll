@@ -52,7 +52,7 @@
 					<div class="coursePreview__card-item-title">{{ card.card_title }}</div>
 
 					<div class="coursePreview__card-item-visual">
-						<img src="{{ card.card_img_src }}">
+						<img src="{{ site.asset_path }}{{ card.card_img_src }}">
 					</div>
 				</li>
 	  		{% endfor %}

@@ -23,8 +23,14 @@ All URLs are generated from mardown files (.md) within the following folders:
 * ``/_landing_pages``
 * ``/_case_studies``
 
+Markdown flavor is [Kramdown](https://kramdown.gettalong.org/syntax.html).
+
 ## Create a page
 Make sure to read this even if you don't want to create a new page. It will likely help you understand how to edit more effecitvly. 
+
+### SEO + [Open Graph](http://ogp.me/)
+For SEO purposes, define the title and description of each page (notes on how to do so below). The title will be the **page title** and the **og:title**. The description will be the **page description** and the **og:description**. 
+
 
 ### New landing page
 1. Create a new .md file and place it in ``/_landing_pages``. Name the file whatever you want the URL to read as. Ex: ``name-of-file.md`` would appear as ``www.website.com/name-of-file``
@@ -39,7 +45,7 @@ Make sure to read this even if you don't want to create a new page. It will like
 1. Create a new .md file and place it in ``/_case_studies``. Name the file whatever you want the URL to read as. Ex: ``/case-studies/name-of-study.md`` would appear as ``www.website.com/name-of-study``
 2. The file must start with a YAML front matter block. This means that the start of **the file should have three dashes at the start and end of the document.** You will define the following between the dashes:
 * **Title** Title of study name.  This will also appear in the index page at ``/case-studies``
-* **Description** Description of study. This will also appear in the index page at ``/case-studies``
+* **Description** Description of study. This will appear in the index page at ``/case-studies``
 * **Location** Location of school
 * **School level** Middle school, High school, etc
 * **Hero image** Appears at top of the case study page as well as in the index page at ``/case-studies``

@@ -72,14 +72,14 @@ $topOffset: 50;
 				.slide__info {
 					.slide__description {
 						left: 0;
-						transition: all .5s ease-in-out;
+						transition: all .7s ease-in-out;
 						opacity: 1;
 						transition-delay: .2s;
 					}
 				}
 
 				.slide__visual{
-					transition: left .5s ease-in-out, opacity 1s ease-in-out;
+					transition: left .5s ease-in-out, opacity .8s ease-in-out;
 					transition-delay: .3s
 				}
 			}
@@ -107,7 +107,7 @@ $topOffset: 50;
 					pointer-events: none;
 					position: relative;
 					left: rem(25);
-					transition: all 1s ease-in-out;
+					transition: all .8s ease-in-out;
 					opacity: 0;
 					transition-delay: .2s;
 				}
@@ -117,7 +117,7 @@ $topOffset: 50;
 				left: rem(50);
 				opacity: 0;
 				position: relative;
-				transition: left .5s ease-in-out, opacity 1s ease-in-out;
+				transition: left .5s ease-in-out, opacity .9s ease-in-out;
 				margin: rem(40) 0;
 				width: 100%;
 
