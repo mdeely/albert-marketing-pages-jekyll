@@ -1,7 +1,9 @@
 navItems:
+## label and url are all that is needed for a simple nav link. 
 - label: Subjects
   url: features
 
+## This is a mega menu dropdown. (Simple menu dropdown seen below this menu)
 - label: Solutions
   submenu:
     - group_title: K-12 Core
@@ -33,7 +35,7 @@ navItems:
         url: k-12-college-entrance
         icon_url: "/assets/img/subject_icons/advanced_placement_psychology.svg"
 
-
+## This is a simple dropdown menu. 
 - label: Explore
   submenu:
     - subitems:
