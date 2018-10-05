@@ -1,7 +1,5 @@
 # Marketing Pages for Albert (2018)
 
-These pages consist of a collection of marketing pages for Albert.
-
 ## Getting Started
 
 ### Prerequisites
