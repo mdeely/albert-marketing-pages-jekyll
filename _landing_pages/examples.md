@@ -66,9 +66,11 @@ components:
   cta_link: "#demo_form"
   description: Description # Does not display IF component_large is true
 
+
+## Lead gen component
 - component_name: leadGen
-  modal: true
-  modal_name: demo_form # Use "#the-modal-name-you-choose" in a cta_link to call that modal. 
+  modal: true # Include only if you want a modal. Must be set to "true"
+  modal_name: demo_form # This is a unique identifier. Modal_name must contain "form" somewhere. Do not use this name twice on one page. Use "#modal-name-you-choose" in a cta_link to enact this modal.  
   ## Paste the entirety of the "Javascript Embed Script" from formstack. Do not put quotes or anything around the code. 
   embed_script: <script type="text/javascript" src="https://learnwithalbert.formstack.com/forms/js.php/untitled_form"></script><noscript><a href="https://learnwithalbert.formstack.com/forms/untitled_form" title="Online Form">Online Form - Demo Request Form</a></noscript>
 
