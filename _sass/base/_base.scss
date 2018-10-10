@@ -11,10 +11,15 @@ html,
 body {
 	font-size: 100%;
 	color: $abbey-grey;
+	background-color: #FFFFFF;
 }
 
 body {
 	overflow-x: hidden;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
 }
 
 * {
@@ -51,6 +56,7 @@ hr {
 
 section {
 	overflow: hidden;
+	background-color: #FFFFFF;
 
 	&:nth-child(even):not(.hero) {
 		background-color: $bgGrey;

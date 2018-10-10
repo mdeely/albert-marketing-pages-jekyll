@@ -11,11 +11,14 @@ $( document ).ready(function() {
 	//
 	var navSubmenu = ".nav__dropdown";
 	var $directional_arrow_scroll = $(".directionalArrow.scrollTo");
-	var anchor = ".tabBar__anchor[href*='#']";
+	var anchor_tabs = ".tabBar__anchor[href*='#']";
+	var anchor_form = "[href*='form'][href*='#']";
+	var section_form = "section.leadGen";
 	var mainNav = $(".mainNav");
 	var navHeight = $(".mainNav").outerHeight();
 	var $slide = $(".slide__link");
 	var $mobileNavMenu = $(".mainNav__mobile-toggle");
+
 
 
 	//
@@ -24,7 +27,10 @@ $( document ).ready(function() {
 	$directional_arrow_scroll.on('click mouseover', goToNextSection);
 	$slide.on('click', updateSlideshowDisplay);
 	$mobileNavMenu.on('click', updateMobileNavMenu);
-	$(anchor).on('click', handleAnchorClick);
+	$(anchor_tabs).on('click', handleAnchorClick);
+	$(anchor_form).on('click', handleAnchorFormClick);
+	$(section_form).on('click', closeSectionForm);
+
 	$(navSubmenu).on('click', updateSubmenuDisplay);
 
 	// For 'scroll to' arrow on hero
@@ -102,6 +108,28 @@ $( document ).ready(function() {
 	// Functions
 	//
 	//
+
+	function closeSectionForm(event) {
+		var $leadGen = $(event.target);
+
+		if ( $leadGen.hasClass("modal") ) {
+			$leadGen.removeClass("active");
+			$('body').removeClass("no-scroll");
+		};
+	}
+
+	function handleAnchorFormClick(form_anchor) {
+        form_anchor.stopImmediatePropagation();
+		form_anchor.preventDefault();
+		
+		var $form_anchor = $(form_anchor.target);
+
+		var form_id = $form_anchor.attr('href').replace('#','');
+
+		$('section[id='+form_id+']').addClass('active');
+		$('body').addClass("no-scroll");
+	}
+
 	function goToNextSection(event) {
 		event.preventDefault();
 

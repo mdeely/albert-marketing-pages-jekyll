@@ -31,7 +31,7 @@ components:
       bar_color: "#DD5566" # Optional (default: green)
       bottom_label: Label below bar # Optional (recommended)
 
-# Testimonial components
+## Testimonial components
 - component_name: testimonials
   title: Title of tesimonial section
   testimonialItems:
@@ -46,7 +46,7 @@ components:
     teacher_location: Chicago, IL
 
 
-# Feature list component
+## Feature list component
 - component_name: featureList
   title: Optional title for stagger components
   staggerItems:
@@ -58,15 +58,21 @@ components:
     cta_url: cta-1 # Optional
     img_src: "random-img3.svg"
 
-# Interstitial component
+## Interstitial component
 - component_name: interstitial
   component_large: true ## Optional - remove component_large to use the alternate style
   title: Title for interstital # Does not display UNLESS component_large is true
   cta_label: Request demo
-  cta_link: ""
+  cta_link: "#demo_form"
   description: Description # Does not display IF component_large is true
 
-# Sales roster component
+- component_name: leadGen
+  modal: true
+  modal_name: demo_form # Use "#the-modal-name-you-choose" in a cta_link to call that modal. 
+  ## Paste the entirety of the "Javascript Embed Script" from formstack. Do not put quotes or anything around the code. 
+  embed_script: <script type="text/javascript" src="https://learnwithalbert.formstack.com/forms/js.php/untitled_form"></script><noscript><a href="https://learnwithalbert.formstack.com/forms/untitled_form" title="Online Form">Online Form - Demo Request Form</a></noscript>
+
+## Sales roster component
 - component_name: salesRoster
   title: Title of salesRoster component section
   description: Description of salesRoster component section
@@ -77,7 +83,7 @@ components:
   - profile_img: "random-img3.svg"
     name: Name Ofperson
 
-# Feature grid component
+## Feature grid component
 - component_name: featureGrid
   card_layout: true # Optional - Remove to use alternate display
   title: Title of grid component section
@@ -90,9 +96,9 @@ components:
     cta_label: CTA label # Optional
     cta_url: cta-url # Optional
 
-# Course preview component
-## Available domain names are the following:
-## ela, world-language, social-studies, computer-science, math, science, and other.
+## Course preview component
+### Available domain names are the following:
+### ela, world-language, social-studies, computer-science, math, science, and other.
 - component_name: coursePreview
   title: Title of coursePreview section
   group_title: Title of domain+group
@@ -110,7 +116,7 @@ components:
       card_img_src: "heart_of_darkness.svg"
       card_title: Title of subject
 
-# Comic strip component
+## Comic strip component
 - component_name: comicStrips
   comicStrips:
     ## Duplicate from here to add another comic strip
@@ -130,7 +136,7 @@ components:
       - img_src: "comic_1.png"
         caption: Caption of the comic panel image. 
 
-## Hero component
+### Hero component
 - component_name: hero
   subtitle: Subtitle for second hero # Optional
   title: Second instance of hero
@@ -139,7 +145,7 @@ components:
   cta_url: hero-url # Optional
   hero_img: "random-img3.svg"
 
-# Tab bar component
+## Tab bar component
 - component_name: tabBar
   tabBarItems:
     ## Duplicate from here to add another tabbar menu item
@@ -148,7 +154,7 @@ components:
     label: Example label
     url: "path/to/page" # Optional. When removed, the url will inherit the label name. ie. "#example-label"
 
-# Slideshow component
+## Slideshow component
 - component_name: slideshow
   title: Title of slideshow section
   description: Description of slideshow section ## Optional
@@ -160,7 +166,7 @@ components:
     img_src: "hero-test.svg"
 
 
-# Prefooter component
+## Prefooter component
 - component_name: preFooter
   # For the preFooter, only define the information below
   # below if you want to overwrite the defaults for a particular page
