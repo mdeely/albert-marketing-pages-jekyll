@@ -2,7 +2,7 @@
 
 <section class="featureList">
 	{% if featureList.title %}
-		<div class="featureList__title">{{ featureList.title }}</div>
+		<h2 class="featureList__title">{{ featureList.title }}</h2>
 	{% endif %}
 	{% if featureList.description %}
 		<div class="featureList__description">{{ featureList.description }}</div>
@@ -12,7 +12,7 @@
 		<li class="featureList__item">
 			<div class="featureList__item-info">
 				<div class="featureList__item-supertitle">{{ feature.supertitle}}</div>
-				<div class="featureList__item-title">{{ feature.title}}</div>
+				<h3 class="featureList__item-title">{{ feature.title}}</h3>
 
 				{% if feature.cta_url %}
 				<a href="{{ staggerItem.cta_url }}" class="featureList__item-anchor button">{{ feature.cta_label}}</a>

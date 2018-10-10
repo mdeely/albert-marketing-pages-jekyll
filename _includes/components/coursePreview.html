@@ -4,9 +4,9 @@
 
 <section class="coursePreview coursePreview-{{ index }}">
 	{% if coursePreview.title %}
-	<div class="coursePreview__title">{{ coursePreview.title }}</div>
+	<h2 class="coursePreview__title">{{ coursePreview.title }}</h2>
 	{% endif %}
-	<div class="coursePreview__group-title">{{ coursePreview.group_title }}</div>
+	<h3 class="coursePreview__group-title">{{ coursePreview.group_title }}</h3>
 	<div class="tabBar">
 	  	<ul class="tabBar__list">
 			{% if coursePreview.courseDomains.size > 1 %} 
