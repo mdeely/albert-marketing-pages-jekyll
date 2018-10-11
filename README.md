@@ -21,6 +21,9 @@ All URLs are generated from mardown files (.md) within the following folders:
 * ``/_landing_pages``
 * ``/_case_studies``
 
+When referencing the file path for visual assets, they will always be relative to `/assets/img/`.
+If you are trying to reference an image found in `assets/img/features/comics/panel_1.png`, you would just write `comics/panel_1.png`.
+
 Markdown flavor is [Kramdown](https://kramdown.gettalong.org/syntax.html).
 
 ## Create a page

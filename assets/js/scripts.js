@@ -1,14 +1,19 @@
 $( document ).ready(function() {
 
-	//
-	// For fade in effect
-	//
+	///////////////////////
+	// For fade in effect//
+	///////////////////////
+
 	$(function() {
 	    $('body').removeClass('fade-out');
 	});
-	//
-	// Gather elements
-	//
+
+
+
+	//////////////////////
+	// Gather elements //
+	/////////////////////
+
 	var navSubmenu = ".nav__dropdown";
 	var $directional_arrow_scroll = $(".directionalArrow.scrollTo");
 	var anchor_tabs = ".tabBar__anchor[href*='#']";
@@ -21,9 +26,10 @@ $( document ).ready(function() {
 
 
 
-	//
-	// Bind to events
-	//
+	////////////////////
+	// Bind to events //
+	////////////////////
+
 	$directional_arrow_scroll.on('click mouseover', goToNextSection);
 	$slide.on('click', updateSlideshowDisplay);
 	$mobileNavMenu.on('click', updateMobileNavMenu);
@@ -33,7 +39,12 @@ $( document ).ready(function() {
 
 	$(navSubmenu).on('click', updateSubmenuDisplay);
 
-	// For 'scroll to' arrow on hero
+
+
+	///////////////////////////////////
+	// For 'scroll to' arrow on hero //
+	///////////////////////////////////
+
 	setTimeout(
 	  function() 
 	  {
@@ -51,18 +62,23 @@ $( document ).ready(function() {
         }
     });
 
-	//
-	// The following will wrap all restricted marks with a <sup> tag
-	//
+
+
+	///////////////////////////////////////////////////////////////////
+	// The following will wrap all restricted marks with a <sup> tag //
+	///////////////////////////////////////////////////////////////////
 	$('body :not(script)').contents().filter(function() {
 	    return this.nodeType === 3;
 	}).replaceWith(function() {
 	    return this.nodeValue.replace(/[™®©]/g, '<sup>$&</sup>');
 	});
 
-	//
-	// Hide nav when user scroll up, show when user scroll down
-	//
+
+
+	/////////////////////////////////////////////////////////////
+	// Hide nav when user scroll up, show when user scroll down//
+	/////////////////////////////////////////////////////////////
+
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
 	  var currentScrollPos = window.pageYOffset;
@@ -77,9 +93,11 @@ $( document ).ready(function() {
 	  prevScrollpos = currentScrollPos;
 	}
 
-	//
-	// The following will highlight comic panels as they come in to view on mobile
-	//
+
+
+	/////////////////////////////////////////////////////////////////////////////////
+	// The following will highlight comic panels as they come in to view on mobile //
+	/////////////////////////////////////////////////////////////////////////////////
 
 	if ( $("section.comicStrip").length > 0 ) {	
 
@@ -103,11 +121,10 @@ $( document ).ready(function() {
 	}
 
 
-	//
-	//
-	// Functions
-	//
-	//
+
+	///////////////
+	// Functions //
+	///////////////
 
 	function closeSectionForm(event) {
 		var $leadGen = $(event.target);
@@ -208,8 +225,6 @@ $( document ).ready(function() {
 		$parent.find(id).addClass('active');
 	}
 
-
-	// MOBILE NAV
 	function updateMobileNavMenu(event) {
 		var $mainNav = $('.mainNav');
 		var $toggleOpen = $('.toggle--open');

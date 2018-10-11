@@ -20,7 +20,6 @@ page:
   title: Learn By Doing
   tagline: Learn By Doing
   description: "Acheive mastery with world-class learning content on Albert."
-  logo_path: "/assets/img/logo_combined_blue.svg"
-  base_url: http://127.0.0.1:4000
+  logo_path: "/assets/img/albert-og-image.jpg"
   ogImage: "assets/img/albert-og-image.jpg"
 
