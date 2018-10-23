@@ -127,6 +127,5 @@ components:
       fill in the content knowledge assessed on the exam.
     img_src: k_12_advanced_placement/questions-that-mimic-the-exam.png
 - component_name: preFooter
-published: false
 
 ---
