@@ -4,7 +4,7 @@ components:
 - component_name: hero
   supertitle: K-12 Advanced Placement®
   title: The best AP® test prep in the world
-  description: Albert the established industry leader in Advanced Placement. With
+  description: Albert is the established industry leader in Advanced Placement. With
     the largest library of standards-aligned and fully-explained questions in the
     world, students who use Albert will be thoroughly prepared for their exams.
   cta_label: Get started
@@ -127,5 +127,6 @@ components:
       fill in the content knowledge assessed on the exam.
     img_src: k_12_advanced_placement/questions-that-mimic-the-exam.png
 - component_name: preFooter
+published: false
 
 ---
