@@ -61,7 +61,6 @@ Within `data/nav.yml`, you can update the navigation structure in the primary na
 
 ### Site information
 Within ``data/information.yml`` you can set variables for things like the company address, phone number, taglines, or anything else that may be used frequently and/or repeated throughout the site.
-Data > information (More to come on this)
 
 ### Config
 Within ``config.yml``, you will find a the configuration for the app. You can set global variables here as well. These variables are meant to be changed infrequently if at all and are generally used for backend configuration. A notable variable in here is the ``asset_path`` var. This may need to be updated based on where the assets come from. 
