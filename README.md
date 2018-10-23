@@ -56,13 +56,16 @@ For SEO purposes, define the title and description of each page (notes on how to
 ### Component documentation
 View file ``examples.md`` for information on components.
 Visit ``/examples`` to see them live. 
-
 ### Update the navigation
-Data > nav.yml (More to come on this)
+Within `data/nav.yml`, you can update the navigation structure in the primary nav. Look at this file for more information. 
 
 ### Site information
+Within ``data/information.yml`` you can set variables for things like the company address, phone number, taglines, or anything else that may be used frequently and/or repeated throughout the site.
 Data > information (More to come on this)
 
-## Author
+### Config
+Within ``config.yml``, you will find a the configuration for the app. You can set global variables here as well. These variables are meant to be changed infrequently if at all and are generally used for backend configuration. A notable variable in here is the ``asset_path`` var. This may need to be updated based on where the assets come from. 
 
-**Marc Deely**
+## Author
+**[Marc Deely](www.marcdeely.com)**
+themarcusdeely@gmail.com
