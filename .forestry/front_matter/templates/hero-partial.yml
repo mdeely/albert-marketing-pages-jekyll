@@ -1,0 +1,15 @@
+---
+label: Hero partial
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  label: Hero Title
+  name: hero_title
+  description: 'Hero title goes here. '
+  config:
+    required: true
+- type: text
+  name: hero_subtitle
+  label: Hero Subtitle
+  description: Hero subtitle goes here
