@@ -1,0 +1,24 @@
+---
+label: Landing page
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+- type: text
+  label: Description
+  name: description
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: blocks
+- type: blocks
+  name: components
+  label: Components
+  template_types:
+  - navigation-header
+  - navigation-header-w-button
+pages:
+- index.md

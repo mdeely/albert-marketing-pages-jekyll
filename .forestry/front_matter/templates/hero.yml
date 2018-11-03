@@ -1,5 +1,5 @@
 ---
-label: hero-banner-marc-test
+label: Hero component
 hide_body: false
 is_partial: true
 fields:
@@ -7,10 +7,7 @@ fields:
   hidden: true
   label: block
   name: block
-  default: hero-2
-- type: file
-  name: background_image
-  label: Background Image
+  default: hero_component
 - type: field_group
   name: image
   label: Image
@@ -22,22 +19,24 @@ fields:
     name: alt_text
     label: Alt Text
 - type: textarea
-  name: headline
-  label: Headline
+  name: description
+  label: Description
   config:
     wysiwyg: true
     schema:
       format: html
-- type: boolean
-  name: content
-  label: Content
-  config:
-    wysiwyg: true
-    schema:
-      format: html
+- type: text
+  name: hero_title
+  label: Title
+- type: text
+  name: hero_supertitle
+  label: Supertitle
+- type: text
+  name: description
+  label: Description
 - type: field_group
   name: cta
-  label: Call-to-action
+  label: Call to action
   fields:
   - type: boolean
     name: enabled
