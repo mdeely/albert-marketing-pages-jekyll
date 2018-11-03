@@ -28,7 +28,7 @@ fields:
     wysiwyg: true
     schema:
       format: html
-- type: textare a
+- type: boolean
   name: content
   label: Content
   config:
