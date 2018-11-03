@@ -17,5 +17,4 @@ components:
     url: Call to action
     button_text: Call to action
 published: false
-
 ---
