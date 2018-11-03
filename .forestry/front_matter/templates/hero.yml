@@ -19,7 +19,7 @@ fields:
     name: alt_text
     label: Alt Text
 - type: text
-  name: hero_supertitle
+  name: supertitle
   label: Supertitle
 - type: text
   name: hero_title

@@ -1,32 +1,18 @@
-{% assign hero = section %}
-
-<!-- {% if section.component_index == 1 %}
-<section class="hero main">
-{% else %} -->
 <section class="hero">
-<!-- {% endif %}
- -->
     <div class="hero__content">
         <div class="hero__info-container">
         
-            {% if hero.supertitle %} 
-                <div class="hero__supertitle">{{ hero.supertitle }}</div>
-            {% endif %}
+                <div class="hero__supertitle">{{ section.supertitle }}</div>
 
-            {% if hero.title %} 
-                <h1 class="hero__title">{{ hero.title }}</h1>
-            {% endif %}
+                <h1 class="hero__title">{{ section.title }}</h1>
 
-            {% if hero.description %} 
-                <p class="hero__description">{{ hero.description }}</p>
-            {% endif %}
+                <p class="hero__description">{{ section.description }}</p>
 
-            {% if hero.cta_url %} 
-                <a href="{{ hero.cta_url }}" class="button--large hero__cta">{{ hero.cta_label }}</a>
+            {% if section.cta and section.cta.enabled == true %}
+            <a href="{{ section.cta.url }}" class="button--large hero__cta">{{ section.cta.button_text }}</a>
             {% endif %}
-
         </div>
-        <div class="hero__visual" style="background-image: url(' {{ site.asset_path }}{{ hero.hero_img }} ')"></div>
+        <div class="hero__visual" style="background-image: url(' {{ section.image }} ')"></div>
     </div>
     {% if include.directional_arrow == true %} 
         {% include /components/directionalArrow.html %}

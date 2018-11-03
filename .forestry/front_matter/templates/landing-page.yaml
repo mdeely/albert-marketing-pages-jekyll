@@ -4,10 +4,10 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
-  label: Title
+  label: Page title
   name: title
 - type: text
-  label: Description
+  label: Page description
   name: description
 - type: text
   name: layout
