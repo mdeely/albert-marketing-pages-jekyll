@@ -1,27 +1,25 @@
 ---
 new_page_extension: md
 auto_deploy: true
-admin_path: ''
+admin_path: 
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Pages
-  create: all
+- type: document
+  path: FORESTRY-README.md
+  label: Welcome - First Steps
+  read_only: true
 - type: jekyll-posts
   label: Posts
   create: all
 - type: directory
-  path: _case-studies
-  label: Case studies
+  path: ''
+  label: Pages
   create: all
-  match: "**/*"
-- type: directory
-  path: _landing_pages
-  label: Landing pages
-  create: all
-  match: "**/*"
+  match: "*.md"
+  exclude: "*README.md"
+  new_doc_ext: md
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ":filename:"
+file_template: ":year:/:month:/:day:/:filename:"
