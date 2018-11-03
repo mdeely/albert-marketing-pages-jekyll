@@ -31,9 +31,6 @@ fields:
 - type: text
   name: hero_supertitle
   label: Supertitle
-- type: text
-  name: description
-  label: Description
 - type: field_group
   name: cta
   label: Call to action
