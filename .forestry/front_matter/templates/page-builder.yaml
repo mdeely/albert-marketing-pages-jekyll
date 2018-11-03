@@ -18,6 +18,7 @@ fields:
   name: page_sections
   label: Page Sections
   template_types:
+  - hero_marc_test
   - navigation-header
   - navigation-header-w-button
   - simple-header
