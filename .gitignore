@@ -13,3 +13,4 @@ ngrok
 .ngrok
 /ngrok
 ./ngrok
+.DS_store

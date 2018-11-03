@@ -7,7 +7,7 @@ fields:
   hidden: true
   label: block
   name: block
-  default: hero_component
+  default: hero-component
 - type: field_group
   name: image
   label: Image
