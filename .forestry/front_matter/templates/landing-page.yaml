@@ -20,5 +20,3 @@ fields:
   template_types:
   - navigation-header
   - navigation-header-w-button
-pages:
-- index.md
