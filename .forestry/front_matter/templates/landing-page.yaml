@@ -18,6 +18,7 @@ fields:
   name: components
   label: Components
   template_types:
+  - hero
   - navigation-header
   - navigation-header-w-button
 pages:
