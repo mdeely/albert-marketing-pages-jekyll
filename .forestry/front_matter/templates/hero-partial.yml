@@ -6,7 +6,7 @@ fields:
 - type: text
   label: Hero Title
   name: hero_title
-  description: 'Hero title goes here. '
+  description: 'I just changed this to test it out. Should be reflected in repo. '
   config:
     required: true
 - type: text
