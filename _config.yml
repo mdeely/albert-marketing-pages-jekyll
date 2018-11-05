@@ -14,12 +14,12 @@ theme: minima
 plugins:
   - jekyll-feed
 
-collections: 
-  landing_pages: 
-    output: true
-    permalink: /:name
-  case-studies:
-    output: true
+# collections: 
+#   landing_pages: 
+#     output: true
+#     permalink: /:name
+#   case-studies:
+#     output: true
 
 defaults:
   - scope:

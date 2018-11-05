@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero main">
     <div class="hero__content">
         <div class="hero__info-container">
         
@@ -14,7 +14,5 @@
         </div>
         <div class="hero__visual" style="background-image: url(' {{ section.image }} ')"></div>
     </div>
-    {% if include.directional_arrow == true %} 
-        {% include /components/directionalArrow.html %}
-    {% endif %}
+    {% include /components/directionalArrow.html %}
 </section>
