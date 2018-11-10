@@ -42,4 +42,4 @@ fields:
       name: button_text
       label: Button text
   config:
-    labelField: Features
+    labelField: title
