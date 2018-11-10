@@ -21,5 +21,6 @@ fields:
   label: Components
   template_types:
   - hero
+  - feature_list
 pages:
 - home.md
