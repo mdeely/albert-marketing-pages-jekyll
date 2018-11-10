@@ -8,47 +8,30 @@ fields:
   label: block
   name: block
   default: feature-list-component
-  - type: field_group_list
-    name: feature-item
-    label: Feature item
-    description: Feature item
-    hidden: false
-    fields: 
+- type: field_group_list
+  name: feature-item
+  label: Feature item
+  description: Feature item
+  hidden: false
+  fields: 
+  - type: text
+    name: supertitle
+    label: Supertitle
+  - type: text
+    name: title
+    label: Title
+  - type: field_group
+    name: cta
+    label: Call to action
+    fields:
+    - type: boolean
+      name: enabled
+      label: Enabled
     - type: text
-      name: supertitle
-      label: Supertitle
+      name: url
+      label: url
     - type: text
-      name: title
-      label: Title
-    - type: field_group
-      name: cta
-      label: Call to action
-      fields:
-      - type: boolean
-        name: enabled
-        label: Enabled
-      - type: text
-        name: url
-        label: url
-      - type: text
-        name: button_text
-        label: Button text
-    config:
-      labelField: Features
-
-
-
-
-
-
-## Feature list component
-- component_name: featureList
-  title: Optional title for stagger components
-  staggerItems:
-  ## Duplicate from here to add another item
-  ## Recommended 2 minimum
-  - supertitle: supertitle 1
-    title: title 1
-    cta_label: CTA 1 # Optional
-    cta_url: cta-1 # Optional
-    img_src: "example_images/feature-example_1.svg"
+      name: button_text
+      label: Button text
+  config:
+    labelField: Features
