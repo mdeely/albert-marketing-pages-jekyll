@@ -22,7 +22,7 @@ fields:
   name: supertitle
   label: Supertitle
 - type: text
-  name: hero_title
+  name: title
   label: Title
 - type: textarea
   name: description
