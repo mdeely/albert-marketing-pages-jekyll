@@ -12,6 +12,8 @@ fields:
   name: title
   label: Title
   description: Title for feature list.
+  config:
+    required: true
 - type: text
   name: description
   label: Description
@@ -28,6 +30,8 @@ fields:
   - type: text
     name: title
     label: Title
+    config:
+      required: true
   - type: field_group
     name: image
     label: Image
