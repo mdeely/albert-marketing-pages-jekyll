@@ -47,5 +47,5 @@ fields:
 - type: boolean
   name: primary_hero
   label: Primary hero
-  description: Disable if this hero is shown further down the page. 
+  description: Disable if this hero is shown further down the page.
   default: true
