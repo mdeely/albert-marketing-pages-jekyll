@@ -17,7 +17,7 @@ fields:
   label: Description
   description: Description for feature grid.
 - type: field_group_list
-  name: feature_item
+  name: feature_items
   label: Feature item
   description: Feature item
   hidden: false
