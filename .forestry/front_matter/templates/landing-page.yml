@@ -20,10 +20,4 @@ fields:
   name: components
   label: Components
   template_types:
-<<<<<<< HEAD
   - hero
-=======
-  - hero
-  - navigation-header
-  - navigation-header-w-button
->>>>>>> 9d7f36981363a1b5fdc8a2b4ed93a03849feeec0
