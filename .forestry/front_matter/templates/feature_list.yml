@@ -29,6 +29,16 @@ fields:
     name: title
     label: Title
   - type: field_group
+    name: image
+    label: Image
+    fields:
+    - type: file
+      name: image
+      label: Image
+    - type: text
+      name: alt_text
+      label: Alt Text
+  - type: field_group
     name: cta
     label: Call to action
     fields:
