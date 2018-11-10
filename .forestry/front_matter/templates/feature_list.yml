@@ -13,7 +13,7 @@ fields:
   label: Feature item
   description: Feature item
   hidden: false
-  fields: 
+  fields:
   - type: text
     name: supertitle
     label: Supertitle
