@@ -57,7 +57,7 @@ fields:
       label: Button text
   config:
     labelField: title
-- type: bloolean
+- type: boolean
   name: card_layout
   label: Card layout
   description: Enable this to make the feature items look like cards. 
