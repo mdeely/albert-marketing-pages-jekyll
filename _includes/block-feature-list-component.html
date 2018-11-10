@@ -1,1 +1,27 @@
-<h1>Feature list is kind of working?</h1>
+
+<section class="featureList">
+	{% if section.title %}
+		<h2 class="featureList__title">{{ section.title }}</h2>
+	{% endif %}
+	{% if section.description %}
+		<div class="featureList__description">{{ section.description }}</div>
+	{% endif %}
+	<ul class="featureList__list">
+		{% for feature in section.feature_item %}
+		<li class="featureList__item">
+			<div class="featureList__item-info">
+				<div class="featureList__item-supertitle">{{ feature.supertitle}}</div>
+				<h3 class="featureList__item-title">{{ feature.title}}</h3>
+
+            	{% if section.cta and section.cta.enabled == true %}
+				<a href="{{ staggerItem.cta.url }}" class="featureList__item-anchor button">{{ feature.cta.button_text}}</a>
+				{% endif %}
+				
+			</div>
+			<div class="featureList__item-visual">
+            	<img src="{{ site.asset_path }}{{ feature.img_src }}"/>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+</section>

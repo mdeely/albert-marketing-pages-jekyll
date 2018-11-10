@@ -8,8 +8,16 @@ fields:
   label: block
   name: block
   default: feature-list-component
+- type: text
+  name: title
+  label: Title
+  description: Title for feature list. 
+- type: text
+  name: description
+  label: Description
+  description: Description for feature list.
 - type: field_group_list
-  name: feature-item
+  name: feature_item
   label: Feature item
   description: Feature item
   hidden: false
