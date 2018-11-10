@@ -60,5 +60,5 @@ fields:
 - type: boolean
   name: card_layout
   label: Card layout
-  description: Enable this to make the feature items look like cards. 
+  description: Enable this to make the feature items look like cards.
   default: false
