@@ -11,7 +11,7 @@ fields:
 - type: text
   name: title
   label: Title
-  description: Title for feature list. 
+  description: Title for feature list.
 - type: text
   name: description
   label: Description
