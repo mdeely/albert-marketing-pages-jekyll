@@ -20,7 +20,8 @@ fields:
   name: components
   label: Components
   template_types:
-  - feature_list
   - hero
+  - feature_list
+  - feature_grid
 pages:
 - home.md
