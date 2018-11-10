@@ -21,3 +21,5 @@ fields:
   label: Components
   template_types:
   - hero
+pages:
+- home.md
