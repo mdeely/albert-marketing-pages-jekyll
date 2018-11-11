@@ -18,15 +18,15 @@ fields:
   name: cta
   label: Call to action
   fields:
+  - type: boolean
+    name: enabled
+    label: Enabled
   - type: text
     name: url
     label: url
   - type: text
     name: button_text
     label: Button text
-  - type: boolean
-    name: enabled
-    label: Enabled
 - type: boolean
   name: large
   label: Large
