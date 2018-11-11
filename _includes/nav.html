@@ -9,11 +9,11 @@
     	</div>
 		<nav role=navigation>
 			<ul class="mainNav__nav">
-				{% for item in site.data.menus.main %}
-    				{% if item.children %}
+				{% for item in site.data.menus.primary_nav %}
+    				{% if item.children.count > 0 %}
 			      		<li class="nav__dropdown">{{ navItem.title }}<i class="fa fa-caret-down"></i>
 		                	<ul>
-		      					{% for item in item.children.count > 0 %}
+		      					{% for item in item.children %}
 
 
 									<div>

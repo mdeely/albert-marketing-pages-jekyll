@@ -1,10 +1,10 @@
 ---
-main:
+primary_nav:
 - url: albert.io
   weight: 1
   parent: item_jXd2mqC
   title: Secondary
   identifier: item_pEjQBVQ
-- title: Primary navigation
+- title: First
   weight: 1
   identifier: item_jXd2mqC
