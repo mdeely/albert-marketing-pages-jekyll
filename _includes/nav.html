@@ -11,10 +11,10 @@
     	</div>
 		<nav role=navigation>
 			<ul class="mainNav__nav">
-				{% for nav_items in site.menus.primary_navigation %}
+				{% for nav_item in site.menus.main %}
 					<li>
-						{% if my_page.title %}
-      						<a class="page-link" href="{{ nav_items.url | relative_url }}">{{ nav_items.title | escape }}</a>
+						{% if nav_item.title %}
+      						<a class="page-link" href="{{ nav_item.url | relative_url }}">{{ nav_item.title | escape }}</a>
     					{% endif %}
 					</li>
 				{% endfor %}
