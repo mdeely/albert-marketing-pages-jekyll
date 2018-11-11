@@ -10,11 +10,13 @@
 		<nav role=navigation>
 			<ul class="mainNav__nav">
 				{% for item in site.data.menus.primary_nav %}
-    				{% if item.parent %}
-			      		<li class="nav__dropdown">{{ navItem.title }}<i class="fa fa-caret-down"></i>
+    				{% if item.children %}
+			      		<li class="nav__dropdown">{{ item.title }}<i class="fa fa-caret-down"></i>
 		                	<ul>
 		      					{% for item in item.children %}
-									<div>
+
+		      					<li><a href="">{{ item.title }}</a></li>
+<!-- 									<div>
 										{% if submenu.group_title %}
 					   						<div class="nav__subitem-group-title">{{ submenu.group_title }}</div>
 										{% endif %}
@@ -37,7 +39,7 @@
 							      				</a>
 							      			</li>
 						   				 {% endfor %}
-						   			</div>
+						   			</div> -->
 
 
 		      					{% endfor %}
