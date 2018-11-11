@@ -5,22 +5,22 @@
     {% for tabBar in section.tab_bar_item %}
       <li class="tabBar__item">
           {% if forloop.index == 1 && section.active && section.active == true %}
-            <a href="{{ section.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+            <a href="{{ tabBar.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% elsif forloop.index == 1  %}
-            <a href="{{ section.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+            <a href="{{ tabBar.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% else %}
-            <a href="{{ section.url }}" class="{{ anchorClass }}">
+            <a href="{{ tabBar.url }}" class="{{ anchorClass }}">
           {% endif %}
 
-<!--            <a href="#{{ section.url | slugify }}" class="{{ anchorClass | append: " " | append: "active" }}" >
-           <a href="#{{ section.url | slugify }}" class="{{ anchorClass }}">
+<!--            <a href="#{{ tabBar.url | slugify }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+           <a href="#{{ tabBar.url | slugify }}" class="{{ anchorClass }}">
  -->
-          {% if section.image %} 
-            <img src="{{ section.image }}">
+          {% if tabBar.image %} 
+            <img src="{{ tabBar.image }}">
           {% endif %}
 
-          {{ section.link_text }}
-          
+          {{ tabBar.link_text }}
+
         </a>
       </li>
     {% endfor %}
