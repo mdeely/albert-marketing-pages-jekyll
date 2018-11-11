@@ -3,12 +3,12 @@
 	{% if section.title %}
 		<div class="interstitial__title">{{ section.title }}</div>
 	{% endif %}
-	{% if section.cta && section.cta.enabled %}
+	{% if section.cta && section.cta.enabled == true %}
 		<a href="{{ section.cta.url }}" class="interstitial__anchor button">{{ section.cta.button_text}}</a>
 	{% endif %}
 {% else %}
 <section class="interstitial interstitial__small">
-	{% if section.cta && section.cta.enabled %}
+	{% if section.cta && section.cta.enabled == true %}
 		<a href="{{ section.cta.url }}" class="interstitial__anchor button--blue">{{ section.cta.button_text}}</a>
 	{% endif %}
 	{% if section.description %}
