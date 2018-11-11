@@ -23,9 +23,9 @@
 	  		<li class="tabBar__actions">
 				{% for domain in coursePreview.curriculum_area %}
 					{% if forloop.index == 1 %}
-						<a class="button active" href="{{ curriculum_area.title }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ curriculum_area.title }}</a>
+						<a class="button active" href="{{ domain.title }}" data-additional-target="#{{ domain.title | append: index | slugify }}">{{ domain.title }}</a>
 					{% else %}
-						<a class="button" href="{{ curriculum_area.title }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ curriculum_area.title }}</a>
+						<a class="button" href="{{ domain.title }}" data-additional-target="#{{ domain.title | append: index | slugify }}">{{ domain.title }}</a>
 					{% endif %}
 			  	{% endfor %}
 			</li>
