@@ -1,0 +1,33 @@
+---
+label: Slideshow
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: slideshow-component
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: description
+  label: Description
+- type: field_group_list
+  name: slideshow_item
+  label: Slideshow item
+  fields:
+  - type: file
+    name: image
+    label: Image
+    hidden: false
+  - type: text
+    name: alt_text
+    label: Alt Text
+  - type: text
+    name: title
+    label: Slide title
+  - type: text
+    name: description
+    label: Description
