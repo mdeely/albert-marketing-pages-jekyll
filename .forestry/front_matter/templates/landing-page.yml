@@ -21,12 +21,12 @@ fields:
   label: Components
   template_types:
   - testimonials
-  - slideshow
   - tab-bar
+  - course_preview
+  - slideshow
   - hero
   - feature_list
   - feature_grid
   - interstitial
-  - course_preview
 pages:
 - home.md
