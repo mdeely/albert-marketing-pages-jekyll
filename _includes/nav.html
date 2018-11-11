@@ -11,13 +11,8 @@
     	</div>
 		<nav role=navigation>
 			<ul class="mainNav__nav">
-				{% for nav_item in site.menus.main %}
-					<li>
-						{% if nav_item.title %}
-      						<a class="page-link" href="{{ nav_item.url | relative_url }}">{{ nav_item.title | escape }}</a>
-    					{% endif %}
-					</li>
-				{% endfor %}
+				{{site.menus.main}}
+
 			</ul>
 		</nav>
 	</header>
