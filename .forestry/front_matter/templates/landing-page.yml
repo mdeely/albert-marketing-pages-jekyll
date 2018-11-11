@@ -20,10 +20,12 @@ fields:
   name: components
   label: Components
   template_types:
+  - testimonials
+  - slideshow
+  - tab-bar
   - hero
   - feature_list
   - feature_grid
   - interstitial
-  - tab-bar
 pages:
 - home.md
