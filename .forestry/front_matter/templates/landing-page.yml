@@ -20,9 +20,10 @@ fields:
   name: components
   label: Components
   template_types:
-  - feature_list
   - hero
-  - navigation-header
-  - navigation-header-w-button
+  - feature_list
+  - feature_grid
+  - interstitial
+  - testimonials
 pages:
 - home.md
