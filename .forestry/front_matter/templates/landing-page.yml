@@ -24,6 +24,6 @@ fields:
   - feature_list
   - feature_grid
   - interstitial
-  - testimonials
+  - tab-bar
 pages:
 - home.md
