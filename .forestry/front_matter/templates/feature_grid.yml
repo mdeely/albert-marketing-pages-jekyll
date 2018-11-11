@@ -12,8 +12,6 @@ fields:
   name: title
   label: Title
   description: Title for feature grid.
-  config:
-    required: true
 - type: text
   name: description
   label: Description

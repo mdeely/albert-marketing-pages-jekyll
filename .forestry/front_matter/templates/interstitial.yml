@@ -1,0 +1,34 @@
+---
+label: Interstitial
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: interstitial-component
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: description
+  label: Description
+- type: field_group
+  name: cta
+  label: Call to action
+  fields:
+  - type: text
+    name: url
+    label: Link
+  - type: text
+    name: button_text
+    label: Button text
+  - type: boolean
+    name: enabled
+    label: Enabled
+- type: boolean
+  name: large
+  label: Large
+  default: false
+  description: Changes the sizing and display of the interstitial.
