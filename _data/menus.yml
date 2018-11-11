@@ -1,5 +1,8 @@
 ---
 main:
-  - title: Primary navigation
-  - identifier: primary_navigation
-  - url: /
+- url: albert.io
+  weight: 1
+  parent: item_JdRrqK1
+  title: Secondary
+- title: Primary navigation
+  weight: 1
