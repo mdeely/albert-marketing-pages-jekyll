@@ -74,6 +74,28 @@ components:
     description: Description of slide
   title: Slideshow title
   description: Slideshow body
+- template: course_preview
+  block: course-preview-component
+  title: Title of entire section
+  group_title: K-12 Advanced Placement
+  curriculum_area:
+  - title: ELA
+    course_card:
+    - domain: Math
+      course_name: Super cool
+      title: Title
+    - domain: Social Studies
+      course_name: Nice
+      title: Title
+  - title: Social Studies
+    course_card:
+    - domain: Science
+      course_name: Sweet
+    - domain: World Language
+      course_name: Pretty cool
+  - course_card:
+    - domain: Computer Science
+  - course_card: []
 published: false
 
 ---
