@@ -96,6 +96,5 @@ components:
   - course_card:
     - domain: Computer Science
   - course_card: []
-published: false
 
 ---
