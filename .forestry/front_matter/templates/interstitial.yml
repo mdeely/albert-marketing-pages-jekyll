@@ -20,7 +20,7 @@ fields:
   fields:
   - type: text
     name: url
-    label: Link
+    label: url
   - type: text
     name: button_text
     label: Button text
