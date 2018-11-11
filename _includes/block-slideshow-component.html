@@ -14,7 +14,7 @@
 
 	<div class="slideshow__wrapper">
 		<ul class="slides">
-			{% for slideshowItem in section.slideshowItems %}
+			{% for slideshowItem in section.slideshow_item %}
 				{% if forloop.first %}
 					<li id="slideshow-{{slideshow_index}}-slide-{{forloop.index}}" class="slide active">
 				{% else %}
@@ -36,7 +36,7 @@
 		</ul>
 
 		<div class="slide__nav">
-			{% for slideshowItem in slideshow.slideshowItems %}
+			{% for slideshowItem in slideshow.slideshow_item %}
 				{% if forloop.first %}
 					<a data-tooltip="{{ slideshowItem.title}}" href="#slideshow-{{slideshow_index}}-slide-{{forloop.index}}" class="slide__link active">
 				{% else %}
