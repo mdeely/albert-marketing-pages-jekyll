@@ -34,16 +34,16 @@
 
 		{% if domain.domain_description %}
 			{% if forloop.index == 1 %}
-				<p class="coursePreview__group-description active" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.description }}</p>
+				<p class="coursePreview__group-description active" data-additional-target="#{{ domain.title | append: index | slugify }}">{{ domain.description }}</p>
 			{% else %}
-				<p class="coursePreview__group-description" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.description }}</p>
+				<p class="coursePreview__group-description" data-additional-target="#{{ domain.title | append: index | slugify }}">{{ domain.description }}</p>
 			{% endif %}
 		{% endif %}
 
 		{% if forloop.index == 1 %}
-			<ul id="{{ domain.domain | append: index | slugify }}" class="{{ cardListClass | append: ' active' }}">
+			<ul id="{{ domain.title | append: index | slugify }}" class="{{ cardListClass | append: ' active' }}">
 		{% else %}
-			<ul id="{{ domain.domain | append: index | slugify }}" class="{{ cardListClass }}">
+			<ul id="{{ domain.title | append: index | slugify }}" class="{{ cardListClass }}">
 		{% endif %}
 			{% for card in domain.course_card %}
 				<li class="coursePreview__card-item {{ card.domain | slugify }}">
