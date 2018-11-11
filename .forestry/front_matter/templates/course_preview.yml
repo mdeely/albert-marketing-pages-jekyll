@@ -64,17 +64,17 @@ fields:
         - Science
         - Computer Science
         - Other
-    - type: text
-      name: course_name
-      label: Course name
-    - type: field_group
-      name: image
-      label: Image
-      fields:
-      - type: file
-        name: image
-        label: Image
-      - type: text
-        name: alt_text
-          label: Alt Text
+    # - type: text
+    #   name: course_name
+    #   label: Course name
+    # - type: field_group
+    #   name: image
+    #   label: Image
+    #   fields:
+    #   - type: file
+    #     name: image
+    #     label: Image
+    #   - type: text
+    #     name: alt_text
+    #       label: Alt Text
 
