@@ -15,6 +15,7 @@ fields:
   name: testimonial
   label: Testimonial
   description: Min of 3 recommended.
+  fields:
   - type: text
     name: title
     label: Title
