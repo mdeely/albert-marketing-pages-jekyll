@@ -1,5 +1,5 @@
 {% include head.html %}
 	{% for section in page.components %}
-		{% include block-{{ section.block }}.html %}
+		{% include block-{{ section.block }}.html component_index=forloop.index %}
 	{% endfor %}
 {% include footer.html %}

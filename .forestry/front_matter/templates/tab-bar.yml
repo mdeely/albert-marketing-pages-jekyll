@@ -1,0 +1,33 @@
+---
+label: Tab bar
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: tab-bar-component
+- type: field_group_list
+  name: tab_bar_item
+  label: Tab item
+  description: Minimum of 2.
+  hidden: false
+  fields:
+  - type: text
+    name: link_text
+    label: Link text
+  - type: text
+    name: url
+    label: Link URL
+  - type: field_group
+    name: image
+    label: Image
+    fields:
+    - type: file
+      name: image
+      label: Image
+      hidden: false
+    - type: text
+      name: alt_text
+      label: Alt Text
