@@ -1,8 +1,8 @@
 {% assign anchorClass = "tabBar__anchor" %}
 
-{% assign slideshow_index = section.component_index %}
+{% assign slideshow_index = include.component_index %}
 
-{{section}}
+{{include}}
 
 
 <section id={{ "slideshow-" | append: slideshow_index }}" class="slideshow">
