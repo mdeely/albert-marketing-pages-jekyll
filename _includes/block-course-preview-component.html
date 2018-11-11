@@ -12,9 +12,9 @@
 			{% for domain in coursePreview.curriculum_area %}
 				<li class="tabBar__item">
 					{% if forloop.index == 1 %}
-						<a href="#{{ domain.domain | append: index | slugify }}" class="tabBar__anchor active">{{ domain.domain }}</a>
+						<a href="#{{ domain.title | append: index | slugify }}" class="tabBar__anchor active">{{ domain.title }}</a>
 					{% else %}
-						<a href="#{{ domain.domain | append: index | slugify }}" class="tabBar__anchor">{{ domain.domain }}</a>
+						<a href="#{{ domain.title | append: index | slugify }}" class="tabBar__anchor">{{ domain.title }}</a>
 					{% endif %}
 				</li>
 	  		{% endfor %}
