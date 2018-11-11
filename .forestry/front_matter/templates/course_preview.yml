@@ -65,7 +65,7 @@ fields:
         - Computer Science
         - Other
     - type: text
-      name: course_name
+      name: title
       label: Course name
     - type: field_group
       name: image
