@@ -1,14 +1,14 @@
 ---
 primary_nav:
-- weight: 4
+- weight: 1
   title: Resources
-- weight: 3
+- weight: 2
   title: Pricing
 - url: albert.io
-  weight: 2
+  weight: 3
   parent: item_jXd2mqC
   title: Explore
   identifier: item_pEjQBVQ
 - title: Solutions
-  weight: 1
+  weight: 4
   identifier: item_jXd2mqC
