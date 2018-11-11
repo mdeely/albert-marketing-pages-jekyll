@@ -1,10 +1,5 @@
 ---
 main:
-  - title: Main
-  - identifier: main
+  - title: Primary navigation
+  - identifier: primary_navigation
   - url: /
-
-projects:
-  - title: Projects
-  - identifier: projects
-  - url: /projects/
