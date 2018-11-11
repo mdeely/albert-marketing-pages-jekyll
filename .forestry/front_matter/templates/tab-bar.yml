@@ -34,4 +34,4 @@ fields:
   - type: boolean
     name: active
     label: Force active
-    description: Force this tab to be the active tab on page load. 
+    description: Force this tab to be the active tab on page load.
