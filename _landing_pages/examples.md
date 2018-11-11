@@ -13,7 +13,7 @@ components:
   description: Hero description. # Optional
   cta_label: Hero CTA # Optional
   cta_url: hero-url # Optional
-  hero_img: "hero-test.svg"
+  hero_img: "example_images/hero_example.svg"
 
 ## Bar graph component
 - component_name: barGraph
@@ -40,7 +40,7 @@ components:
   - title: Title 1
     quote: The quote goes here 
     teacher_name: Name, Ofperson
-    teacher_img_src: "random-img3.svg"
+    teacher_img_src: "example_images/testimonial_example_1.jpg"
     teacher_type: Math teacher
     teacher_level: High school
     teacher_location: Chicago, IL
@@ -56,7 +56,7 @@ components:
     title: title 1
     cta_label: CTA 1 # Optional
     cta_url: cta-1 # Optional
-    img_src: "random-img3.svg"
+    img_src: "example_images/feature-example_1.svg"
 
 ## Interstitial component
 - component_name: interstitial
@@ -82,7 +82,7 @@ components:
   cta_url: ""
   salesRosterItems:
   ## Duplicate from here to add another profile
-  - profile_img: "random-img3.svg"
+  - profile_img: "example_images/testimonial_example_2.jpg"
     name: Name Ofperson
 
 ## Feature grid component
@@ -92,7 +92,7 @@ components:
   featureGridItems:
   ## Duplicate from here to add another feature item
   ## Recommended 3 minimum, 6 maximum. 
-  - img_src: "random-img3.svg"
+  - img_src: "example_images/feature_example_2.svg"
     title: Title of feature
     description: Description of feature
     cta_label: CTA label # Optional
@@ -115,7 +115,7 @@ components:
     ## Duplicate from here to add another card
     ## Recommended 3 minimum 
     - card_group: ela
-      card_img_src: "heart_of_darkness.svg"
+      card_img_src: "example_images/subject_icon_example.svg"
       card_title: Title of subject
 
 ## Comic strip component
@@ -123,19 +123,19 @@ components:
   comicStrips:
     ## Duplicate from here to add another comic strip
     - teacher_name: Mr. Teachername
-      teacher_img_src: zakaria.png
+      teacher_img_src: example_images/teacher_portrait_example.png
       comicPanels:
       ## REQUIRED 4 panels per comic strip. 
-      - img_src: "comic_1.png"
+      - img_src: "example_images/comic_example_1.jpeg"
         caption: Caption of the comic panel image. 
 
-      - img_src: "comic_1.png"
+      - img_src: "example_images/comic_example_2.jpeg"
         caption: Caption of the comic panel image. 
 
-      - img_src: "comic_1.png"
+      - img_src: "example_images/comic_example_3.jpeg"
         caption: Caption of the comic panel image. 
 
-      - img_src: "comic_1.png"
+      - img_src: "example_images/comic_example_4.jpeg"
         caption: Caption of the comic panel image. 
 
 ### Hero component
@@ -145,14 +145,14 @@ components:
   description: This will display slightly differently than the main hero # Optional
   cta_label: Hero CTA # Optional
   cta_url: hero-url # Optional
-  hero_img: "random-img3.svg"
+  hero_img: "example_images/hero_example.svg"
 
 ## Tab bar component
 - component_name: tabBar
   tabBarItems:
     ## Duplicate from here to add another tabbar menu item
     ## Recommended 2 minimum. 
-  - img_src: "random-img3.svg"
+  - img_src: "example_images/feature_example_3.svg"
     label: Example label
     url: "path/to/page" # Optional. When removed, the url will inherit the label name. ie. "#example-label"
 
@@ -165,7 +165,7 @@ components:
   ## Recommended 2 minumum. 
   - title: Title of first slide
     description: Description of first slide
-    img_src: "hero-test.svg"
+    img_src: "example_images/slide_example_1.png"
 
 
 ## Prefooter component
@@ -173,13 +173,13 @@ components:
   # For the preFooter, only define the information below
   # below if you want to overwrite the defaults for a particular page
   left:
-    img_src: "random-img.svg"
+    img_src: "example_images/feature_example_4.svg"
     title: Custom left title
     description: Custom description for left side.
     cta_label: Custom CTA
     cta_url: left-cta
   right:
-    img_src: "random-img2.svg"
+    img_src: "feature_example_1.svg"
     title: Custom right title
     description: Custom description for right side.
     cta_label: Custom CTA

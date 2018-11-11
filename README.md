@@ -22,7 +22,7 @@ All URLs are generated from mardown files (.md) within the following folders:
 * ``/_case_studies``
 
 When referencing the file path for visual assets, they will always be relative to `/assets/img/`.
-If you are trying to reference an image found in `assets/img/features/comics/panel_1.png`, you would just write `comics/panel_1.png`.
+If you are trying to reference an image found in `assets/img/comics/panel_1.png`, you would just write `comics/panel_1.png`.
 
 Markdown flavor is [Kramdown](https://kramdown.gettalong.org/syntax.html).
 
@@ -56,13 +56,15 @@ For SEO purposes, define the title and description of each page (notes on how to
 ### Component documentation
 View file ``examples.md`` for information on components.
 Visit ``/examples`` to see them live. 
-
 ### Update the navigation
-Data > nav.yml (More to come on this)
+Within `data/nav.yml`, you can update the navigation structure in the primary nav. Look at this file for more information. 
 
 ### Site information
-Data > information (More to come on this)
+Within ``data/information.yml`` you can set variables for things like the company address, phone number, taglines, or anything else that may be used frequently and/or repeated throughout the site.
+
+### Config
+Within ``config.yml``, you will find a the configuration for the app. You can set global variables here as well. These variables are meant to be changed infrequently if at all and are generally used for backend configuration. A notable variable in here is the ``asset_path`` var. This may need to be updated based on where the assets come from. 
 
 ## Author
-
-**Marc Deely**
+**[Marc Deely](www.marcdeely.com)**
+themarcusdeely@gmail.com

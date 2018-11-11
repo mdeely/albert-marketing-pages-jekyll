@@ -1,0 +1,25 @@
+<section class="featureGrid {% if section.card_layout and section.card_layout == true %}featureCards{% endif %}">
+	{% if section.title %}
+	<h2 class="featureGrid__title">{{ section.title }}</h2>
+	{% endif %}
+		<ul class="featureGrid__list">
+			{% for featureGridItem in section.feature_items %}
+				<li class="featureGrid__item">
+					<div class="featureGrid__item-visual">
+						<img src="{{ featureGridItem.image.image }}">
+					</div>
+	            	{% if featureGridItem.badge %} 
+						<div class="featureGrid__item-badge">{{ featureGridItem.badge }}</div>
+	            	{% endif %} 
+					<div class="featureGrid__item-title">{{ featureGridItem.title }}</div>
+	            	{% if featureGridItem.description %} 
+						<p class="featureGrid__item-description">{{ featureGridItem.description }}</p>
+					{% endif %}
+	            	{% if featureGridItem.cta.url %} 
+						<a href="{{ featureGridItem.cta_url }}" class="featureGrid__anchor button">{{ featureGridItem.cta.button_text }}</a>
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

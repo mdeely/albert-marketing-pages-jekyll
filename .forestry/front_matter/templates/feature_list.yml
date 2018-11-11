@@ -1,0 +1,59 @@
+---
+label: Feature list
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: feature-list-component
+- type: text
+  name: title
+  label: Title
+  description: Title for feature list.
+  config:
+    required: true
+- type: text
+  name: description
+  label: Description
+  description: Description for feature list.
+- type: field_group_list
+  name: feature_item
+  label: Feature item
+  description: Feature item
+  hidden: false
+  fields:
+  - type: text
+    name: supertitle
+    label: Supertitle
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: field_group
+    name: image
+    label: Image
+    fields:
+    - type: file
+      name: image
+      label: Image
+    - type: text
+      name: alt_text
+      label: Alt Text
+  - type: field_group
+    name: cta
+    label: Call to action
+    fields:
+    - type: boolean
+      name: enabled
+      label: Enabled
+    - type: text
+      name: url
+      label: url
+    - type: text
+      name: button_text
+      label: Button text
+  config:
+    labelField: title

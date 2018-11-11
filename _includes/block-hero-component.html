@@ -1,0 +1,18 @@
+<section class="hero {% if section.primary_hero and section.primary_hero == true %} main {% endif %}">
+    <div class="hero__content">
+        <div class="hero__info-container">
+        
+                <div class="hero__supertitle">{{ section.supertitle }}</div>
+
+                <h1 class="hero__title">{{ section.title }}</h1>
+
+                <p class="hero__description">{{ section.description }}</p>
+
+            {% if section.cta and section.cta.enabled == true %}
+            <a href="{{ section.cta.url }}" class="button--large hero__cta">{{ section.cta.button_text }}</a>
+            {% endif %}
+        </div>
+        <div class="hero__visual" style="background-image: url(' {{ section.image.image }} ')"></div>
+    </div>
+    {% include /components/directionalArrow.html %}
+</section>
