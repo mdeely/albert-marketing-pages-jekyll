@@ -91,10 +91,9 @@ components:
     course_card:
     - domain: Science
       course_name: Sweet
+      title: Social studies course name
     - domain: World Language
       course_name: Pretty cool
-  - course_card:
-    - domain: Computer Science
-  - course_card: []
+      title: World language course name
 
 ---
