@@ -1,4 +1,28 @@
-{% assign nav = site.data.nav %}
+<div class="mainNav">
+	<header role="banner">
+		<a href="/" class="mainNav__logo">
+			{% include /svg/logo-combined-white.svg %}
+		</a>
+		<div class="mainNav__mobile-toggle">
+			<i class="fas fa-bars toggle--open active"></i>
+			<i class="fas fa-times toggle--close"></i>
+    	</div>
+		<nav role=navigation>
+			<ul class="mainNav__nav">
+				{% for nav in site.menus.primary_navigation %}
+					<li>
+						{% if my_page.title %}
+      						<a class="page-link" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a>
+    					{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</header>
+</div> -->
+
+
+<!-- {% assign nav = site.data.nav %}
 
 <div class="mainNav">
 	<header role="banner">
@@ -63,4 +87,4 @@
 
 		</nav>
 	</header>
-</div>
+</div> -->
