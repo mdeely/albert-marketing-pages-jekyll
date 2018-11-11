@@ -10,12 +10,10 @@
 		<nav role=navigation>
 			<ul class="mainNav__nav">
 				{% for item in site.data.menus.main %}
-    				{% unless item.children %}
-			      		<li><a href="/{{ item.url }}">{{ item.title }}</a>
-					{% else %}
+    				{% if item.children %}
 			      		<li class="nav__dropdown">{{ navItem.title }}<i class="fa fa-caret-down"></i>
 		                	<ul>
-		      					{% for item in item.children %}
+		      					{% for item in item.children.count > 0 %}
 
 
 									<div>
@@ -46,8 +44,10 @@
 
 		      					{% endfor %}
 		      				</ul>
-			      	{% endunless %}
-					</li>
+		      			</li>
+					{% else %}
+			      		<li><a href="/{{ item.url }}">{{ item.title }}</a></li>
+			      	{% endif %}
 				{% endfor %}
 			</ul>
 			<ul class="mainNav__account">
