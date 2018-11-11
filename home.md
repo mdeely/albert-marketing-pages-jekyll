@@ -96,5 +96,10 @@ components:
   - course_card:
     - domain: Computer Science
   - course_card: []
+menu:
+  main:
+    weight: 2
+    title: Third
+    identifier: item_2mv_ZtD
 
 ---
