@@ -1,5 +1,11 @@
 ---
 primary_nav:
+- weight: 2
+  parent: item_jXd2mqC
+  title: K-12 Math
+- weight: 1
+  parent: item_jXd2mqC
+  title: K-12 Test Prep
 - weight: 1
   title: Resources
 - weight: 2
