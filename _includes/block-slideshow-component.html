@@ -6,15 +6,15 @@
 
 <section id={{ "slideshow-" | append: slideshow_index }}" class="slideshow">
 
-	<div class="slideshow__title">{{ slideshow.title }}</div>
+	<div class="slideshow__title">{{ section.title }}</div>
 
-	{% if slideshow.description %}
-	<div class="slideshow__description">{{ slideshow.description }}</div>
+	{% if section.description %}
+	<div class="slideshow__description">{{ section.description }}</div>
 	{% endif %}
 
 	<div class="slideshow__wrapper">
 		<ul class="slides">
-			{% for slideshowItem in slideshow.slideshowItems %}
+			{% for slideshowItem in section.slideshowItems %}
 				{% if forloop.first %}
 					<li id="slideshow-{{slideshow_index}}-slide-{{forloop.index}}" class="slide active">
 				{% else %}
