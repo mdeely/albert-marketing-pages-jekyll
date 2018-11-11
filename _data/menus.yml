@@ -1,5 +1,9 @@
 ---
 main:
+- weight: 2
+  title: Third
+  identifier: item_2mv_ZtD
+  url: "/home"
 - url: albert.io
   weight: 1
   parent: item_jXd2mqC
