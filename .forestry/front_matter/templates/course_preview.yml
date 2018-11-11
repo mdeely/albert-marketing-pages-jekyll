@@ -1,0 +1,79 @@
+---
+label: Course preview
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: course-preview-component
+- type: text
+  name: title
+  label: Title
+  description: This title will always be visible. It is the title of the entire section. 
+- type: text
+  name: group_title
+  label: Group title
+  description: E.g K-12 Advanced Placement
+- type: field_group_list
+  name: curriculum_area
+  label: Curriculum area
+  description: E.g Science
+  hidden: false
+  fields:
+  - type: text
+    name: title
+    label: Title
+    Description: E.g ELA
+  - type: text
+    name: description
+    label: description
+    description: E.g Our ELA courses are second to none!
+  - type: field_group
+    name: cta
+    label: Call to action
+    fields:
+    - type: boolean
+      name: enabled
+      label: Enabled
+    - type: text
+      name: url
+      label: url
+    - type: text
+      name: button_text
+      label: Button text
+    - type: field_group_list
+      name: course_card
+      label: Course card
+      hidden: false
+      fields:
+      - type: select
+        name: domain
+        label: Domain
+        description: Select a cirriculum area.
+        hidden: false
+        config:
+            source:
+              type: custom
+            options:
+                - "ELA"
+                - "Social Studies"
+                - "World Language"
+                - "Math"
+                - "Science"
+                - "Computer Science"
+                - "Other"
+      - type: text
+        name: course_name
+        label: Course name
+      - type: field_group
+        name: image
+        label: Image
+        fields:
+        - type: file
+          name: image
+          label: Image
+        - type: text
+          name: alt_text
+          label: Alt Text

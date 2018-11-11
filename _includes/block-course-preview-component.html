@@ -1,0 +1,67 @@
+{% assign coursePreview = section %}
+{% assign index = include.component_index %}
+{% assign cardListClass = "coursePreview__card-list" %}
+
+<section class="coursePreview coursePreview-{{ index }}">
+	{% if coursePreview.title %}
+	<h2 class="coursePreview__title">{{ coursePreview.title }}</h2>
+	{% endif %}
+	<h3 class="coursePreview__group-title">{{ coursePreview.group_title }}</h3>
+	<div class="tabBar">
+	  	<ul class="tabBar__list">
+			{% if coursePreview.courseDomains.size > 1 %} 
+				{% for domain in coursePreview.curriculum_area %}
+					<li class="tabBar__item">
+						{% if forloop.index == 1 %}
+							<a href="#{{ domain.domain | append: index | slugify }}" class="tabBar__anchor active">{{ domain.domain }}</a>
+						{% else %}
+							<a href="#{{ domain.domain | append: index | slugify }}" class="tabBar__anchor">{{ domain.domain }}</a>
+						{% endif %}
+					</li>
+		  		{% endfor %}
+			{% endif %}
+	  		<li class="tabBar__actions">
+				{% for domain in coursePreview.curriculum_area %}
+					{% if forloop.index == 1 %}
+						<a class="button active" href="{{ domain.domain.cta.url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain.cta.url }}</a>
+					{% else %}
+						<a class="button" href="{{ domain.domain.cta.url }}" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.domain.cta.url }}</a>
+					{% endif %}
+			  	{% endfor %}
+			</li>
+	  	</ul>
+	</div>
+
+	{% for domain in coursePreview.curriculum_area %}
+
+		{% if domain.domain_description %}
+			{% if forloop.index == 1 %}
+				<p class="coursePreview__group-description active" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.description }}</p>
+			{% else %}
+				<p class="coursePreview__group-description" data-additional-target="#{{ domain.domain | append: index | slugify }}">{{ domain.description }}</p>
+			{% endif %}
+		{% endif %}
+
+		{% if forloop.index == 1 %}
+			<ul id="{{ domain.domain | append: index | slugify }}" class="{{ cardListClass | append: ' active' }}">
+		{% else %}
+			<ul id="{{ domain.domain | append: index | slugify }}" class="{{ cardListClass }}">
+		{% endif %}
+			{% for card in domain.course_card %}
+				<li class="coursePreview__card-item {{ card.card_group | slugify }}">
+					<div class="coursePreview__card-item-title">{{ card.title }}</div>
+
+					<div class="coursePreview__card-item-visual">
+						<img src="{{ card.image }}">
+					</div>
+				</li>
+	  		{% endfor %}
+	  		{% if domain.cta.button_text %}
+			<a class="coursePreview__card-item" href="{{ domain.cta.url }}">
+				<div class="coursePreview__card-item-title">{{ domain.cta.button_text }}</div>
+			</a>
+			{% endif %}
+		</ul>
+  	{% endfor %}
+
+</section>
