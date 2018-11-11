@@ -8,8 +8,8 @@
 	{% endif %}
 {% else %}
 <section class="interstitial interstitial__small">
-	{% if section.cta_label %}
-		<a href="{{ section.cta.url }}" class="interstitial__anchor button--blue">{{ section.button_text}}</a>
+	{% if section.cta.url %}
+		<a href="{{ section.cta.url }}" class="interstitial__anchor button--blue">{{ section.cta.button_text}}</a>
 	{% endif %}
 	{% if section.description %}
 		<div class="interstitial__description">{{ section.description }}</div>
