@@ -17,8 +17,8 @@ fields:
   description: Min of 3 recommended.
   fields:
   - type: text
-    name: title
-    label: Title
+    name: teacher_name
+    label: Name
   - type: text
     name: quote
     label: quote
@@ -26,9 +26,6 @@ fields:
       wysiwyg: true
       schema:
         format: html
-  - type: text
-    name: teacher_name
-    label: Name
   - type: text
     name: teacher_type
     label: Teacher type
