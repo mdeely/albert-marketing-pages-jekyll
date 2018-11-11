@@ -4,33 +4,23 @@
   <ul class="tabBar__list">
     {% for tabBar in section.tab_bar_item %}
       <li class="tabBar__item">
-        {% if section.url %} 
-
-        {% if section.status %}
-          {% if section.status == "active" %}
+          {% if forloop.index == 1 && section.active && section.active == true %}
+            <a href="{{ section.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+          {% elsif forloop.index == 1  %}
             <a href="{{ section.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% else %}
-            <a href="{{ section.url }}" class="{{ anchorClass }}" >
-          {% endif %}
-        {% else %}
-          {% if forloop.index == 1 %}
-            <a href="{{ section.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
-            {% else %}
             <a href="{{ section.url }}" class="{{ anchorClass }}">
           {% endif %}
-        {% endif %}
 
-        {% else %}
-          {% if forloop.index == 1 %}
-            <a href="#{{ section.link_text | slugify }}" class="{{ anchorClass | append: " " | append: "active" }}" >
-          {% else %}
-            <a href="#{{ section.link_text | slugify }}" class="{{ anchorClass }}">
-          {% endif %}
-        {% endif %}
+<!--            <a href="#{{ section.url | slugify }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+           <a href="#{{ section.url | slugify }}" class="{{ anchorClass }}">
+ -->
           {% if section.image %} 
-            <img src="{{ section.iamge }}">
+            <img src="{{ section.image }}">
           {% endif %}
+
           {{ section.link_text }}
+          
         </a>
       </li>
     {% endfor %}

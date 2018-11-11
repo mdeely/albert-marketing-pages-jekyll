@@ -31,3 +31,7 @@ fields:
     - type: text
       name: alt_text
       label: Alt Text
+  - type: boolean
+    name: active
+    label: Force active
+    description: Force this tab to be the active tab on page load. 
