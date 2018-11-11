@@ -10,8 +10,49 @@
 		<nav role=navigation>
 			<ul class="mainNav__nav">
 				{% for item in site.data.menus.main %}
-					<li><a href="item.url">{{ item.title }}</a></li>
+    				{% unless item.children %}
+			      		<li><a href="/{{ item.url }}">{{ item.title }}</a>
+					{% else %}
+			      		<li class="nav__dropdown">{{ navItem.title }}<i class="fa fa-caret-down"></i>
+		                	<ul>
+		      					{% for item in item.children %}
+
+
+									<div>
+										{% if submenu.group_title %}
+					   						<div class="nav__subitem-group-title">{{ submenu.group_title }}</div>
+										{% endif %}
+						   				 {% for subitem in submenu.subitems %}
+							      			<li>
+							      				<a class="{{ subitem.domain | prepend: 'nav__subitem-anchor ' }}" href="/{{ subitem.url }}">
+													{% if subitem.icon_url %}
+							      						<div class="nav__subitem-visual">
+							      							<img src="{{ subitem.icon_url }}">
+							      						</div>
+								      					<div class="nav__subitem-info-container">
+								      						<div class="nav__subitem-title">{{ subitem.label }}</div>
+															{% if subitem.description %}
+								      							<div class="nav__subitem-description">{{ subitem.description }}</div>
+															{% endif %}
+								      					</div>
+													{% else %}
+														{{ subitem.label}}
+													{% endif %}
+							      				</a>
+							      			</li>
+						   				 {% endfor %}
+						   			</div>
+
+
+		      					{% endfor %}
+		      				</ul>
+			      	{% endunless %}
+					</li>
 				{% endfor %}
+			</ul>
+			<ul class="mainNav__account">
+				<li><a href="#">Log in</a></li>
+				<li class="sign-up""><a class="button--white button--sign-up" href="#">Sign up</a></li>
 			</ul>
 		</nav>
 	</header>
