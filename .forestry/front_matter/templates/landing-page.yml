@@ -20,8 +20,8 @@ fields:
   name: components
   label: Components
   template_types:
-  - testimonials
   - tab-bar
+  - testimonials
   - course_preview
   - slideshow
   - hero
