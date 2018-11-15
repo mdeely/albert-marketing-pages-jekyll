@@ -86,7 +86,10 @@ components:
       title: 'Mastery Math: Algebra I'
     - domain: Social Studies
       course_name: Nice
-      title: Title
+      title: US Histry
+      image:
+        image: "/uploads/2018/11/15/1YCXjCrqQ0ajSICdNn7o_full_brave_new_world.svg.png"
+        alt_text: this is an image
   - title: Social Studies
     course_card:
     - domain: Science
