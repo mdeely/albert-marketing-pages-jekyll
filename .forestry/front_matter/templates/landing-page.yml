@@ -29,5 +29,5 @@ fields:
   - feature_grid
   - interstitial
 pages:
-- benefits.md
 - home.md
+- benefits.md

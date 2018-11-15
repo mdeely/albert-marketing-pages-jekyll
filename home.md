@@ -83,7 +83,7 @@ components:
     course_card:
     - domain: Math
       course_name: Super cool
-      title: 'Mastery Math: Algebra I'
+      title: 'Mastery Math: Algebra I '
       image:
         image: "/uploads/2018/11/15/1YCXjCrqQ0ajSICdNn7o_full_brave_new_world.svg.png"
     - domain: Social Studies
