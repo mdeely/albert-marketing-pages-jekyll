@@ -10,7 +10,7 @@ components:
   image:
     image: "/uploads/2018/11/11/logo-type-blue.svg"
     alt_text: Albert
-  supertitle: Home
+  supertitle: Homeee
   title: Page title
   description: Description for page
   cta:
