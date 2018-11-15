@@ -92,6 +92,10 @@ components:
       image:
         image: "/uploads/2018/11/15/1YCXjCrqQ0ajSICdNn7o_full_brave_new_world.svg.png"
         alt_text: this is an image
+    cta:
+      url: albert.io
+      button_text: view more courses
+      enabled: true
   - title: Social Studies
     course_card:
     - domain: Science
