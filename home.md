@@ -83,7 +83,7 @@ components:
     course_card:
     - domain: Math
       course_name: Super cool
-      title: Title
+      title: 'Mastery Math: Algebra I'
     - domain: Social Studies
       course_name: Nice
       title: Title
