@@ -76,7 +76,7 @@ components:
   description: Slideshow body
 - template: course_preview
   block: course-preview-component
-  title: Title of entire section
+  title: Title of entire sectionnnn
   group_title: K-12 Advanced Placement
   curriculum_area:
   - title: ELA
