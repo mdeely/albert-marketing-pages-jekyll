@@ -28,6 +28,8 @@ fields:
     name: title
     label: Graph title
     description: Displays above graph.
+    config:
+      required: false
   - type: text
     name: tab_label
     label: Tab label
