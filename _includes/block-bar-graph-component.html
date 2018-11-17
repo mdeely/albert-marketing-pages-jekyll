@@ -83,7 +83,7 @@
 
 					{% for data in graph.data_points %}
 						{% if data.data_footer_label %}
-					    	{% assign a_footer_label = data.data_value_label | split: '_' %}
+					    	{% assign a_footer_label = data.data_footer_label | split: '_' %}
 					    	{% assign footer_labels = footer_labels | concat: a_footer_label %}
 					    {% endif %}
 					{% endfor %}
