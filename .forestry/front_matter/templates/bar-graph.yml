@@ -2,6 +2,7 @@
 label: Bar graph
 hide_body: false
 is_partial: true
+display_field: title
 fields:
 - type: text
   hidden: true
