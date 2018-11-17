@@ -12,8 +12,7 @@ fields:
 - type: text
   name: purpose
   label: Short description
-  description: Will not show up on front end. Will only display in Forestry to help
-    you quickly see what this form is for on the previous screen.
+  description: For internal use. Displays on previous Forestry screen.
 - type: textarea
   name: embed_script2
   label: Embed script
