@@ -14,9 +14,16 @@ fields:
   label: Short description
   description: Will not show up on front end. Will only display in Forestry to help
     you quickly see what this form is for on the previous screen.
-- type: text
-  name: embed_script
+- type: textarea
+  name: embed_script2
   label: Embed script
+  description: 'Paste the entirety of the "Javascript Embed Script" from formstack.
+    Do not put quotes or anything around the code. '
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
 - type: field_group
   name: modal
   label: Modal
