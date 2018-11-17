@@ -20,6 +20,7 @@ fields:
   name: components
   label: Components
   template_types:
+  - team_roster
   - comic-collection
   - bar-graph
   - tab-bar
