@@ -49,8 +49,7 @@ fields:
     - type: text
       name: data_value_label
       label: Custom data point value label
-      description: OPTIONAL. Displays above the data point. If not defined, the value
-        will display.
+      description: OPTIONAL. Defaults to Data Point Value.
     - type: color
       name: data_color
       default: "#1ABC9C"
@@ -58,6 +57,10 @@ fields:
       config:
         color_format: Hex
     - type: text
+      name: data_label
+      label: Data label
+      description: OPTIONAL. Displays below the data point.
+    - type: text
       name: data_footer_label
       label: Data point footer label
-      description: Displays below the data point.
+      description: OPTIONAL. E.g Year 1.
