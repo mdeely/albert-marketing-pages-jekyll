@@ -12,7 +12,8 @@ fields:
 - type: text
   name: purpose
   label: Short description
-  description: Will not show up on front end. Will only display in Forestry to help you quickly see what this form is for on the previous screen.
+  description: Will not show up on front end. Will only display in Forestry to help
+    you quickly see what this form is for on the previous screen.
 - type: text
   name: embed_script
   label: Embed script
@@ -26,4 +27,6 @@ fields:
   - type: text
     name: modal_id
     label: Modal ID
-    description: Must contain "form" in the ID. Must be unique. Use this ID in any CTA > URL field to trigger the modal. Append with "#". E.g 'Modal ID "lead_gen". Use "#lead_gen" in a CTA > URL field. 
+    description: Must contain "form" in the ID. Must be unique. Use this ID in any
+      CTA > URL field to trigger the modal. Append with "#". E.g 'Modal ID "lead_gen".
+      Use "#lead_gen" in a CTA > URL field.
