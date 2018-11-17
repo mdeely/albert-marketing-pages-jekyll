@@ -2,7 +2,7 @@
 label: Comic collection
 hide_body: false
 is_partial: true
-display_field: title
+display_field: block
 fields:
 - type: text
   hidden: true
@@ -20,6 +20,8 @@ fields:
     name: title
     label: Comic title
     description: Typically a teacher's name.
+    config:
+      required: true
   - type: field_group
     name: image
     label: Image
@@ -49,6 +51,8 @@ fields:
       - type: text
         name: alt_text
         label: Alt Text
+        config:
+          required: true
     - type: text
       name: caption
       label: Caption
