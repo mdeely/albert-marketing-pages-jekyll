@@ -1,5 +1,5 @@
 ---
-label: Other Landing page that I don't want
+label: Landing page that should be deleted
 hide_body: true
-is_partial: true
+is_partial: false
 fields: []
