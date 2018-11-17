@@ -44,12 +44,12 @@
 
 				  					{% assign data_value = data.data_value | append: '%' %}
 
+									{% assign data_value_number = data_value | plus: 0 %}
+									{% assign data_value_number = data_value_number | times: 1 %}
+
 			  						{% if data.data_value_label %}
 			  							{% assign data_value = data.data_value_label %}
 			  						{% endif %}
-
-									{% assign data_value_number = data_value | plus: 0 %}
-									{% assign data_value_number = data_value_number | times: 1 %}
 
 				  					{% if data_value_number > 84 %}
 				  						<div class="data__value inside-bar">{{ data_value }}</div>

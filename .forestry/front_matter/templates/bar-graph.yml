@@ -46,10 +46,9 @@ fields:
       label: Data point value
       description: Represented as percentage.
     - type: text
-      name: data_custom_label
-      label: Data point custom label
-      description: Optional. This will display above the data point instead of a percentage
-        value.
+      name: data_value_label
+      label: Custom data point value label
+      description: OPTIONAL. Displays above the data point. If not defined, the value will display.
     - type: color
       name: data_color
       default: "#1ABC9C"
