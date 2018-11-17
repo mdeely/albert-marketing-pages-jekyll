@@ -28,7 +28,8 @@ fields:
   - type: text
     name: tab_label
     label: Tab label
-    description: If there is more than one graph, the tab label will be used for navigating between graphs.
+    description: If there is more than one graph, the tab label will be used for navigating
+      between graphs.
   - type: field_group_list
     name: data_points
     label: Data point
@@ -42,14 +43,15 @@ fields:
     - type: text
       name: data_custom_label
       label: Data point custom label
-      description: Optional. This will display above the data point instead of a percentage value. 
+      description: Optional. This will display above the data point instead of a percentage
+        value.
     - type: color
       name: data_color
       default: "#DD5566"
-      description: Color of the data point. 
+      description: Color of the data point.
       config:
-          color_format: Hex
+        color_format: Hex
     - type: text
       name: data_footer_label
       label: Data point footer label
-      description: Displays below the data point. 
+      description: Displays below the data point.
