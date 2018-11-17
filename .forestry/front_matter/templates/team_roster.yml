@@ -47,6 +47,3 @@ fields:
     - type: text
       name: alt_text
       label: Alt Text
-
-
-
