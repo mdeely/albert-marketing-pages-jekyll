@@ -25,7 +25,7 @@ fields:
   - type: text
     name: title
     label: Graph title
-    description: Display above graph.
+    description: Displays above graph.
   - type: text
     name: tab_label
     label: Tab label
