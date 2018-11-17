@@ -79,16 +79,22 @@
 			  		</ul>
 			  		{% endif %}
 
-					{% assign bar_labels = '' | split: '' %}
 
-			  		<ul class="data__group-label">
-			  			{% for data in graph.data_points %}
-			  				{% if data.data_footer_label %}
-			  					<li>{{ data.data_footer_label }}</li>
-			  				{% endif %}
+
+					{% for data in graph.data_points %}
+						{% if data.data_footer_label %}
+					    	{% assign a_footer_label = data.data_value_label | split: '_' %}
+					    	{% assign footer_labels = footer_labels | concat: a_footer_label %}
+					    {% endif %}
+					{% endfor %}
+
+					{% if footer_labels[0] %}
+					<ul class="data__group-labels">
+			  			{% for label in footer_labels %}
+			  				<li>{{ label }}</li>
 			  			{% endfor %}
 			  		</ul>
-
+			  		{% endif %}
 				</li>
 			{% endfor %}
 	  	</ul>
