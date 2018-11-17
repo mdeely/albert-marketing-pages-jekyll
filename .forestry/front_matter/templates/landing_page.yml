@@ -29,3 +29,5 @@ fields:
   - feature_list
   - feature_grid
   - interstitial
+pages:
+- home.md
