@@ -36,6 +36,15 @@ fields:
     hidden: false
     description: Recommended 4 max.
     fields:
+    - type: number
+      config:
+        max: '100'
+        step: '1'
+        required: true
+        min: '0'
+      name: data_value
+      label: Data point value
+      description: Represented as percentage.
     - type: text
       name: data_custom_label
       label: Data point custom label
@@ -51,13 +60,3 @@ fields:
       name: data_footer_label
       label: Data point footer label
       description: Displays below the data point.
-    - type: number
-      config:
-        max: '100'
-        step: '1'
-        required: true
-        min: '0'
-      default: '1.1'
-      name: data_value
-      label: Data point value
-      description: Represented as percentage.
