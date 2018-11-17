@@ -14,7 +14,7 @@ fields:
   label: Short description
   description: For internal use. Displays on previous Forestry screen.
 - type: textarea
-  name: embed_script2
+  name: embed_script
   label: Embed script
   description: 'Paste the entirety of the "Javascript Embed Script" from formstack.
     Do not put quotes or anything around the code. '
