@@ -1,0 +1,55 @@
+---
+label: Bar graph
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: bar-graph-component
+- type: text
+  name: title
+  label: Title
+  description: Displays above the entire component.
+- type: text
+  name: description
+  label: Description
+  description: Displays above the entire component.
+- type: field_group_list
+  name: graphs
+  label: Graph
+  hidden: false
+  fields:
+  - type: text
+    name: title
+    label: Graph title
+    description: Display above graph.
+  - type: text
+    name: tab_label
+    label: Tab label
+    description: If there is more than one graph, the tab label will be used for navigating between graphs.
+  - type: field_group_list
+    name: data_points
+    label: Data point
+    hidden: false
+    description: Recommended 4 max.
+    fields:
+    - type: number
+      name: data_value
+      label: Data point value
+      description: Represented as percentage.
+    - type: text
+      name: data_custom_label
+      label: Data point custom label
+      description: Optional. This will display above the data point instead of a percentage value. 
+    - type: color
+      name: data_color
+      default: "#DD5566"
+      description: Color of the data point. 
+      config:
+          color_format: Hex
+    - type: text
+      name: data_footer_label
+      label: Data point footer label
+      description: Displays below the data point. 

@@ -1,10 +1,10 @@
-{% assign graph = include.content %}
+{% assign graph = section %}
 
 <section class="barGraph">
 	<div class="component__info-wrapper">
-		<h2 class="component__title">{{ graph.component_title }}</h2>
-		{% if graph.component_description %}
-			<div class="component__description">{{ graph.component_description }}</div>
+		<h2 class="component__title">{{ graph.title }}</h2>
+		{% if graph.description %}
+			<div class="component__description">{{ graph.description }}</div>
 		{% endif %}
 	</div>
 
@@ -33,14 +33,14 @@
 				{% else %}
 					<li id="{{ graph.tab_label | append: include.component_index | slugify }}" class="graph__item">
 				{% endif %}
-					<div class="data__title">{{ graph.graph_title }}</div>
+					<div class="data__title">{{ graph.title }}</div>
 			  		<div class="data__info-container">
 			  			<div class="data__markers">
 			  				<div class="data__middle-marker"></div>
 			  			</div>
 						{% for data in graph.data_points %}
 				  			<div class="data__value-wrapper">
-				  				<div class="data__bar" style="background-color: {{ data.bar_color }}; height: {{ data.data_value | append: '%' }}">
+				  				<div class="data__bar" style="background-color: {{ data.color }}; height: {{ data.data_value | append: '%' }}">
 
 				  					{% assign data_value = data.data_value | append: '%' %}
 
