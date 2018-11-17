@@ -44,23 +44,29 @@ fields:
         required: true
         min: '0'
       name: data_value
-      label: Data point value
-      description: Represented as percentage.
+      label: Value
+      description: "%"
     - type: text
       name: data_value_label
-      label: Custom data point value label
-      description: OPTIONAL. Defaults to Data Point Value.
+      label: Value label
+      description: Defaults to value percentage
+      config:
+        required: false
+    - type: text
+      name: data_label
+      label: Bar label
+      description: Displays below the bar.
+      default: ''
     - type: color
       name: data_color
       default: "#1ABC9C"
-      description: Color of the data point.
+      description: ''
       config:
         color_format: Hex
-    - type: text
-      name: data_label
-      label: Data label
-      description: OPTIONAL. Displays below the data point.
+      label: Bar color
     - type: text
       name: data_footer_label
-      label: Data point footer label
-      description: OPTIONAL. E.g Year 1.
+      label: Footer label
+      description: 'If you wanted two or more bars to share a label (e.g "Year 1"),
+        then you would define that label here. You only need to define this in one
+        data point. '
