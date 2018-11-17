@@ -2,6 +2,7 @@
 label: Bar graph
 hide_body: false
 is_partial: true
+display_field: title
 fields:
 - type: text
   hidden: true
@@ -24,7 +25,7 @@ fields:
   - type: text
     name: title
     label: Graph title
-    description: Display above graph.
+    description: Displays above graph.
   - type: text
     name: tab_label
     label: Tab label
