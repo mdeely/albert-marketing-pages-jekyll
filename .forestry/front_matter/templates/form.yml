@@ -20,7 +20,7 @@ fields:
     Do not put quotes or anything around the code. '
   config:
     required: true
-    wysiwyg: true
+    wysiwyg: false
     schema:
       format: html-blocks
 - type: field_group
