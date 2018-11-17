@@ -80,7 +80,6 @@
 			  		{% endif %}
 
 
-
 					{% for data in graph.data_points %}
 						{% if data.data_footer_label %}
 					    	{% assign a_footer_label = data.data_footer_label | split: '_' %}
@@ -89,7 +88,7 @@
 					{% endfor %}
 
 					{% if footer_labels[0] %}
-					<ul class="data__group-labels">
+					<ul class="data__group-label">
 			  			{% for label in footer_labels %}
 			  				<li>{{ label }}</li>
 			  			{% endfor %}
