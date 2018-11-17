@@ -1,0 +1,22 @@
+---
+label: Landing page
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: blocks
+  config:
+    required: false
+- type: text
+  label: Page title
+  name: title
+- type: text
+  label: Page description
+  name: description
+- type: blocks
+  name: components
+  label: Components
+  template_types: 
