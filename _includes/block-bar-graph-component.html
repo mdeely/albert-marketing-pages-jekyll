@@ -62,7 +62,7 @@
 			  		</div>
 
 					{% for data in graph.data_points %}
-					    {% assign a_bar_label = data.data_custom_label | split: '_' %}
+					    {% assign a_bar_label = data.data_value_label | split: '_' %}
 					    {% assign bar_labels = bar_labels | concat: a_bar_label %}
 					{% endfor %}
 			  		
