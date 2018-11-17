@@ -23,7 +23,7 @@ fields:
   - type: field_group
     name: image
     label: Image
-    description: Typically an illustration of a teacher. 
+    description: Typically an illustration of a teacher.
     fields:
     - type: file
       name: image
@@ -35,12 +35,12 @@ fields:
   - type: field_group_list
     name: comic_panels
     label: Comic panel
-    description: 4 panels recommended. 
+    description: 4 panels recommended.
     hidden: false
     fields:
     - type: field_group
       name: image
-      label: Image 
+      label: Image
       fields:
       - type: file
         name: image
