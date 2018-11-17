@@ -1,0 +1,52 @@
+---
+label: Team roster
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: team-roster-component
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: description
+  label: Description
+- type: field_group
+  name: cta
+  label: Call to action
+  fields:
+  - type: boolean
+    name: enabled
+    label: Enabled
+    default: false
+  - type: text
+    name: url
+    label: url
+  - type: text
+    name: button_text
+    label: Button text
+- type: field_group_list
+  name: people
+  label: Person
+  hidden: false
+  fields:
+  - type: text
+    name: name
+    label: Name
+  - type: field_group
+    name: image
+    label: Image
+    fields:
+    - type: file
+      name: image
+      label: Image
+      hidden: false
+    - type: text
+      name: alt_text
+      label: Alt Text
+
+
+

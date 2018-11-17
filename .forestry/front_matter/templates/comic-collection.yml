@@ -51,8 +51,6 @@ fields:
       - type: text
         name: alt_text
         label: Alt Text
-        config:
-          required: true
         description: 'Good for screen readers. Alt is also good for SEO, but perhaps
           not very important for this particular image. '
     - type: text

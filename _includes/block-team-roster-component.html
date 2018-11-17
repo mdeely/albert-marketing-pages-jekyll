@@ -1,0 +1,28 @@
+{% assign salesRoster = section %}
+
+<section class="salesRoster">
+	<div class="salesRoster__wrapper">
+		<div class="salesRoster__info">
+			<div class="salesRoster__title">{{ salesRoster.title }}</div>
+			<div class="salesRoster__description">{{ salesRoster.description }}</div>
+
+			{% if salesRoster.cta.enabled %}
+				<a href="{{ salesRoster.cta.url }}" class="salesRoster__anchor button">{{ salesRoster.cta.button_text }}</a>
+			{% endif %}
+
+		</div>
+		<div class="salesRoster__visuals">
+			<ul class="salesRoster__list">
+				{% for person in salesRoster.people %}
+				<li class="salesRoster__item">
+					<figure class="salesRoster__profile">
+						<div style="background-image: url('{{ person.image.image }}')" class="salesRoster__profile-visual"></div>
+						<figcaption class="salesRoster__caption">{{ person.name }}</figcaption>
+					</figure>
+				</li>
+				{% endfor %}
+
+			</ul>
+		</div>
+	</div>
+</section>
