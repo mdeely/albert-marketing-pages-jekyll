@@ -21,6 +21,8 @@ fields:
   name: graphs
   label: Graph
   hidden: false
+  config:
+    labelField: title
   fields:
   - type: text
     name: title
@@ -36,6 +38,8 @@ fields:
     label: Data point
     hidden: false
     description: Recommended 4 max.
+    config:
+      labelField: data_value
     fields:
     - type: number
       config:
