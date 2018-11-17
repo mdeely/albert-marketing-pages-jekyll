@@ -52,7 +52,7 @@ fields:
         value.
     - type: color
       name: data_color
-      default: "#DD5566"
+      default: "#1ABC9C"
       description: Color of the data point.
       config:
         color_format: Hex
