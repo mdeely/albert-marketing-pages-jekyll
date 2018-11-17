@@ -29,7 +29,7 @@ components:
       image: "/uploads/2018/11/11/logo-type-blue.svg"
     comic_panels:
     - image:
-        image: "/uploads/2018/11/12/benefits-hero.svg"
+        image: "/uploads/2018/11/17/AP comic 4 Panel 4.png"
         alt_text: Alt text
       caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
         condimentum diam. Vestibulum volutpat et quam non porta. Nulla ut dui sed
@@ -37,18 +37,21 @@ components:
         sem.
     - image:
         alt_text: Alt
+        image: "/uploads/2018/11/17/AP comic 4 panel 2.png"
       caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
         condimentum diam. Vestibulum volutpat et quam non porta. Nulla ut dui sed
         erat viverra laoreet in non nisl. Curabitur ut maximus lorem, ut scelerisque
         sem.
     - image:
         alt_text: Alt
+        image: "/uploads/2018/11/17/AP comic 4 panel 1.png"
       caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
         condimentum diam. Vestibulum volutpat et quam non porta. Nulla ut dui sed
         erat viverra laoreet in non nisl. Curabitur ut maximus lorem, ut scelerisque
         sem.
     - image:
         alt_text: Alt text
+        image: "/uploads/2018/11/17/AP comic 4 panel 3.png"
       caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
         condimentum diam. Vestibulum volutpat et quam non porta. Nulla ut dui sed
         erat viverra laor
@@ -58,21 +61,28 @@ components:
       image: "/uploads/2018/11/12/benefits-hero.svg"
     comic_panels:
     - image:
-        image: "/uploads/2018/11/12/benefits-hero.svg"
+        image: "/uploads/2018/11/17/AP comic 4 Panel 4.png"
         alt_text: Alt
       caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
         condimentum diam. Vestibulum volutpat et quam non porta. Nulla ut dui sed
         erat viverra laoreet in non nisl. Curabitur ut maximus lorem, ut scelerisque
         sem.
     - image:
-        image: "/uploads/2018/11/15/1YCXjCrqQ0ajSICdNn7o_full_brave_new_world.svg.png"
+        image: "/uploads/2018/11/17/AP comic 4 panel 3.png"
         alt_text: Alt
       caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
         condimentum diam. Vestibulum volutpat et quam non porta. Nulla ut dui sed
         erat viverra laoreet in non nisl. Curabitur ut maximus lorem, ut scelerisque
         sem.
     - image:
-        image: "/uploads/2018/11/11/logo-type-blue.svg"
+        image: "/uploads/2018/11/17/AP comic 4 panel 1.png"
+        alt_text: Alt
+      caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
+        condimentum diam. Vestibulum volutpat et quam non porta. Nulla ut dui sed
+        erat viverra laoreet in non nisl. Curabitur ut maximus lorem, ut scelerisque
+        sem.
+    - image:
+        image: "/uploads/2018/11/17/AP comic 4 panel 2.png"
         alt_text: Alt
       caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
         condimentum diam. Vestibulum volutpat et quam non porta. Nulla ut dui sed
