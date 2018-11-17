@@ -1,0 +1,54 @@
+---
+label: Comic collection
+hide_body: false
+is_partial: true
+display_field: title
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: comic-collection-component
+- type: field_group_list
+  name: comic_strips
+  label: Comic strip
+  hidden: false
+  config:
+    labelField: title
+  fields:
+  - type: text
+    name: title
+    label: Comic title
+    description: Typically a teacher's name.
+  - type: field_group
+    name: image
+    label: Image
+    description: Typically an illustration of a teacher. 
+    fields:
+    - type: file
+      name: image
+      label: Image
+      hidden: false
+    - type: text
+      name: alt_text
+      label: Alt Text
+  - type: field_group_list
+    name: comic_panels
+    label: Comic panel
+    description: 4 panels recommended. 
+    hidden: false
+    fields:
+    - type: field_group
+      name: image
+      label: Image 
+      fields:
+      - type: file
+        name: image
+        label: Image
+        hidden: false
+      - type: text
+        name: alt_text
+        label: Alt Text
+    - type: text
+      name: caption
+      label: Caption

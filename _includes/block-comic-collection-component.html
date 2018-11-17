@@ -1,0 +1,48 @@
+{% assign comics = section %}
+
+<section class="comicStrip">
+	<div class="tabBar">
+	  <ul class="tabBar__list">
+		{% for comicStrip in comics.comic_strips %}
+		    <li class="tabBar__item">
+			    {% if comicStrip.title %} 
+					{% if forloop.index == 1 %}
+			      		<a href="#{{ comicStrip.title | slugify }}" class="tabBar__anchor active">
+					{% else %}
+			      		<a href="#{{ comicStrip.title | slugify }}" class="tabBar__anchor">
+					{% endif %}
+			      {% if comicStrip.teacher_img_src %} 
+			      	<img src="{{ comicStrip.image.image }}">
+			      {% endif %}
+			      {{ comicStrip.title }}
+			      	</a>
+			     {% endif %}
+		    </li>
+	    {% endfor %}
+	  </ul>
+	</div>
+	<ul class="comicStrip__list">
+		{% for comicStrip in comics.comic_strips %}
+			{% if forloop.index == 1 %}
+				<li id="{{ comicStrip.title | slugify }}" class="comicStrip__item active">
+			{% else %}
+				<li id="{{ comicStrip.title | slugify }}" class="comicStrip__item">
+			{% endif %}
+				<ul class="comicPanel__list">
+					{% for comicPanel in comicStrip.comic_panels %}
+						{% if forloop.index == 1 %}
+							<li class="comicPanel__item active" data-appear-top-offset="-300">
+						{% else %}
+							<li class="comicPanel__item" data-appear-top-offset="-300">
+						{% endif %}
+							<figure class="comicPanel__link">
+								<img src="{{ comicPanel.image.image }}" class="comicPanel__img"/>
+								<figcaption class="comicPanel__caption">{{ comicPanel.caption }}</figcaption>
+							</figure>
+						</li>
+					{% endfor %}
+				</ul>
+			</li>
+		{% endfor %}
+	</div>
+</section>
