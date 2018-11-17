@@ -1,5 +1,5 @@
 ---
-label: Landing page
+label: Other Landing page that I don't want
 hide_body: true
 is_partial: false
 fields:
@@ -19,4 +19,8 @@ fields:
 - type: blocks
   name: components
   label: Components
-  template_types: 
+  template_types:
+  - hero
+  - feature_list
+  - feature_grid
+  - interstitial
