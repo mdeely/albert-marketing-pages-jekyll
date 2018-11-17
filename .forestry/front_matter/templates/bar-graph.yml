@@ -49,7 +49,8 @@ fields:
     - type: text
       name: data_value_label
       label: Custom data point value label
-      description: OPTIONAL. Displays above the data point. If not defined, the value will display.
+      description: OPTIONAL. Displays above the data point. If not defined, the value
+        will display.
     - type: color
       name: data_color
       default: "#1ABC9C"
