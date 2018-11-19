@@ -16,6 +16,12 @@ fields:
 - type: text
   label: Page description
   name: description
+- type: text
+  label: Location
+  name: location
+- type: text
+  label: School level
+  name: school_level
 - type: field_group_list
   name: statistics
   label: Statistics
