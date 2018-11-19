@@ -33,5 +33,5 @@ fields:
     name: modal_id
     label: Modal ID
     description: Must contain "form" in the ID. Must be unique. Use this ID in any
-      CTA > URL field to trigger the modal. Append with "#". E.g 'Modal ID "lead_gen".
-      Use "#lead_gen" in a CTA > URL field.
+      CTA > URL field to trigger the modal. Append with "#". E.g 'Modal ID "lead_gen_form".
+      Use "#lead_gen_form" in a CTA > URL field.
