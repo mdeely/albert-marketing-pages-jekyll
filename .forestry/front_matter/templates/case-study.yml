@@ -43,3 +43,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- case-studies/hello.md
