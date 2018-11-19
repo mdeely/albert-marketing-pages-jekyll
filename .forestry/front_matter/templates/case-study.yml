@@ -16,6 +16,27 @@ fields:
 - type: text
   label: Page description
   name: description
+- type: field_group_list
+  name: statistics
+  label: Statistics
+  hidden: false
+  fields:
+  - type: text
+    name: value
+    label: Metric value
+    hidden: false
+  - type: text
+    name: value_subtitle
+    label: Value subtitle
+    hidden: false
+- type: textarea
+  name: content
+  label: Content
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
 # - type: blocks
 #   name: components
 #   label: Components
