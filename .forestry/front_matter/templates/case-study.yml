@@ -16,3 +16,5 @@ fields:
 - type: text
   label: Page description
   name: description
+pages:
+- _case-studies/test.md
