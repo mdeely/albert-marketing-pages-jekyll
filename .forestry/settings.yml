@@ -19,12 +19,10 @@ sections:
   exclude: "*README.md"
   new_doc_ext: md
 - type: directory
-  path: case-studies
+  path: _case-studies
   label: Case studies
-  create: all
-  match: "*.md"
-  exclude: "*README.md"
-  new_doc_ext: md
+  templates:
+  - landing_pages
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
