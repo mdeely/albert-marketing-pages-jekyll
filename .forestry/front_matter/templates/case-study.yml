@@ -34,7 +34,7 @@ fields:
   label: Content
   config:
     required: true
-    wysiwyg: false
+    wysiwyg: true
     schema:
       format: markdown
 pages:
