@@ -26,7 +26,7 @@ fields:
     name: badge
     label: Badge
     description: e.g Coming soon!
-    hidden: false
+    hidden: true
   - type: text
     name: supertitle
     label: Supertitle
