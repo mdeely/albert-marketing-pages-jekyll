@@ -16,8 +16,3 @@ fields:
 - type: text
   label: Page description
   name: description
-# - type: blocks
-#   name: components
-#   label: Components
-#   template_types:
-#   - comic-collection
