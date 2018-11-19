@@ -37,8 +37,5 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-# - type: blocks
-#   name: components
-#   label: Components
-#   template_types:
-#   - comic-collection
+pages:
+- _case-studies/test.md
