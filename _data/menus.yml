@@ -1,11 +1,1 @@
----
-primary_nav:
-- weight: 2
-  title: Pricing
-  identifier: item_YWuHrL-
-- weight: 1
-  title: Resources
-  identifier: item_YxCTJX8
-- title: Solutions
-  weight: 3
-  identifier: item_jXd2mqC
+--- {}
