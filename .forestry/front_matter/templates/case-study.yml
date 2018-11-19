@@ -16,5 +16,12 @@ fields:
 - type: text
   label: Page description
   name: description
+- type: textarea
+  name: content
+  label: Content
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 pages:
 - _case-studies/test.md
