@@ -13,7 +13,14 @@ sections:
   create: all
 - type: directory
   path: ''
-  label: Pages
+  label: Landing pages
+  create: all
+  match: "*.md"
+  exclude: "*README.md"
+  new_doc_ext: md
+- type: directory
+  path: '/case-studies'
+  label: Case studies
   create: all
   match: "*.md"
   exclude: "*README.md"
