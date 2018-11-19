@@ -32,5 +32,4 @@ fields:
   - feature_grid
   - interstitial
 pages:
-- case-studies/test.md
 - marc-test.md

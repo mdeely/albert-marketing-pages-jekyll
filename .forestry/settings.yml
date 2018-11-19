@@ -21,6 +21,8 @@ sections:
 - type: directory
   path: _case-studies
   label: Case studies
+  create: all
+  match: "**/*"
   templates:
   - landing_pages
 upload_dir: uploads
