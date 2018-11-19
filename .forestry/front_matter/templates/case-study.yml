@@ -7,7 +7,7 @@ fields:
   name: layout
   label: Layout
   hidden: true
-  default: case-study
+  default: case_study
   config:
     required: false
 - type: text
