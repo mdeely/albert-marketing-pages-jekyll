@@ -16,8 +16,8 @@ fields:
 - type: textarea
   name: embed_script
   label: Embed script
-  description: 'Paste the entirety of the "Javascript Embed Script" from formstack.
-    Do not put quotes or anything around the code. '
+  description: 'Paste the entirety of the "Javascript Embed Script" from Formstack.
+    Do not put quotes or other characters around the code. '
   config:
     required: true
     wysiwyg: false
