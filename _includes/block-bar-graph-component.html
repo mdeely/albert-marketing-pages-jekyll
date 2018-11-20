@@ -66,9 +66,9 @@
 				    	{% assign data_labels = data_labels | concat: a_data_label %}
 					{% endfor %}
 			  		
-					{% if bar_labels[0] %}
+					{% if data_labels[0] %}
 					<ul class="data__bar-labels">
-			  			{% for label in bar_labels %}
+			  			{% for label in data_labels %}
 			  				<li class="data__bar-label">{{ label }}</li>
 			  			{% endfor %}
 			  		</ul>
