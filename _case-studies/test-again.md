@@ -6,7 +6,11 @@ banner_image: ''
 description: ''
 location: ''
 school_level: ''
-statistics: []
+statistics:
+- value: 10M
+  value_subtitle: Statistic again
+- value: 90%
+  value_subtitle: Statistic subtitle
 published: false
 
 ---
