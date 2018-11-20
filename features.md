@@ -52,7 +52,10 @@ components:
     title: Ready-to-use curriculum
     description: It starts with our carefully crafted subject guides. Content is organized
       in familiar ways with scaffolding and differentiation.
-  - {}
+  - description: Search content by keyword, content tags, or learning standards to
+      find exactly what you want to teach or assess
+    title: Powerful content search
+    image: "/uploads/2018/11/20/tiny-ui_advanced-search.png"
   - {}
 published: false
 
