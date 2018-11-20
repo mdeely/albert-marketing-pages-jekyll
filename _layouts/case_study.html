@@ -31,23 +31,8 @@
 
 		<div class="caseStudy__info">
 			{{ content | markdownify }}
-<!-- 			{% assign sections = page.sections %}
-			{% for section in sections %}
-				<div class="caseStudy__info-title">{{ section.title }}</div>
-				<div class="caseStudy__info-paragraph">{{ section.paragraph | markdownify }}</div>
-				{% if section.citation %}
-					<div class="caseStudy__info-citation">{{ section.citation | markdownify }}</div>
-				{% endif %}
-			{% endfor %} -->
 		</div>
 	</div>
 
-<!-- 	  {% assign components = page.components %}
-	  {% for component in components %}
-
-	    {% assign include_file = component.component_name | append: '.html' %}
-	    {% include /components/{{ include_file }} content=component component_index=forloop.index directional_arrow=directional_arrow %}
-
-	  {% endfor %} -->
 
 {% include footer.html %}
