@@ -1,6 +1,6 @@
 ---
 label: Albert Academy
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - type: text
@@ -13,6 +13,8 @@ fields:
 - type: text
   label: Page Title
   name: title
+  hidden: true
 - type: text
   label: Page description
   name: description
+  hidden: true
