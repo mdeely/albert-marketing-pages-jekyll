@@ -20,7 +20,6 @@ sections:
   new_doc_ext: md
   templates:
   - landing_page
-  - default
 - type: directory
   path: _case-studies
   label: Case studies
