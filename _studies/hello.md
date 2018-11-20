@@ -16,6 +16,5 @@ content: |-
   Content
 
   ![](/uploads/2018/11/19/backpack_open..svg)
-published: false
 
 ---
