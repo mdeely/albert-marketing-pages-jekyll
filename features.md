@@ -46,7 +46,7 @@ components:
     image: "/uploads/2018/11/20/home-illustration-features-best-practice.svg"
 - template: slideshow
   block: slideshow-component
-  title: "\tInstructional flexibility"
+  title: Instructional flexibility
   slideshow_item:
   - image: "/uploads/2018/11/20/Screen Shot 2018-11-20 at 4.16.22 PM.png"
     title: Ready-to-use curriculum
@@ -56,7 +56,10 @@ components:
       find exactly what you want to teach or assess
     title: Powerful content search
     image: "/uploads/2018/11/20/tiny-ui_advanced-search.png"
-  - {}
+  - title: Assignments your way
+    description: Enjoy full control over all aspects of assigned work and differentiate
+      content between students. Your customizations are reusable and shareable.
+    image: "/uploads/2018/11/20/tiny-ui_assignments_choose-questions.png"
 published: false
 
 ---
