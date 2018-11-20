@@ -1,0 +1,15 @@
+---
+graph_colors:
+  Red:
+    color = "#BC1A3C"
+  Gold:
+    color = "#FAAC30"
+  Green:
+    color = "#19BC9C"
+  Blue:
+    color = "#1785C8"
+  Purple:
+    color = "#985BCD"
+  Grey:
+    color = "#3F555A"
+---
