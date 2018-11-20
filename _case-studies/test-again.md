@@ -2,7 +2,7 @@
 title: Test again
 layout: case_study
 date: 2018-11-20 03:43:27 +0000
-banner_image: ''
+banner_image: "/uploads/2018/11/17/AP comic 4 panel 1.png"
 description: ''
 location: ''
 school_level: ''
