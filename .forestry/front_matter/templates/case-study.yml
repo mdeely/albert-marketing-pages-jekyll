@@ -47,4 +47,5 @@ fields:
   config:
     required: false
 pages:
+- _case-studies/df.md
 - _case-studies/test-4.md
