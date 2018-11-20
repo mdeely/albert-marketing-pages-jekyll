@@ -4,15 +4,9 @@ email: hello@albert.io
 description: >-
   Acheive mastery with world-class learning content on Albert.
 base_url: http://127.0.0.1:4000
-url: "" # your site's origin, e.g. https://forestry.io
+url: "http://albert.io" # the base hostname & protocol for your site
 
 asset_path: "/assets/img/"
-
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
 
 # collections: 
 #   landing_pages: 
@@ -33,6 +27,13 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 
 sass:
   sass_dir: _sass
