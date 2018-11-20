@@ -46,3 +46,5 @@ fields:
   default: case_study
   config:
     required: false
+pages:
+- _case-studies/test-4.md
