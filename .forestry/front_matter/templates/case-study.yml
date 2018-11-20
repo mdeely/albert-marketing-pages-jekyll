@@ -44,4 +44,4 @@ fields:
     schema:
       format: markdown
 pages:
-- case-studies/hello.md
+- _studies/another-test.md
