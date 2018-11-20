@@ -18,7 +18,7 @@ sections:
   label: Pages
   create: documents
   match: "*.md"
-  exclude: "[README.md]"
+  exclude: "{/README.md, /albert-academy.md}"
   new_doc_ext: md
   templates:
   - landing_page
