@@ -1,9 +1,0 @@
-{% assign form = include.content %}
-
-{% if form.modal == true %}
-<section id="{{ form.modal_name }}" class="leadGen modal">
-{% else %}
-<section class="leadGen">
-{% endif %}
-{{ form.embed_script }}
-</section>
