@@ -51,7 +51,7 @@ fields:
         min: '0'
       name: data_value
       label: Value
-      description: "%"
+      description: "Represented as a percentage."
       default: ''
     - type: text
       name: data_value_label
