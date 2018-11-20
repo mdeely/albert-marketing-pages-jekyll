@@ -32,6 +32,16 @@ components:
     title: Engaging formats
     description: Our question formats provide learners with multiple ways to learn
       and make the content come alive like pencil and paper never could.
+- template: hero
+  block: hero-component
+  primary_hero: true
+  title: The best practice content, anywhere
+  description: Our obsession with quality means you can trust that you are getting
+    relevant standards-aligned practice with helpful explanations, every time.
+  cta:
+    enabled: true
+    button_text: Explore our course library
+    url: 'https://www.albert.io/test-prep/advanced-placement '
 published: false
 
 ---
