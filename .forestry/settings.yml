@@ -13,7 +13,7 @@ sections:
   create: all
 - type: directory
   path: ''
-  label: Landing pages
+  label: Pages
   create: all
   match: "*.md"
   exclude: "*README.md"
