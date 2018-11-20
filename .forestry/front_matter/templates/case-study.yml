@@ -31,14 +31,6 @@ fields:
     name: value_subtitle
     label: Value subtitle
     hidden: false
-- type: textarea
-  name: content
-  label: Content
-  config:
-    required: true
-    wysiwyg: true
-    schema:
-      format: markdown
 - type: text
   name: layout
   label: Layout
