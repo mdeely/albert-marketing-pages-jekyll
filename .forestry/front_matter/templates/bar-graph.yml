@@ -70,7 +70,7 @@ fields:
       hidden: false
       config:
         source:
-          type: custom
+          type: simple
         options:
         - Red
         - Gold
@@ -78,6 +78,7 @@ fields:
         - Blue
         - Purple
         - Grey
+      default: Green
     - type: text
       name: data_footer_label
       label: Footer label
