@@ -1,7 +1,10 @@
 ---
 title: Test
-layout: case_study
-date: 2018-11-19 05:25:22 +0000
-published: false
+layout: blocks
+date: 2018-11-19 04:42:37 +0000
+description: What
+components:
+- template: comic-collection
+  block: comic-collection-component
 
 ---

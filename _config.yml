@@ -21,9 +21,8 @@ plugins:
 #   case-studies:
 #     output: true
 collections:
-  studies:
+  case-studies:
     output: true
-    permalink: "/:path/"
 
 defaults:
   - scope:
