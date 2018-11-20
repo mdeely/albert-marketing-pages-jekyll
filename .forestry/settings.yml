@@ -14,20 +14,27 @@ sections:
 - type: directory
   path: ''
   label: Pages
-  create: all
+  create: documents
   match: "*.md"
   exclude: "*README.md"
   new_doc_ext: md
+  templates:
+  - landing_page
+  - default
 - type: directory
   path: _case-studies
   label: Case studies
   create: all
   match: "**/*"
+  templates:
+  - case-study
 - type: directory
   path: _albert-academy
   label: Albert Academy
   create: all
   match: "**/*"
+  templates:
+  - albert-academy
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
