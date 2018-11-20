@@ -2,22 +2,3 @@
 title: Case Studies
 layout: studies
 ---
-<div class="caseStudies">
-	<div class="caseStudies__hero" style="background-image: url(' {{ site.asset_path }}hero/home-hero.svg ')">
-		<h1 class=caseStudies__hero-title>{{ page.title }}</h1>
-	</div>
-	<ul class="caseStudy__list">
-		{% for study in site.case-studies %}
-			<li class="caseStudy__item">
-        		<div class="caseStudy__hero" style="background-image: url(' {{ site.asset_path }}{{ study.hero_img_src }} ')"></div>
-				<div class="caseStudy__title">{{ study.title }}</div>
-        		<div class="caseStudy__school-info">
-					<div class="caseStudy__location">{{ study.location }}</div>
-					<div class="caseStudy__school-level">{{ study.school_level }}</div>
-        		</div>
-				<p class="caseStudy__description">{{ study.description }}</p>
-				<a class="button" href="{{ study.url }}">View study</a>
-			</li>
-		{% endfor %}
-	</ul>
-</div>
