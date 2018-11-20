@@ -4,11 +4,9 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  name: layout
-  label: Layout
+  name: title
+  label: Post title
   hidden: true
   default: post
   config:
     required: false
-  label: Post title
-  name: title
