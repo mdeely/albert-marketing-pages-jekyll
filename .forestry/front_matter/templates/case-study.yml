@@ -4,13 +4,6 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
-  name: layout
-  label: Layout
-  hidden: true
-  default: case_study
-  config:
-    required: false
-- type: text
   label: Page title
   name: title
 - type: text
@@ -43,3 +36,10 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+- type: text
+  name: layout
+  label: Layout
+  hidden: false
+  default: case_study
+  config:
+    required: false
