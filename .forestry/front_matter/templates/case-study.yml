@@ -19,6 +19,7 @@ fields:
 - type: text
   label: Page description
   name: description
+  description: 'This will display in Case Studies page. '
 - type: text
   label: Location
   name: location
