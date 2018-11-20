@@ -63,13 +63,20 @@ fields:
       label: Bar label
       description: Displays below the bar.
       default: ''
-    - type: color
-      name: data_color
-      default: "#1ABC9C"
-      description: ''
-      config:
-        color_format: Hex
+    - type: select
+      name: bar_color_name
       label: Bar color
+      hidden: false
+      config:
+        source:
+          type: custom
+        options:
+        - Red
+        - Gold
+        - Green
+        - Blue
+        - Purple
+        - Grey
     - type: text
       name: data_footer_label
       label: Footer label

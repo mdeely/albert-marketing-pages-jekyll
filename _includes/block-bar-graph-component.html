@@ -40,7 +40,7 @@
 			  			</div>
 						{% for data in graph.data_points %}
 				  			<div class="data__value-wrapper">
-				  				<div class="data__bar" style="background-color: {{ data.color }}; height: {{ data.data_value | append: '%' }}">
+				  				<div class="data__bar {{ data.bar_color_name | slugify }}" style="background-color: height: {{ data.data_value | append: '%' }}">
 
 				  					{% assign data_value = data.data_value | append: '%' %}
 
