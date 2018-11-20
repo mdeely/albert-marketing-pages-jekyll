@@ -1,5 +1,6 @@
 ---
-layout: case_studies
+title: Case Studies
+layout: studies
 ---
 <div class="caseStudies">
 	<div class="caseStudies__hero" style="background-image: url(' {{ site.asset_path }}hero/home-hero.svg ')">

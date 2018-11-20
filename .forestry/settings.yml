@@ -19,7 +19,7 @@ sections:
   exclude: "*README.md"
   new_doc_ext: md
 - type: directory
-  path: case-studies
+  path: _studies
   label: Case studies
   create: all
   match: "**/*"
