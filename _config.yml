@@ -23,8 +23,10 @@ plugins:
 collections:
   case-studies:
     output: true
+    permalink: "/case-studies/:path/"
   albert-academy:
     output: true
+    permalink: "/albert-academy/:path/"
 
 defaults:
   - scope:
