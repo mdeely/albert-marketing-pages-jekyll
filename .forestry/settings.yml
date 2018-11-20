@@ -11,6 +11,8 @@ sections:
 - type: jekyll-posts
   label: Blog
   create: all
+  templates:
+  - post
 - type: directory
   path: ''
   label: Pages
