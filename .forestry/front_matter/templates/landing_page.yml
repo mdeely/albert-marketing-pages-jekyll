@@ -32,4 +32,5 @@ fields:
   - feature_grid
   - interstitial
 pages:
+- Benefits/educator.md
 - marc-test.md
