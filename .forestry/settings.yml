@@ -23,6 +23,11 @@ sections:
   label: Case studies
   create: all
   match: "**/*"
+- type: directory
+  path: _albert-academy
+  label: Albert Academy
+  create: all
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
