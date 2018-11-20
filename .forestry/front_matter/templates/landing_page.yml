@@ -31,3 +31,5 @@ fields:
   - feature_list
   - feature_grid
   - interstitial
+pages:
+- results.md
