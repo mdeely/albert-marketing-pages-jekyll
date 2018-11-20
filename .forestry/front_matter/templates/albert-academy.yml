@@ -18,3 +18,5 @@ fields:
   label: Page description
   name: description
   hidden: false
+pages:
+- _albert-academy/template-from-page-builder.md
