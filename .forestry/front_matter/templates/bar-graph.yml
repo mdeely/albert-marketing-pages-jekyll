@@ -62,8 +62,8 @@ fields:
     - type: text
       name: data_label
       label: Bar label
-      description: Displays below the bar.
-      default: ''
+      description: Y axis
+      default: Year 1
     - type: select
       name: bar_color_name
       label: Bar color
@@ -81,6 +81,6 @@ fields:
     - type: text
       name: data_footer_label
       label: Footer label
-      description: 'If you wanted two or more bars to share a label (e.g "Year 1"),
+      description: 'If you wanted two or more bars to share a label (e.g "Before Albert"),
         then you would define that label here. You only need to define this in one
         data point. '
