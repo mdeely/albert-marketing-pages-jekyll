@@ -10,18 +10,24 @@ fields:
   default: case_study
   config:
     required: false
+- type: file
+  label: Banner image
+  name: banner_image
 - type: text
   label: Page title
   name: title
 - type: text
   label: Page description
   name: description
+  description: Used for SEO.
 - type: text
   label: Location
   name: location
+  description: Location of case study. E.g. Chicago, IL
 - type: text
   label: School level
   name: school_level
+  description: E.g Middle school
 - type: field_group_list
   name: statistics
   label: Statistics
