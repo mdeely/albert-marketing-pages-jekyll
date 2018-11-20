@@ -4,12 +4,15 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  name: title
-  label: Page title
+  name: layout
+  label: Layout
   hidden: true
   default: albert_academy
   config:
     required: false
+- type: text
+  label: Page Title
+  name: title
 - type: text
   label: Page description
   name: description

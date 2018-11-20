@@ -2,9 +2,12 @@
 
 {% include nav.html %}
 
-<h1>Albert Academy</h1>
+<section class="academy">
+	<h1>Albert Academy</h1>
 	{% for study in site.albert-academy %}
 		<div class="caseStudy__title">{{ study.title }}</div>
 	{% endfor %}
+</section>
+
 
 {% include footer.html %}
