@@ -23,6 +23,8 @@ plugins:
 collections:
   case-studies:
     output: true
+  albert-academy:
+    output: true
 
 defaults:
   - scope:
