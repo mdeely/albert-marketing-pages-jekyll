@@ -23,8 +23,6 @@ sections:
   label: Case studies
   create: all
   match: "**/*"
-  templates:
-  - landing_pages
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
