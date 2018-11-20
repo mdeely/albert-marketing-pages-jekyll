@@ -6,6 +6,5 @@ description: What
 components:
 - template: comic-collection
   block: comic-collection-component
-published: false
 
 ---
