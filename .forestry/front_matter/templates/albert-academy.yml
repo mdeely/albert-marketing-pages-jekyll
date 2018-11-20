@@ -13,8 +13,8 @@ fields:
 - type: text
   label: Page Title
   name: title
-  hidden: true
+  hidden: false
 - type: text
   label: Page description
   name: description
-  hidden: true
+  hidden: false
