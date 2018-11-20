@@ -42,6 +42,8 @@ components:
     enabled: true
     button_text: Explore our course library
     url: 'https://www.albert.io/test-prep/advanced-placement '
+  image:
+    image: "/uploads/2018/11/20/home-illustration-features-best-practice.svg"
 published: false
 
 ---
