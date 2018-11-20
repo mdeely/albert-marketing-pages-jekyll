@@ -1,4 +1,4 @@
 ---
 title: Case Studies
-layout: case-studies
+layout: case_studies
 ---
