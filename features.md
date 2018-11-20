@@ -73,6 +73,10 @@ components:
   - title: Teach the right content
     description: Target your instruction to address the most common misconceptions.
     image: "/uploads/2018/11/20/tiny-ui_students-tab_question-tab.png"
+  - image: "/uploads/2018/11/20/tiny-ui_students-tab_topics.png"
+    title: Understand the whole learner
+    description: Access detailed individual student reports to enable differentiated
+      instruction.
 published: false
 
 ---
