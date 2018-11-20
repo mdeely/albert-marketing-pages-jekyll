@@ -60,6 +60,17 @@ components:
     description: Enjoy full control over all aspects of assigned work and differentiate
       content between students. Your customizations are reusable and shareable.
     image: "/uploads/2018/11/20/tiny-ui_assignments_choose-questions.png"
+- template: slideshow
+  block: slideshow-component
+  title: Meaningful insights to inform instruction
+  slideshow_item:
+  - image: "/uploads/2018/11/20/tiny-ui_class-dashboard.png"
+    title: Maximize impact
+    description: Quickly identify which learners need more attention.
+  - image: "/uploads/2018/11/20/tiny-ui_students-tab_students-tab.png"
+    title: Track progress
+    description: Help learners move toward mastery over time.
+  - {}
 published: false
 
 ---
