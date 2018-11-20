@@ -52,10 +52,11 @@ fields:
       name: data_value
       label: Value
       description: "%"
+      default: '50'
     - type: text
       name: data_value_label
-      label: Value label
-      description: Defaults to value percentage
+      label: Custom value label
+      description: Defaults to value percentage if not defined
       config:
         required: false
     - type: text
