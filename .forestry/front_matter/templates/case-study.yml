@@ -41,3 +41,5 @@ fields:
     name: value_subtitle
     label: Value subtitle
     hidden: false
+pages:
+- _case-studies/george-ranch.md
