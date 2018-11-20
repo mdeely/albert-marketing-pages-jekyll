@@ -44,6 +44,16 @@ components:
     url: 'https://www.albert.io/test-prep/advanced-placement '
   image:
     image: "/uploads/2018/11/20/home-illustration-features-best-practice.svg"
+- template: slideshow
+  block: slideshow-component
+  title: "\tInstructional flexibility"
+  slideshow_item:
+  - image: "/uploads/2018/11/20/Screen Shot 2018-11-20 at 4.16.22 PM.png"
+    title: Ready-to-use curriculum
+    description: It starts with our carefully crafted subject guides. Content is organized
+      in familiar ways with scaffolding and differentiation.
+  - {}
+  - {}
 published: false
 
 ---
