@@ -9,4 +9,5 @@ fields:
   hidden: false
   default: default
 pages:
+- _posts/d.md
 - _posts/home.md
