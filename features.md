@@ -70,7 +70,9 @@ components:
   - image: "/uploads/2018/11/20/tiny-ui_students-tab_students-tab.png"
     title: Track progress
     description: Help learners move toward mastery over time.
-  - {}
+  - title: Teach the right content
+    description: Target your instruction to address the most common misconceptions.
+    image: "/uploads/2018/11/20/tiny-ui_students-tab_question-tab.png"
 published: false
 
 ---
