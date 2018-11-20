@@ -52,7 +52,7 @@ fields:
       name: data_value
       label: Value
       description: "%"
-      default: '50'
+      default: ''
     - type: text
       name: data_value_label
       label: Custom value label
@@ -63,7 +63,7 @@ fields:
       name: data_label
       label: Bar label
       description: Y axis
-      default: Year 1
+      default: ''
     - type: select
       name: bar_color_name
       label: Bar color
