@@ -16,5 +16,3 @@ fields:
 - type: text
   label: Page description
   name: description
-pages:
-- _albert-academy/test.md
