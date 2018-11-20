@@ -3,6 +3,9 @@ label: Case study
 hide_body: true
 is_partial: false
 fields:
+- type: file
+  label: Banner image
+  name: banner_image
 - type: text
   label: Page title
   name: title
