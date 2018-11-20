@@ -13,6 +13,8 @@ components:
     button_text: Get started
     enabled: true
     url: https://www.albert.io/signup
+  image:
+    image: "/uploads/2018/11/20/features-hero.svg"
 published: false
 
 ---
