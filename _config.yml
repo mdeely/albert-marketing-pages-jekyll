@@ -20,6 +20,10 @@ plugins:
 #     permalink: /:name
 #   case-studies:
 #     output: true
+collections:
+  studies:
+    output: true
+    permalink: "/:path/"
 
 defaults:
   - scope:
