@@ -9,7 +9,7 @@ sections:
   label: Welcome - First Steps
   read_only: true
 - type: jekyll-posts
-  label: Posts
+  label: Blog
   create: all
 - type: directory
   path: ''
