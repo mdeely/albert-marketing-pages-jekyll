@@ -15,6 +15,15 @@ components:
     url: https://www.albert.io/signup
   image:
     image: "/uploads/2018/11/20/features-hero.svg"
+- template: slideshow
+  block: slideshow-component
+  title: Learn by doing
+  slideshow_item:
+  - image: "/uploads/2018/11/20/tiny-ui_ie-explanations.png"
+    title: Immediate feedback
+    description: Our detailed explanations let learners address misconceptions and
+      build context as they practice. Each interaction feels like having a personal
+      tutor, on-demand.
 published: false
 
 ---
