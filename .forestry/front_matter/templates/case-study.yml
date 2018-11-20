@@ -3,6 +3,13 @@ label: Case study
 hide_body: false
 is_partial: false
 fields:
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: case_study
+  config:
+    required: false
 - type: file
   label: Banner image
   name: banner_image
@@ -31,12 +38,5 @@ fields:
     name: value_subtitle
     label: Value subtitle
     hidden: false
-- type: text
-  name: layout
-  label: Layout
-  hidden: false
-  default: case_study
-  config:
-    required: false
 pages:
 - _case-studies/test-again.md
