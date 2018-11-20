@@ -28,6 +28,10 @@ components:
     title: Personalization
     description: Learners can customize their learning experience to fit their needs
       and interests to always stay motivated and engaged.
+  - image: "/uploads/2018/11/20/Screen Shot 2018-11-20 at 4.16.22 PM.png"
+    title: Engaging formats
+    description: Our question formats provide learners with multiple ways to learn
+      and make the content come alive like pencil and paper never could.
 published: false
 
 ---
