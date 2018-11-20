@@ -24,6 +24,10 @@ components:
     description: Our detailed explanations let learners address misconceptions and
       build context as they practice. Each interaction feels like having a personal
       tutor, on-demand.
+  - image: "/uploads/2018/11/20/tiny-ui_ie.png"
+    title: Personalization
+    description: Learners can customize their learning experience to fit their needs
+      and interests to always stay motivated and engaged.
 published: false
 
 ---
