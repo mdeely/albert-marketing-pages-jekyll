@@ -43,5 +43,3 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-pages:
-- _studies/another-test.md
