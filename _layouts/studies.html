@@ -1,7 +1,7 @@
----
-layout: default
----
+{% include head.html %}
 
-{% for study in site.studies %}
-	<h1>{{ study.title }}</h1>
-{% endfor %}
+	{% for study in site.studies %}
+		<h1>{{ study.title }}</h1>
+	{% endfor %}
+
+{% include footer.html %}
