@@ -6,7 +6,7 @@ fields:
 - type: text
   name: title
   label: Post title
-  hidden: true
+  hidden: false
   default: post
   config:
     required: false
