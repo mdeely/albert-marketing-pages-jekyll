@@ -2,12 +2,12 @@
 title: Bar graph test
 layout: blocks
 date: 2018-11-20 14:26:26 +0000
-description: There is a bug with how y-axis labels are being generated. Fix coming!
+description: ''
 components:
 - template: bar-graph
   block: bar-graph-component
   title: Title of bar graph
-  description: Description for it
+  description: There is a bug with how y-axis labels are being generated. Fix coming!
   graphs:
   - title: AP® English
     tab_label: AP® English
