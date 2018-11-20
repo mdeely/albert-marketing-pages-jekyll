@@ -10,5 +10,3 @@ fields:
   default: post
   config:
     required: false
-pages:
-- _posts/teaching-a-teacher.md
