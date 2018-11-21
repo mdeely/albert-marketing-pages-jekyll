@@ -10,18 +10,13 @@
 		<nav role=navigation>
 			<ul class="mainNav__nav">
 				{% for item in site.menus.header %}
-				  <li class="menu-item-{{ loop.index }}">
-				    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-				    {% if item.children %}
-				      <ul class="sub-menu">
-				      {% for item in item.children %}
-				        <li class="menu-item-{{ loop.index }}">
-				          <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-				        </li>
-				      {% endfor %}
-				      </ul>
-				    {% endif %}
-				  </li>
+					{% if item.children %}
+					<li class="menu-item-{{ loop.index }}">
+					    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+					</li>
+					{% else %}
+			      	<li class="nav__dropdown">{{ item.title }}<i class="fa fa-caret-down"></i>
+					{% endif %}
 				{% endfor %}
 			</ul>
 			<ul class="mainNav__account">
