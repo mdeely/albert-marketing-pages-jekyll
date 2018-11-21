@@ -7,6 +7,5 @@ menu:
     weight: 2
     parent: item_sk2n32f
     identifier: item_w81CbUu
-published: false
 
 ---
