@@ -26,6 +26,5 @@ components:
       data_label: Year 1
       bar_color_name: Green
       data_footer_label: After Albert
-published: false
 
 ---
