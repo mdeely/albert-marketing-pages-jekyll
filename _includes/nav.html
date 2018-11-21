@@ -10,7 +10,9 @@
 		<nav role=navigation>
 			<ul>
 			{% for item in site.menus.header %}
-				<li>{{ item.title }}</li>
+				{% for item in item.children %} <!-- if HAS parent. Not if IS parent -->
+				<li>Child: {{ item.title }}</li>
+				{% endif %}
 			{% endfor %}
 			</ul>
 			<ul class="mainNav__account">
