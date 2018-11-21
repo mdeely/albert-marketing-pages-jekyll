@@ -26,10 +26,5 @@ components:
       data_label: Year 1
       bar_color_name: Green
       data_footer_label: After Albert
-menu:
-  header:
-    weight: 1
-    identifier: item_giuHnUK
-    parent: item_w81CbUu
 
 ---
