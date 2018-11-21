@@ -1,6 +1,5 @@
 ---
 label: Landing page
-menus: header
 hide_body: true
 is_partial: false
 fields:
@@ -34,5 +33,6 @@ fields:
   - interstitial
   - pre-footer
 pages:
-- features.md
 - results.md
+- another-page.md
+- features.md
