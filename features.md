@@ -77,6 +77,27 @@ components:
     title: Understand the whole learner
     description: Access detailed individual student reports to enable differentiated
       instruction.
+- template: slideshow
+  block: slideshow-component
+  slideshow_item:
+  - image: "/uploads/2018/11/21/features-page-administrator-experience-1.svg"
+    title: Change. Managed.
+    description: Albert provides powerful tools for school administrators to manage
+      their Albert deployment at all levels. .
+  - image: "/uploads/2018/11/21/features-page-administrator-experience-2.svg"
+    title: Complete insights
+    description: Our comprehensive reporting tools provide detailed insights into
+      classes, teachers, students, and subjects for a complete view of your data.
+  - image: "/uploads/2018/11/21/tiny-ui_admin-tab--reports.png"
+    title: Drive instructional value
+    description: 'User Albert’s data insights to drive engagement across teachers
+      and class to supercharge learning at your school. '
+  - image: "/uploads/2018/11/21/features-page-administrator-experience-4.svg"
+    title: Measurable outcomes
+    description: As your students learn more deeply while your teachers free up time
+      for personalized instruction, watch test scores, productivity, and engagement
+      improve.
+  title: A complete administrator experience
 published: false
 
 ---
