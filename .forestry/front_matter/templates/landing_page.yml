@@ -1,5 +1,6 @@
 ---
 label: Landing page
+menus: header
 hide_body: true
 is_partial: false
 fields:
