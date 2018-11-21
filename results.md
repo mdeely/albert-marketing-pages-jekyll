@@ -29,7 +29,6 @@ components:
 menu:
   header:
     weight: 1
-    title: Nav item
     identifier: item_giuHnUK
     parent: item_w81CbUu
 
