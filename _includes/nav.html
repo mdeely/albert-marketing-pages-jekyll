@@ -12,7 +12,7 @@
 			{% for item in site.menus.header %}
 				{% for item in item.children %} <!-- if HAS parent. Not if IS parent -->
 				<li>Child: {{ item.title }}</li>
-				{% endif %}
+				{% endfor %}
 			{% endfor %}
 			</ul>
 			<ul class="mainNav__account">
