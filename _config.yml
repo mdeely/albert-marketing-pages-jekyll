@@ -17,10 +17,10 @@ asset_path: "/assets/img/"
 collections:
   case-studies:
     output: true
-    permalink: "/case-studies/:path/"
+    permalink: "/case-studies/:name/"
   albert-academy:
     output: true
-    permalink: "/albert-academy/:path/"
+    permalink: "/albert-academy/:name/"
 
 defaults:
   - scope:
