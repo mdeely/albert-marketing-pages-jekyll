@@ -9,7 +9,9 @@
     	</div>
 		<nav role=navigation>
 			<ul>
-			{{ site.menus.header }}
+			{% for item in site.menus.header %}
+				{{ item }}
+			{% endfor %}
 			</ul>
 			<ul class="mainNav__account">
 				<li><a href="#">Log in</a></li>
