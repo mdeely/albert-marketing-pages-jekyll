@@ -11,9 +11,5 @@ components:
     url: link
   - link_text: Item
     url: linke
-menu:
-  header:
-    weight: 1
-    identifier: item_4kNafyT
 
 ---
