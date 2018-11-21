@@ -6,7 +6,7 @@ description: Testing menus
 components: []
 menu:
   header:
-    weight: 3
+    weight: 2
     title: Test
 
 ---

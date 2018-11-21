@@ -28,7 +28,7 @@ components:
       data_footer_label: After Albert
 menu:
   header:
-    weight: 2
+    weight: 1
     title: Results
 
 ---
