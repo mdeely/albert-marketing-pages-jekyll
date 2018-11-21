@@ -28,7 +28,8 @@ components:
       data_footer_label: After Albert
 menu:
   header:
-    weight: 2
+    weight: 3
     title: Nav item
+    identifier: item_giuHnUK
 
 ---
