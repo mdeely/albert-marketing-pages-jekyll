@@ -8,16 +8,21 @@
 			<i class="fas fa-times toggle--close"></i>
     	</div>
 		<nav role=navigation>
-			<ul class="mainNav__nav">
-				{% for item in site.menus.header %}
-					{% if item.children %}
-				      	<li class="nav__dropdown">Has children<i class="fa fa-caret-down"></i>
-					{% else %}
-						<li class="menu-item-{{ loop.index }}">
-						    <a href="{{ item.url }}" title="Go to {{ item.title }}">No children</a>
-						</li>
-					{% endif %}
-				{% endfor %}
+			<ul>
+			{% for item in site.menus.header %}
+			  <li class="menu-item-{{ loop.index }}">
+			    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+			    {% if item.children %}
+			      <ul class="sub-menu">
+			      {% for item in item.children %}
+			        <li class="menu-item-{{ loop.index }}">
+			          <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+			        </li>
+			      {% endfor %}
+			      </ul>
+			    {% endif %}
+			  </li>
+			{% endfor %}
 			</ul>
 			<ul class="mainNav__account">
 				<li><a href="#">Log in</a></li>
