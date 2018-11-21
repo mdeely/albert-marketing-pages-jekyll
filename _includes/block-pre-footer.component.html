@@ -1,0 +1,25 @@
+{% assign preFooter = section %}
+
+
+<section class="preFooter">
+    <div class="preFooter__left">
+        <div class="preFooter__visual">
+            <img src="{{ preFooter.left.image"/>
+        </div>
+        <div class="preFooter__info-container">
+            <div class="preFooter__title">{{ preFooter.left.title }}</div>
+            <p class="preFooter__description">{{ preFooter.left.description }}</p>
+            <a href="{{ preFooter.left.cta.url }}" class="preFooter__cta button--white">{{ preFooter.left.cta.button_text }}</a>
+        </div>
+    </div>
+    <div class="preFooter__right">
+        <div class="preFooter__visual">
+            <img src="{{ preFooter.right.image"/>
+        </div>
+        <div class="preFooter__info-container">
+            <div class="preFooter__title">{{ preFooter.right.title }}</div>
+            <p class="preFooter__description">{{ preFooter.right.description }}</p>
+            <a href="{{ preFooter.right.cta.url }}" class="preFooter__cta button--white">{{ preFooter.right.cta.button_text }}</a>
+        </div>
+    </div>
+</section>

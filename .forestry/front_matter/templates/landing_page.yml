@@ -31,6 +31,7 @@ fields:
   - feature_list
   - feature_grid
   - interstitial
+  - pre-footer
 pages:
 - features.md
 - results.md
