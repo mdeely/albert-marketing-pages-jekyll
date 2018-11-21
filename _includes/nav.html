@@ -10,8 +10,8 @@
 		<nav role=navigation>
 			<ul>
 			{% for item in site.menus.header %}
-				{% if item.parent %} <!-- if HAS parent. Not if IS parent -->
-				<li>{{ item.title }}</li>
+				{% if item.children %}
+				<li>Parent: {{ item.title }}</li>
 				{% endif %}
 			{% endfor %}
 			</ul>
