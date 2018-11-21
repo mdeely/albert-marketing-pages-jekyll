@@ -17,6 +17,8 @@ fields:
 - type: field_group_list
   name: slideshow_item
   label: Slideshow item
+  config:
+    labelField: title
   fields:
   - type: file
     name: image

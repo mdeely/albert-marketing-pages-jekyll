@@ -11,10 +11,14 @@ fields:
 - type: field_group
   name: left
   label: Left side
+  config:
+    labelField: title
   fields:
   - type: field_group
     name: image
     label: Image
+    config:
+      labelField: iamge
     fields:
     - type: file
       name: image
@@ -36,6 +40,8 @@ fields:
   - type: field_group
     name: cta
     label: CTA
+    config:
+      labelField: button_text
     fields:
     - type: text
       name: button_text
@@ -47,10 +53,14 @@ fields:
 - type: field_group
   name: right
   label: Right side
+  config:
+    labelField: title
   fields:
   - type: field_group
     name: image
     label: Image
+    config:
+      labelField: image
     fields:
     - type: file
       name: image
@@ -72,6 +82,8 @@ fields:
   - type: field_group
     name: cta
     label: CTA
+    config:
+      labelField: button_text
     fields:
     - type: text
       name: button_text
