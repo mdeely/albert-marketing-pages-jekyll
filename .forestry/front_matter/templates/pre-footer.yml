@@ -10,7 +10,7 @@ fields:
   default: pre-footer-component
 - type: field_group
   name: left
-  label: left
+  label: Left side
   fields:
   - type: field_group
     name: image
@@ -20,28 +20,33 @@ fields:
       name: image
       label: Image
       hidden: false
+      default: "/uploads/2018/11/19/backpack_open..svg"
     - type: text
       name: alt_text
       label: Alt Text
   - type: text
     name: title
     label: Header
+    default: Try Albert for free
   - type: text
     name: description
     label: Description
+    default: Build confidence and educator buy-in with an Albert trial supported by
+      a dedicated member of our Schools team.
   - type: field_group
     name: cta
     label: CTA
     fields:
     - type: text
-      name: url
-      label: URL
-    - type: text
       name: button_text
       label: Button text
+      default: Apply
+    - type: text
+      name: url
+      label: URL
 - type: field_group
   name: right
-  label: right
+  label: Right side
   fields:
   - type: field_group
     name: image
@@ -51,22 +56,28 @@ fields:
       name: image
       label: Image
       hidden: false
+      default: "/uploads/2018/11/19/backpack_open..svg"
     - type: text
       name: alt_text
       label: Alt Text
   - type: text
     name: title
     label: Header
+    default: Get a consultation
   - type: text
     name: description
     label: Description
+    default: Explore how Albert can help your school meet its instructional goals
+      with one of our Schools team members.
   - type: field_group
     name: cta
     label: CTA
     fields:
     - type: text
-      name: url
-      label: URL
-    - type: text
       name: button_text
       label: Button text
+      default: Request demo
+    - type: text
+      name: url
+      label: URL
+      default: https://www.albert.io/schools/request-demo
