@@ -11,10 +11,10 @@
 			<ul class="mainNav__nav">
 				{% for item in site.menus.header %}
 					{% if item.children %}
-				      	<li class="nav__dropdown">{{ item.title }}<i class="fa fa-caret-down"></i>
+				      	<li class="nav__dropdown">Has children<i class="fa fa-caret-down"></i>
 					{% else %}
 						<li class="menu-item-{{ loop.index }}">
-						    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+						    <a href="{{ item.url }}" title="Go to {{ item.title }}">No children</a>
 						</li>
 					{% endif %}
 				{% endfor %}
