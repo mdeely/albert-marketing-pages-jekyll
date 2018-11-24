@@ -108,7 +108,7 @@ components:
       by a dedicated member of our Schools team.
     cta:
       button_text: Apply
-      url: albert.io
+      url: ''
   right:
     image:
       image: "/uploads/2018/11/24/analytics_data_support (1).svg"
