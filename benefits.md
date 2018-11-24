@@ -83,6 +83,11 @@ components:
       curriculum supplement for all areas at a fraction of the price.
     image:
       image: "/uploads/2018/11/24/benefits-budget.svg"
+  - title: Service how it should be
+    description: Our team of former educators is with you every step of the way to
+      ensure a successful implementation.
+    image:
+      image: "/uploads/2018/11/24/benefits-service.svg"
 published: false
 
 ---
