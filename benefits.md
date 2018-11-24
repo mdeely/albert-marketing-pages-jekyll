@@ -65,6 +65,19 @@ components:
   title: The smart choice for administrators
   image:
     image: "/uploads/2018/11/24/for-admins.svg"
+- template: feature_grid
+  block: feature-grid-component
+  feature_items:
+  - title: An integrated solution
+    description: Albert brings rich interactive learning to all curriculum areas in
+      one place for a simple schoolwide implementation.
+    image:
+      image: "/uploads/2018/11/24/benefits-integrated.svg"
+  - title: Meaningful schoolwide data
+    description: See holistic data across subject areas and grade levels to cultivate
+      a culture of data-driven excellence at your school.
+    image:
+      image: "/uploads/2018/11/24/benefits-data.svg"
 published: false
 
 ---
