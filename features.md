@@ -102,7 +102,7 @@ components:
   block: pre-footer-component
   left:
     image:
-      image: "/uploads/2018/11/19/backpack_open..svg"
+      image: "/uploads/2018/11/24/rocket_soaring.svg"
     title: Try Albert for free
     description: Build confidence and educator buy-in with an Albert trial supported
       by a dedicated member of our Schools team.
@@ -111,7 +111,7 @@ components:
       url: albert.io
   right:
     image:
-      image: "/uploads/2018/11/19/backpack_open..svg"
+      image: "/uploads/2018/11/24/analytics_data_support (1).svg"
     title: Get a consultation
     description: Explore how Albert can help your school meet its instructional goals
       with one of our Schools team members.
