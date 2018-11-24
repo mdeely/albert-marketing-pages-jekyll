@@ -27,11 +27,11 @@ components:
 - template: hero
   block: hero-component
   primary_hero: true
-  description: With coverage of all core curriculum and standardized exams, Albert
-    is a powerful curriculum supplement that your entire school can leverage.<br>
-  title: A teacher’s dream
+  description: If your school does not provide access, Albert is a great self-study
+    supplement to get additional practice for high-stakes exams and self-remediation.
+  title: Go your own way
   image:
-    image: "/uploads/2018/11/24/for-teachers.svg"
+    image: "/uploads/2018/11/24/for-students.svg"
   cta:
     button_text: Explore Course Library
     url: 'https://www.albert.io/test-prep/advanced-placement '
