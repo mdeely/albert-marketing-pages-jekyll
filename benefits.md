@@ -44,7 +44,7 @@ components:
     image:
       image: "/uploads/2018/11/24/students.png"
     cta:
-      enabled: true
+      enabled: false
       button_text: ''
       url: ''
   - title: Focus your instruction
