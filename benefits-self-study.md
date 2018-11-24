@@ -50,11 +50,12 @@ components:
       harder than you play and feel prepared come test day.
     image:
       image: "/uploads/2018/11/24/build-confidence.svg"
-  - title: Let us worry about content
-    description: Focus more on teaching. We handle updating and expanding content
-      to align to ongoing changes to national standards.
+  - title: Get unstuck
+    description: No, Albert won’t solve your homework problems for you. But it can
+      give you relevant practice with detailed walkthroughs so you can complete your
+      classwork with ease.
     image:
-      image: "/uploads/2018/11/24/benefits-let us worry.svg"
+      image: "/uploads/2018/11/24/get-unstuck.svg"
   - title: Teach your way
     description: Albert fits any pedagogical approach by focusing on simple and flexible
       features to enable any teaching style.
