@@ -59,6 +59,12 @@ components:
     image:
       image: "/uploads/2018/11/24/benefits-teach.svg"
   card_layout: false
+- template: hero
+  block: hero-component
+  primary_hero: true
+  title: The smart choice for administrators
+  image:
+    image: "/uploads/2018/11/24/for-admins.svg"
 published: false
 
 ---
