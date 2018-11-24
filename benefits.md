@@ -10,7 +10,7 @@ components:
   - link_text: Educators
     active: true
     image:
-      image: ''
+      image: "/uploads/2018/11/24/benefits-educators-tab.svg"
     url: "/benefits/educators"
   - link_text: Self-study
     image:
