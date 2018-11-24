@@ -89,6 +89,5 @@ components:
       ensure a successful implementation.
     image:
       image: "/uploads/2018/11/24/benefits-service.svg"
-published: false
 
 ---
