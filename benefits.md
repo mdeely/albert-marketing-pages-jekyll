@@ -44,9 +44,9 @@ components:
     image:
       image: "/uploads/2018/11/24/students.png"
     cta:
-      enabled: true
-      button_text: Learn more about Albert’s results
-      url: "/results"
+      enabled: false
+      button_text: ''
+      url: ''
   - title: Focus your instruction
     description: Inform your instructional practices with simple and actionable data
       across skills and students.
