@@ -15,7 +15,7 @@ components:
   block: tab-bar-component
   tab_bar_item:
   - link_text: Educators
-    active: true
+    active: false
     image:
       image: "/uploads/2018/11/24/benefits-educators-tab.svg"
     url: ''
@@ -23,6 +23,7 @@ components:
     image:
       image: "/uploads/2018/11/24/benefits-self-tab.svg"
     url: "/benefits/self-study"
+    active: true
 - template: hero
   block: hero-component
   primary_hero: true
