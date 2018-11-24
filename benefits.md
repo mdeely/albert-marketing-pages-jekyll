@@ -18,11 +18,11 @@ components:
     active: true
     image:
       image: "/uploads/2018/11/24/benefits-educators-tab.svg"
-    url: ''
+    url: "/benefits"
   - link_text: Self-study
     image:
       image: "/uploads/2018/11/24/benefits-self-tab.svg"
-    url: benefits-self-study
+    url: "/benefits-self-study"
 - template: hero
   block: hero-component
   primary_hero: true
