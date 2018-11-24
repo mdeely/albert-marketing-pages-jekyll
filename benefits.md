@@ -78,6 +78,11 @@ components:
       a culture of data-driven excellence at your school.
     image:
       image: "/uploads/2018/11/24/benefits-data.svg"
+  - title: More value for your budget
+    description: Implementing multiple niche tools is expensive. Choose an innovative
+      curriculum supplement for all areas at a fraction of the price.
+    image:
+      image: "/uploads/2018/11/24/benefits-budget.svg"
 published: false
 
 ---
