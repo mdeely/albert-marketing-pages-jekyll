@@ -57,6 +57,11 @@ components:
       to align to ongoing changes to national standards.
     image:
       image: "/uploads/2018/11/24/benefits-let us worry.svg"
+  - title: Teach your way
+    description: Albert fits any pedagogical approach by focusing on simple and flexible
+      features to enable any teaching style.
+    image:
+      image: "/uploads/2018/11/24/benefits-teach.svg"
 published: false
 
 ---
