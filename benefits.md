@@ -14,7 +14,7 @@ components:
     url: "/benefits/educators"
   - link_text: Self-study
     image:
-      image: ''
+      image: "/uploads/2018/11/24/benefits-self-tab.svg"
     url: "/benefits/self-study"
 published: false
 
