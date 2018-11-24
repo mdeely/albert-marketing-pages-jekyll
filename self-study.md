@@ -76,6 +76,5 @@ components:
     cta:
       button_text: Request demo
       url: ''
-published: false
 
 ---
