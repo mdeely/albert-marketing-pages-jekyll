@@ -34,7 +34,6 @@ fields:
   - pre-footer
 pages:
 - self-study.md
-- benefits-self-study.md
 - benefits.md
 - features.md
 - results.md
