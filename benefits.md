@@ -23,6 +23,14 @@ components:
     image:
       image: "/uploads/2018/11/24/benefits-self-tab.svg"
     url: "/benefits/self-study"
+- template: hero
+  block: hero-component
+  primary_hero: true
+  description: With coverage of all core curriculum and standardized exams, Albert
+    is a powerful curriculum supplement that your entire school can leverage.<br>
+  title: A teacher’s dream
+  image:
+    image: "/uploads/2018/11/24/for-teachers.svg"
 published: false
 
 ---
