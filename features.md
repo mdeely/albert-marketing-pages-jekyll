@@ -116,6 +116,5 @@ components:
       with one of our Schools team members.
     cta:
       button_text: Request demo
-published: false
 
 ---
