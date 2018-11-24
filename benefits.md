@@ -43,15 +43,6 @@ components:
       Albert serves as a 1:1 tutor helping to address misconceptions as they happen.
     image:
       image: "/uploads/2018/11/24/students.svg"
-  - title: Engage all learners
-    description: Self-directed learning has never been so easy. As students practice,
-      Albert serves as a 1:1 tutor helping to address misconceptions as they happen.
-    image:
-      image: "/uploads/2018/11/24/students.png"
-    cta:
-      enabled: false
-      button_text: ''
-      url: ''
   - title: Focus your instruction
     description: Inform your instructional practices with simple and actionable data
       across skills and students.
