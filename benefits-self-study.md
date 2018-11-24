@@ -39,11 +39,11 @@ components:
 - template: feature_grid
   block: feature-grid-component
   feature_items:
-  - title: Engage all leaners
-    description: Self-directed learning has never been so easy. As students practice,
-      Albert serves as a 1:1 tutor helping to address misconceptions as they happen.
+  - title: Boost your scores
+    description: If you are taking high-stakes exams this school year, lots of practice
+      with real-time feedback is a surefire way to raise your score.
     image:
-      image: "/uploads/2018/11/24/students.svg"
+      image: "/uploads/2018/11/24/boost-your-scores.svg"
   - title: Focus your instruction
     description: Inform your instructional practices with simple and actionable data
       across skills and students.
