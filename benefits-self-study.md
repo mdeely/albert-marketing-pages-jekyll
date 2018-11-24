@@ -1,5 +1,5 @@
 ---
-title: self-study
+title: Self-study
 layout: blocks
 date: 2018-11-24 21:33:43 +0000
 description: ''
