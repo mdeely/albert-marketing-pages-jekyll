@@ -44,11 +44,12 @@ components:
       with real-time feedback is a surefire way to raise your score.
     image:
       image: "/uploads/2018/11/24/boost-your-scores.svg"
-  - title: Focus your instruction
-    description: Inform your instructional practices with simple and actionable data
-      across skills and students.
+  - title: Build confidence
+    description: Albert’s practice content is designed to represent the real exam.
+      In many cases, Albert’s questions are even harder than the real thing. Practice
+      harder than you play and feel prepared come test day.
     image:
-      image: "/uploads/2018/11/24/home-illustration-benefits-focus.svg"
+      image: "/uploads/2018/11/24/build-confidence.svg"
   - title: Let us worry about content
     description: Focus more on teaching. We handle updating and expanding content
       to align to ongoing changes to national standards.
