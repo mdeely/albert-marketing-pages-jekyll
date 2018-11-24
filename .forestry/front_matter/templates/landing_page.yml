@@ -33,5 +33,6 @@ fields:
   - interstitial
   - pre-footer
 pages:
+- benefits.md
 - results.md
 - features.md
