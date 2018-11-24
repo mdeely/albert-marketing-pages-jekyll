@@ -33,6 +33,7 @@ fields:
   - interstitial
   - pre-footer
 pages:
+- results.md
 - benefits-self-study.md
 - benefits.md
 - self-study.md
