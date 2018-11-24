@@ -62,7 +62,7 @@ components:
       features to enable any teaching style.
     image:
       image: "/uploads/2018/11/24/benefits-teach.svg"
-  card_layout: true
+  card_layout: false
 published: false
 
 ---
