@@ -108,6 +108,7 @@ components:
       by a dedicated member of our Schools team.
     cta:
       button_text: Apply
+      url: albert.io
   right:
     image:
       image: "/uploads/2018/11/19/backpack_open..svg"
