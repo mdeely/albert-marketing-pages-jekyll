@@ -47,6 +47,16 @@ components:
       enabled: true
       button_text: Learn more about Albert’s results
       url: "/results"
+  - title: Focus your instruction
+    description: Inform your instructional practices with simple and actionable data
+      across skills and students.
+    image:
+      image: "/uploads/2018/11/24/home-illustration-benefits-focus.svg"
+  - title: Let us worry about content
+    description: Focus more on teaching. We handle updating and expanding content
+      to align to ongoing changes to national standards.
+    image:
+      image: "/uploads/2018/11/24/benefits-let us worry.svg"
 published: false
 
 ---
