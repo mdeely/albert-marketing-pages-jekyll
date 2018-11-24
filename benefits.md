@@ -31,6 +31,10 @@ components:
   title: A teacher’s dream
   image:
     image: "/uploads/2018/11/24/for-teachers.svg"
+  cta:
+    button_text: Explore Course Library
+    url: 'https://www.albert.io/test-prep/advanced-placement '
+    enabled: true
 published: false
 
 ---
