@@ -18,7 +18,7 @@ components:
     active: true
     image:
       image: "/uploads/2018/11/24/benefits-educators-tab.svg"
-    url: "/benefits/educators"
+    url: "/benefits"
   - link_text: Self-study
     image:
       image: "/uploads/2018/11/24/benefits-self-tab.svg"
