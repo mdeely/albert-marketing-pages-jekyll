@@ -4,7 +4,7 @@
   <ul class="tabBar__list">
     {% for tabBar in section.tab_bar_item %}
       <li class="tabBar__item">
-          {% if forloop.index == 1 && section.active && section.active == true %}
+          {% if forloop.index == 1 && tabBar.active && tabBar.active == true %}
             <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% elsif forloop.index == 1  %}
             <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
