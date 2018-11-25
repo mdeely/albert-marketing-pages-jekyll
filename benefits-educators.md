@@ -61,7 +61,7 @@ components:
   card_layout: false
 - template: hero
   block: hero-component
-  primary_hero: true
+  primary_hero: false
   title: The smart choice for administrators
   image:
     image: "/uploads/2018/11/24/for-admins.svg"
