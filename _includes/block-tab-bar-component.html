@@ -12,9 +12,9 @@
 
     {% for tabBar in section.tab_bar_item %}
       <li class="tabBar__item">
-          {% if active_tabbar && active_tabbar == true %}
+          {% if active_tabbar == true %}
 
-            {% if active_tabbar == true %}
+            {% if tabBar.active == true %}
               <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
             {% else %}
               <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
