@@ -1,10 +1,11 @@
 {% assign anchorClass = "tabBar__anchor" %}
+{% assign active_tabbar == false %}
 
 <section class="tabBar">
   <ul class="tabBar__list">
 
     {% for tabBar in section.tab_bar_item %}
-      {% if tabBar.active == true %}
+      {% if tabBar.active && tabBar.active == true %}
         {% assign active_tabbar == true %}
       {% endif %}
     {% endfor %}
