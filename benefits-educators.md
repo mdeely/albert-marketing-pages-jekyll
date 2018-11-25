@@ -25,7 +25,7 @@ components:
     url: "/benefits-self-study"
 - template: hero
   block: hero-component
-  primary_hero: true
+  primary_hero: false
   description: With coverage of all core curriculum and standardized exams, Albert
     is a powerful curriculum supplement that your entire school can leverage.<br>
   title: A teacher’s dream
