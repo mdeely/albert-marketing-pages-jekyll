@@ -26,7 +26,7 @@ components:
     active: true
 - template: hero
   block: hero-component
-  primary_hero: true
+  primary_hero: false
   description: If your school does not provide access, Albert is a great self-study
     supplement to get additional practice for high-stakes exams and self-remediation.
   title: Go your own way
