@@ -21,7 +21,7 @@
 
           {% else %}
 
-            {% elsif forloop.index == 1  %}
+            {% if forloop.index == 1  %}
               <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
             {% else %}
               <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
