@@ -15,7 +15,7 @@ components:
     image: "/uploads/2018/11/25/results-hero.svg"
   cta:
     enabled: true
-    url: Get started
-    button_text: https://www.albert.io/signup
+    url: https://www.albert.io/signup
+    button_text: Get started
 
 ---
