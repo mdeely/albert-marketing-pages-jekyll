@@ -24,6 +24,9 @@ fields:
     name: image
     label: Image
     hidden: false
+  - type: text
+    name: alt_text
+    label: Alt Text
   - type: boolean
     name: active
     label: Force active
