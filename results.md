@@ -17,6 +17,5 @@ components:
     enabled: true
     url: Get started
     button_text: https://www.albert.io/signup
-published: false
 
 ---
