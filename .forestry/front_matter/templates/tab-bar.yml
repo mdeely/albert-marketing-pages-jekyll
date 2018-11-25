@@ -14,6 +14,9 @@ fields:
   description: Minimum of 2.
   hidden: false
   fields:
+  - type: boolean
+    name: enabled
+    label: Enabled
   - type: text
     name: link_text
     label: Link text
