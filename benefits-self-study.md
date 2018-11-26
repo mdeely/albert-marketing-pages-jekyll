@@ -73,7 +73,7 @@ components:
       with one of our Schools team members.
     cta:
       button_text: Request demo
-      url: demo_request_form
+      url: "#demo_request_form"
 - template: form
   block: form-component
   purpose: Demo Request Form
