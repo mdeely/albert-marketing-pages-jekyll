@@ -23,33 +23,5 @@ components:
   title: TEST
   image:
     image: "/uploads/2018/11/25/results-hero.svg"
-- template: bar-graph
-  block: bar-graph-component
-  title: Groundbreaking efficacy research
-  description: Based on a controlled study, schools that implemented Albert saw a
-    TBD% improvement in test scores and a strong correlation between scores and Albert
-    usage.
-  graphs:
-  - data_points:
-    - data_value_label: Before Albert
-      data_label: Pass Rate
-      bar_color_name: Green
-      data_value: '50'
-    - data_value_label: After Albert
-      data_label: Pass Rate
-      bar_color_name: Gold
-      data_value: '80'
-- template: bar-graph
-  block: bar-graph-component
-  description: In a survey of Albert classrooms, we found a 14% score advantage over
-    national averages with improvements consistent in all subject areas.
-  graphs:
-  - tab_label: AP® English
-    data_points:
-    - data_label: Pass Rate
-      bar_color_name: Green
-      data_value: '55'
-      data_value_label: Before Albert
-  title: 'Albert users outperform '
 
 ---
