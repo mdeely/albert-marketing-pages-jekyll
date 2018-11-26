@@ -71,7 +71,17 @@ components:
       image:
         image: "/uploads/2018/11/26/reading_blueprints.svg"
   - title: SAT®
+    course_card:
+    - domain: Social Studies
+      title: Fake SAT® 1
+      image:
+        image: "/uploads/2018/11/26/reading_blueprints.svg"
   - title: ACT®
+    course_card:
+    - domain: Social Studies
+      title: Fake ACT® 1
+      image:
+        image: "/uploads/2018/11/26/reading_blueprints.svg"
 published: false
 
 ---
