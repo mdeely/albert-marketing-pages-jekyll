@@ -17,6 +17,12 @@ components:
     enabled: true
     url: https://www.albert.io/signup
     button_text: Get started
+- template: hero
+  block: hero-component
+  primary_hero: true
+  title: TEST
+  image:
+    image: "/uploads/2018/11/25/results-hero.svg"
 - template: bar-graph
   block: bar-graph-component
   title: Groundbreaking efficacy research
