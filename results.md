@@ -119,5 +119,9 @@ components:
   cta:
     enabled: true
     button_text: Explore case studies
+- template: testimonials
+  block: testimonials-component
+  testimonial: Testimonials
+  title: Test????
 
 ---
