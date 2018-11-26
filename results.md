@@ -28,13 +28,18 @@ components:
   title: TEST
   description: description is here
   graphs:
-  - title: title
-    tab_label: label
+  - title: Groundbreaking efficacy research
+    tab_label: Based on a controlled study, schools that implemented Albert saw a
+      20% improvement in test scores and a strong correlation between scores and Albert
+      usage.
     data_points:
-    - data_value: '25'
-      data_value_label: value label
-      data_label: y axis
+    - data_value: '50'
+      data_value_label: ''
+      data_label: Before Albrert
       bar_color_name: Green
-      data_footer_label: footer
+      data_footer_label: AP Pass Rates
+    - data_value: '80'
+      bar_color_name: Gold
+      data_label: After Albert
 
 ---
