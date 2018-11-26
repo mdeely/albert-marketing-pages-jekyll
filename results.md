@@ -29,7 +29,7 @@ components:
     data_points:
     - data_value: '50'
       data_value_label: ''
-      data_label: Before Albrert
+      data_label: Before Albert
       bar_color_name: Green
       data_footer_label: ''
     - data_value: '80'
