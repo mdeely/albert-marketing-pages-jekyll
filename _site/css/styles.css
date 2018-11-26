@@ -2174,18 +2174,6 @@ section.interstitial {
               transition-delay: .2s; }
             .barGraph .graph__wrapper .graphs .graph__item.active .data__info-container .data__value-wrapper .data__bar {
               background-color: #19BC9C; }
-              .barGraph .graph__wrapper .graphs .graph__item.active .data__info-container .data__value-wrapper .data__bar.red {
-                background-color: #BC1A3C; }
-              .barGraph .graph__wrapper .graphs .graph__item.active .data__info-container .data__value-wrapper .data__bar.gold {
-                background-color: #FAAC30; }
-              .barGraph .graph__wrapper .graphs .graph__item.active .data__info-container .data__value-wrapper .data__bar.green {
-                background-color: #19BC9C; }
-              .barGraph .graph__wrapper .graphs .graph__item.active .data__info-container .data__value-wrapper .data__bar.blue {
-                background-color: #1785C8; }
-              .barGraph .graph__wrapper .graphs .graph__item.active .data__info-container .data__value-wrapper .data__bar.purple {
-                background-color: #985BCD; }
-              .barGraph .graph__wrapper .graphs .graph__item.active .data__info-container .data__value-wrapper .data__bar.grey {
-                background-color: #3F555A; }
         .barGraph .graph__wrapper .graphs .graph__item .data__title {
           font-weight: 400;
           font-family: all_round_gothic, 'Futura';
