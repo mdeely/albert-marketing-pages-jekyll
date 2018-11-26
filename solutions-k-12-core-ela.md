@@ -39,6 +39,19 @@ components:
       span STEM, social studies, and literature.
     image:
       image: "/uploads/2018/11/26/question_types.svg"
+- template: course_preview
+  block: course-preview-component
+  title: ELA Course Highlights
+  curriculum_area:
+  - title: ELA Course Highlights 2
+    description: Explore all ELA subjects 2
+    cta:
+      button_text: Explore all ELA subjects 3
+      enabled: true
+    course_card:
+    - domain: ELA
+      title: Reading Blueprints
+  group_title: Explore all ELA subjects
 published: false
 
 ---
