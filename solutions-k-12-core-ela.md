@@ -17,6 +17,14 @@ components:
     url: https://www.albert.io/signup
   image:
     image: "/uploads/2018/11/26/k-12-ela-hero.svg"
+- template: feature_grid
+  block: feature-grid-component
+  title: Product highlights
+  feature_items:
+  - title: High-interest passages
+    description: Our leveled reading passages connect to student’s real-life contexts.
+    image:
+      image: "/uploads/2018/11/26/passages.svg"
 published: false
 
 ---
