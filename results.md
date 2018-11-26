@@ -33,5 +33,17 @@ components:
       data_label: Pass Rate
       bar_color_name: Gold
       data_value: '80'
+- template: bar-graph
+  block: bar-graph-component
+  description: In a survey of Albert classrooms, we found a 14% score advantage over
+    national averages with improvements consistent in all subject areas.
+  graphs:
+  - tab_label: AP® English
+    data_points:
+    - data_label: Pass Rate
+      bar_color_name: Green
+      data_value: '55'
+      data_value_label: Before Albert
+  title: 'Albert users outperform '
 
 ---
