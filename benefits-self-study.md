@@ -73,6 +73,15 @@ components:
       with one of our Schools team members.
     cta:
       button_text: Request demo
-      url: ''
+      url: demo_request_form
+- template: form
+  block: form-component
+  purpose: Demo Request Form
+  embed_script: <script type="text/javascript" src="https://learnwithalbert.formstack.com/forms/js.php/request_demo"></script><noscript><a
+    href="https://learnwithalbert.formstack.com/forms/request_demo" title="Online
+    Form">Online Form - Demo Request Form - Final</a></noscript>
+  modal:
+    enabled: true
+    modal_id: demo_request_form
 
 ---
