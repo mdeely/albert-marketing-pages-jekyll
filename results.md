@@ -57,56 +57,56 @@ components:
     tab_label: Languages
     data_points:
     - data_value: '85'
-      data_label: National Average
+      data_label: ''
       bar_color_name: Green
     - data_value: '87'
-      data_label: Albert Average
+      data_label: ''
       bar_color_name: Gold
   - title: AP® Calculus AB, AP® Calculus BC, AP® Statistics
     tab_label: Math
     data_points:
     - data_value: '63'
-      data_label: National Average
+      data_label: ''
       bar_color_name: Green
     - data_value: '70'
-      data_label: Albert Average
+      data_label: ''
       bar_color_name: Gold
   - title: "AP® English Language, Literature\t"
     tab_label: English
     data_points:
     - data_value: '55'
-      data_label: National Average
+      data_label: ''
       bar_color_name: Green
     - data_value: '70'
-      data_label: Albert Average
+      data_label: ''
       bar_color_name: Gold
   - title: AP® Computer Science A, AP® Computer Science Principles
     tab_label: Computer Science
     data_points:
     - data_value: '68'
-      data_label: National Average
+      data_label: ''
       bar_color_name: Green
     - data_value: '80'
-      data_label: Albert Average
+      data_label: ''
       bar_color_name: Gold
   - title: "AP® Art History, AP® European History, AP® US History, AP® World History\t"
     tab_label: Histories
     data_points:
     - data_value: '53'
-      data_label: National Average
+      data_label: ''
       bar_color_name: Green
     - data_value: '66'
       bar_color_name: Gold
-      data_label: Albert Average
+      data_label: ''
   - title: "AP® Psychology, AP® Human Geography, AP® Macroeconomics, AP® Microeconomics,
       AP® US Government, AP® Comparative Government\t"
     tab_label: Social Studies
     data_points:
     - data_value: '57'
-      data_label: National Average
+      data_label: ''
       bar_color_name: Green
     - data_value: '73'
-      data_label: Albert Average
+      data_label: ''
       bar_color_name: Gold
 
 ---
