@@ -77,11 +77,11 @@
 							.data__bar {
 								background-color: #19BC9C; // default
 
-								// @each $bar-name, $bar-color in $bar-color-map {
-								// 	&.#{$bar-name} {
-								// 		background-color: $bar-color;
-								// 	}
-								// }
+								@each $bar-name, $bar-color in $bar-color-map {
+									&.#{$bar-name} {
+										background-color: $bar-color;
+									}
+								}
 							}
 						}
 
