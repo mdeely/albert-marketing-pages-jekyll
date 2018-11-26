@@ -82,6 +82,6 @@ components:
     Form">Online Form - Demo Request Form - Final</a></noscript>
   modal:
     enabled: true
-    modal_id: demo_request_form
+    modal_id: "#demo_request_form"
 
 ---
