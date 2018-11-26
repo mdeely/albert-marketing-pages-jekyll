@@ -4,15 +4,6 @@ layout: blocks
 date: 2018-11-24 21:33:43 +0000
 description: ''
 components:
-- template: form
-  block: form-component
-  purpose: Demo Request Form
-  embed_script: <script type="text/javascript" src="https://learnwithalbert.formstack.com/forms/js.php/request_demo"></script><noscript><a
-    href="https://learnwithalbert.formstack.com/forms/request_demo" title="Online
-    Form">Online Form - Demo Request Form - Final</a></noscript>
-  modal:
-    enabled: true
-    modal_id: demo_request_form
 - template: hero
   block: hero-component
   primary_hero: true
@@ -64,6 +55,15 @@ components:
     image:
       image: "/uploads/2018/11/24/get-unstuck.svg"
   card_layout: false
+- template: form
+  block: form-component
+  purpose: Demo Request Form
+  embed_script: <script type="text/javascript" src="https://learnwithalbert.formstack.com/forms/js.php/request_demo"></script><noscript><a
+    href="https://learnwithalbert.formstack.com/forms/request_demo" title="Online
+    Form">Online Form - Demo Request Form - Final</a></noscript>
+  modal:
+    enabled: true
+    modal_id: demo_request_form
 - template: pre-footer
   block: pre-footer-component
   left:
