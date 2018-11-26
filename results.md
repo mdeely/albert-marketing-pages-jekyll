@@ -23,5 +23,18 @@ components:
   title: TEST
   image:
     image: "/uploads/2018/11/25/results-hero.svg"
+- template: bar-graph
+  block: bar-graph-component
+  title: TEST
+  description: description is here
+  graphs:
+  - title: title
+    tab_label: label
+    data_points:
+    - data_value: '25'
+      data_value_label: value label
+      data_label: y axis
+      bar_color_name: Green
+      data_footer_label: footer
 
 ---
