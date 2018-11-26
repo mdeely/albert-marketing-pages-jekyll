@@ -51,6 +51,8 @@ components:
     course_card:
     - domain: ELA
       title: Reading Blueprints
+      image:
+        image: "/uploads/2018/11/26/reading_blueprints.svg"
   group_title: Explore all ELA subjects
 published: false
 
