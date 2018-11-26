@@ -60,7 +60,7 @@ components:
     cta:
       enabled: true
       url: https://albert.io/k-12/test-prep/advanced-placement
-      button_text: Explore more AP® courses
+      button_text: Explore all 33 AP® courses
     course_card:
     - domain: Math
       title: AP® Fake 1
