@@ -108,5 +108,16 @@ components:
     - data_value: '73'
       data_label: ''
       bar_color_name: Gold
+- template: hero
+  block: hero-component
+  primary_hero: false
+  description: See how Albert has helped schools significantly improve learning outcomes
+    and boost teacher productivity.
+  title: Case studies
+  image:
+    image: "/uploads/2018/11/26/home-illustration-case-studies.svg"
+  cta:
+    enabled: true
+    button_text: Explore case studies
 
 ---
