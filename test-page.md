@@ -65,7 +65,7 @@ components:
     - domain: Math
       title: AP® Fake 1
       image:
-        image: "/uploads/2018/11/26/reading_blueprints.svg"
+        image: "/uploads/2018/11/26/of_mice_and_men.svg"
     - domain: Social Studies
       title: AP® Fake 2
       image:
