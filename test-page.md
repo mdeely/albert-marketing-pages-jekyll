@@ -62,6 +62,18 @@ components:
       url: https://albert.io/k-12/test-prep/advanced-placement
       button_text: Explore more AP® courses
     course_card:
+    - domain: World Language
+      title: AP® Fake 4
+      image:
+        image: "/uploads/2018/11/26/reading_blueprints.svg"
+    - domain: Computer Science
+      title: AP® Fake 5
+      image:
+        image: "/uploads/2018/11/26/reading_blueprints.svg"
+    - domain: Social Studies
+      title: AP® Fake 2
+      image:
+        image: "/uploads/2018/11/26/reading_blueprints.svg"
     - domain: Math
       title: AP® Fake 1
       image:
