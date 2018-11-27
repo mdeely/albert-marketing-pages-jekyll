@@ -150,10 +150,8 @@ $( document ).ready(function() {
 	function goToNextSection(event) {
 		event.preventDefault();
 
-		console.log("going to next section which is");
-
 	    var $this = $(event.target);
-	        $next = $this.parent().next();
+	        $next = $this.parents("section").next();
 
 		console.log($this);
 		console.log($next);
