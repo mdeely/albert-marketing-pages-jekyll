@@ -33,12 +33,12 @@
           {% if forloop.index == 1  %}
             <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% else %}
-            <a href="{{ tabBar.linkimage_url }}" class="{{ anchorClass }}">
+            <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
           {% endif %}
 
-          {% if tabBar.image %} 
-            <img src=" {{ tabBar.image }} ">
-          {% endif %}
+            {% if tabBar.image %} 
+              <img src=" {{ tabBar.image }} ">
+            {% endif %}
 
           {{ tabBar.link_text }}
 
