@@ -4,29 +4,26 @@
 <section class="tabBar">
   <ul class="tabBar__list">
 
-    {% for tabBar in section.tab_bar_item %}
-      {% if tabBar.active && tabBar.active == true %}
-        {% assign active_tabbar == true %}
-      {% endif %}
-    {% endfor %}
-
-    {% for tabBar in section.tab_bar_item %}
-      <li class="tabBar__item">
-          {% if active_tabbar == true %}
-
-            {% if tabBar.active == true %}
-              <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
-            {% else %}
-              <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
-            {% endif %}
+          {% if tab_bar_item.custom_active == true %}
+            {% for tabBar in section.tab_bar_item %}
+              <li class="tabBar__item">
+              {% if tabBar.active == true %}
+                <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+              {% else %}
+                <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
+              {% endif %}
+            {% endfor %}
 
           {% else %}
 
-            {% if forloop.index == 1  %}
-              <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
-            {% else %}
-              <a href="{{ tabBar.linkimage_url }}" class="{{ anchorClass }}">
-            {% endif %}
+            {% for tabBar in section.tab_bar_item %}
+              <li class="tabBar__item">
+              {% if forloop.index == 1  %}
+                <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+              {% else %}
+                <a href="{{ tabBar.linkimage_url }}" class="{{ anchorClass }}">
+              {% endif %}
+            {% endfor %}
 
           {% endif %}
 
@@ -38,6 +35,6 @@
 
         </a>
       </li>
-    {% endfor %}
+
   </ul>
 </section>

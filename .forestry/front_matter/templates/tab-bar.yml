@@ -8,6 +8,11 @@ fields:
   label: block
   name: block
   default: tab-bar-component
+- type: boolean
+  name: custom_active
+  label: Custom active
+  description: When enabled, you can choose a custom active tab in the tab item settings.
+  default: false.
 - type: field_group_list
   name: tab_bar_item
   label: Tab item
