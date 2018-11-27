@@ -22,7 +22,7 @@
 					<h2 class="slide__title">{{ slideshowItem.title}}</h2>
 					<div class="slide__description">{{ slideshowItem.description}}</div>
 				</div>
-				{% if slideshowItem.strip_styling %}
+				{% if slideshowItem.strip_styling && slideshowItem.strip_styling == true %}
 					<div class="slide__visual strip_styling">
 				{% else %}
 					<div class="slide__visual">
