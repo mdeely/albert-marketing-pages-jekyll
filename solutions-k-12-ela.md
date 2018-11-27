@@ -102,6 +102,8 @@ components:
     - caption: Ms. Abdulaziz watches her student’s mastery soar as students connect
         abstract concepts with concrete representations. She even decorates her classroom
         with Albert’s grammar drawings!
+    image:
+      image: "/uploads/2018/11/27/abdulaziz.png"
   - title: Mr. Cohen
     comic_panels:
     - caption: 'Mr. Cohen loves teaching an interdisciplinary subject, combining English
@@ -115,6 +117,8 @@ components:
     - caption: With their daily assessments taken care of, his students are free to
         spend class time on creative projects that highlight their deep understanding
         of literature and history.
+    image:
+      image: "/uploads/2018/11/27/cohen.png"
   - title: Mr. Patel
     comic_panels:
     - caption: Mr. Patel uses the 10 Common Core Anchor Standards to guide his ELA
@@ -125,6 +129,8 @@ components:
         practice for Mr. Patel’s students -- and no shortage of data for him to analyze.
     - caption: 'The grading is instant, so Mr. Patel can spend more time understanding
         his students’ performance. '
+    image:
+      image: "/uploads/2018/11/27/patel.png"
 published: false
 
 ---
