@@ -10,7 +10,7 @@
       {{ page.url }}
 
         <li class="tabBar__item">
-          {% if page.url container tabBar.link_url  %}
+          {% if page.url contains tabBar.link_url  %}
               <a href="{{ tabBar.page.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% else %}
               <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
