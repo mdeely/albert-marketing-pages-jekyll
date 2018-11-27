@@ -14,8 +14,6 @@ fields:
 - type: field_group_list
   name: testimonial
   label: Testimonial
-  default: Testimonials
-  description: Min of 3 recommended.
   fields:
   - type: text
     name: teacher_name
