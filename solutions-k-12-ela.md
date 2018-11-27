@@ -41,7 +41,7 @@ components:
       image: "/uploads/2018/11/26/question_types.svg"
 - template: course_preview
   block: course-preview-component
-  title: ELA Course Highlights
+  title: ''
   curriculum_area:
   - title: ''
     description: ''
@@ -74,7 +74,7 @@ components:
       title: Leveled Readings in Science and Technology
       image:
         image: "/uploads/2018/11/27/leveled_readings_in_science_and_technology.svg"
-  group_title: ''
+  group_title: ELA Course Highlights
 - template: comic-collection
   block: comic-collection-component
   comic_strips:
