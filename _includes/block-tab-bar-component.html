@@ -3,7 +3,30 @@
 <section class="tabBar">
   <ul class="tabBar__list">
 
-    {% if tab_bar_item.custom_active && tab_bar_item.custom_active == true %}
+    {% if tab_bar_item.navigation && tab_bar_item.navigation == true %}
+
+      {% for tabBar in section.tab_bar_item %}
+        <li class="tabBar__item">
+          {% if link_url == page.url %}
+              <a href="{{ tabBar.page.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+          {% else %}
+              <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
+          {% end %}
+
+          {% if tabBar.image %} 
+            <img src=" {{ tabBar.image }} ">
+          {% endif %}
+
+          {{ tabBar.link_text }}
+
+          </a>
+        </li>
+
+      {% endfor %}
+
+    {% endif  %}
+
+<!--   {% if tab_bar_item.custom_active && tab_bar_item.custom_active == true %}
       {% for tabBar in section.tab_bar_item %}
           <li class="tabBar__item">
 
@@ -44,7 +67,7 @@
         </li>
       {% endfor %}
 
-    {% endif %}
+    {% endif %} -->
 
   </ul>
 </section>

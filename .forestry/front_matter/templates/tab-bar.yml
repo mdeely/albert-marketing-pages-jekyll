@@ -9,10 +9,10 @@ fields:
   name: block
   default: tab-bar-component
 - type: boolean
-  name: custom_active
-  label: Custom active
-  description: When enabled, you can choose a custom active tab in the tab item settings.
-  default: false.
+  name: navigation
+  label: Page navigation
+  description: Enable if the tabs are to navigation between pages. 
+  default: false
 - type: field_group_list
   name: tab_bar_item
   label: Tab item
@@ -32,7 +32,3 @@ fields:
   - type: text
     name: alt_text
     label: Alt Text
-  - type: boolean
-    name: active
-    label: Force active
-    description: Force this tab to be the active tab on page load.
