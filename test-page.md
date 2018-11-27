@@ -4,6 +4,33 @@ layout: blocks
 date: 2018-11-26 20:28:13 +0000
 description: ''
 components:
+- template: testimonials
+  block: testimonials-component
+  testimonial: Testimonials
+  testimonials:
+  - image: "/uploads/2018/11/25/results-hero.svg"
+    alt_text: Mr. Mann
+    quote: Here is a quote that can go in this spot. I am typing a second sentence.
+      And a third!
+    teacher_type: Science Professor
+    teacher_level: College
+    teacher_location: Austin, TX
+    teacher_name: Mr. Mann
+  - image: "/uploads/2018/11/26/k-12-ela-hero.svg"
+    alt_text: Guy
+    teacher_name: Guy
+    teacher_level: Elementary school
+    teacher_location: Atlanta, GA
+    quote: 'Lorem ipsum a small quote. '
+    teacher_type: AP® Science teacher
+  - image: "/uploads/2018/11/24/benefits-educators-tab.svg"
+    alt_text: Teacher McName
+    teacher_name: Teacher McName
+    quote: 'I really like Albert so much and I''m so happy that my students like it
+      too. Such a great product. '
+    teacher_type: Math teacher
+    teacher_level: Middle school
+    teacher_location: Chicago, IL
 - template: course_preview
   block: course-preview-component
   group_title: K-12 Core
