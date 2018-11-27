@@ -84,13 +84,21 @@ components:
     comic_panels:
     - caption: Ms. Yoon’s 11th graders love to read, but they all read at very different
         levels. This can make Ms. Yoon’s job as an English teacher pretty challenging.
+      image:
+        image: "/uploads/2018/11/27/ELA comic 1 panel 1.png"
     - caption: 'She wants to build her students’ confidence and meet her readers where
         they are, but creating differentiated resources is too time-consuming. '
+      image:
+        image: "/uploads/2018/11/27/ELA comic 1 panel 2.png"
     - caption: 'When she struggles, her students struggle. It’s hard to have a class
         discussion when everyone is literally on a different page. '
+      image:
+        image: "/uploads/2018/11/27/ELA comic 1 panel 3.png"
     - caption: 'Then, Ms. Yoon discovers Albert’s Leveled Reading course. Now all
         of her students can read at their own level and still discuss the same ideas
         in class. '
+      image:
+        image: "/uploads/2018/11/27/ELA comic 1 panel 4.png"
   - title: Ms. Abdulaziz
     comic_panels:
     - caption: Ms. Abdulaziz’s 9th grade English students are mostly visual learners.
@@ -150,6 +158,15 @@ components:
     cta:
       button_text: Request demo
       url: https://www.albert.io/schools/request-demo
+- template: form
+  block: form-component
+  purpose: Pilot Application
+  embed_script: <script type="text/javascript" src="https://learnwithalbert.formstack.com/forms/js.php/pilot_application"></script><noscript><a
+    href="https://learnwithalbert.formstack.com/forms/pilot_application" title="Online
+    Form">Online Form - Pilot Application Form</a></noscript>
+  modal:
+    enabled: true
+    modal_id: pilot_application_form
 published: false
 
 ---
