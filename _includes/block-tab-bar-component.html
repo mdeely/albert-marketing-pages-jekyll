@@ -7,7 +7,7 @@
 
       {% for tabBar in section.tab_bar_item %}
         <li class="tabBar__item">
-          {% if link_url == page.url %}
+          {% if tabBar.link_url == page.url %}
               <a href="{{ tabBar.page.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% else %}
               <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
@@ -25,49 +25,6 @@
       {% endfor %}
 
     {% endif  %}
-
-<!--   {% if tab_bar_item.custom_active && tab_bar_item.custom_active == true %}
-      {% for tabBar in section.tab_bar_item %}
-          <li class="tabBar__item">
-
-          {% if tabBar.active && tabBar.active == true %}
-            <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
-          {% else %}
-            <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
-        {% endif %}
-
-        {% if tabBar.image %} 
-          <img src=" {{ tabBar.image }} ">
-        {% endif %}
-
-        {{ tabBar.link_text }}
-
-        </a>
-      </li>
-      {% endfor %}
-
-    {% else %}
-
-      {% for tabBar in section.tab_bar_item %}
-        <li class="tabBar__item">
-
-          {% if forloop.index == 1  %}
-            <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
-          {% else %}
-            <a href="{{ tabBar.linkimage_url }}" class="{{ anchorClass }}">
-          {% endif %}
-
-          {% if tabBar.image %} 
-            <img src=" {{ tabBar.image }} ">
-          {% endif %}
-
-          {{ tabBar.link_text }}
-
-          </a>
-        </li>
-      {% endfor %}
-
-    {% endif %} -->
 
   </ul>
 </section>
