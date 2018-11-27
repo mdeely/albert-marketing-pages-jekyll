@@ -16,7 +16,7 @@ sections:
 - type: directory
   path: ''
   label: Pages
-  create: documents
+  create: all
   match: "*.md"
   exclude: "{README.md,posts.md,albert-academy.md,case-studies.md}"
   new_doc_ext: md
