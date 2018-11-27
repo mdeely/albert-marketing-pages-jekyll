@@ -43,17 +43,26 @@ components:
   block: course-preview-component
   title: ELA Course Highlights
   curriculum_area:
-  - title: ELA Course Highlights 2
-    description: Explore all ELA subjects 2
+  - title: ''
+    description: ''
     cta:
-      button_text: Explore all ELA subjects 3
+      button_text: Explore all ELA subjects
       enabled: true
+      url: https://albert.io/k-12/ela/core
     course_card:
+    - domain: ELA
+      title: Elements of a Sentence
+      image:
+        image: "/uploads/2018/11/27/elements_of_a_sentence.svg"
     - domain: ELA
       title: Reading Blueprints
       image:
         image: "/uploads/2018/11/26/reading_blueprints.svg"
-  group_title: Explore all ELA subjects
+    - {}
+    - {}
+    - {}
+    - {}
+  group_title: ''
 published: false
 
 ---
