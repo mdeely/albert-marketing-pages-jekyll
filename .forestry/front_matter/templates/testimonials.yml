@@ -20,6 +20,7 @@ fields:
   hidden: false
   config:
     labelField: teacher_name
+    min: '3'
   fields:
   - type: file
     name: image
