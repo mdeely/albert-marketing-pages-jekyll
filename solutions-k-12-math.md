@@ -43,7 +43,7 @@ components:
       image: "/uploads/2018/11/27/flexible-alignment.svg"
 - template: course_preview
   block: course-preview-component
-  title: ELA Course Highlights
+  title: Math Course Highlights
   curriculum_area:
   - title: ''
     description: ''
