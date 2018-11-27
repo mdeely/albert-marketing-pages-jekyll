@@ -108,7 +108,7 @@ components:
     - caption: 'She has been looking for resources that visually represent simple
         English concepts, but has not been able to find any that meet her needs. '
       image:
-        image: "/uploads/2018/11/27/ELA comic 2 panel 2-1.png"
+        image: "/uploads/2018/11/27/ELA comic 2 panel 2.png"
     - caption: That’s why she loves Albert’s Elements of a Sentence course, which
         uses images in all its explanations to make grammar concepts come to life.
       image:
