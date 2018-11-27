@@ -7,38 +7,40 @@ components:
 - template: hero
   block: hero-component
   primary_hero: true
-  supertitle: K-12 ELA
-  title: English for everyone
-  description: Our meticulously-researched ELA courses build the skills that students
-    need to become devoted readers, strong writers, and clear thinkers.
+  supertitle: K-12 Math
+  title: Making math approachable
+  description: Skills, application, and conceptual questions combine to build authentic
+    and lasting understanding of math concepts for all types of learners.
   cta:
     enabled: true
     button_text: Get Started
     url: https://www.albert.io/signup
   image:
-    image: "/uploads/2018/11/26/k-12-ela-hero.svg"
+    image: "/uploads/2018/11/27/k-12-math-hero.svg"
 - template: feature_grid
   block: feature-grid-component
   title: Product highlights
   feature_items:
-  - title: High-interest passages
-    description: Our leveled reading passages connect to student’s real-life contexts.
+  - title: Multiple approaches
+    description: Topics include a balance of skill assessments, applications, and
+      conceptual questions designed to gauge true mastery.
     image:
-      image: "/uploads/2018/11/26/passages.svg"
-  - title: Evidence-driven
-    description: Our leveled reading passages connect to student’s real-life contexts.
+      image: "/uploads/2018/11/27/multiple-approaches.svg"
+  - title: Leveled organization
+    description: Concepts are segmented by difficulty level and extra practice to
+      support differentiation and goal-based work.
     image:
-      image: "/uploads/2018/11/26/interactive_texts.svg"
-  - title: Built in differentiation
-    description: With scaffolded organization and leveled passages, Albert’s Core
-      ELA products offer every reader meaningful practice opportunities.
+      image: "/uploads/2018/11/27/leveled-organization.svg"
+  - title: Strategy building
+    description: Questions include background information and strategy tips to help
+      students build their metacognitive problem solving skills.
     image:
-      image: "/uploads/2018/11/26/scaffolded_organization.svg"
-  - title: Cross-disciplinary
-    description: Reading and writing instruction doesn’t happen in a vacuum. Our passages
-      span STEM, social studies, and literature.
+      image: "/uploads/2018/11/20/Screen Shot 2018-11-20 at 4.16.22 PM.png"
+  - title: Flexible alignment
+    description: Questions are aligned to Common Core and incorporate other standards,
+      such as ACT® CCRS and SAT® Domains and Dimensions.
     image:
-      image: "/uploads/2018/11/26/question_types.svg"
+      image: "/uploads/2018/11/27/flexible-alignment.svg"
 - template: course_preview
   block: course-preview-component
   title: ELA Course Highlights
