@@ -76,35 +76,44 @@ components:
 - template: comic-collection
   block: comic-collection-component
   comic_strips:
-  - title: Ms. Yoon
+  - title: Ms. Benson
     image:
-      image: "/uploads/2018/11/27/yoon.png"
+      image: "/uploads/2018/11/27/benson.png"
     comic_panels:
-    - caption: Ms. Yoon’s 11th graders love to read, but they all read at very different
-        levels. This can make Ms. Yoon’s job as an English teacher pretty challenging.
-    - caption: 'She wants to build her students’ confidence and meet her readers where
-        they are, but creating differentiated resources is too time-consuming. '
-    - caption: 'When she struggles, her students struggle. It’s hard to have a class
-        discussion when everyone is literally on a different page. '
-    - caption: 'Then, Ms. Yoon discovers Albert’s Leveled Reading course. Now all
-        of her students can read at their own level and still discuss the same ideas
-        in class. '
-  - title: Ms. Abdulaziz
-    comic_panels:
-    - caption: Ms. Abdulaziz’s 9th grade English students are mostly visual learners.
-        She tries her best to make sure that she is differentiating for their needs.
-    - caption: 'She has been looking for resources that visually represent simple
-        English concepts, but has not been able to find any that meet her needs. '
+    - caption: Ms. Benson loves to assign conceptual questions before class to encourage
+        students to really think about the topic before her lesson.
       image:
-        image: "/uploads/2018/11/27/ELA comic 2 panel 2.png"
-    - caption: That’s why she loves Albert’s Elements of a Sentence course, which
-        uses images in all its explanations to make grammar concepts come to life.
-    - caption: Ms. Abdulaziz watches her student’s mastery soar as students connect
-        abstract concepts with concrete representations. She even decorates her classroom
-        with Albert’s grammar drawings!
+        image: "/uploads/2018/11/27/math comic 1 panel 1.png"
+    - caption: The pre-work the students put in makes the lesson so much smoother
+        and more meaningful.
+      image:
+        image: "/uploads/2018/11/27/math comic 1 panel 2.png"
+    - caption: The skill questions she assigns for homework give her students more
+        practical and conceptual practice.
+      image:
+        image: "/uploads/2018/11/27/math comic 1 panel 3.png"
+    - caption: And the application questions give the skills context and relevance
+        to promote a deeper understanding of those skills.
+      image:
+        image: "/uploads/2018/11/27/math comic 1 panel 4.png"
+  - title: Mr. Odesso
+    comic_panels:
+    - caption: Mr. Odesso’s Algebra 2 class has a diverse range of learners.
+      image:
+        image: "/uploads/2018/11/27/math comic 2 panel 1.png"
+    - caption: He prepares remediation assignments from Algebra 1 based on the standards
+        where his students are weakest.
+      image:
+        image: "/uploads/2018/11/27/math comic 2 panel 2.png"
+    - caption: Individual students can get the support they need…
+      image:
+        image: "/uploads/2018/11/27/math comic 2 panel 3.png"
+    - caption: "...and still keep pace with Mr. Odesso’s Algebra 2 lessons."
+      image:
+        image: "/uploads/2018/11/27/math comic 2 panel 4.png"
     image:
-      image: "/uploads/2018/11/27/abdulaziz.png"
-  - title: Mr. Cohen
+      image: "/uploads/2018/11/27/odesso.png"
+  - title: Mrs. Finney
     comic_panels:
     - caption: 'Mr. Cohen loves teaching an interdisciplinary subject, combining English
         and Social Studies designed to turn his students into strong writers and informed
@@ -118,7 +127,7 @@ components:
         spend class time on creative projects that highlight their deep understanding
         of literature and history.
     image:
-      image: "/uploads/2018/11/27/cohen.png"
+      image: "/uploads/2018/11/27/finney.png"
   - title: Mr. Patel
     comic_panels:
     - caption: Mr. Patel uses the 10 Common Core Anchor Standards to guide his ELA
