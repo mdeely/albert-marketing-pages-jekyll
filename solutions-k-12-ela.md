@@ -58,10 +58,22 @@ components:
       title: Reading Blueprints
       image:
         image: "/uploads/2018/11/26/reading_blueprints.svg"
-    - {}
-    - {}
-    - {}
-    - {}
+    - title: Confused and Misused
+      domain: ELA
+      image:
+        image: "/uploads/2018/11/27/confused_and_misused.svg"
+    - domain: ELA
+      title: Leveled Readings in Arts and Culture
+      image:
+        image: "/uploads/2018/11/27/leveled_readings_in_arts_and_culture.svg"
+    - domain: ELA
+      title: Leveled Readings in History, Politics, and Biography
+      image:
+        image: "/uploads/2018/11/27/history_of_politics_and_biography.svg"
+    - domain: ELA
+      title: Leveled Readings in Science and Technology
+      image:
+        image: "/uploads/2018/11/27/leveled_readings_in_science_and_technology.svg"
   group_title: ''
 published: false
 
