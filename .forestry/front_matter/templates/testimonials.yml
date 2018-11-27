@@ -14,6 +14,7 @@ fields:
 - type: field_group_list
   name: testimonial
   label: Testimonial
+  hidden: false
   fields:
   - type: text
     name: teacher_name
