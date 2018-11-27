@@ -1,54 +1,47 @@
 ---
-label: Testimonials
+label: Testmionial
 hide_body: false
 is_partial: true
+display_field: title
 fields:
 - type: text
   hidden: true
   label: block
   name: block
-  default: testimonials-component
+  default: testmionial-component
 - type: text
   name: title
   label: Title
+  description: Displays above the entire component.
 - type: field_group_list
-  name: testimonial
-  label: Testimonial
+  name: testimonials
+  label: Testimonials
   hidden: false
+  config:
+    labelField: teacher_name
   fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: alt_text
+    label: Alt Text
   - type: text
     name: teacher_name
     label: Name
   - type: text
     name: quote
-    label: quote
-    config:
-      wysiwyg: true
-      schema:
-        format: html
+    label: Quote
   - type: text
     name: teacher_type
-    label: Teacher type
-    description: E.g Math teacher
+    label: Type of teacher
+    description: e.g Math teacher
   - type: text
     name: teacher_level
-    label: Teacher level
-    description: E.g High School
+    label: Level
+    description: e.g Middle school
   - type: text
     name: teacher_location
-    label: Teacher location
-    description: E.g Chicago, IL
-  - type: field_group
-    name: image
-    label: Image
-    fields:
-    - type: file
-      name: image
-      label: Image
-      hidden: false
-    - type: text
-      name: alt_text
-      label: Alt Text
-  config:
-    labelField: teacher_name
-    min: '3'
+    label: Location of school
+    description: e.g Chicago, IL
+
