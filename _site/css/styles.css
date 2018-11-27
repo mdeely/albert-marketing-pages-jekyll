@@ -310,7 +310,7 @@ allRoundGothic-selector {
 
 .directionalArrow {
   color: #399FDF;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
   background-color: #FFFFFF;
   border-radius: 50%;
   line-height: 70px;
@@ -1334,6 +1334,9 @@ section.tabBar {
         .slideshow .slides .slide .slide__visual.strip_styling {
           border-radius: 0;
           box-shadow: none; }
+          .slideshow .slides .slide .slide__visual.strip_styling img {
+            box-shadow: none;
+            border-radius: none; }
         .slideshow .slides .slide .slide__visual img {
           max-width: 100%;
           height: auto;
@@ -1767,7 +1770,8 @@ section.tabBar {
       text-align: left;
       position: relative;
       max-width: 26.875rem;
-      min-width: 18.75rem; }
+      min-width: 18.75rem;
+      width: 100%; }
       .testimonials .testimonials__list .testimonial__item .testimonial__visual {
         position: absolute;
         left: 0;
@@ -1780,7 +1784,8 @@ section.tabBar {
         overflow: hidden;
         margin: 0 auto;
         background-color: #FFFFFF;
-        border: 7px solid #FFFFFF; }
+        border: 7px solid #FFFFFF;
+        text-align: center; }
         .testimonials .testimonials__list .testimonial__item .testimonial__visual img {
           height: 100%;
           width: auto;

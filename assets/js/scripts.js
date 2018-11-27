@@ -150,14 +150,11 @@ $( document ).ready(function() {
 	function goToNextSection(event) {
 		event.preventDefault();
 
-	    var $this = $(event.target);
-	        $next = $this.closest("section").next("section");
-
-		console.log($this);
-		console.log($next);
+		var $section = $("section[class*='hero']:first-of-type");
+	    var $next_section = $section.next("section");
 
         $('html,body').animate({
-          scrollTop: $next.offset().top - navHeight
+          scrollTop: $next_section.offset().top - navHeight
         }, 500);
 	};
 
