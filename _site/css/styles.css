@@ -1878,6 +1878,8 @@ footer {
       margin-bottom: 2.5rem; }
       footer .footer ul li {
         margin-bottom: 0.9375rem; }
+        footer .footer ul li i {
+          margin-right: 0.625rem; }
     footer .footer .footer__logo {
       max-width: 9.375rem;
       height: auto;
@@ -1896,6 +1898,11 @@ footer {
         footer .footer .footer__site-links ul .footer__column-title {
           color: #797E81;
           font-weight: 600; }
+        footer .footer .footer__site-links ul .footer__column-category {
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-top: 1.875rem;
+          color: #797E81; }
     footer .footer .footer__site-details {
       padding-top: 2.5rem;
       border-top: 1px solid #E1E4E6;

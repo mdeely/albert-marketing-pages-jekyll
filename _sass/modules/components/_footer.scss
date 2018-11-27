@@ -11,6 +11,10 @@ footer {
 
 			li {
 				margin-bottom: rem(15);
+				
+				i {
+					margin-right: rem(10);
+				}
 			}
 		}
 
@@ -39,6 +43,13 @@ footer {
 				.footer__column-title {
 					color: $text-black--lighter_step_2;
 					font-weight: 600;
+				}
+
+				.footer__column-category {
+					font-weight: 600;
+					text-transform: uppercase;
+					margin-top: rem(30);
+					color: $text-black--lighter_step_2;
 				}
 	    	}
 		}

@@ -16,12 +16,10 @@ components:
   tab_bar_item:
   - link_text: Educators
     active: true
-    image:
-      image: "/uploads/2018/11/24/benefits-educators-tab.svg"
+    image: "/uploads/2018/11/24/benefits-educators-tab.svg"
     url: "/benefits"
   - link_text: Self-study
-    image:
-      image: "/uploads/2018/11/24/benefits-self-tab.svg"
+    image: "/uploads/2018/11/24/benefits-self-tab.svg"
     url: "/benefits-self-study"
 - template: hero
   block: hero-component

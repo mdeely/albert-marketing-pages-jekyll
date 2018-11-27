@@ -24,7 +24,7 @@ fields:
       name: image
       label: Image
       hidden: false
-      default: "/uploads/2018/11/19/backpack_open..svg"
+      default: "/uploads/2018/11/24/rocket_soaring.svg"
     - type: text
       name: alt_text
       label: Alt Text
@@ -66,7 +66,7 @@ fields:
       name: image
       label: Image
       hidden: false
-      default: "/uploads/2018/11/19/backpack_open..svg"
+      default: "/uploads/2018/11/24/analytics_data_support (1).svg"
     - type: text
       name: alt_text
       label: Alt Text

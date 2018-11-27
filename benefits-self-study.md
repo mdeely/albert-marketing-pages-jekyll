@@ -16,12 +16,10 @@ components:
   tab_bar_item:
   - link_text: Educators
     active: false
-    image:
-      image: "/uploads/2018/11/24/benefits-educators-tab.svg"
+    image: "/uploads/2018/11/24/benefits-educators-tab.svg"
     url: "/benefits"
   - link_text: Self-study
-    image:
-      image: "/uploads/2018/11/24/benefits-self-tab.svg"
+    image: "/uploads/2018/11/24/benefits-self-tab.svg"
     url: "/benefits-self-study"
     active: true
 - template: hero
@@ -57,6 +55,15 @@ components:
     image:
       image: "/uploads/2018/11/24/get-unstuck.svg"
   card_layout: false
+- template: form
+  block: form-component
+  purpose: Demo Request Form
+  embed_script: <script type="text/javascript" src="https://learnwithalbert.formstack.com/forms/js.php/request_demo"></script><noscript><a
+    href="https://learnwithalbert.formstack.com/forms/request_demo" title="Online
+    Form">Online Form - Demo Request Form - Final</a></noscript>
+  modal:
+    enabled: true
+    modal_id: demo_request_form
 - template: pre-footer
   block: pre-footer-component
   left:
@@ -75,6 +82,6 @@ components:
       with one of our Schools team members.
     cta:
       button_text: Request demo
-      url: ''
+      url: "#demo_request_form"
 
 ---
