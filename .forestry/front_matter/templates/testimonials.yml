@@ -12,6 +12,7 @@ fields:
 - type: text
   name: title
   label: Title
+  default: Testimonials
   description: Displays above the entire component.
 - type: field_group_list
   name: testimonials

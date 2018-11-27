@@ -2,10 +2,10 @@
 	<h2 class="testimonials__title">{{ section.title }}</h2>
 	<ul class="testimonials__list">
 		
-		{% for testimonialItem in section.testimonial %}
+		{% for testimonialItem in section.testimonials %}
 		<li class="testimonial__item">
 			<div class="testimonial__visual">
-				<img src="{{ testimonialItem.image }}">
+				<img src="{{ testimonialItem.image }}" alt="{{ testimonialItem.alt_text }}">
 			</div>
 			<div class="testimonial__info">
 				<div class="testimonial__quote">
