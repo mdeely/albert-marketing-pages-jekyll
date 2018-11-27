@@ -14,16 +14,15 @@
             <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
         {% endif %}
 
-      {% endfor %}
+        {% if tabBar.image %} 
+          <img src=" {{ tabBar.image }} ">
+        {% endif %}
 
-          {% if tabBar.image %} 
-            <img src=" {{ tabBar.image }} ">
-          {% endif %}
-
-          {{ tabBar.link_text }}
+        {{ tabBar.link_text }}
 
         </a>
       </li>
+      {% endfor %}
 
     {% else %}
 
@@ -36,16 +35,15 @@
             <a href="{{ tabBar.linkimage_url }}" class="{{ anchorClass }}">
           {% endif %}
 
-      {% endfor %}
-
           {% if tabBar.image %} 
             <img src=" {{ tabBar.image }} ">
           {% endif %}
 
           {{ tabBar.link_text }}
 
-        </a>
-      </li>
+          </a>
+        </li>
+      {% endfor %}
 
     {% endif %}
 
