@@ -75,6 +75,22 @@ components:
       image:
         image: "/uploads/2018/11/27/leveled_readings_in_science_and_technology.svg"
   group_title: ''
+- template: comic-collection
+  block: comic-collection-component
+  comic_strips:
+  - title: Ms. Yoon
+    image:
+      image: "/uploads/2018/11/27/yoon.png"
+    comic_panels:
+    - caption: Ms. Yoon’s 11th graders love to read, but they all read at very different
+        levels. This can make Ms. Yoon’s job as an English teacher pretty challenging.
+    - caption: 'She wants to build her students’ confidence and meet her readers where
+        they are, but creating differentiated resources is too time-consuming. '
+    - caption: 'When she struggles, her students struggle. It’s hard to have a class
+        discussion when everyone is literally on a different page. '
+    - caption: 'Then, Ms. Yoon discovers Albert’s Leveled Reading course. Now all
+        of her students can read at their own level and still discuss the same ideas
+        in class. '
 published: false
 
 ---
