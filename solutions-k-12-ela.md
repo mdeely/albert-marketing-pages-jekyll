@@ -103,13 +103,21 @@ components:
     comic_panels:
     - caption: Ms. Abdulaziz’s 9th grade English students are mostly visual learners.
         She tries her best to make sure that she is differentiating for their needs.
+      image:
+        image: "/uploads/2018/11/27/ELA comic 2 panel 1.png"
     - caption: 'She has been looking for resources that visually represent simple
         English concepts, but has not been able to find any that meet her needs. '
+      image:
+        image: "/uploads/2018/11/27/ELA comic 2 panel 2-1.png"
     - caption: That’s why she loves Albert’s Elements of a Sentence course, which
         uses images in all its explanations to make grammar concepts come to life.
+      image:
+        image: "/uploads/2018/11/27/ELA comic 2 panel 3.png"
     - caption: Ms. Abdulaziz watches her student’s mastery soar as students connect
         abstract concepts with concrete representations. She even decorates her classroom
         with Albert’s grammar drawings!
+      image:
+        image: "/uploads/2018/11/27/ELA comic 2 panel 4.png"
     image:
       image: "/uploads/2018/11/27/abdulaziz.png"
   - title: Mr. Cohen
@@ -117,26 +125,42 @@ components:
     - caption: 'Mr. Cohen loves teaching an interdisciplinary subject, combining English
         and Social Studies designed to turn his students into strong writers and informed
         citizens. '
+      image:
+        image: "/uploads/2018/11/27/ELA comic 3 panel 1.png"
     - caption: He loves the freedom of creating his own course, but with great freedom
         comes the great responsibility of creating lots of custom lesson plans...
+      image:
+        image: "/uploads/2018/11/27/ELA comic 3 panel 2.png"
     - caption: 'Mr. Cohen turns to Albert’s Essential Readings course, which provides
         a vast array of interdisciplinary passages and questions, including his favorite:
         foundational American texts.'
+      image:
+        image: "/uploads/2018/11/27/ELA comic 3 panel 3-1.png"
     - caption: With their daily assessments taken care of, his students are free to
         spend class time on creative projects that highlight their deep understanding
         of literature and history.
+      image:
+        image: "/uploads/2018/11/27/ELA comic 3 panel 4.png"
     image:
       image: "/uploads/2018/11/27/cohen.png"
   - title: Mr. Patel
     comic_panels:
     - caption: Mr. Patel uses the 10 Common Core Anchor Standards to guide his ELA
         instruction throughout the year.
+      image:
+        image: "/uploads/2018/11/27/ELA comic 4 panel 1.png"
     - caption: He uses Albert’s Reading Blueprints course to easily assign mixed practice
         or isolated skill practice aligned to CC Anchor Standards.
+      image:
+        image: "/uploads/2018/11/27/ELA comic 4 panel 2.png"
     - caption: With over 1,000 Reading Blueprints questions, there’s no shortage of
         practice for Mr. Patel’s students -- and no shortage of data for him to analyze.
+      image:
+        image: "/uploads/2018/11/27/ELA comic 4 panel 3.png"
     - caption: 'The grading is instant, so Mr. Patel can spend more time understanding
         his students’ performance. '
+      image:
+        image: "/uploads/2018/11/27/ELA comic 4 panel 4.png"
     image:
       image: "/uploads/2018/11/27/patel.png"
 - template: pre-footer
@@ -168,6 +192,5 @@ components:
   modal:
     enabled: true
     modal_id: pilot_application_form
-published: false
 
 ---
