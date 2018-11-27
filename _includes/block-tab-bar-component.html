@@ -11,11 +11,11 @@
               <a href="{{ tabBar.page.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% else %}
               <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
-          {% end %}
-
-          {% if tabBar.image %} 
-            <img src=" {{ tabBar.image }} ">
           {% endif %}
+
+            {% if tabBar.image %} 
+              <img src=" {{ tabBar.image }} ">
+            {% endif %}
 
           {{ tabBar.link_text }}
 
