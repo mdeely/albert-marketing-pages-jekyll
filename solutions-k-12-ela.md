@@ -1,5 +1,5 @@
 ---
-title: solutions-k-12-core-ela
+title: solutions-k-12-ela
 layout: blocks
 date: 2018-11-26 18:35:18 +0000
 description: ''
@@ -51,6 +51,8 @@ components:
     course_card:
     - domain: ELA
       title: Reading Blueprints
+      image:
+        image: "/uploads/2018/11/26/reading_blueprints.svg"
   group_title: Explore all ELA subjects
 published: false
 
