@@ -49,3 +49,6 @@ fields:
     - type: text
       name: alt_text
       label: Alt Text
+  config:
+    labelField: teacher_name
+    min: '3'
