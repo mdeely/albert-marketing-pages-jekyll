@@ -3,7 +3,7 @@
 <section class="tabBar">
   <ul class="tabBar__list">
 
-    {% if tab_bar_item.custom_active == true %}
+    {% if tab_bar_item.custom_active && tab_bar_item.custom_active == true %}
       {% for tabBar in section.tab_bar_item %}
           <li class="tabBar__item">
 
