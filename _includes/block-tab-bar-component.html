@@ -4,28 +4,17 @@
 <section class="tabBar">
   <ul class="tabBar__list">
 
-          {% if tab_bar_item.custom_active == true %}
-            {% for tabBar in section.tab_bar_item %}
-              <li class="tabBar__item">
-              {% if tabBar.active == true %}
-                <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
-              {% else %}
-                <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
-              {% endif %}
-            {% endfor %}
+    {% if tab_bar_item.custom_active == true %}
+      {% for tabBar in section.tab_bar_item %}
+          <li class="tabBar__item">
 
+          {% if tabBar.active && tabBar.active == true %}
+            <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% else %}
+            <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
+        {% endif %}
 
-            {% for tabBar in section.tab_bar_item %}
-              <li class="tabBar__item">
-              {% if forloop.index == 1  %}
-                <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
-              {% else %}
-                <a href="{{ tabBar.linkimage_url }}" class="{{ anchorClass }}">
-              {% endif %}
-            {% endfor %}
-
-          {% endif %}
+      {% endfor %}
 
           {% if tabBar.image %} 
             <img src=" {{ tabBar.image }} ">
@@ -35,6 +24,30 @@
 
         </a>
       </li>
+
+    {% else %}
+
+      {% for tabBar in section.tab_bar_item %}
+        <li class="tabBar__item">
+
+          {% if forloop.index == 1  %}
+            <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+          {% else %}
+            <a href="{{ tabBar.linkimage_url }}" class="{{ anchorClass }}">
+          {% endif %}
+
+      {% endfor %}
+
+          {% if tabBar.image %} 
+            <img src=" {{ tabBar.image }} ">
+          {% endif %}
+
+          {{ tabBar.link_text }}
+
+        </a>
+      </li>
+
+    {% endif %}
 
   </ul>
 </section>
