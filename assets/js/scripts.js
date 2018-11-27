@@ -151,7 +151,7 @@ $( document ).ready(function() {
 		event.preventDefault();
 
 	    var $this = $(event.target);
-	        $next = $this.parents("section").next();
+	        $next = $this.closest("section").next("section");
 
 		console.log($this);
 		console.log($next);
