@@ -11,7 +11,7 @@ fields:
 - type: boolean
   name: navigation
   label: Page navigation
-  description: Enable if the tabs are to navigation between pages. 
+  description: Enable if the tabs are to navigation between pages.
   default: false
 - type: field_group_list
   name: tab_bar_item
