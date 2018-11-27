@@ -6,11 +6,11 @@
     {% if section.navigation && section.navigation == true %}
 
       {% for tabBar in section.tab_bar_item %}
-      {{ tabbar.link_url }}
+      {{ tabBar.link_url }}
       {{ page.url }}
 
         <li class="tabBar__item">
-          {% if tabBar.link_url == page.url | replace: ".html", ""  %}
+          {% if tabBar.link_url contains page.url  %}
               <a href="{{ tabBar.page.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% else %}
               <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
