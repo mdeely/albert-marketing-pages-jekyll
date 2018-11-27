@@ -11,6 +11,9 @@ fields:
   config:
     required: false
 - type: text
+  label: Permalink
+  name: permalink
+- type: text
   label: Page title
   name: title
 - type: text
