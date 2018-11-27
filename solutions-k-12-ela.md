@@ -149,6 +149,7 @@ components:
       by a dedicated member of our Schools team.
     cta:
       button_text: Apply
+      url: pilot_application_form
   right:
     image:
       image: "/uploads/2018/11/24/analytics_data_support (1).svg"
