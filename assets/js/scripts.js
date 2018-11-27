@@ -150,8 +150,13 @@ $( document ).ready(function() {
 	function goToNextSection(event) {
 		event.preventDefault();
 
+		console.log("going to next section which is");
+
 	    var $this = $(event.target);
 	        $next = $this.parent().next();
+
+		console.log($this);
+		console.log($next);
 
         $('html,body').animate({
           scrollTop: $next.offset().top - navHeight
