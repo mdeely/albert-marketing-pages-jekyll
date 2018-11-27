@@ -45,37 +45,33 @@ components:
   block: course-preview-component
   title: Math Course Highlights
   curriculum_area:
-  - title: ''
+  - title: test?
     description: ''
     cta:
       button_text: Explore all ELA subjects
       enabled: true
       url: https://albert.io/k-12/ela/core
     course_card:
-    - domain: ELA
-      title: Elements of a Sentence
+    - domain: Math
+      title: 'Mastery Math: Pre-Algebra'
       image:
-        image: "/uploads/2018/11/27/elements_of_a_sentence.svg"
-    - domain: ELA
-      title: Reading Blueprints
+        image: "/uploads/2018/11/27/mastery_math_prealgebra.svg"
+    - domain: Math
+      title: 'Mastery Math: Algebra 1'
       image:
-        image: "/uploads/2018/11/26/reading_blueprints.svg"
-    - title: Confused and Misused
-      domain: ELA
+        image: "/uploads/2018/11/27/mastery_math_algebra_1 (1).svg"
+    - title: 'Mastery Math: Algebra 2'
+      domain: Math
       image:
-        image: "/uploads/2018/11/27/confused_and_misused.svg"
-    - domain: ELA
-      title: Leveled Readings in Arts and Culture
+        image: "/uploads/2018/11/27/mastery_math_algebra_2.svg"
+    - domain: Math
+      title: 'Mastery Math: Geometry'
       image:
-        image: "/uploads/2018/11/27/leveled_readings_in_arts_and_culture.svg"
-    - domain: ELA
-      title: Leveled Readings in History, Politics, and Biography
+        image: "/uploads/2018/11/27/mastery_math_geometry.svg"
+    - domain: Math
+      title: 'Mastery Math: Precalculus'
       image:
-        image: "/uploads/2018/11/27/history_of_politics_and_biography.svg"
-    - domain: ELA
-      title: Leveled Readings in Science and Technology
-      image:
-        image: "/uploads/2018/11/27/leveled_readings_in_science_and_technology.svg"
+        image: "/uploads/2018/11/27/mastery_math_precalculus.svg"
   group_title: ''
 - template: comic-collection
   block: comic-collection-component
