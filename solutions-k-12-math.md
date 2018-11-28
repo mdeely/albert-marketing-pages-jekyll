@@ -115,31 +115,29 @@ components:
       image: "/uploads/2018/11/27/odesso.png"
   - title: Mrs. Finney
     comic_panels:
-    - caption: 'Mr. Cohen loves teaching an interdisciplinary subject, combining English
-        and Social Studies designed to turn his students into strong writers and informed
-        citizens. '
-    - caption: He loves the freedom of creating his own course, but with great freedom
-        comes the great responsibility of creating lots of custom lesson plans...
-    - caption: 'Mr. Cohen turns to Albert’s Essential Readings course, which provides
-        a vast array of interdisciplinary passages and questions, including his favorite:
-        foundational American texts.'
-    - caption: With their daily assessments taken care of, his students are free to
-        spend class time on creative projects that highlight their deep understanding
-        of literature and history.
+    - caption: In her Geometry classroom, Mrs. Finney groups students based on their
+        ability.
+    - caption: Albert offers multiple levels of rigor for each math concept, allowing
+        the groups to tackle concepts at levels ranging from straightforward calculations
+        to abstract applications.
+    - caption: At the end of each day, she gives a quick exit ticket to get a sense
+        for students stand.
+    - caption: The data tells her how all her students are doing so she can adjust
+        groups for tomorrow.
     image:
       image: "/uploads/2018/11/27/finney.png"
-  - title: Mr. Patel
+  - title: Mr. Kietriys
     comic_panels:
-    - caption: Mr. Patel uses the 10 Common Core Anchor Standards to guide his ELA
-        instruction throughout the year.
-    - caption: He uses Albert’s Reading Blueprints course to easily assign mixed practice
-        or isolated skill practice aligned to CC Anchor Standards.
-    - caption: With over 1,000 Reading Blueprints questions, there’s no shortage of
-        practice for Mr. Patel’s students -- and no shortage of data for him to analyze.
-    - caption: 'The grading is instant, so Mr. Patel can spend more time understanding
-        his students’ performance. '
+    - caption: This is Mr. Kietriy’s first year teaching AP Calculus, so Albert’s
+        AP Calculus questions are a lifesaver.
+    - caption: But his students get frustrated when they miss a question because of
+        a skill they should have learned last year.
+    - caption: So he likes to include questions from Precalculus and Algebra 2 on
+        each of his assignments depending on what each of his students struggles with.
+    - caption: His mixed assignments provide AP practice while also keeping the foundational
+        skills fresh!
     image:
-      image: "/uploads/2018/11/27/patel.png"
+      image: "/uploads/2018/11/27/kietry.png"
 - template: pre-footer
   block: pre-footer-component
   left:
