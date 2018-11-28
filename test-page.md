@@ -41,6 +41,21 @@ components:
       image:
         image: "/uploads/2018/11/27/leveled_readings_in_arts_and_culture.svg"
       title: Fake ELA
+    title: ELA
+  - title: Math
+    course_card:
+    - domain: Math
+      title: Fake Math
+      image:
+        image: "/uploads/2018/11/27/mastery_math_algebra_2.svg"
+    - domain: Math
+      title: Fake Math
+      image:
+        image: "/uploads/2018/11/27/mastery_math_geometry.svg"
+    - domain: Math
+      image:
+        image: "/uploads/2018/11/27/mastery_math_precalculus.svg"
+      title: Fake Math
 published: false
 
 ---
