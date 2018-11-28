@@ -12,4 +12,4 @@ fields:
 - type: boolean
   name: enabled
   label: Enabled
-  description: "Use '#demo_request_form_modal' in any URL to trigger this modal"
+  description: Use '#demo_request_form_modal' in any URL to trigger this modal
