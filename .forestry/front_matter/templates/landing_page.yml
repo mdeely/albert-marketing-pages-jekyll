@@ -20,6 +20,7 @@ fields:
   name: components
   label: Components
   template_types:
+  - form-demo-request
   - form
   - comic-collection
   - bar-graph
