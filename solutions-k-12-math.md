@@ -173,6 +173,5 @@ components:
     cta:
       button_text: Request demo
       url: https://www.albert.io/schools/request-demo
-published: false
 
 ---
