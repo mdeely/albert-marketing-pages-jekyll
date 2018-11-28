@@ -117,25 +117,41 @@ components:
     comic_panels:
     - caption: In her Geometry classroom, Mrs. Finney groups students based on their
         ability.
+      image:
+        image: "/uploads/2018/11/27/math comic 3 panel 1.png"
     - caption: Albert offers multiple levels of rigor for each math concept, allowing
         the groups to tackle concepts at levels ranging from straightforward calculations
         to abstract applications.
+      image:
+        image: "/uploads/2018/11/27/math comic 3 panel 2.png"
     - caption: At the end of each day, she gives a quick exit ticket to get a sense
         for students stand.
+      image:
+        image: "/uploads/2018/11/27/math comic 3 panel 3.png"
     - caption: The data tells her how all her students are doing so she can adjust
         groups for tomorrow.
+      image:
+        image: "/uploads/2018/11/27/math comic 3 panel 4.png"
     image:
       image: "/uploads/2018/11/27/finney.png"
   - title: Mr. Kietriys
     comic_panels:
     - caption: This is Mr. Kietriy’s first year teaching AP Calculus, so Albert’s
         AP Calculus questions are a lifesaver.
+      image:
+        image: "/uploads/2018/11/27/math comic 4 panel 1.png"
     - caption: But his students get frustrated when they miss a question because of
         a skill they should have learned last year.
+      image:
+        image: "/uploads/2018/11/27/math comic 4 panel 2.png"
     - caption: So he likes to include questions from Precalculus and Algebra 2 on
         each of his assignments depending on what each of his students struggles with.
+      image:
+        image: "/uploads/2018/11/27/math comic 4 panel 3.png"
     - caption: His mixed assignments provide AP practice while also keeping the foundational
         skills fresh!
+      image:
+        image: "/uploads/2018/11/27/math comic 4 panel 4.png"
     image:
       image: "/uploads/2018/11/27/kietry.png"
 - template: pre-footer
