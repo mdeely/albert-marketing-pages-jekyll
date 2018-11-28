@@ -42,6 +42,10 @@ components:
         image: "/uploads/2018/11/27/leveled_readings_in_arts_and_culture.svg"
       title: Fake ELA
     title: ELA
+    cta:
+      enabled: true
+      button_text: View more ELA courses
+      url: "/k-12/ela"
   - title: Math
     course_card:
     - domain: Math
@@ -56,6 +60,10 @@ components:
       image:
         image: "/uploads/2018/11/27/mastery_math_precalculus.svg"
       title: Fake Math
+    cta:
+      enabled: true
+      url: "/k-12/math"
+      button_text: View more Math courses
 published: false
 
 ---
