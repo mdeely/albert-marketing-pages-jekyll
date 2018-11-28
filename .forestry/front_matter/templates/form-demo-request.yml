@@ -2,7 +2,6 @@
 label: Demo Request Form
 hide_body: false
 is_partial: true
-display_field:
 fields:
 - type: text
   hidden: true
