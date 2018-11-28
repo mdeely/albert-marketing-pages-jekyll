@@ -1,0 +1,30 @@
+---
+label: Albert information
+hide_body: false
+is_partial: false
+fields:
+- type: field_group
+  name: contact
+  label: Contact
+  description: Albert's contact information
+  fields:
+- type: text
+  label: Support phone
+  name: support_phone
+  default: "(312) 470-2290 ext. 0"
+- type: text
+  name: Support email
+  label: support_email
+  default: "hello@albert.io"
+- type: text
+  label: Sales phone
+  name: sales_phone
+  default: "(312) 470-2290 ext. 1"
+- type: text
+  label: Sales fax
+  name: sales_fax
+  default: "(312) 313-2667"
+- type: text
+  label: Sales email
+  name: sales_email
+  default: "schools@albert.io"
