@@ -31,17 +31,17 @@ components:
     description: Albert’s unique blend of general science and NGSS-aligned courses
       supports a thorough science curriculum in any state.
     image:
-      image: "/uploads/2018/11/27/leveled-organization.svg"
+      image: "/uploads/2018/11/28/critical-thinking.png"
   - title: Relevant primary literature
     description: Albert’s incorporation of published research teaches students how
       to dissect and evaluate primary literature.
     image:
-      image: "/uploads/2018/11/20/Screen Shot 2018-11-20 at 4.16.22 PM.png"
+      image: "/uploads/2018/11/28/critical-thinking.png"
   - title: Classroom sample tasks
     description: Designed to target technical writing and laboratory skills, these
       open-ended questions allow students to tackle NGSS in depth.
     image:
-      image: "/uploads/2018/11/27/flexible-alignment.svg"
+      image: "/uploads/2018/11/28/critical-thinking.png"
 - template: course_preview
   block: course-preview-component
   title: Math Course Highlights
