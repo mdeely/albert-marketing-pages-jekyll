@@ -1,0 +1,37 @@
+---
+label: Form
+hide_body: false
+is_partial: true
+display_field: purpose
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: form-component
+- type: text
+  name: purpose
+  label: Short description
+  description: For internal use. Displays on previous Forestry screen.
+- type: textarea
+  name: embed_script
+  label: Embed script
+  description: Paste in the the "Javascript Embed Script"section from Formstack.
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: html-blocks
+- type: field_group
+  name: modal
+  label: Modal
+  fields:
+  - type: boolean
+    name: enabled
+    label: Enabled
+  - type: text
+    name: modal_id
+    label: Modal ID
+    description: Must contain "form" in the ID. Must be unique. Use this ID in any
+      CTA > URL field to trigger the modal. Append with "#". E.g 'Modal ID "lead_gen_form".
+      Use "#lead_gen_form" in a CTA > URL field.
