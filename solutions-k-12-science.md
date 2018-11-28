@@ -22,24 +22,24 @@ components:
   block: feature-grid-component
   title: Product highlights
   feature_items:
-  - title: Multiple approaches
-    description: Topics include a balance of skill assessments, applications, and
-      conceptual questions designed to gauge true mastery.
+  - title: Emphasis on scientific inquiry
+    description: Questions require students to demonstrate science and engineering
+      practices in the context of scientific investigations.
     image:
-      image: "/uploads/2018/11/27/multiple-approaches.svg"
-  - title: Leveled organization
-    description: Concepts are segmented by difficulty level and extra practice to
-      support differentiation and goal-based work.
+      image: "/uploads/2018/11/28/critical-thinking.png"
+  - title: Thorough alignment
+    description: Albert’s unique blend of general science and NGSS-aligned courses
+      supports a thorough science curriculum in any state.
     image:
       image: "/uploads/2018/11/27/leveled-organization.svg"
-  - title: Strategy building
-    description: Questions include background information and strategy tips to help
-      students build their metacognitive problem solving skills.
+  - title: Relevant primary literature
+    description: Albert’s incorporation of published research teaches students how
+      to dissect and evaluate primary literature.
     image:
       image: "/uploads/2018/11/20/Screen Shot 2018-11-20 at 4.16.22 PM.png"
-  - title: Flexible alignment
-    description: Questions are aligned to Common Core and incorporate other standards,
-      such as ACT® CCRS and SAT® Domains and Dimensions.
+  - title: Classroom sample tasks
+    description: Designed to target technical writing and laboratory skills, these
+      open-ended questions allow students to tackle NGSS in depth.
     image:
       image: "/uploads/2018/11/27/flexible-alignment.svg"
 - template: course_preview
