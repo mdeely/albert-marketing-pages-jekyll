@@ -6,45 +6,48 @@ navItems:
 
 ## This is a mega menu dropdown. (Simple menu dropdown seen below this menu)
 - label: Solutions
-  - group_title: K-12 Core
-    subitems:
-    - label: K-12 ELA
-      description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
-      url: k-12-ela
-      icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
-      domain: ela
-    - label: K-12 Math
-      description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
-      url: k-12-math
-      icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
-      domain: math
-    - label: K-12 Science
-      description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
-      url: k-12-science
-      icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
-      domain: science
-  - group_title: K-12 Test Prep
-    subitems:
-    - label: K-12 Advanced Placement
-      description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
-      url: k-12-advanced-placement
-      icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
-    - label: K-12 College Entrance
-      description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
-      url: k-12-college-entrance
-      icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
+  submenu:
+    - group_title: K-12 Core
+      subitems:
+      - label: K-12 ELA
+        description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
+        url: k-12-ela
+        icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
+        domain: ela
+      - label: K-12 Math
+        description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
+        url: k-12-math
+        icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
+        domain: math
+      - label: K-12 Science
+        description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
+        url: k-12-science
+        icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
+        domain: science
+
+    - group_title: K-12 Test Prep
+      subitems:
+      - label: K-12 Advanced Placement
+        description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
+        url: k-12-advanced-placement
+        icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
+      - label: K-12 College Entrance
+        description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
+        url: k-12-college-entrance
+        icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
 
 ## This is a simple dropdown menu. 
 - label: Explore
-  - subitems:
-    - label: Features
-      url: features
-    - label: Benefits
-      url: benefits-educators
-    - label: Results
-      url: results
-    - label: Case studies
-      url: case-studies
+  submenu:
+    - subitems:
+      - label: Features
+        url: features
+      - label: Benefits
+        url: benefits-educators
+      - label: Results
+        url: results
+      - label: Case studies
+        url: case-studies
 
 - label: Pricing
   url: pricing
