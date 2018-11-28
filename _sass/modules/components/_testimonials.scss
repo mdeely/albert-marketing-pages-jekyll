@@ -39,6 +39,7 @@
 			position: relative;
 			max-width: rem(430);
 			min-width: rem(300);
+			width: 100%;
 
 			.testimonial__visual {
 				position: absolute;
@@ -53,6 +54,7 @@
 				margin: 0 auto;
 				background-color: #FFFFFF;
 				border: 7px solid #FFFFFF;
+				text-align: center;
 
 				img {
 					height: 100%;

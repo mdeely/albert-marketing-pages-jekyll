@@ -1,0 +1,14 @@
+---
+label: Demo Request Form
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: form-demo-request-component
+- type: boolean
+  name: enabled
+  label: Use as modal
+  description: Use '#demo_request_form_modal' in any URL to trigger this modal

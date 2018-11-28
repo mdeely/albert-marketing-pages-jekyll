@@ -124,6 +124,11 @@ $topOffset: 50;
 				&.strip_styling {
 					border-radius: 0;
 					box-shadow: none;
+
+					img {
+						box-shadow: none;
+						border-radius: none;
+					}
 				}
 
 				img {

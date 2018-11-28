@@ -17,8 +17,8 @@ $( document ).ready(function() {
 	var navSubmenu = ".nav__dropdown";
 	var $directional_arrow_scroll = $(".directionalArrow.scrollTo");
 	var anchor_tabs = ".tabBar__anchor[href*='#']";
-	var anchor_form = "[href*='form'][href*='#']";
-	var section_form = "section.leadGen";
+	var anchor_form = "[href*='modal'][href*='form']";
+	var section_form = "section.forms.modal";
 	var mainNav = $(".mainNav");
 	var navHeight = $(".mainNav").outerHeight();
 	var $slide = $(".slide__link");
@@ -150,11 +150,11 @@ $( document ).ready(function() {
 	function goToNextSection(event) {
 		event.preventDefault();
 
-	    var $this = $(event.target);
-	        $next = $this.parent().next();
+		var $section = $("section[class*='hero']:first-of-type");
+	    var $next_section = $section.next("section");
 
         $('html,body').animate({
-          scrollTop: $next.offset().top - navHeight
+          scrollTop: $next_section.offset().top - navHeight
         }, 500);
 	};
 

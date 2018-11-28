@@ -4,13 +4,6 @@ layout: blocks
 date: 2018-11-24 21:33:43 +0000
 description: ''
 components:
-- template: hero
-  block: hero-component
-  primary_hero: true
-  supertitle: Benefits
-  title: A better way to practice and assess
-  image:
-    image: "/uploads/2018/11/24/benefits-hero.svg"
 - template: tab-bar
   block: tab-bar-component
   tab_bar_item:
@@ -18,10 +11,21 @@ components:
     active: false
     image: "/uploads/2018/11/24/benefits-educators-tab.svg"
     url: "/benefits"
+    link_url: "/benefits-educators"
   - link_text: Self-study
     image: "/uploads/2018/11/24/benefits-self-tab.svg"
     url: "/benefits-self-study"
     active: true
+    link_url: "/benefits-self-study"
+  custom_active: true
+  navigation: true
+- template: hero
+  block: hero-component
+  primary_hero: true
+  supertitle: Benefits
+  title: A better way to practice and assess
+  image:
+    image: "/uploads/2018/11/24/benefits-hero.svg"
 - template: hero
   block: hero-component
   primary_hero: false
@@ -55,15 +59,6 @@ components:
     image:
       image: "/uploads/2018/11/24/get-unstuck.svg"
   card_layout: false
-- template: form
-  block: form-component
-  purpose: Demo Request Form
-  embed_script: <script type="text/javascript" src="https://learnwithalbert.formstack.com/forms/js.php/request_demo"></script><noscript><a
-    href="https://learnwithalbert.formstack.com/forms/request_demo" title="Online
-    Form">Online Form - Demo Request Form - Final</a></noscript>
-  modal:
-    enabled: true
-    modal_id: demo_request_form
 - template: pre-footer
   block: pre-footer-component
   left:

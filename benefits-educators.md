@@ -4,6 +4,19 @@ layout: blocks
 date: 2018-11-24 21:33:43 +0000
 description: ''
 components:
+- template: tab-bar
+  block: tab-bar-component
+  tab_bar_item:
+  - link_text: Educators
+    active: false
+    image: "/uploads/2018/11/24/benefits-educators-tab.svg"
+    url: "/benefits"
+    link_url: "/benefits-educators"
+  - link_text: Self-study
+    image: "/uploads/2018/11/24/benefits-self-tab.svg"
+    url: "/benefits-self-study"
+    link_url: "/benefits-self-study"
+  navigation: true
 - template: hero
   block: hero-component
   primary_hero: true
@@ -11,16 +24,6 @@ components:
   title: A better way to practice and assess
   image:
     image: "/uploads/2018/11/24/benefits-hero.svg"
-- template: tab-bar
-  block: tab-bar-component
-  tab_bar_item:
-  - link_text: Educators
-    active: true
-    image: "/uploads/2018/11/24/benefits-educators-tab.svg"
-    url: "/benefits"
-  - link_text: Self-study
-    image: "/uploads/2018/11/24/benefits-self-tab.svg"
-    url: "/benefits-self-study"
 - template: hero
   block: hero-component
   primary_hero: false

@@ -1,3 +1,4 @@
+---
 navItems:
 ## label and url are all that is needed for a simple nav link. 
 - label: Subjects
@@ -11,17 +12,17 @@ navItems:
       - label: K-12 ELA
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-ela
-        icon_url: "/assets/img/subject_icons/bret_harte.svg"
+        icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
         domain: ela
       - label: K-12 Math
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-math
-        icon_url: "/assets/img/subject_icons/advanced_placement_microeconomics.svg"
+        icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
         domain: math
       - label: K-12 Science
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-science
-        icon_url: "/assets/img/subject_icons/advanced_placement_biology.svg"
+        icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
         domain: science
 
     - group_title: K-12 Test Prep
@@ -29,11 +30,11 @@ navItems:
       - label: K-12 Advanced Placement
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-advanced-placement
-        icon_url: "/assets/img/subject_icons/advanced_placement_world_history.svg"
+        icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
       - label: K-12 College Entrance
         description: Our meticulously-researched ELA courses build the skills that students need to become devoted readers, strong writers, and clear thinkers. 
         url: k-12-college-entrance
-        icon_url: "/assets/img/subject_icons/advanced_placement_psychology.svg"
+        icon_url: "uploads/2018/11/27/history_of_politics_and_biography.svg"
 
 ## This is a simple dropdown menu. 
 - label: Explore

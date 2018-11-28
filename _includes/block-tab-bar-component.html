@@ -1,43 +1,52 @@
 {% assign anchorClass = "tabBar__anchor" %}
-{% assign active_tabbar == false %}
 
 <section class="tabBar">
   <ul class="tabBar__list">
 
-    {% for tabBar in section.tab_bar_item %}
-      {% if tabBar.active && tabBar.active == true %}
-        {% assign active_tabbar == true %}
-      {% endif %}
-    {% endfor %}
+    {% if section.navigation && section.navigation == true %}
 
-    {% for tabBar in section.tab_bar_item %}
-      <li class="tabBar__item">
-          {% if active_tabbar && active_tabbar == true %}
+      {% for tabBar in section.tab_bar_item %}
 
-            {% if active_tabbar == true %}
-              <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
-            {% else %}
-              <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
-            {% endif %}
-
+        <li class="tabBar__item">
+          {% if page.url contains tabBar.link_url  %}
+              <a href="{{ tabBar.page.url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
           {% else %}
+              <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
+          {% endif %}
 
-            {% if forloop.index == 1  %}
-              <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
-            {% else %}
-              <a href="{{ tabBar.linkimage_url }}" class="{{ anchorClass }}">
+            {% if tabBar.image %} 
+              <img src=" {{ tabBar.image }} ">
             {% endif %}
-
-          {% endif %}
-
-          {% if tabBar.image %} 
-            <img src=" {{ tabBar.image }} ">
-          {% endif %}
 
           {{ tabBar.link_text }}
 
-        </a>
-      </li>
-    {% endfor %}
+          </a>
+        </li>
+
+      {% endfor %}
+
+    {% else %}
+
+      {% for tabBar in section.tab_bar_item %}
+        <li class="tabBar__item">
+
+          {% if forloop.index == 1  %}
+            <a href="{{ tabBar.link_url }}" class="{{ anchorClass | append: " " | append: "active" }}" >
+          {% else %}
+            <a href="{{ tabBar.link_url }}" class="{{ anchorClass }}">
+          {% endif %}
+
+            {% if tabBar.image %} 
+              <img src=" {{ tabBar.image }} ">
+            {% endif %}
+
+          {{ tabBar.link_text }}
+
+          </a>
+        </li>
+      {% endfor %}
+
+    {% endif %}
+
   </ul>
 </section>

@@ -20,7 +20,7 @@ fields:
   name: components
   label: Components
   template_types:
-  - form
+  - form-demo-request
   - comic-collection
   - bar-graph
   - tab-bar
@@ -34,8 +34,10 @@ fields:
   - pre-footer
 pages:
 - benefits-educators.md
+- solutions-k-12-science.md
 - results.md
 - features.md
 - benefits-self-study.md
-- solutions-k-12-ela.md
 - test-page.md
+- solutions-k-12-ela.md
+- solutions-k-12-math.md

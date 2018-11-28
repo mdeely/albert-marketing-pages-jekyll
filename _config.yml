@@ -8,12 +8,8 @@ url: "http://albert.io" # the base hostname & protocol for your site
 
 asset_path: "/assets/img/"
 
-# collections: 
-#   landing_pages: 
-#     output: true
-#     permalink: /:name
-#   case-studies:
-#     output: true
+permalink: /:title
+
 collections:
   case-studies:
     output: true
