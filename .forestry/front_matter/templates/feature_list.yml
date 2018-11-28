@@ -13,7 +13,7 @@ fields:
   label: Title
   description: Title for feature list.
   config:
-    required: true
+    required: false
 - type: text
   name: description
   label: Description
