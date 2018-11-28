@@ -183,14 +183,5 @@ components:
     cta:
       button_text: Request demo
       url: https://www.albert.io/schools/request-demo
-- template: form
-  block: form-component
-  purpose: Pilot Application
-  embed_script: <script type="text/javascript" src="https://learnwithalbert.formstack.com/forms/js.php/pilot_application"></script><noscript><a
-    href="https://learnwithalbert.formstack.com/forms/pilot_application" title="Online
-    Form">Online Form - Pilot Application Form</a></noscript>
-  modal:
-    enabled: true
-    modal_id: pilot_application_form
 
 ---
