@@ -7,10 +7,11 @@ components:
 - template: hero
   block: hero-component
   primary_hero: true
-  supertitle: K-12 Math
-  title: Making math approachable
-  description: Skills, application, and conceptual questions combine to build authentic
-    and lasting understanding of math concepts for all types of learners.
+  supertitle: K-12 Science
+  title: Bringing science to life
+  description: Albert’s science courses engage students in scientific inquiry and
+    build skills alongside knowledge. Now with support for traditional science curricula
+    and NGSS three-dimensional learning.<br>
   cta:
     enabled: true
     button_text: Get Started
