@@ -25,7 +25,7 @@ components:
     description: Topics include a balance of skill assessments, applications, and
       conceptual questions designed to gauge true mastery.
     image:
-      image: "/uploads/2018/11/27/multiple-approaches.svg"
+      image: "/uploads/2018/11/28/multiple-approaches.svg"
   - title: Leveled organization
     description: Concepts are segmented by difficulty level and extra practice to
       support differentiation and goal-based work.
