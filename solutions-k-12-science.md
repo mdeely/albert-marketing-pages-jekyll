@@ -98,19 +98,23 @@ components:
         to improve their own lab reports. Now they are thinking and writing like scientists!
       image:
         image: "/uploads/2018/11/27/math comic 1 panel 4.png"
-  - title: Mr. Odesso
+  - title: Mr. Thurgood
     comic_panels:
-    - caption: Mr. Odesso’s Algebra 2 class has a diverse range of learners.
+    - caption: 'Mr. Thurgood’s administrator requires that all classes incorporate
+        reading and math practice. But Mr. Thurgood teaches science. '
       image:
         image: "/uploads/2018/11/27/math comic 2 panel 1.png"
-    - caption: He prepares remediation assignments from Algebra 1 based on the standards
-        where his students are weakest.
+    - caption: He tries to stay true to his curriculum while giving students plenty
+        of reading and math practice. But it’s not always easy.
       image:
         image: "/uploads/2018/11/27/math comic 2 panel 2.png"
-    - caption: Individual students can get the support they need…
+    - caption: He finds Albert’s NGSS questions, which align to Common Core standards
+        for Reading and Math. Now his students practice Science, Reading, and Math
+        all at once!
       image:
         image: "/uploads/2018/11/27/math comic 2 panel 3.png"
-    - caption: "...and still keep pace with Mr. Odesso’s Algebra 2 lessons."
+    - caption: 'When his students take their end-of-year tests, he knows he’s done
+        all he can to help them pass with flying colors. '
       image:
         image: "/uploads/2018/11/27/math comic 2 panel 4.png"
     image:
