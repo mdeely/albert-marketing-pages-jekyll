@@ -57,5 +57,6 @@ components:
   cta:
     enabled: true
     button_text: Submit application
+  large: true
 
 ---
