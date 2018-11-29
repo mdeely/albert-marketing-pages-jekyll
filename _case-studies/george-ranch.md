@@ -7,18 +7,18 @@ description: ''
 location: Houston, TX
 school_level: High School
 statistics:
-- value: total AP Students in 2016
-  value_subtitle: 778
-- value: AP Exams taken in 2016
-  value_subtitle: 1515
-- value: Scores of 3 or higher in 2016
-  value_subtitle: 937
-- value_subtitle: 61%
-  value: Pass Rate in 2016
-- value: 5's Scored in 2016
-  value_subtitle: 157
-- value: AP Courses Offered
-  value_subtitle: 28
+- value: 778
+  value_subtitle: total AP Students in 2016
+- value: 1515
+  value_subtitle: AP Exams taken in 2016
+- value: 937
+  value_subtitle: Scores of 3 or higher in 2016
+- value_subtitle: Pass Rate in 2016
+  value: 61%
+- value: 157
+  value_subtitle: 5's Scored in 2016
+- value: 28
+  value_subtitle: AP Courses Offered
 
 ---
 **Introduction: A Diverse and Expanding School**
