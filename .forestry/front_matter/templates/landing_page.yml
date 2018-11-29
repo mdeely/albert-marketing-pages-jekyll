@@ -33,6 +33,7 @@ fields:
   - interstitial
   - pre-footer
 pages:
+- success.md
 - demo-request.md
 - pilot.md
 - homepage-example.md
