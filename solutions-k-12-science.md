@@ -182,7 +182,9 @@ components:
       with one of our Schools team members.
     cta:
       button_text: Request demo
-      url: https://www.albert.io/schools/request-demo
-published: false
+      url: "#demo_request_form_modal"
+- template: form-demo-request
+  block: form-demo-request-component
+  enabled: true
 
 ---
