@@ -11,7 +11,7 @@
 					{% else %}
 			      		<a href="#{{ comicStrip.title | slugify }}" class="tabBar__anchor">
 					{% endif %}
-			      {% if comicStrip.teacher_img_src %} 
+			      {% if comicStrip.image %} 
 			      	<img src="{{ comicStrip.image }}">
 			      {% endif %}
 			      {{ comicStrip.title }}
