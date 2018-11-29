@@ -1,9 +1,10 @@
 ---
-title: George Ranch
+title: How George Ranch Honed Student Engagement to Boost AP Performance
 layout: case_study
 date: 2018-11-20 17:17:22 +0000
 banner_image: "/uploads/2018/11/29/GeorgeRanchHS.jpg"
-description: How George Ranch Honed Student Engagement to Boost AP Performance
+description: George Ranch High School saw an increase in both pass rates and average
+  scores year over year, while also beating the global averages across the board.
 location: Houston, TX
 school_level: High School
 statistics:
