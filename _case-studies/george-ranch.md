@@ -2,7 +2,7 @@
 title: George Ranch
 layout: case_study
 date: 2018-11-20 17:17:22 +0000
-banner_image: "/uploads/2018/11/20/Screen Shot 2018-11-20 at 4.16.22 PM.png"
+banner_image: "/uploads/2018/11/29/GeorgeRanchHS.jpg"
 description: ''
 location: Houston, TX
 school_level: High School
