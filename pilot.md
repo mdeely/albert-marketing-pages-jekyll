@@ -12,17 +12,9 @@ components:
     to try Albert at no-cost for 60-days.
   supertitle: Pilot
   cta:
-    url: Submit application
+    url: ''
     enabled: true
-- template: feature_list
-  block: feature-list-component
-  feature_item:
-  - title: title
-    image:
-      image: "/uploads/2018/11/29/updated-curricula.svg"
-    supertitle: supertitle
-  title: feature list title
-  description: description
+    button_text: Submit application
 - template: feature_grid
   block: feature-grid-component
   feature_items:
