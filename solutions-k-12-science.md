@@ -44,35 +44,39 @@ components:
       image: "/uploads/2018/11/29/differentiation.svg"
 - template: course_preview
   block: course-preview-component
-  title: Math Course Highlights
+  title: Science Course Highlights
   curriculum_area:
-  - title: test?
+  - title: K-12 Science
     description: ''
     cta:
       button_text: Explore all ELA subjects
       enabled: true
       url: https://albert.io/k-12/ela/core
     course_card:
-    - domain: Math
-      title: 'Mastery Math: Pre-Algebra'
+    - domain: Science
+      title: " General Biology"
       image:
-        image: "/uploads/2018/11/27/mastery_math_prealgebra.svg"
-    - domain: Math
-      title: 'Mastery Math: Algebra 1'
+        image: "/uploads/2018/11/29/general_biology.svg"
+    - domain: Science
+      title: " General Chemistry"
       image:
-        image: "/uploads/2018/11/27/mastery_math_algebra_1 (1).svg"
-    - title: 'Mastery Math: Algebra 2'
-      domain: Math
+        image: "/uploads/2018/11/29/general_chemistry.svg"
+    - title: " General Physics"
+      domain: Science
       image:
-        image: "/uploads/2018/11/27/mastery_math_algebra_2.svg"
-    - domain: Math
-      title: 'Mastery Math: Geometry'
+        image: "/uploads/2018/11/29/general_physics.svg"
+    - domain: Science
+      title: " NGSS Earth and Space Sciences"
       image:
-        image: "/uploads/2018/11/27/mastery_math_geometry.svg"
-    - domain: Math
-      title: 'Mastery Math: Precalculus'
+        image: "/uploads/2018/11/29/ngss_earth_and_space_sciences.svg"
+    - domain: Science
+      title: " NGSS Life Sciences"
       image:
-        image: "/uploads/2018/11/27/mastery_math_precalculus.svg"
+        image: "/uploads/2018/11/29/ngss_life_sciences.svg"
+    - domain: Science
+      title: " NGSS Physical Sciences"
+      image:
+        image: "/uploads/2018/11/29/ngss_physical_sciences.svg"
   group_title: ''
 - template: comic-collection
   block: comic-collection-component
