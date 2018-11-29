@@ -25,11 +25,11 @@ The Soulsville Charter School (TSCS) is public charter high school in the heart 
 
  Since their founding nine years ago, 100% of graduates have been accepted to colleges and universities. A key ingredient in accomplishing this feat is properly preparing students for the rigor of college coursework. Bryan Hearn, Director of Academics, believes giving students access to AP® courses is just as valuable as the college credit they can earn from passing the exam.
 
-> “While we obviously want students to earn a 3 or higher on AP® exams, we also know that students beneft tremendously simply from being in AP® courses and tackling college-level work in high school.”
+> “While we obviously want students to earn a 3 or higher on AP® exams, we also know that students benefit tremendously simply from being in AP® courses and tackling college-level work in high school.”
 
 TSCS graduated its first senior class in 2012, with only 11 students in AP® courses taking a combined 20 exams.
 
-In the 2015-2016 school year, 51 students participated, taking a total of 104 exams, growing by 5x since their frst year. In order to grow their AP® program, TSCS needed to not only convince students who previously did not consider themselves “AP® Students” to take the risk and enroll, but also to support these students as they tackled college-level coursework. To properly assist these brave students, Hearn and his AP® teachers knew they needed a tool that included aligned practice questions and easily accessible data.
+In the 2015-2016 school year, 51 students participated, taking a total of 104 exams, growing by 5x since their first year. In order to grow their AP® program, TSCS needed to not only convince students who previously did not consider themselves “AP® Students” to take the risk and enroll, but also to support these students as they tackled college-level coursework. To properly assist these brave students, Hearn and his AP® teachers knew they needed a tool that included aligned practice questions and easily accessible data.
 
 **TSCS staff found Albert to be just the tool they sought.**
 
@@ -49,7 +49,7 @@ TSCS sets high expectations for its students to stand by its belief that 100% of
 
 ## Key Outcomes at TSCS
 
-* Intentional, aligned support was provided to frst time AP® students in new AP® courses through partnership with Albert. 
+* Intentional, aligned support was provided to first time AP® students in new AP® courses through partnership with Albert. 
 * TSCS’ AP® program grew from 11 students in 2012 to 51 students in 2016. 
 * AP® US History saw a jump from 8% pass rate to 54% after implementing weekly after-school practice with Albert.
 
