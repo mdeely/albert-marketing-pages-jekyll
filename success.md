@@ -12,7 +12,32 @@ components:
     are here to help drive instructional and change management goals.
 - template: team_roster
   block: team-roster-component
-  title: ''
+  title: Meet the team
+  description: As former educators, our School Success team intimately understand
+    what makes for a successful Albert implementation, both within the classroom and
+    across a school.
+  people:
+  - name: Luke Brewers
+    image:
+      image: "/uploads/2018/11/29/Brewers Luke.jpg"
+  - name: Priya Devineni
+    image:
+      image: "/uploads/2018/11/29/Priya (1 of 8) edited panda.jpg"
+  - name: Sarah Girgis
+    image:
+      image: "/uploads/2018/11/29/Girgis Sarah.jpg"
+  - name: Sloane Merdinger
+    image:
+      image: "/uploads/2018/11/29/Merdinger, Sloane.jpg"
+  - name: Katherine Olecki
+    image:
+      image: "/uploads/2018/11/29/Olecki Katherine.jpg"
+  - name: Anil Singhal
+    image:
+      image: "/uploads/2018/11/29/Singhal, Anil.jpg"
+  - name: Nneka Ugwu
+    image:
+      image: "/uploads/2018/11/29/Ugwu, Nneka.jpg"
 - template: feature_list
   block: feature-list-component
   title: How we partner with you
