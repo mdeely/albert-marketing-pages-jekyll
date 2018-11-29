@@ -42,4 +42,5 @@ fields:
     label: Value subtitle
     hidden: false
 pages:
+- _case-studies/how-sam-barlow-chose-ap-equity-without-compromise.md
 - _case-studies/george-ranch.md
