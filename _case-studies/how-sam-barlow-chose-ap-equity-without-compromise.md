@@ -9,7 +9,6 @@ description: Sam Barlow High School supplied teachers with the highest value tes
 location: Gresham, Oregon
 school_level: High school
 statistics: []
-published: false
 
 ---
 ## Introduction: A Changing School 
