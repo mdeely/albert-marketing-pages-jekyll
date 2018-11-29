@@ -33,6 +33,7 @@ fields:
   - interstitial
   - pre-footer
 pages:
+- demo-request.md
 - pilot.md
 - homepage-example.md
 - benefits-self-study.md
