@@ -26,22 +26,22 @@ components:
     description: Questions require students to demonstrate science and engineering
       practices in the context of scientific investigations.
     image:
-      image: "/uploads/2018/11/29/critical-thinking.png"
+      image: "/uploads/2018/11/29/critical-thinking.svg"
   - title: Thorough alignment
     description: Albert’s unique blend of general science and NGSS-aligned courses
       supports a thorough science curriculum in any state.
     image:
-      image: "/uploads/2018/11/29/critical-thinking.png"
+      image: "/uploads/2018/11/29/thorough-alignment.svg"
   - title: Relevant primary literature
     description: Albert’s incorporation of published research teaches students how
       to dissect and evaluate primary literature.
     image:
-      image: "/uploads/2018/11/29/critical-thinking.png"
+      image: "/uploads/2018/11/29/primary-literature.svg"
   - title: Classroom sample tasks
     description: Designed to target technical writing and laboratory skills, these
       open-ended questions allow students to tackle NGSS in depth.
     image:
-      image: "/uploads/2018/11/29/critical-thinking.png"
+      image: "/uploads/2018/11/29/differentiation.svg"
 - template: course_preview
   block: course-preview-component
   title: Math Course Highlights
@@ -77,24 +77,25 @@ components:
 - template: comic-collection
   block: comic-collection-component
   comic_strips:
-  - title: Ms. Benson
+  - title: Ms. Nielsen
     image:
-      image: "/uploads/2018/11/27/benson.png"
+      image: "/uploads/2018/11/27/nielsen.png"
     comic_panels:
-    - caption: Ms. Benson loves to assign conceptual questions before class to encourage
-        students to really think about the topic before her lesson.
+    - caption: Ms. Nielsen encourages her 9th grade Biology students to think like
+        scientists.
       image:
         image: "/uploads/2018/11/27/math comic 1 panel 1.png"
-    - caption: The pre-work the students put in makes the lesson so much smoother
-        and more meaningful.
+    - caption: But to think like scientists, students have to read primary literature,
+        including journal abstracts. These can be hard to find and modify for grades
+        6-12.
       image:
         image: "/uploads/2018/11/27/math comic 1 panel 2.png"
-    - caption: The skill questions she assigns for homework give her students more
-        practical and conceptual practice.
+    - caption: 'That’s why Ms. Nielsen loves Albert’s NGSS questions, which break
+        down primary literature in a student-friendly way.  '
       image:
         image: "/uploads/2018/11/27/math comic 1 panel 3.png"
-    - caption: And the application questions give the skills context and relevance
-        to promote a deeper understanding of those skills.
+    - caption: Ms. Nielsen’s students are able to use what they’ve learned from Albert
+        to improve their own lab reports. Now they are thinking and writing like scientists!
       image:
         image: "/uploads/2018/11/27/math comic 1 panel 4.png"
   - title: Mr. Odesso
