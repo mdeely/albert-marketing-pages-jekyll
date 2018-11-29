@@ -33,14 +33,14 @@ fields:
   - interstitial
   - pre-footer
 pages:
-- benefits-educators.md
-- solutions-k-12-science.md
-- results.md
-- features.md
+- pilot.md
+- homepage-example.md
 - benefits-self-study.md
 - solutions-k-12-ap.md
-- homepage-example.md
-- pilot.md
-- test-page.md
-- solutions-k-12-ela.md
+- solutions-k-12-science.md
 - solutions-k-12-math.md
+- solutions-k-12-ela.md
+- test-page.md
+- features.md
+- results.md
+- benefits-educators.md
