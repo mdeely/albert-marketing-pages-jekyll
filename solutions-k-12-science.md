@@ -17,7 +17,7 @@ components:
     button_text: Get Started
     url: https://www.albert.io/signup
   image:
-    image: "/uploads/2018/11/27/k-12-math-hero.svg"
+    image: "/uploads/2018/11/29/k-12-science-hero.svg"
 - template: feature_grid
   block: feature-grid-component
   title: Product highlights
