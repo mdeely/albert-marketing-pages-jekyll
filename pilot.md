@@ -15,6 +15,8 @@ components:
     url: ''
     enabled: true
     button_text: Submit application
+  image:
+    image: "/uploads/2018/11/29/Artboard 1.svg"
 - template: feature_grid
   block: feature-grid-component
   feature_items:
