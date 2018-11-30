@@ -2069,9 +2069,10 @@ section.interstitial {
             transform: scale(1);
             transition: all .1s ease-in-out;
             background-position: center;
-            background-size: 100%;
+            background-size: cover;
             margin-left: auto;
-            margin-right: auto; }
+            margin-right: auto;
+            background-repeat: no-repeat; }
           .salesRoster .salesRoster__wrapper .salesRoster__visuals .salesRoster__list .salesRoster__item .salesRoster__profile .salesRoster__caption {
             margin-top: 1.5625rem;
             font-weight: 400;
