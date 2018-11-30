@@ -21,25 +21,25 @@ components:
   people:
   - name: Luke Brewers
     image:
-      image: "/uploads/2018/11/29/Brewers Luke.jpg"
+      image: "/uploads/2018/11/30/Brewers-Luke.jpg"
   - name: Priya Devineni
     image:
-      image: "/uploads/2018/11/29/Priya (1 of 8) edited panda.jpg"
+      image: "/uploads/2018/11/30/Devineni-Priya.jpg"
   - name: Sarah Girgis
     image:
-      image: "/uploads/2018/11/29/Girgis Sarah.jpg"
+      image: "/uploads/2018/11/30/Girgis-Sarah.jpg"
   - name: Sloane Merdinger
     image:
-      image: "/uploads/2018/11/29/Merdinger, Sloane.jpg"
+      image: "/uploads/2018/11/30/Merdinger-Sloane.jpg"
   - name: Katherine Olecki
     image:
-      image: "/uploads/2018/11/29/Olecki Katherine.jpg"
+      image: "/uploads/2018/11/30/Olecki-Katherine.jpg"
   - name: Anil Singhal
     image:
-      image: "/uploads/2018/11/29/Singhal, Anil.jpg"
+      image: "/uploads/2018/11/30/Singhal-Anil.jpg"
   - name: Nneka Ugwu
     image:
-      image: "/uploads/2018/11/29/Ugwu, Nneka.jpg"
+      image: "/uploads/2018/11/30/Ugwu-Nneka.jpg"
 - template: feature_list
   block: feature-list-component
   title: Professional learning
