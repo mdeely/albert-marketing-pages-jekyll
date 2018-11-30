@@ -34,9 +34,9 @@ fields:
   - interstitial
   - pre-footer
 pages:
+- pilot.md
 - success.md
 - demo-request.md
-- pilot.md
 - homepage-example.md
 - benefits-self-study.md
 - solutions-k-12-ap.md
