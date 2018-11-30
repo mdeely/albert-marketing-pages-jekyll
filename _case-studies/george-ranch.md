@@ -1,5 +1,5 @@
 ---
-title: George Ranch
+title: How George Ranch Honed Student Engagement to Boost AP Performance
 layout: case_study
 date: 2018-11-20 17:17:22 +0000
 banner_image: "/uploads/2018/11/29/GeorgeRanchHS.jpg"

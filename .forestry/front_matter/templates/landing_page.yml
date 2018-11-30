@@ -20,6 +20,7 @@ fields:
   name: components
   label: Components
   template_types:
+  - team_roster
   - form-demo-request
   - comic-collection
   - bar-graph
@@ -33,6 +34,7 @@ fields:
   - interstitial
   - pre-footer
 pages:
+- success.md
 - demo-request.md
 - pilot.md
 - homepage-example.md
