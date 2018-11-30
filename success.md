@@ -8,8 +8,8 @@ components:
   block: hero-component
   primary_hero: true
   title: We're here for you
-  description: All educators using Albert have access to our School Success team who
-    are here to help drive instructional and change management goals.
+  description: 'All educators using Albert have access to our School Success team
+    who are here to help drive instructional and change management goals. '
   image:
     image: "/uploads/2018/11/30/success-hero.svg"
 - template: team_roster
