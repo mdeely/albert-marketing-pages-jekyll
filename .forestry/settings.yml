@@ -3,9 +3,6 @@ new_page_extension: md
 auto_deploy: true
 admin_path: ''
 webhook_url: 
-build:
-  custom_preview: true
-  preview_command: bundle exec jekyll serve --port 8080 --host 0.0.0.0
 sections:
 - type: directory
   path: _data
@@ -50,3 +47,5 @@ front_matter_path: "/uploads"
 use_front_matter_path: true
 file_template: ":year:/:month:/:day:/:filename:"
 custom_preview: true
+build:
+  preview_command: bundle exec jekyll serve --port 8080 --host 0.0.0.0
