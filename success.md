@@ -40,12 +40,31 @@ components:
       image: "/uploads/2018/11/29/Ugwu, Nneka.jpg"
 - template: feature_list
   block: feature-list-component
-  title: How we partner with you
+  title: Professional learning
   feature_item:
-  - title: Professional learning
-    supertitle: Test
+  - title: Albert Essentials
+    supertitle: ''
     image:
-      image: "/uploads/2018/11/20/Screen Shot 2018-11-20 at 4.16.22 PM.png"
+      image: "/uploads/2018/11/30/albert-illustrations-essentials.svg"
+    description: This training is designed to help teachers effectively incorporate
+      Albert into their teaching practices. We will cover how to adapt Albert to any
+      instructional model, key features and their use-cases, and the foundations of
+      Albert’s data tools.
+  - image:
+      image: "/uploads/2018/11/30/albert-success-2.svg"
+    title: Data Deep Dive
+    description: This training helps teachers leverage Albert’s powerful data tools
+      to take proactive instructional action and meet students at their level. Emphasis
+      is placed on fixing misconceptions, advanced differentiation, and goal-based
+      learning.
+  - image:
+      image: "/uploads/2018/11/30/albert-illustration-essentials.svg"
+    title: Custom
+    description: Our team will tailor training based on your goals. We can also send
+      a member of our content development team to provide subject specific trainings,
+      such as the best ways to leverage Albert for high school ELA instruction.
+  description: Our team is here to help your school make the most out of Albert with
+    training designed to help teachers and administrators maximize student impact.
 published: false
 
 ---
