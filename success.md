@@ -10,6 +10,8 @@ components:
   title: We're here for you
   description: All educators using Albert have access to our School Success team who
     are here to help drive instructional and change management goals.
+  image:
+    image: "/uploads/2018/11/30/success-hero.svg"
 - template: team_roster
   block: team-roster-component
   title: Meet the team
@@ -65,6 +67,39 @@ components:
       such as the best ways to leverage Albert for high school ELA instruction.
   description: Our team is here to help your school make the most out of Albert with
     training designed to help teachers and administrators maximize student impact.
+- template: feature_grid
+  block: feature-grid-component
+  feature_items:
+  - title: Webinars
+    description: Administrators at licensed schools can schedule a complimentary webinar
+      with our Success team to workshop with their educators.
+    image:
+      image: "/uploads/2018/11/30/albert-illustration-webinar.svg"
+  - title: Live chat
+    description: Sign into your teacher account and click the chat bubble in the bottom-right
+      corner to easily connect with our team.
+    image:
+      image: "/uploads/2018/11/30/tiny-ui_dash.png"
+  - supertitle: Self-service
+    title: Help center
+    description: For support in using the product, check out the help articles in
+      our knowledge base.
+    image:
+      image: "/uploads/2018/11/30/albert-illustration-help-center.svg"
+    cta:
+      button_text: Go to help center
+      url: https://help.albert.io
+      enabled: true
+  - title: Thought leadership
+    description: Check out our blog, where we write about topics in education, ed-tech,
+      blended learning and more.
+    image:
+      image: "/uploads/2018/11/30/albert-illustration-Thought leadership.svg"
+    cta:
+      button_text: Go to blog
+      url: "/blog"
+      enabled: true
+  card_layout: true
 published: false
 
 ---
