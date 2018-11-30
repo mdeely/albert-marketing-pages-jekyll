@@ -10,7 +10,7 @@ components:
   title: Try a school-wide Albert pilot.
   description: The Albert Pilot Program (APP) is the only way for high-potential schools
     to try Albert at no-cost for 60-days.
-  supertitle: Pilot
+  supertitle: CHANGE THIS
   cta:
     url: ''
     enabled: true
