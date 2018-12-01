@@ -1693,6 +1693,14 @@ section.tabBar {
           @media only screen and (min-width: 1400px) {
             .featureList .featureList__list .featureList__item .featureList__item-info .featureList__item-title {
               font-size: 2.125rem; } }
+        .featureList .featureList__list .featureList__item .featureList__item-info .featureList__item-description {
+          text-align: center;
+          max-width: 31.25rem;
+          line-height: 1.5em;
+          color: #9ba0a2;
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 5rem; }
         .featureList .featureList__list .featureList__item .featureList__item-info .featureList__item-anchor {
           margin-top: 1.875rem; }
       .featureList .featureList__list .featureList__item .featureList__item-visual {

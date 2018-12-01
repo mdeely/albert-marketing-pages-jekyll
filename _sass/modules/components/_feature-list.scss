@@ -42,6 +42,10 @@
 					@include title-medium;
 				}
 
+				.featureList__item-description {
+					@include component-description;
+				}
+
 				.featureList__item-anchor{
 					margin-top: rem(30);
 				}
