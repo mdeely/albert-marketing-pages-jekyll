@@ -43,6 +43,22 @@
 		}
 	}
 
+	h1 {
+		@include title-large();
+	}
+
+	h2 {
+		@include title-medium();
+	}
+
+	h3 {
+		@include title-small();
+	}
+
+	h4 {
+		@include title-xs();
+	}
+
 	.caseStudy__list {
 		@include section-spacing;
 		display: flex;
