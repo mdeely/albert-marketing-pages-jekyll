@@ -2650,6 +2650,9 @@ section.forms.modal {
         padding-top: 8rem;
         padding-bottom: 8rem; } }
     .caseStudy .caseStudy__info h1,
+    .caseStudy .caseStudy__info h2,
+    .caseStudy .caseStudy__info h3,
+    .caseStudy .caseStudy__info h4,
     .caseStudy .caseStudy__info .caseStudy__info-title {
       font-weight: 400;
       font-family: all_round_gothic, 'Futura';
@@ -2661,13 +2664,22 @@ section.forms.modal {
       text-align: center; }
       @media only screen and (min-width: 780px) {
         .caseStudy .caseStudy__info h1,
+        .caseStudy .caseStudy__info h2,
+        .caseStudy .caseStudy__info h3,
+        .caseStudy .caseStudy__info h4,
         .caseStudy .caseStudy__info .caseStudy__info-title {
           font-size: 1.75rem; } }
       @media only screen and (min-width: 1400px) {
         .caseStudy .caseStudy__info h1,
+        .caseStudy .caseStudy__info h2,
+        .caseStudy .caseStudy__info h3,
+        .caseStudy .caseStudy__info h4,
         .caseStudy .caseStudy__info .caseStudy__info-title {
           font-size: 2.125rem; } }
       .caseStudy .caseStudy__info h1:first-child,
+      .caseStudy .caseStudy__info h2:first-child,
+      .caseStudy .caseStudy__info h3:first-child,
+      .caseStudy .caseStudy__info h4:first-child,
       .caseStudy .caseStudy__info .caseStudy__info-title:first-child {
         margin-top: 0; }
     .caseStudy .caseStudy__info h1 {
