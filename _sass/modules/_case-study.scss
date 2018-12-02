@@ -144,25 +144,8 @@
 		max-width: rem(1000);
 		margin: 0 auto;
 
-		h1,
-		h2,
-		h3,
-		h4,
 		.caseStudy__info-title {
 			@include fancy-title-medium;
-			margin-bottom: rem(30);
-			margin-top: rem(100);
-			text-align: center;
-
-			&:first-child {
-				margin-top: 0;
-			}
-		}
-
-		h1 {
-			max-width: rem(500);
-			margin-left: auto;
-			margin-right: auto;
 		}
 
 		h1 {
@@ -179,6 +162,24 @@
 
 		h4 {
 			@include title-xs();
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		.caseStudy__info-title {
+			@include make-fancy();
+			margin-bottom: rem(30);
+			margin-top: rem(100);
+			text-align: center;
+			max-width: rem(500);
+			margin-left: auto;
+			margin-right: auto;
+
+			&:first-child {
+				margin-top: 0;
+			}
 		}
 
 		p,
