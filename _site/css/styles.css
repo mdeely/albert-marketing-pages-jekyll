@@ -1700,7 +1700,8 @@ section.tabBar {
           color: #9ba0a2;
           margin-right: auto;
           margin-left: auto;
-          margin-bottom: 5rem; }
+          margin-bottom: 5rem;
+          margin-top: 0.625rem; }
         .featureList .featureList__list .featureList__item .featureList__item-info .featureList__item-anchor {
           margin-top: 1.875rem; }
       .featureList .featureList__list .featureList__item .featureList__item-visual {
@@ -1728,6 +1729,8 @@ section.tabBar {
         flex: 1;
         text-align: left;
         margin-left: 5rem; }
+        .featureList .featureList__list .featureList__item .featureList__item-info .featureList__item-description {
+          text-align: left; }
         .featureList .featureList__list .featureList__item .featureList__item-info .featureList__item-anchor {
           margin-top: 3.125rem; }
       .featureList .featureList__list .featureList__item .featureList__item-visual {
@@ -2562,7 +2565,8 @@ section.forms.modal {
       font-size: 2.5rem;
       line-height: 1.3em;
       margin-bottom: 1.25rem;
-      max-width: 37.5rem; }
+      max-width: 37.5rem;
+      text-align: center; }
       @media only screen and (min-width: 780px) {
         .caseStudy .caseStudy__hero .caseStudy__title {
           font-size: 3.125rem; } }
@@ -2670,6 +2674,35 @@ section.forms.modal {
       max-width: 31.25rem;
       margin-left: auto;
       margin-right: auto; }
+    .caseStudy .caseStudy__info h1 {
+      font-weight: 400;
+      font-size: 2.5rem;
+      line-height: 1.3em; }
+      @media only screen and (min-width: 780px) {
+        .caseStudy .caseStudy__info h1 {
+          font-size: 3.125rem; } }
+    .caseStudy .caseStudy__info h2 {
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 1.3em; }
+      @media only screen and (min-width: 780px) {
+        .caseStudy .caseStudy__info h2 {
+          font-size: 1.875rem; } }
+      @media only screen and (min-width: 1400px) {
+        .caseStudy .caseStudy__info h2 {
+          font-size: 2.125rem; } }
+    .caseStudy .caseStudy__info h3 {
+      font-weight: 400;
+      font-size: 1.125em; }
+      @media only screen and (min-width: 780px) {
+        .caseStudy .caseStudy__info h3 {
+          font-size: 1.25rem; } }
+    .caseStudy .caseStudy__info h4 {
+      font-weight: 400;
+      font-size: 1em; }
+      @media only screen and (min-width: 780px) {
+        .caseStudy .caseStudy__info h4 {
+          font-size: 1.0625rem; } }
     .caseStudy .caseStudy__info p,
     .caseStudy .caseStudy__info .caseStudy__info-paragraph {
       font-size: 1.0625rem;
