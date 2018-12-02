@@ -1461,7 +1461,7 @@ section.tabBar {
         margin-right: 0;
         margin-left: 6.25rem; }
     .hero + .slideshow .slideshow__wrapper .slide__nav, .slideshow:nth-of-type(even) .slideshow__wrapper .slide__nav {
-      left: 37.5rem; } }
+      left: 33.4375rem; } }
 @media only screen and (min-width: 1800px) {
   .hero + .slideshow .slideshow__wrapper .slide__nav, .slideshow:nth-of-type(even) .slideshow__wrapper .slide__nav {
     left: 50rem; } }

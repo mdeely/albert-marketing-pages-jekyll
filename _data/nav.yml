@@ -3,6 +3,8 @@ navItems:
 ## label and url are all that is needed for a simple nav link. 
 - label: Subjects
   url: features
+  text_group:
+  - subobject_text: test
 
 ## This is a mega menu dropdown. (Simple menu dropdown seen below this menu)
 - label: Solutions
