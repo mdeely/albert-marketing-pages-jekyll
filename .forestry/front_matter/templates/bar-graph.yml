@@ -36,14 +36,6 @@ fields:
     description: If there is more than one graph, the tab label will be used for navigating
       between graphs.
   - type: field_group_list
-    name: graph_footers
-    label: Graph footers
-    description: graph footers
-    fields:
-    - type: text
-      name: graph_footer_label
-      label: Graph footer label
-  - type: field_group_list
     name: data_points
     label: Data point
     hidden: false
@@ -87,3 +79,11 @@ fields:
         - Purple
         - Grey
       default: Green
+  - type: field_group_list
+    name: graph_footers
+    label: Graph footers
+    description: graph footers
+    fields:
+    - type: text
+      name: graph_footer_label
+      label: Graph footer label
