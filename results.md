@@ -31,7 +31,6 @@ components:
       data_value_label: ''
       data_label: Before Albert
       bar_color_name: Green
-      data_footer_label: ''
     - data_value: '80'
       bar_color_name: Gold
       data_label: After Albert
