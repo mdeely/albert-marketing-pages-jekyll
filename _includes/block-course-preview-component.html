@@ -6,29 +6,36 @@
 	{% if coursePreview.title %}
 	<h2 class="coursePreview__title">{{ coursePreview.title }}</h2>
 	{% endif %}
+	{% if coursePreview.group_title %}
 	<h3 class="coursePreview__group-title">{{ coursePreview.group_title }}</h3>
-	<div class="tabBar">
-	  	<ul class="tabBar__list">
-			{% for domain in coursePreview.curriculum_area %}
-				<li class="tabBar__item">
-					{% if forloop.index == 1 %}
-						<a href="#{{ domain.title | append: index | slugify }}" class="tabBar__anchor active">{{ domain.title }}</a>
-					{% else %}
-						<a href="#{{ domain.title | append: index | slugify }}" class="tabBar__anchor">{{ domain.title }}</a>
-					{% endif %}
-				</li>
-	  		{% endfor %}
-	  		<li class="tabBar__actions">
-				{% for domain in coursePreview.curriculum_area %}
-					{% if forloop.index == 1 %}
-						<a class="button active" href="{{ domain.title }}" data-additional-target="#{{ domain.title | append: index | slugify }}">{{ domain.title }}</a>
-					{% else %}
-						<a class="button" href="{{ domain.title }}" data-additional-target="#{{ domain.title | append: index | slugify }}">{{ domain.title }}</a>
-					{% endif %}
-			  	{% endfor %}
-			</li>
-	  	</ul>
-	</div>
+	{% endif %}
+
+	{% for domain in coursePreview.curriculum_area %}
+		{% if forloop.length > 1%}
+			<div class="tabBar">
+			  	<ul class="tabBar__list">
+					{% for domain in coursePreview.curriculum_area %}
+						<li class="tabBar__item">
+							{% if forloop.index == 1 %}
+								<a href="#{{ domain.title | append: index | slugify }}" class="tabBar__anchor active">{{ domain.title }}</a>
+							{% else %}
+								<a href="#{{ domain.title | append: index | slugify }}" class="tabBar__anchor">{{ domain.title }}</a>
+							{% endif %}
+						</li>
+			  		{% endfor %}
+			  		<li class="tabBar__actions">
+						{% for domain in coursePreview.curriculum_area %}
+							{% if forloop.index == 1 %}
+								<a class="button active" href="{{ domain.title }}" data-additional-target="#{{ domain.title | append: index | slugify }}">{{ domain.title }}</a>
+							{% else %}
+								<a class="button" href="{{ domain.title }}" data-additional-target="#{{ domain.title | append: index | slugify }}">{{ domain.title }}</a>
+							{% endif %}
+					  	{% endfor %}
+					</li>
+			  	</ul>
+			</div>
+		{% endif %}
+	{% endfor %}
 
 	{% for domain in coursePreview.curriculum_area %}
 
