@@ -21,7 +21,7 @@ components:
   people:
   - name: Luke Brewers
     image:
-      image: "/uploads/2018/11/30/Brewers-Luke.jpg"
+      image: "/uploads/2018/12/03/Brewers-Luke.jpg"
   - name: Priya Devineni
     image:
       image: "/uploads/2018/11/30/Devineni-Priya.jpg"
@@ -33,13 +33,13 @@ components:
       image: "/uploads/2018/11/30/Merdinger-Sloane.jpg"
   - name: Katherine Olecki
     image:
-      image: "/uploads/2018/11/30/Olecki-Katherine.jpg"
+      image: "/uploads/2018/12/03/Olecki-Katherine.jpg"
   - name: Anil Singhal
     image:
-      image: "/uploads/2018/11/30/Singhal-Anil.jpg"
+      image: "/uploads/2018/12/03/Singhal-Anil.jpg"
   - name: Nneka Ugwu
     image:
-      image: "/uploads/2018/11/30/Ugwu-Nneka.jpg"
+      image: "/uploads/2018/12/03/Ugwu-Nneka.jpg"
 - template: feature_list
   block: feature-list-component
   title: Professional learning
@@ -47,20 +47,20 @@ components:
   - title: Albert Essentials
     supertitle: ''
     image:
-      image: "/uploads/2018/11/30/albert-illustrations-essentials.svg"
+      image: "/uploads/2018/12/03/albert-illustrations-essentials.svg"
     description: This training is designed to help teachers effectively incorporate
       Albert into their teaching practices. We will cover how to adapt Albert to any
       instructional model, key features and their use-cases, and the foundations of
       Albert’s data tools.
   - image:
-      image: "/uploads/2018/11/30/albert-success-2.svg"
+      image: "/uploads/2018/12/03/albert-success-data.svg"
     title: Data Deep Dive
     description: This training helps teachers leverage Albert’s powerful data tools
       to take proactive instructional action and meet students at their level. Emphasis
       is placed on fixing misconceptions, advanced differentiation, and goal-based
       learning.
   - image:
-      image: "/uploads/2018/11/30/albert-illustration-essentials.svg"
+      image: "/uploads/2018/12/03/albert-illustration-custom.svg"
     title: Custom
     description: Our team will tailor training based on your goals. We can also send
       a member of our content development team to provide subject specific trainings,
@@ -74,18 +74,18 @@ components:
     description: Administrators at licensed schools can schedule a complimentary webinar
       with our Success team to workshop with their educators.
     image:
-      image: "/uploads/2018/11/30/albert-illustration-webinar.svg"
+      image: "/uploads/2018/12/03/albert-illustration-webinar.svg"
   - title: Live chat
     description: Sign into your teacher account and click the chat bubble in the bottom-right
       corner to easily connect with our team.
     image:
-      image: "/uploads/2018/11/30/tiny-ui_dash.png"
+      image: "/uploads/2018/12/03/tiny-ui_dash.png"
   - supertitle: Self-service
     title: Help center
     description: For support in using the product, check out the help articles in
       our knowledge base.
     image:
-      image: "/uploads/2018/11/30/albert-illustration-help-center.svg"
+      image: "/uploads/2018/12/03/albert-illustration-help-center.svg"
     cta:
       button_text: Go to help center
       url: https://help.albert.io
@@ -94,7 +94,7 @@ components:
     description: Check out our blog, where we write about topics in education, ed-tech,
       blended learning and more.
     image:
-      image: "/uploads/2018/11/30/albert-illustration-Thought leadership.svg"
+      image: "/uploads/2018/12/03/albert-illustration-thought-leadership.svg"
     cta:
       button_text: Go to blog
       url: "/blog"
