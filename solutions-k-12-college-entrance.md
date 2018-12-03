@@ -44,42 +44,16 @@ components:
       never-before-seen practice tests that mimic the format of the actual exam
     image:
       image: "/uploads/2018/12/03/practice_exams.svg"
-- template: course_preview
-  block: course-preview-component
-  title: ELA Course Highlights
-  curriculum_area:
-  - title: ''
-    description: ''
-    cta:
-      button_text: Explore all ELA subjects
-      enabled: true
-      url: https://albert.io/k-12/ela/core
-    course_card:
-    - domain: ELA
-      title: Elements of a Sentence
-      image:
-        image: "/uploads/2018/11/27/elements_of_a_sentence.svg"
-    - domain: ELA
-      title: Reading Blueprints
-      image:
-        image: "/uploads/2018/11/26/reading_blueprints.svg"
-    - title: Confused and Misused
-      domain: ELA
-      image:
-        image: "/uploads/2018/11/27/confused_and_misused.svg"
-    - domain: ELA
-      title: Leveled Readings in Arts and Culture
-      image:
-        image: "/uploads/2018/11/27/leveled_readings_in_arts_and_culture.svg"
-    - domain: ELA
-      title: Leveled Readings in History, Politics, and Biography
-      image:
-        image: "/uploads/2018/11/27/history_of_politics_and_biography.svg"
-    - domain: ELA
-      title: Leveled Readings in Science and Technology
-      image:
-        image: "/uploads/2018/11/27/leveled_readings_in_science_and_technology.svg"
-  group_title: ''
+- template: interstitial
+  block: interstitial-component
+  title: Full SAT and ACT coverage
+  description: Albert’s College Entrance offering includes full coverage of the new
+    SAT, all SAT Subject Tests, and all sections of the ACT.
+  cta:
+    url: Explore all College Entrance subjects
+    enabled: true
+    button_text: "/k-12/college-entrance"
+  large: true
 - template: comic-collection
   block: comic-collection-component
   comic_strips:
