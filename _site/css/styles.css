@@ -732,7 +732,8 @@ allRoundGothic-selector {
             font-size: 1rem;
             text-transform: uppercase;
             padding-left: 1.25rem;
-            pointer-events: none; }
+            pointer-events: none;
+            text-align: center; }
             @media only screen and (min-width: 780px) {
               .mainNav header nav ul li ul .nav__subitem-group-title {
                 font-size: 1.25rem; } }
@@ -1092,7 +1093,8 @@ allRoundGothic-selector {
             display: flex;
             flex-direction: column;
             width: 100%;
-            position: relative; }
+            position: relative;
+            background-color: #FFFFFF; }
             .comicStrip .comicStrip__list .comicStrip__item .comicPanel__list .comicPanel__item .comicPanel__link .comicPanel__img {
               width: 100%;
               height: auto; }
@@ -1100,18 +1102,16 @@ allRoundGothic-selector {
               width: 100%;
               max-width: 25rem;
               text-align: left;
-              padding: 0.625rem;
+              padding: 0.9375rem;
+              text-align: center;
               color: #626668;
-              font-size: 0.875rem;
+              font-size: 0.9375rem;
               line-height: 24px;
-              position: absolute;
               background-color: rgba(255, 255, 255, 0.65);
-              bottom: 0;
               border-radius: 0.625rem;
               left: 1.25rem;
               right: 1.25rem;
               width: auto;
-              bottom: 1.25rem;
               margin: auto;
               transition: background-color .2s ease-in-out; }
 
@@ -1121,7 +1121,7 @@ allRoundGothic-selector {
   .comicStrip .comicStrip__list .comicStrip__item .comicPanel__list .comicPanel__item {
     filter: grayscale(0%);
     border-bottom: 0px solid transparent;
-    border-right: 1px solid #A7ADB0; }
+    border-right: 1px solid #dddfe0; }
     .comicStrip .comicStrip__list .comicStrip__item .comicPanel__list .comicPanel__item.active:hover, .comicStrip .comicStrip__list .comicStrip__item .comicPanel__list .comicPanel__item:hover {
       filter: grayscale(0%); }
       .comicStrip .comicStrip__list .comicStrip__item .comicPanel__list .comicPanel__item.active:hover .comicPanel__link .comicPanel__caption, .comicStrip .comicStrip__list .comicStrip__item .comicPanel__list .comicPanel__item:hover .comicPanel__link .comicPanel__caption {
