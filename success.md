@@ -11,7 +11,7 @@ components:
   description: 'All educators using Albert have access to our School Success team
     who are here to help drive instructional and change management goals. '
   image:
-    image: "/uploads/2018/12/03/school_success_three.svg"
+    image: "/uploads/2018/12/02/school_success_three.svg"
 - template: team_roster
   block: team-roster-component
   title: Meet the team
@@ -40,20 +40,20 @@ components:
   - title: Albert Essentials
     supertitle: ''
     image:
-      image: "/uploads/2018/12/03/albert-illustrations-essentials.svg"
+      image: "/uploads/2018/12/02/albert-illustrations-essentials.svg"
     description: This training is designed to help teachers effectively incorporate
       Albert into their teaching practices. We will cover how to adapt Albert to any
       instructional model, key features and their use-cases, and the foundations of
       Albert’s data tools.
   - image:
-      image: "/uploads/2018/12/03/albert-success-data.svg"
+      image: "/uploads/2018/12/02/albert-success-data.svg"
     title: Data Deep Dive
     description: This training helps teachers leverage Albert’s powerful data tools
       to take proactive instructional action and meet students at their level. Emphasis
       is placed on fixing misconceptions, advanced differentiation, and goal-based
       learning.
   - image:
-      image: "/uploads/2018/12/03/albert-illustration-custom.svg"
+      image: "/uploads/2018/12/02/albert-illustration-custom.svg"
     title: Custom
     description: Our team will tailor training based on your goals. We can also send
       a member of our content development team to provide subject specific trainings,
@@ -67,18 +67,18 @@ components:
     description: Administrators at licensed schools can schedule a complimentary webinar
       with our Success team to workshop with their educators.
     image:
-      image: "/uploads/2018/12/03/albert-illustration-webinar.svg"
+      image: "/uploads/2018/12/02/albert-illustration-webinar.svg"
   - title: Live chat
     description: Sign into your teacher account and click the chat bubble in the bottom-right
       corner to easily connect with our team.
     image:
-      image: "/uploads/2018/12/03/tiny-ui_dash.png"
+      image: "/uploads/2018/12/02/tiny-ui_dash.png"
   - supertitle: Self-service
     title: Help center
     description: For support in using the product, check out the help articles in
       our knowledge base.
     image:
-      image: "/uploads/2018/12/03/albert-illustration-help-center.svg"
+      image: "/uploads/2018/12/02/albert-illustration-help-center.svg"
     cta:
       button_text: Go to help center
       url: https://help.albert.io
@@ -87,7 +87,7 @@ components:
     description: Check out our blog, where we write about topics in education, ed-tech,
       blended learning and more.
     image:
-      image: "/uploads/2018/12/03/albert-illustration-thought-leadership.svg"
+      image: "/uploads/2018/12/02/albert-illustration-thought-leadership.svg"
     cta:
       button_text: Go to blog
       url: "/blog"
