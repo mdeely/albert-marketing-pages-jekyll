@@ -34,6 +34,7 @@ fields:
   - interstitial
   - pre-footer
 pages:
+- results.md
 - pilot.md
 - success.md
 - demo-request.md
@@ -45,5 +46,4 @@ pages:
 - solutions-k-12-ela.md
 - test-page.md
 - features.md
-- results.md
 - benefits-educators.md
