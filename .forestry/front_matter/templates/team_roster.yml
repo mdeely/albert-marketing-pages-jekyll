@@ -35,7 +35,7 @@ fields:
   hidden: false
   fields:
   - type: file
-    name: image
+    name: headshot
     label: Headshot
   - type: text
     name: name

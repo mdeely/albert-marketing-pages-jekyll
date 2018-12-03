@@ -19,24 +19,20 @@ components:
     what makes for a successful Albert implementation, both within the classroom and
     across a school.
   people:
-  - image: "/uploads/2018/11/29/Girgis Sarah.jpg"
+  - headshot: "/uploads/2018/11/29/Girgis Sarah.jpg"
     name: Sarah Girgis
-  - image: "/uploads/2018/11/30/Priya-Devineni.jpg"
+  - headshot: "/uploads/2018/11/30/Priya-Devineni.jpg"
     name: Priya Devineni
-  - image: "/uploads/2018/12/03/Brewers Luke_square-sm.jpg"
+  - headshot: "/uploads/2018/12/02/Brewers Luke_square-sm.jpg"
     name: Luke Brewers
   - name: Sloane Merdinger
-    image:
-      image: ''
+    headshot: ''
   - name: Katherine Olecki
-    image:
-      image: ''
+    headshot: ''
   - name: Anil Singhal
-    image:
-      image: ''
+    headshot: ''
   - name: Nneka Ugwu
-    image:
-      image: ''
+    headshot: ''
 - template: feature_list
   block: feature-list-component
   title: Professional learning
