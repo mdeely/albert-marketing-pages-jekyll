@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="137px" height="134px" viewBox="0 0 137 134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>general_biology</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="general_biology" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M111,116 L111,134 L96,134 L96,133 C96,128.04 91.96,124 87,124 L51,124 C46.04,124 42,128.04 42,133 L42,134 L27,134 L27,116 L21,116 L21,104 L31,104 L31,55 C31,43.42 40.42,34 52,34 L76,34 L76,30 L76.47,30 L80.17,24.45 L81,24 L81,8 L78,8 L78,1 L96,1 L96,8 L93,8 L93,24 L93.83,24.45 L97.53,30 L98,30 L98,61 L100,61 L100,69 L74,69 L74,61 L76,61 L76,58 L53,58 C49.14,58 46,61.14 46,65 L46,104 L117,104 L117,116 L111,116 Z M78,38 L78,40 L97,40 L97,38 L78,38 Z M78,51 L78,53 L97,53 L97,51 L78,51 Z M86,7 L86,25 L88,25 L88,7 L86,7 Z M63,54 C67.41,54 71,50.41 71,46 C71,41.59 67.41,38 63,38 C58.59,38 55,41.59 55,46 C55,50.41 58.59,54 63,54 Z M63,40 C66.31,40 69,42.69 69,46 C69,49.31 66.31,52 63,52 C59.69,52 57,49.31 57,46 C57,42.69 59.69,40 63,40 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <path d="M89,74 L85,74 C81.69,74 79,71.31 79,68 L79,67 L95,67 L95,68 C95,71.31 92.31,74 89,74 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" opacity="0.5"></path>
+        <path d="M71,99 L64,99 L64,92 L109,92 L109,99 L102,99 L102,106 L71,106 L71,99 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero" opacity="0.75"></path>
+        <path d="M63,54 C58.59,54 55,50.41 55,46 C55,41.59 58.59,38 63,38 C67.41,38 71,41.59 71,46 C71,50.41 67.41,54 63,54 Z" id="Shape" fill="#FFFFFF" opacity="0.75"></path>
+        <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" opacity="0.9" x="77" y="38" width="20" height="2"></rect>
+        <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" opacity="0.9" x="77" y="51" width="20" height="2"></rect>
+        <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" opacity="0.9" x="86" y="7" width="2" height="18"></rect>
+    </g>
+</svg>

@@ -1,7 +1,6 @@
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-uploads/
 
 # Ngrok
 node_modules/
@@ -13,6 +12,5 @@ ngrok
 .ngrok
 /ngrok
 ./ngrok
-uploads/
 
 .DS_Store
