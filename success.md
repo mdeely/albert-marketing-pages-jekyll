@@ -11,7 +11,7 @@ components:
   description: 'All educators using Albert have access to our School Success team
     who are here to help drive instructional and change management goals. '
   image:
-    image: "/uploads/2018/11/30/success-hero.svg"
+    image: "/uploads/2018/12/03/school_success_three.svg"
 - template: team_roster
   block: team-roster-component
   title: Meet the team
