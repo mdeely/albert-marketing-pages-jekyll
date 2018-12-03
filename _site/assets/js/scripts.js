@@ -150,7 +150,7 @@ $( document ).ready(function() {
 	function goToNextSection(event) {
 		event.preventDefault();
 
-		var $section = $("section[class*='hero']:first-of-type");
+		var $section = $("section:first-of-type");
 	    var $next_section = $section.next("section");
 
         $('html,body').animate({
