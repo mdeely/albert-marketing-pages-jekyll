@@ -24,14 +24,6 @@ fields:
   description: Feature item
   hidden: false
   fields:
-  - type: text
-    name: supertitle
-    label: Supertitle
-  - type: text
-    name: title
-    label: Title
-    config:
-      required: true
   - type: field_group
     name: image
     label: Image
@@ -42,6 +34,18 @@ fields:
     - type: text
       name: alt_text
       label: Alt Text
+  - type: text
+    name: supertitle
+    label: Supertitle
+    description: E.g Albert is...
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: textarea
+    label: Description
+    name: description
   - type: field_group
     name: cta
     label: Call to action

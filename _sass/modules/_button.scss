@@ -16,16 +16,17 @@
 
 .button--large {
 	@include button();
-	font-size: rem(20);
+	font-size: rem(16);
+	letter-spacing: .8px;
 
 	@media only screen and (min-width: $xs-viewport) {
-		padding: em(18) em(28);
+		padding: em(30) em(40);
  	}
 }
 
 .button--small {
 	@include button();
-	font-size: rem(16);
+	font-size: rem(12);
 	padding: em(5) em(10);
 }
 

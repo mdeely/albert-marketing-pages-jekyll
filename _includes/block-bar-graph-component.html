@@ -11,9 +11,9 @@
 	<div class="graph__wrapper">
 <!-- 		<a class="directionalArrow previous" href="#component_previous"><i class="fa fa-chevron-left"></i></a>
 		<a class="directionalArrow next" href="#component_next"><i class="fa fa-chevron-right"></i></a> -->
+		{% if graph.graphs.size > 1 %} 
 		<div class="tabBar">
 		  	<ul class="tabBar__list">
-				{% if graph.graphs.size > 1 %} 
 					{% for graph in graph.graphs %}
 						<li class="tabBar__item">
 					         {% if forloop.index == 1 %}
@@ -23,9 +23,10 @@
 					         {% endif %}
 						</li>
 			  		{% endfor %}
-				{% endif %}
 		  	</ul>
 		</div>
+		{% endif %}
+		
 	  	<ul class="graphs">
 			{% for graph in graph.graphs %}
 				{% if forloop.index == 1 %}
@@ -74,20 +75,14 @@
 			  		</ul>
 			  		{% endif %}
 
-					{% for data in graph.data_points %}
-						{% if data.data_footer_label %}
-					    	{% assign a_footer_label = data.data_footer_label | split: '_' %}
-					    	{% assign footer_labels = footer_labels | concat: a_footer_label %}
-					    {% endif %}
-					{% endfor %}
+			  		{% if graph.graph_footers[0] %}
+						<ul class="data__group-label">
+						{% for graph_footer in graph.graph_footers %}
+				  			<li>{{ graph_footer.graph_footer_label }}</li>
+						{% endfor %}
+					  	</ul>
+					{% endif %}
 
-					{% if footer_labels[0] %}
-					<ul class="data__group-label">
-			  			{% for label in footer_labels %}
-			  				<li>{{ label }}</li>
-			  			{% endfor %}
-			  		</ul>
-			  		{% endif %}
 				</li>
 			{% endfor %}
 	  	</ul>

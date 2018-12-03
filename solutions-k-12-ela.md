@@ -24,21 +24,22 @@ components:
   - title: High-interest passages
     description: Our leveled reading passages connect to student’s real-life contexts.
     image:
-      image: "/uploads/2018/11/26/passages.svg"
+      image: "/uploads/2018/12/02/passages.svg"
   - title: Evidence-driven
     description: Our leveled reading passages connect to student’s real-life contexts.
     image:
-      image: "/uploads/2018/11/26/interactive_texts.svg"
+      image: "/uploads/2018/12/02/interactive_texts.svg"
+      alt_text: Interactive texts
   - title: Built in differentiation
     description: With scaffolded organization and leveled passages, Albert’s Core
       ELA products offer every reader meaningful practice opportunities.
     image:
-      image: "/uploads/2018/11/26/scaffolded_organization.svg"
+      image: "/uploads/2018/12/02/scaffolded_organization.svg"
   - title: Cross-disciplinary
     description: Reading and writing instruction doesn’t happen in a vacuum. Our passages
       span STEM, social studies, and literature.
     image:
-      image: "/uploads/2018/11/26/question_types.svg"
+      image: "/uploads/2018/12/02/question_types.svg"
 - template: course_preview
   block: course-preview-component
   title: ELA Course Highlights

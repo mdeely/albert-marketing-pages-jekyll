@@ -42,6 +42,11 @@
 					@include title-medium;
 				}
 
+				.featureList__item-description {
+					@include component-description;
+					margin-top: rem(10);
+				}
+
 				.featureList__item-anchor{
 					margin-top: rem(30);
 				}
@@ -93,6 +98,10 @@
 					}
 
 					.featureList__item-title {
+					}
+
+					.featureList__item-description {
+						text-align: left;
 					}
 
 					.featureList__item-anchor{

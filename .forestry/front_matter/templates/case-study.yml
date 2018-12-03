@@ -42,4 +42,6 @@ fields:
     label: Value subtitle
     hidden: false
 pages:
+- _case-studies/soulsville-charter.md
+- _case-studies/sam-barlow.md
 - _case-studies/george-ranch.md

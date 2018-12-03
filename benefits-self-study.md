@@ -21,13 +21,6 @@ components:
   navigation: true
 - template: hero
   block: hero-component
-  primary_hero: true
-  supertitle: Benefits
-  title: A better way to practice and assess
-  image:
-    image: "/uploads/2018/11/24/benefits-hero.svg"
-- template: hero
-  block: hero-component
   primary_hero: false
   description: If your school does not provide access, Albert is a great self-study
     supplement to get additional practice for high-stakes exams and self-remediation.

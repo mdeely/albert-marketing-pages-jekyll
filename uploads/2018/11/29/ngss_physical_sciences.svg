@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="137px" height="134px" viewBox="0 0 137 134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>ngss_physical_sciences</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ngss_physical_sciences" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="XMLID_6_" fill="#FFFFFF" fill-rule="nonzero" points="68 12 71 12 71 28 68 28"></polygon>
+        <g id="Group" transform="translate(31.000000, 27.000000)" fill="#FFFFFF">
+            <polygon id="XMLID_4_" fill-rule="nonzero" opacity="0.5" points="59 23 63 23 63 80 59 80"></polygon>
+            <polygon id="XMLID_4_-Copy" fill-rule="nonzero" opacity="0.5" points="13 23 17 23 17 88 13 88"></polygon>
+            <path d="M38,50 C24.1928813,50 13,38.8071187 13,25 C13,11.1928813 24.1928813,0 38,0 C51.8071187,0 63,11.1928813 63,25 C63,38.8071187 51.8071187,50 38,50 Z M38,46 C49.5979797,46 59,36.5979797 59,25 C59,13.4020203 49.5979797,4 38,4 C26.4020203,4 17,13.4020203 17,25 C17,36.5979797 26.4020203,46 38,46 Z" id="XMLID_2_" fill-rule="nonzero"></path>
+            <polygon id="XMLID_8_" points="15.375 107 0 107 8.375 88 15.375 88 22 88 30.375 107"></polygon>
+        </g>
+        <path d="M110.202212,90 L110.202212,70.7621787 L116.202212,70.7621787 L116.202212,90 L121.702212,90 L113.203183,102.533788 L104.702212,90 L110.202212,90 Z M28.7606252,72.2959671 L28.7606252,91.7621787 L22.7606252,91.7621787 L22.7606252,72.2959671 L17.2022124,72.2959671 L25.7012413,59.7621787 L34.2022124,72.2959671 L28.7606252,72.2959671 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <path d="M13,0 L123,0 L123,10 C123,11.1045695 122.104569,12 121,12 L15,12 C13.8954305,12 13,11.1045695 13,10 L13,0 Z" id="Rectangle-44" fill="#FFFFFF" opacity="0.5"></path>
+    </g>
+</svg>

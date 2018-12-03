@@ -160,6 +160,7 @@ $nav-padding: rem(20);
 	    					@include fancy-title-small;
 	    					padding-left: rem(20);
 	    					pointer-events: none;
+	    					text-align: center;
 						}
 
 	    				li {
@@ -258,7 +259,7 @@ $nav-padding: rem(20);
 	    							.nav__subitem-description {
 	    								line-height: initial;
 	    								font-size: rem(13);
-	    								color: $text_light_grey;
+	    								color: lighten($text_black, 20%);
 	    							}
     							}
 	    					}
@@ -281,6 +282,7 @@ $nav-padding: rem(20);
 					    padding: 0 rem(15);
 					    color: $link;
 					    line-height: rem(40);
+					    font-size: rem(12);
 					}
 				}
 			}

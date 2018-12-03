@@ -153,6 +153,17 @@ $( document ).ready(function() {
 		var $section = $("section:first-of-type");
 	    var $next_section = $section.next("section");
 
+	    if ( ($section).hasClass("tabBar") ) {
+
+	    	var $next_section = $section.next("section").next("section");
+
+	        $('html,body').animate({
+	          scrollTop: $next_section.offset().top - navHeight
+	        }, 500);
+
+	        return;
+	    }
+
         $('html,body').animate({
           scrollTop: $next_section.offset().top - navHeight
         }, 500);

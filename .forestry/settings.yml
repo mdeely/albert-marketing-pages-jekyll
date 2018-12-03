@@ -5,20 +5,6 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: _data
-  label: Data
-  create: documents
-  match: "**/*"
-- type: document
-  path: FORESTRY-README.md
-  label: Welcome - First Steps
-  read_only: true
-- type: jekyll-posts
-  label: Blog
-  create: all
-  templates:
-  - post
-- type: directory
   path: ''
   label: Pages
   create: all
@@ -41,8 +27,25 @@ sections:
   match: "**/*"
   templates:
   - albert-academy
+- type: jekyll-posts
+  label: Blog
+  create: all
+  templates:
+  - post
+- type: directory
+  path: _data
+  label: Data
+  create: none
+  match: "**/*.{json,yaml,yml}"
+- type: document
+  path: FORESTRY-README.md
+  label: Welcome - First Steps
+  read_only: true
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
 use_front_matter_path: true
 file_template: ":year:/:month:/:day:/:filename:"
+custom_preview: true
+build:
+  preview_command: bundle exec jekyll serve --port 8080 --host 0.0.0.0

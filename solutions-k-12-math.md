@@ -30,7 +30,7 @@ components:
     description: Concepts are segmented by difficulty level and extra practice to
       support differentiation and goal-based work.
     image:
-      image: "/uploads/2018/11/27/leveled-organization.svg"
+      image: "/uploads/2018/11/28/leveled-organization.svg"
   - title: Strategy building
     description: Questions include background information and strategy tips to help
       students build their metacognitive problem solving skills.
@@ -40,7 +40,7 @@ components:
     description: Questions are aligned to Common Core and incorporate other standards,
       such as ACT® CCRS and SAT® Domains and Dimensions.
     image:
-      image: "/uploads/2018/11/27/flexible-alignment.svg"
+      image: "/uploads/2018/11/28/flexible-alignment.svg"
 - template: course_preview
   block: course-preview-component
   title: Math Course Highlights
@@ -172,6 +172,9 @@ components:
       with one of our Schools team members.
     cta:
       button_text: Request demo
-      url: https://www.albert.io/schools/request-demo
+      url: "#demo_request_form_modal"
+- template: form-demo-request
+  block: form-demo-request-component
+  enabled: true
 
 ---

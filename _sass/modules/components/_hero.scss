@@ -56,7 +56,7 @@
 
 			.hero__description {
 				font-size: rem(15);
-				color: $text_light_grey;
+				color: lighten($text_black, 20%);
 				margin-bottom: 0;
 			}
 
