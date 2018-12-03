@@ -21,7 +21,7 @@ components:
   people:
   - name: Luke Brewers
     image:
-      image: "/2018/11/29/Brewers Luke.jpg"
+      image: "/2018/12/03/Brewers-Luke.jpg"
   - name: Priya Devineni
     image:
       image: "/uploads/2018/11/30/Devineni-Priya.jpg"
