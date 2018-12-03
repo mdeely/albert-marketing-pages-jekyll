@@ -766,29 +766,29 @@ allRoundGothic-selector {
               .mainNav header nav ul li ul li .nav__subitem-anchor.ela .nav__subitem-info-container .nav__subitem-title {
                 color: #AB5FAB; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.world-language .nav__subitem-visual {
-                background-color: #C2416E; }
+                background-color: #BB3C69; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.world-language .nav__subitem-info-container .nav__subitem-title {
-                color: #C2416E; }
+                color: #BB3C69; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.social-studies .nav__subitem-visual {
-                background-color: #D8734C; }
+                background-color: #CA653E; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.social-studies .nav__subitem-info-container .nav__subitem-title {
-                color: #D8734C; }
+                color: #CA653E; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.computer-science .nav__subitem-visual {
-                background-color: #DD983C; }
+                background-color: #D28A35; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.computer-science .nav__subitem-info-container .nav__subitem-title {
-                color: #DD983C; }
+                color: #D28A35; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.math .nav__subitem-visual {
-                background-color: #5EAFBA; }
+                background-color: #4A9AAB; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.math .nav__subitem-info-container .nav__subitem-title {
-                color: #5EAFBA; }
+                color: #4A9AAB; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.science .nav__subitem-visual {
-                background-color: #9284CE; }
+                background-color: #8273C2; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.science .nav__subitem-info-container .nav__subitem-title {
-                color: #9284CE; }
+                color: #8273C2; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.other .nav__subitem-visual {
-                background-color: #A99988; }
+                background-color: #A1917F; }
               .mainNav header nav ul li ul li .nav__subitem-anchor.other .nav__subitem-info-container .nav__subitem-title {
-                color: #A99988; }
+                color: #A1917F; }
               .mainNav header nav ul li ul li .nav__subitem-anchor .nav__subitem-visual {
                 position: relative;
                 height: 2.5rem;
@@ -1571,23 +1571,23 @@ section.tabBar {
         background-color: #AB5FAB;
         box-shadow: 0 2px 20px rgba(171, 95, 171, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
       .coursePreview .coursePreview__card-list .coursePreview__card-item.world-language {
-        background-color: #C2416E;
-        box-shadow: 0 2px 20px rgba(194, 65, 110, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
+        background-color: #BB3C69;
+        box-shadow: 0 2px 20px rgba(187, 60, 105, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
       .coursePreview .coursePreview__card-list .coursePreview__card-item.social-studies {
-        background-color: #D8734C;
-        box-shadow: 0 2px 20px rgba(216, 115, 76, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
+        background-color: #CA653E;
+        box-shadow: 0 2px 20px rgba(202, 101, 62, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
       .coursePreview .coursePreview__card-list .coursePreview__card-item.computer-science {
-        background-color: #DD983C;
-        box-shadow: 0 2px 20px rgba(221, 152, 60, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
+        background-color: #D28A35;
+        box-shadow: 0 2px 20px rgba(210, 138, 53, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
       .coursePreview .coursePreview__card-list .coursePreview__card-item.math {
-        background-color: #5EAFBA;
-        box-shadow: 0 2px 20px rgba(94, 175, 186, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
+        background-color: #4A9AAB;
+        box-shadow: 0 2px 20px rgba(74, 154, 171, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
       .coursePreview .coursePreview__card-list .coursePreview__card-item.science {
-        background-color: #9284CE;
-        box-shadow: 0 2px 20px rgba(146, 132, 206, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
+        background-color: #8273C2;
+        box-shadow: 0 2px 20px rgba(130, 115, 194, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
       .coursePreview .coursePreview__card-list .coursePreview__card-item.other {
-        background-color: #A99988;
-        box-shadow: 0 2px 20px rgba(169, 153, 136, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
+        background-color: #A1917F;
+        box-shadow: 0 2px 20px rgba(161, 145, 127, 0.25), 0 7px 20px rgba(0, 0, 0, 0.05); }
       .coursePreview .coursePreview__card-list .coursePreview__card-item .coursePreview__card-item-visual {
         text-align: center;
         position: absolute;
@@ -1601,6 +1601,7 @@ section.tabBar {
       .coursePreview .coursePreview__card-list .coursePreview__card-item .coursePreview__card-item-title {
         font-weight: 400;
         font-size: 1.125em;
+        line-height: 1.3em;
         line-height: 1.1;
         text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
         color: #FFFFFF; }
@@ -2306,6 +2307,8 @@ section.interstitial {
           z-index: 10;
           background-color: #FFFFFF;
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.06); }
+          .barGraph .graph__wrapper .graphs .graph__item .data__bar-labels li {
+            line-height: initial; }
           .barGraph .graph__wrapper .graphs .graph__item .data__bar-labels > * {
             margin-top: 1.25rem;
             flex: 1; }
@@ -2484,14 +2487,12 @@ section.forms.modal {
           border-left: 1px solid #E1E4E6; }
       .caseStudies .caseStudy__list .caseStudy__item .caseStudy__title {
         font-weight: 400;
-        font-size: 1.25rem;
-        line-height: 1.3em; }
+        font-size: 1.125em;
+        line-height: 1.3em;
+        font-weight: 600; }
         @media only screen and (min-width: 780px) {
           .caseStudies .caseStudy__list .caseStudy__item .caseStudy__title {
-            font-size: 1.875rem; } }
-        @media only screen and (min-width: 1400px) {
-          .caseStudies .caseStudy__list .caseStudy__item .caseStudy__title {
-            font-size: 2.125rem; } }
+            font-size: 1.25rem; } }
       .caseStudies .caseStudy__list .caseStudy__item .caseStudy__description {
         color: #626668;
         margin-bottom: 1.25rem; }
@@ -2639,6 +2640,7 @@ section.forms.modal {
           display: none;
           font-weight: 400;
           font-size: 1.125em;
+          line-height: 1.3em;
           margin-bottom: 1.25rem; }
           @media only screen and (min-width: 780px) {
             .caseStudy .caseStudy__statistics-wrapper .statistics__list .requestDemo .requestDemo__title {
@@ -2687,7 +2689,8 @@ section.forms.modal {
           font-size: 2.125rem; } }
     .caseStudy .caseStudy__info h3 {
       font-weight: 400;
-      font-size: 1.125em; }
+      font-size: 1.125em;
+      line-height: 1.3em; }
       @media only screen and (min-width: 780px) {
         .caseStudy .caseStudy__info h3 {
           font-size: 1.25rem; } }

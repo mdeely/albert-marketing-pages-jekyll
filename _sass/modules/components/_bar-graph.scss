@@ -204,6 +204,10 @@
 					background-color: #FFFFFF;
 					box-shadow: 0 0 30px rgba(black, .06);
 
+					li {
+						line-height: initial;
+					}
+
 					> * {
 						margin-top: rem(20);
 						flex: 1;

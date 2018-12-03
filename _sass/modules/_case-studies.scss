@@ -98,7 +98,8 @@
 			}
 
 			.caseStudy__title {
-				@include title-medium;
+				@include title-small;
+				font-weight: 600;
 			}
 
 			.caseStudy__description {

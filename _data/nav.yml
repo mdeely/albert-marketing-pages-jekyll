@@ -1,7 +1,7 @@
 ---
 navItems:
 - label: Solutions
-  submenu:
+  group_items:
   - group_title: K-12 Core
     subitems:
     - label: K-12 ELA
@@ -36,32 +36,28 @@ navItems:
       icon_url: uploads/2018/11/27/history_of_politics_and_biography.svg
 - label: Subjects
   url: features
-  text_group:
-  - subobject_text: test
 - label: Explore
-  submenu:
-  - subitems:
-    - label: Features
-      url: features
-    - label: Benefits
-      url: benefits-educators
-    - label: Results
-      url: results
-    - label: Case studies
-      url: case-studies
+  subitems:
+  - label: Features
+    url: features
+  - label: Benefits
+    url: benefits-educators
+  - label: Results
+    url: results
+  - label: Case studies
+    url: case-studies
 - label: Pricing
   url: pricing
 - label: Resources
-  submenu:
-  - subitems:
-    - label: Help Center
-      url: help-center
-    - label: Pilot Program
-      url: pilot
-    - label: Success Team
-      url: success
-    - label: Blog
-      url: blog
+  subitems:
+  - label: Help Center
+    url: help-center
+  - label: Pilot Program
+    url: pilot
+  - label: Success Team
+    url: success
+  - label: Blog
+    url: blog
 accountItems:
 - label: Login
   url: login
