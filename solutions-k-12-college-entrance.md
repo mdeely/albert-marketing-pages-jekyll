@@ -7,39 +7,43 @@ components:
 - template: hero
   block: hero-component
   primary_hero: true
-  supertitle: K-12 ELA
-  title: English for everyone
-  description: Our meticulously-researched ELA courses build the skills that students
-    need to become devoted readers, strong writers, and clear thinkers.
+  supertitle: College Entrance
+  title: Begin your path to college.
+  description: The ACT and SAT test hundreds of concepts and standards. We’ve created
+    questions for each one. Practice with confidence, knowing that Albert offers comprehensive
+    test-preparation.
   cta:
     enabled: true
     button_text: Get Started
     url: https://www.albert.io/signup
   image:
-    image: "/uploads/2018/11/26/k-12-ela-hero.svg"
+    image: "/uploads/2018/12/03/k-12-college-entrance-hero.svg"
 - template: feature_grid
   block: feature-grid-component
   title: Product highlights
   feature_items:
-  - title: High-interest passages
-    description: Our leveled reading passages connect to student’s real-life contexts.
+  - title: Meticulously aligned
+    description: Our ACT and SAT content is aligned to the most updated specifications
+      of each test, so you can feel confident that you are practicing with the most
+      current resources.
     image:
-      image: "/uploads/2018/12/02/passages.svg"
-  - title: Evidence-driven
-    description: Our leveled reading passages connect to student’s real-life contexts.
+      image: "/uploads/2018/12/03/aligned-to-standards_act_sat.svg"
+  - title: Developed by experts
+    description: We collaborate with elite teachers and tutors to create challenging
+      prompts and thoughtful explanations.
     image:
-      image: "/uploads/2018/12/02/interactive_texts.svg"
-      alt_text: Interactive texts
-  - title: Built in differentiation
-    description: With scaffolded organization and leveled passages, Albert’s Core
-      ELA products offer every reader meaningful practice opportunities.
+      image: "/uploads/2018/12/03/developed_by_experts.svg"
+      alt_text: ''
+  - title: Insight into the exam
+    description: Our actionable test-taking strategies teach students how to take
+      standardized tests and arrive at the right answer faster.
     image:
-      image: "/uploads/2018/12/02/scaffolded_organization.svg"
-  - title: Cross-disciplinary
-    description: Reading and writing instruction doesn’t happen in a vacuum. Our passages
-      span STEM, social studies, and literature.
+      image: "/uploads/2018/12/03/into-the-exam.svg"
+  - title: Practice exams
+    description: Our full-length exams are hidden from students, so teachers can assign
+      never-before-seen practice tests that mimic the format of the actual exam
     image:
-      image: "/uploads/2018/12/02/question_types.svg"
+      image: "/uploads/2018/12/03/practice_exams.svg"
 - template: course_preview
   block: course-preview-component
   title: ELA Course Highlights
