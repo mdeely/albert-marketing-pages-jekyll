@@ -407,7 +407,7 @@ allRoundGothic-selector {
             font-size: 5rem; } }
       .hero .hero__content .hero__info-container .hero__description {
         font-size: 0.9375rem;
-        color: #A7ADB0;
+        color: #818689;
         margin-bottom: 0; }
       .hero .hero__content .hero__info-container .hero__cta {
         margin-top: 3.125rem; }
@@ -2175,7 +2175,7 @@ section.interstitial {
     .barGraph .graph__wrapper .tabBar {
       box-shadow: 0 -1px 0 #CDD0D2 inset; }
       .barGraph .graph__wrapper .tabBar + .graphs .graph__item .data__title {
-        padding: 1.5625rem 0 1.25rem 0; }
+        padding: 1.5625rem 0.9375rem 1.25rem 0.9375rem; }
     .barGraph .graph__wrapper .graphs {
       display: flex; }
       .barGraph .graph__wrapper .graphs .graph__item {

@@ -29,11 +29,11 @@ components:
     data_points:
     - data_value: '50'
       data_value_label: ''
-      data_label: Before Albert
+      data_label: ''
       bar_color_name: Green
     - data_value: '80'
       bar_color_name: Gold
-      data_label: After Albert
+      data_label: ''
 - template: bar-graph
   block: bar-graph-component
   title: 'Albert users outperform '
