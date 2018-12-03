@@ -43,7 +43,7 @@ sections:
   read_only: true
 upload_dir: uploads
 public_path: "/uploads"
-front_matter_path: "/uploads"
+front_matter_path: ''
 use_front_matter_path: true
 file_template: ":year:/:month:/:day:/:filename:"
 custom_preview: true
