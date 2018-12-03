@@ -16,7 +16,6 @@ statistics:
   value_subtitle: AP® students scored 3+ in 2016
 - value: 11
   value_subtitle: AP® courses offered
-published: false
 
 ---
 ## Introduction: Supporting a Growing AP® Program 
