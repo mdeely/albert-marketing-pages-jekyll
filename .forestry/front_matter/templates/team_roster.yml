@@ -2,6 +2,7 @@
 label: Team roster
 hide_body: false
 is_partial: true
+display_field: people
 fields:
 - type: text
   hidden: true
@@ -35,8 +36,7 @@ fields:
   fields:
   - type: file
     name: image
-    label: Image
-    hidden: false
+    label: Headshot
   - type: text
     name: name
     label: Name
