@@ -258,7 +258,7 @@ $nav-padding: rem(20);
 	    							.nav__subitem-description {
 	    								line-height: initial;
 	    								font-size: rem(13);
-	    								color: $text_light_grey;
+	    								color: lighten($text_black, 20%);
 	    							}
     							}
 	    					}
