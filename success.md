@@ -20,7 +20,7 @@ components:
     across a school.
   people:
   - headshot: "/uploads/2018/11/29/Girgis Sarah.jpg"
-    name: Sarah Girgiss
+    name: Sarah Girgis
   - headshot: "/uploads/2018/11/30/Priya-Devineni.jpg"
     name: Priya Devineni
   - headshot: "/uploads/2018/12/02/Brewers Luke_square-sm.jpg"
