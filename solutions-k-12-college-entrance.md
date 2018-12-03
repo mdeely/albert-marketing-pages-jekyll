@@ -17,7 +17,7 @@ components:
     button_text: Get Started
     url: https://www.albert.io/signup
   image:
-    image: "/uploads/2018/12/03/k-12-college-entrance-hero.svg"
+    image: "/uploads/2018/12/02/k-12-college-entrance-hero.svg"
 - template: feature_grid
   block: feature-grid-component
   title: Product highlights
@@ -27,23 +27,23 @@ components:
       of each test, so you can feel confident that you are practicing with the most
       current resources.
     image:
-      image: "/uploads/2018/12/03/aligned-to-standards_act_sat.svg"
+      image: "/uploads/2018/12/02/aligned-to-standards_act_sat.svg"
   - title: Developed by experts
     description: We collaborate with elite teachers and tutors to create challenging
       prompts and thoughtful explanations.
     image:
-      image: "/uploads/2018/12/03/developed_by_experts.svg"
+      image: "/uploads/2018/12/02/developed_by_experts.svg"
       alt_text: ''
   - title: Insight into the exam
     description: Our actionable test-taking strategies teach students how to take
       standardized tests and arrive at the right answer faster.
     image:
-      image: "/uploads/2018/12/03/into-the-exam.svg"
+      image: "/uploads/2018/12/02/into-the-exam.svg"
   - title: Practice exams
     description: Our full-length exams are hidden from students, so teachers can assign
       never-before-seen practice tests that mimic the format of the actual exam
     image:
-      image: "/uploads/2018/12/03/practice_exams.svg"
+      image: "/uploads/2018/12/02/practice_exams.svg"
 - template: interstitial
   block: interstitial-component
   title: Full SAT and ACT coverage
@@ -82,20 +82,20 @@ components:
     - caption: Mr. Okafor leads a small SAT review group every Saturday morning. He
         wants to give his students the most rigorous practice materials he can.
       image:
-        image: "/uploads/2018/12/03/CE comic 2 panel 1.png"
+        image: "/uploads/2018/12/02/CE comic 2 panel 1.png"
     - caption: 'Mr. Okafor’s review group works in small sub-groups. The use their
         assignments from the week before to brush up on the concepts where they need
         the most help. '
       image:
-        image: "/uploads/2018/12/03/CE comic 2 panel 2.png"
+        image: "/uploads/2018/12/02/CE comic 2 panel 2.png"
     - caption: Mr. Okafor can wander freely and give guidance as students work. He
         can spend as much time as he needs guiding each student until the student
         grasps the concept.
       image:
-        image: "/uploads/2018/12/03/CE comic 2 panel 3.png"
+        image: "/uploads/2018/12/02/CE comic 2 panel 3.png"
     - caption: Mr. Okafor’s students have never felt so ready for a standardized test!
       image:
-        image: "/uploads/2018/12/03/CE comic 2 panel 4.png"
+        image: "/uploads/2018/12/02/CE comic 2 panel 4.png"
     image:
       image: "/uploads/2018/11/27/okafor.png"
 - template: slideshow
@@ -107,23 +107,23 @@ components:
     description: Hone your reading and writing skills with original passages crafted
       to mimic the test as thoroughly as possible.
     strip_styling: true
-  - image: "/uploads/2018/12/03/rigorous-questions-inspired-by.png"
+  - image: "/uploads/2018/12/02/rigorous-questions-inspired-by.png"
     title: Rigorous Questions Inspired by the Test
     description: Albert’s College Entrance questions assess students’ mastery of basic
       to advanced skills, such as making inferences, interpolating data, and communicating
       ideas clearly.
     strip_styling: true
-  - image: "/uploads/2018/12/03/anticipate-misconceptions.png"
+  - image: "/uploads/2018/12/02/anticipate-misconceptions.png"
     title: Anticipates misconceptions
     description: Our distractors predict students’ incorrect assumptions, mimicking
       the difficulty of the test.
     strip_styling: true
-  - image: "/uploads/2018/12/03/concise solutions.png"
+  - image: "/uploads/2018/12/02/concise solutions.png"
     title: Concise solutions
     description: Every explanation guides students through a step-by-step process
       that addresses the distractors and provides guidance on testing strategies.
     strip_styling: true
-  - image: "/uploads/2018/12/03/the-skils-students-need.png"
+  - image: "/uploads/2018/12/02/the-skils-students-need.png"
     title: The skills students need
     description: Each question is explicitly linked to a standard, so teachers can
       feel good about assigning the targeted practice that their students need.

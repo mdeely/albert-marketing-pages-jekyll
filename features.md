@@ -80,7 +80,7 @@ components:
 - template: slideshow
   block: slideshow-component
   slideshow_item:
-  - image: "/uploads/2018/12/03/features-page-administrator-experience-1.svg"
+  - image: "/uploads/2018/12/02/features-page-administrator-experience-1.svg"
     title: Change. Managed.
     description: Albert provides powerful tools for school administrators to manage
       their Albert deployment at all levels. .
