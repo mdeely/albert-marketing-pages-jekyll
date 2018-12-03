@@ -34,6 +34,7 @@ fields:
   - interstitial
   - pre-footer
 pages:
+- solutions-k-12-college-entrance.md
 - results.md
 - pilot.md
 - success.md
