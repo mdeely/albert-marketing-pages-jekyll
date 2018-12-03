@@ -106,28 +106,28 @@ components:
     title: Original, high-level passages
     description: Hone your reading and writing skills with original passages crafted
       to mimic the test as thoroughly as possible.
-    strip_styling: false
+    strip_styling: true
   - image: "/uploads/2018/12/03/rigorous-questions-inspired-by.png"
     title: Rigorous Questions Inspired by the Test
     description: Albert’s College Entrance questions assess students’ mastery of basic
       to advanced skills, such as making inferences, interpolating data, and communicating
       ideas clearly.
-    strip_styling: false
+    strip_styling: true
   - image: "/uploads/2018/12/03/anticipate-misconceptions.png"
     title: Anticipates misconceptions
     description: Our distractors predict students’ incorrect assumptions, mimicking
       the difficulty of the test.
-    strip_styling: false
+    strip_styling: true
   - image: "/uploads/2018/12/03/concise solutions.png"
     title: Concise solutions
     description: Every explanation guides students through a step-by-step process
       that addresses the distractors and provides guidance on testing strategies.
-    strip_styling: false
+    strip_styling: true
   - image: "/uploads/2018/12/03/the-skils-students-need.png"
     title: The skills students need
     description: Each question is explicitly linked to a standard, so teachers can
       feel good about assigning the targeted practice that their students need.
-    strip_styling: false
+    strip_styling: true
 - template: pre-footer
   block: pre-footer-component
   left:
