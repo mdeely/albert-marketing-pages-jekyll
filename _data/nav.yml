@@ -37,17 +37,6 @@ navItems:
 - label: Subjects
   url: features
 - label: Explore
-- type: field_group_list
-  name: graphs
-  label: Graph
-  hidden: false
-  config:
-    labelField: title
-  fields:
-  - type: text
-    name: title
-    label: Graph title
-    description: Displays above graph.
   subitems:
   - label: Features
     url: features
