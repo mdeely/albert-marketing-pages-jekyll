@@ -57,91 +57,77 @@ components:
 - template: comic-collection
   block: comic-collection-component
   comic_strips:
-  - title: Ms. Yoon
+  - title: Ms. Burton
     image:
-      image: "/uploads/2018/11/27/yoon.png"
+      image: "/uploads/2018/11/27/burton.png"
     comic_panels:
-    - caption: Ms. Yoon’s 11th graders love to read, but they all read at very different
-        levels. This can make Ms. Yoon’s job as an English teacher pretty challenging.
+    - caption: Ms. Burton’s admin requires that all teachers use ACT standards for
+        practice and assessment.
       image:
         image: "/uploads/2018/11/27/ELA comic 1 panel 1.png"
-    - caption: 'She wants to build her students’ confidence and meet her readers where
-        they are, but creating differentiated resources is too time-consuming. '
+    - caption: 'Ms. Burton makes a plan to implement standards-based teaching and
+        uses Albert’s search to create assignments aligned to one standard at a time '
       image:
         image: "/uploads/2018/11/27/ELA comic 1 panel 2.png"
-    - caption: 'When she struggles, her students struggle. It’s hard to have a class
-        discussion when everyone is literally on a different page. '
+    - caption: The more that Ms. Burton’s students practice with individual standards,
+        the higher their scores are on her Albert-powered exit tickets.
       image:
         image: "/uploads/2018/11/27/ELA comic 1 panel 3.png"
-    - caption: 'Then, Ms. Yoon discovers Albert’s Leveled Reading course. Now all
-        of her students can read at their own level and still discuss the same ideas
-        in class. '
+    - caption: Ms. Burton’s admin can observe student progress too, using the Albert
+        Administrator Dashboard. She’s delighted with Ms. Burton’s performance!
       image:
         image: "/uploads/2018/11/27/ELA comic 1 panel 4.png"
-  - title: Ms. Abdulaziz
+  - title: Mr. Okafor
     comic_panels:
-    - caption: Ms. Abdulaziz’s 9th grade English students are mostly visual learners.
-        She tries her best to make sure that she is differentiating for their needs.
+    - caption: Mr. Okafor leads a small SAT review group every Saturday morning. He
+        wants to give his students the most rigorous practice materials he can.
       image:
-        image: "/uploads/2018/11/27/ELA comic 2 panel 1.png"
-    - caption: 'She has been looking for resources that visually represent simple
-        English concepts, but has not been able to find any that meet her needs. '
+        image: "/uploads/2018/12/03/CE comic 2 panel 1.png"
+    - caption: 'Mr. Okafor’s review group works in small sub-groups. The use their
+        assignments from the week before to brush up on the concepts where they need
+        the most help. '
       image:
-        image: "/uploads/2018/11/27/ELA comic 2 panel 2.png"
-    - caption: That’s why she loves Albert’s Elements of a Sentence course, which
-        uses images in all its explanations to make grammar concepts come to life.
+        image: "/uploads/2018/12/03/CE comic 2 panel 2.png"
+    - caption: Mr. Okafor can wander freely and give guidance as students work. He
+        can spend as much time as he needs guiding each student until the student
+        grasps the concept.
       image:
-        image: "/uploads/2018/11/27/ELA comic 2 panel 3.png"
-    - caption: Ms. Abdulaziz watches her student’s mastery soar as students connect
-        abstract concepts with concrete representations. She even decorates her classroom
-        with Albert’s grammar drawings!
+        image: "/uploads/2018/12/03/CE comic 2 panel 3.png"
+    - caption: Mr. Okafor’s students have never felt so ready for a standardized test!
       image:
-        image: "/uploads/2018/11/27/ELA comic 2 panel 4.png"
+        image: "/uploads/2018/12/03/CE comic 2 panel 4.png"
     image:
-      image: "/uploads/2018/11/27/abdulaziz.png"
-  - title: Mr. Cohen
-    comic_panels:
-    - caption: 'Mr. Cohen loves teaching an interdisciplinary subject, combining English
-        and Social Studies designed to turn his students into strong writers and informed
-        citizens. '
-      image:
-        image: "/uploads/2018/11/27/ELA comic 3 panel 1.png"
-    - caption: He loves the freedom of creating his own course, but with great freedom
-        comes the great responsibility of creating lots of custom lesson plans...
-      image:
-        image: "/uploads/2018/11/27/ELA comic 3 panel 2.png"
-    - caption: 'Mr. Cohen turns to Albert’s Essential Readings course, which provides
-        a vast array of interdisciplinary passages and questions, including his favorite:
-        foundational American texts.'
-      image:
-        image: "/uploads/2018/11/27/ELA comic 3 panel 3-1.png"
-    - caption: With their daily assessments taken care of, his students are free to
-        spend class time on creative projects that highlight their deep understanding
-        of literature and history.
-      image:
-        image: "/uploads/2018/11/27/ELA comic 3 panel 4.png"
-    image:
-      image: "/uploads/2018/11/27/cohen.png"
-  - title: Mr. Patel
-    comic_panels:
-    - caption: Mr. Patel uses the 10 Common Core Anchor Standards to guide his ELA
-        instruction throughout the year.
-      image:
-        image: "/uploads/2018/11/27/ELA comic 4 panel 1.png"
-    - caption: He uses Albert’s Reading Blueprints course to easily assign mixed practice
-        or isolated skill practice aligned to CC Anchor Standards.
-      image:
-        image: "/uploads/2018/11/27/ELA comic 4 panel 2.png"
-    - caption: With over 1,000 Reading Blueprints questions, there’s no shortage of
-        practice for Mr. Patel’s students -- and no shortage of data for him to analyze.
-      image:
-        image: "/uploads/2018/11/27/ELA comic 4 panel 3.png"
-    - caption: 'The grading is instant, so Mr. Patel can spend more time understanding
-        his students’ performance. '
-      image:
-        image: "/uploads/2018/11/27/ELA comic 4 panel 4.png"
-    image:
-      image: "/uploads/2018/11/27/patel.png"
+      image: "/uploads/2018/11/27/okafor.png"
+- template: slideshow
+  block: slideshow-component
+  title: Expertly crafted practice items
+  slideshow_item:
+  - image: "/uploads/2018/11/20/Screen Shot 2018-11-20 at 4.16.22 PM.png"
+    title: Original, high-level passages
+    description: Hone your reading and writing skills with original passages crafted
+      to mimic the test as thoroughly as possible.
+    strip_styling: false
+  - image: "/uploads/2018/12/03/rigorous-questions-inspired-by.png"
+    title: Rigorous Questions Inspired by the Test
+    description: Albert’s College Entrance questions assess students’ mastery of basic
+      to advanced skills, such as making inferences, interpolating data, and communicating
+      ideas clearly.
+    strip_styling: false
+  - image: "/uploads/2018/12/03/anticipate-misconceptions.png"
+    title: Anticipates misconceptions
+    description: Our distractors predict students’ incorrect assumptions, mimicking
+      the difficulty of the test.
+    strip_styling: false
+  - image: "/uploads/2018/12/03/concise solutions.png"
+    title: Concise solutions
+    description: Every explanation guides students through a step-by-step process
+      that addresses the distractors and provides guidance on testing strategies.
+    strip_styling: false
+  - image: "/uploads/2018/12/03/the-skils-students-need.png"
+    title: The skills students need
+    description: Each question is explicitly linked to a standard, so teachers can
+      feel good about assigning the targeted practice that their students need.
+    strip_styling: false
 - template: pre-footer
   block: pre-footer-component
   left:
@@ -162,6 +148,5 @@ components:
     cta:
       button_text: Request demo
       url: https://www.albert.io/schools/request-demo
-published: false
 
 ---
