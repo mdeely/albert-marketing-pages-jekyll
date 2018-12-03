@@ -295,7 +295,17 @@ $nav-padding: rem(20);
 	top: 0 !important; //  overrides js that hides navigation bar on scroll for mobile
 
    		&.mobile--open {
-   			background-color: $link;
+   			background-color: $nav-background-color;
+
+			header {
+				.mainNav__logo {
+					svg {
+						path {
+							fill: #FFFFFF;
+						}
+					}
+				}
+			}
    		}
 
     	header {
