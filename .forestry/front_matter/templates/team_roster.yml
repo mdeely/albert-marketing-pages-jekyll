@@ -33,17 +33,10 @@ fields:
   label: Person
   hidden: false
   fields:
+  - type: file
+    name: image
+    label: Image
+    hidden: false
   - type: text
     name: name
     label: Name
-  - type: field_group
-    name: image
-    label: Image
-    fields:
-    - type: file
-      name: image
-      label: Image
-      hidden: false
-    - type: text
-      name: alt_text
-      label: Alt Text
