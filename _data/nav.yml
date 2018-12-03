@@ -1,6 +1,7 @@
 ---
 navItems:
 - label: Solutions
+  url: /solutions
   group_items:
   - group_title: K-12 Core
     subitems:
@@ -37,6 +38,7 @@ navItems:
 - label: Subjects
   url: features
 - label: Explore
+  url: /explore
   subitems:
   - label: Features
     url: features
@@ -49,6 +51,7 @@ navItems:
 - label: Pricing
   url: pricing
 - label: Resources
+  url: /resources
   subitems:
   - label: Help Center
     url: help-center
