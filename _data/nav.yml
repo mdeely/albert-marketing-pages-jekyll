@@ -1,14 +1,14 @@
 ---
 navItems:
 - label: Solutions
-  url: /solutions
+  url: "/solutions"
   group_items:
   - group_title: K-12 Core
     subitems:
     - label: K-12 ELA
       description: Our meticulously-researched ELA courses build the skills that students
         need to become devoted readers, strong writers, and clear thinkers.
-      url: k-12-ela
+      url: solutions-k-12-ela
       icon_url: uploads/2018/11/27/history_of_politics_and_biography.svg
       domain: ela
     - label: K-12 Math
@@ -38,7 +38,7 @@ navItems:
 - label: Subjects
   url: features
 - label: Explore
-  url: /explore
+  url: "/explore"
   subitems:
   - label: Features
     url: features
@@ -51,7 +51,7 @@ navItems:
 - label: Pricing
   url: pricing
 - label: Resources
-  url: /resources
+  url: "/resources"
   subitems:
   - label: Help Center
     url: help-center
