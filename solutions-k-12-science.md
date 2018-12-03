@@ -88,39 +88,39 @@ components:
     - caption: Ms. Nielsen encourages her 9th grade Biology students to think like
         scientists.
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 1 panel 1.png"
+        image: "/uploads/2018/11/29/K12 Science comic 1 panel 1.jpg"
     - caption: But to think like scientists, students have to read primary literature,
         including journal abstracts. These can be hard to find and modify for grades
         6-12.
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 1 panel 2.png"
+        image: "/uploads/2018/11/29/K12 Science comic 1 panel 2.jpg"
     - caption: 'That’s why Ms. Nielsen loves Albert’s NGSS questions, which break
         down primary literature in a student-friendly way.  '
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 1 panel 3.png"
+        image: "/uploads/2018/11/29/K12 Science comic 1 panel 3.jpg"
     - caption: Ms. Nielsen’s students are able to use what they’ve learned from Albert
         to improve their own lab reports. Now they are thinking and writing like scientists!
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 1 panel 4.png"
+        image: "/uploads/2018/11/29/K12 Science comic 1 panel 4.jpg"
   - title: Mr. Thurgood
     comic_panels:
     - caption: 'Mr. Thurgood’s administrator requires that all classes incorporate
         reading and math practice. But Mr. Thurgood teaches science. '
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 2 panel 1.png"
+        image: "/uploads/2018/11/29/K12 Science comic 2 panel 1.jpg"
     - caption: He tries to stay true to his curriculum while giving students plenty
         of reading and math practice. But it’s not always easy.
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 2 panel 2.png"
+        image: "/uploads/2018/11/29/K12 Science comic 2 panel 2.jpg"
     - caption: He finds Albert’s NGSS questions, which align to Common Core standards
         for Reading and Math. Now his students practice Science, Reading, and Math
         all at once!
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 2 panel 3.png"
+        image: "/uploads/2018/11/29/K12 Science comic 2 panel 3.jpg"
     - caption: 'When his students take their end-of-year tests, he knows he’s done
         all he can to help them pass with flying colors. '
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 2 panel 4.png"
+        image: "/uploads/2018/11/29/K12 Science comic 2 panel 4.jpg"
     image:
       image: "/uploads/2018/11/27/thurgood.png"
   - title: Ms. Krawitz
@@ -128,20 +128,20 @@ components:
     - caption: In her Geometry classroom, Mrs. Finney groups students based on their
         ability.
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 3 panel 1.png"
+        image: "/uploads/2018/11/29/K12 Science comic 3 panel 1.jpg"
     - caption: Albert offers multiple levels of rigor for each math concept, allowing
         the groups to tackle concepts at levels ranging from straightforward calculations
         to abstract applications.
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 3 panel 2.png"
+        image: "/uploads/2018/11/29/K12 Science comic 3 panel 2.jpg"
     - caption: At the end of each day, she gives a quick exit ticket to get a sense
         for students stand.
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 3 panel 3.png"
+        image: "/uploads/2018/11/29/K12 Science comic 3 panel 3.jpg"
     - caption: The data tells her how all her students are doing so she can adjust
         groups for tomorrow.
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 3 panel 4.png"
+        image: "/uploads/2018/11/29/K12 Science comic 3 panel 4.jpg"
     image:
       image: "/uploads/2018/11/27/krawitz.png"
   - title: Mr. Mendes
@@ -149,19 +149,19 @@ components:
     - caption: This is Mr. Kietriy’s first year teaching AP Calculus, so Albert’s
         AP Calculus questions are a lifesaver.
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 4 panel 1.png"
+        image: "/uploads/2018/11/29/K12 Science comic 4 panel 1.jpg"
     - caption: But his students get frustrated when they miss a question because of
         a skill they should have learned last year.
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 4 panel 2.png"
+        image: "/uploads/2018/11/29/K12 Science comic 4 panel 2.jpg"
     - caption: So he likes to include questions from Precalculus and Algebra 2 on
         each of his assignments depending on what each of his students struggles with.
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 4 panel 3.png"
+        image: "/uploads/2018/11/29/K12 Science comic 4 panel 3.jpg"
     - caption: His mixed assignments provide AP practice while also keeping the foundational
         skills fresh!
       image:
-        image: "/uploads/2018/11/29/K12 Science comic 4 panel 4.png"
+        image: "/uploads/2018/11/29/K12 Science comic 4 panel 4.jpg"
     image:
       image: "/uploads/2018/11/27/mendes.png"
 - template: pre-footer

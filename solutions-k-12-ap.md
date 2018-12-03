@@ -64,36 +64,36 @@ components:
     comic_panels:
     - caption: Mr. Zakaria’s AP English students need a lot of writing practice.
       image:
-        image: "/uploads/2018/11/29/AP comic 1 panel 1.png"
+        image: "/uploads/2018/11/29/AP comic 1 panel 1.jpg"
     - caption: Mr. Zakaria uses Albert’s FRQ prompts to familiarize students with
         the hard work of literary analysis.
       image:
-        image: "/uploads/2018/11/29/AP comic 1 panel 2.png"
+        image: "/uploads/2018/11/29/AP comic 1 panel 2.jpg"
     - caption: Students write multiple drafts of FRQs and critique them together in
         class.
       image:
-        image: "/uploads/2018/11/29/AP comic 1 panel 3.png"
+        image: "/uploads/2018/11/29/AP comic 1 panel 3.jpg"
     - caption: Students compare their essays to the Albert sample responses and discuss
         what makes them perfect exemplars.
       image:
-        image: "/uploads/2018/11/29/AP comic 1 panel 4.png"
+        image: "/uploads/2018/11/29/AP comic 1 panel 4.jpg"
   - title: Mr. Chen
     comic_panels:
     - caption: Mr. Chen’s AP US History students prep for tomorrow’s lesson with some
         pre-reading.
       image:
-        image: "/uploads/2018/11/29/AP comic 2 panel 1.png"
+        image: "/uploads/2018/11/29/AP comic 2 panel 1.jpg"
     - caption: To get a sense of how much they understood from reading, Mr. Chen gives
         a short assignment at the beginning of class on Albert.
       image:
-        image: "/uploads/2018/11/29/AP comic 2 panel 2.png"
+        image: "/uploads/2018/11/29/AP comic 2 panel 2.jpg"
     - caption: During class, he chooses topics to focus on based on the results.
       image:
-        image: "/uploads/2018/11/29/AP comic 2 panel 3.png"
+        image: "/uploads/2018/11/29/AP comic 2 panel 3.jpg"
     - caption: At the end of class, his exit ticket provides mastery data of how much
         the students learned in that lesson.
       image:
-        image: "/uploads/2018/11/29/AP comic 2 panel 4.png"
+        image: "/uploads/2018/11/29/AP comic 2 panel 4.jpg"
     image:
       image: "/uploads/2018/11/27/chen.png"
   - title: Ms. Albertini
@@ -101,19 +101,19 @@ components:
     - caption: Students in Ms. Albertini’s AP Calculus class practice difficult calculus
         problems on Albert at home.
       image:
-        image: "/uploads/2018/11/29/AP comic 3 panel 1.png"
+        image: "/uploads/2018/11/29/AP comic 3 panel 1.jpg"
     - caption: In the class the next day, students discuss their misconceptions in
         groups.
       image:
-        image: "/uploads/2018/11/29/AP comic 3 panel 2.png"
+        image: "/uploads/2018/11/29/AP comic 3 panel 2.jpg"
     - caption: Ms. Albertini likes to bring the whole class back together to discuss
         a problem the students haven’t seen yet.
       image:
-        image: "/uploads/2018/11/29/AP comic 3 panel 3.png"
+        image: "/uploads/2018/11/29/AP comic 3 panel 3.jpg"
     - caption: Based on how individual students contribute, she can give custom assignments
         for each student on Albert.
       image:
-        image: "/uploads/2018/11/29/AP comic 3 panel 4.png"
+        image: "/uploads/2018/11/29/AP comic 3 panel 4.jpg"
     image:
       image: "/uploads/2018/11/27/albertini.png"
   - title: Ms. Whiteeagle
@@ -121,18 +121,18 @@ components:
     - caption: Ms. Whiteeagle is worried that her new class schedule won’t leave time
         to include all the AP Biology topics she needs to cover.
       image:
-        image: "/uploads/2018/11/29/AP comic 4 panel 1.png"
+        image: "/uploads/2018/11/29/AP comic 4 panel 1.jpg"
     - caption: She decides to include Albert for daily practice and weekly quizzes.
       image:
-        image: "/uploads/2018/11/29/AP comic 4 panel 2.png"
+        image: "/uploads/2018/11/29/AP comic 4 panel 2.jpg"
     - caption: The data analytics that are provided for each standard help Ms. Whiteeagle
         decide where to prioritize her teaching time.
       image:
-        image: "/uploads/2018/11/29/AP comic 4 panel 3.png"
+        image: "/uploads/2018/11/29/AP comic 4 panel 3.jpg"
     - caption: At the end of the year, Albert’s full-length practice exams show her
         students are ready for the AP exam in May!
       image:
-        image: "/uploads/2018/11/29/AP comic 4 Panel 4.png"
+        image: "/uploads/2018/11/29/AP comic 4 Panel 4.jpg"
     image:
       image: "/uploads/2018/11/27/whiteeagle.png"
 - template: pre-footer
