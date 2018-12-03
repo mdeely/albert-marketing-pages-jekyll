@@ -21,7 +21,7 @@ components:
   people:
   - name: Luke Brewers
     image:
-      image: "/uploads/2018/12/03/Brewers-Luke.jpg"
+      image: "/2018/11/29/Brewers Luke.jpg"
   - name: Priya Devineni
     image:
       image: "/uploads/2018/11/30/Devineni-Priya.jpg"
@@ -33,7 +33,7 @@ components:
       image: "/uploads/2018/11/30/Merdinger-Sloane.jpg"
   - name: Katherine Olecki
     image:
-      image: "/uploads/2018/12/03/Olecki-Katherine.jpg"
+      image: "/uploads/2018/11/29/Olecki Katherine.jpg"
   - name: Anil Singhal
     image:
       image: "/uploads/2018/12/03/Singhal-Anil.jpg"
