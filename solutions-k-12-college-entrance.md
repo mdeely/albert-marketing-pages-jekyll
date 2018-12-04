@@ -50,9 +50,9 @@ components:
   description: Albert’s College Entrance offering includes full coverage of the new
     SAT, all SAT Subject Tests, and all sections of the ACT.
   cta:
-    url: Explore all College Entrance subjects
+    url: "/k-12/college-entrance"
     enabled: true
-    button_text: "/k-12/college-entrance"
+    button_text: Explore all College Entrance subjects
   large: true
 - template: comic-collection
   block: comic-collection-component
