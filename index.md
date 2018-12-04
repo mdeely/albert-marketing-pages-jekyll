@@ -70,6 +70,9 @@ components:
     title: High fiving
     image:
       image: "/uploads/2018/11/20/features-hero.svg"
+- template: form-pilot-request
+  block: form-pilot-request-component
+  enabled: true
 - template: pre-footer
   block: pre-footer-component
   left:
@@ -88,6 +91,6 @@ components:
       with one of our Schools team members.
     cta:
       button_text: Request demo
-      url: https://www.albert.io/schools/request-demo
+      url: "#pilot_request_form_modal"
 
 ---
