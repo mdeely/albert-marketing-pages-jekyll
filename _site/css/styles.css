@@ -2721,17 +2721,26 @@ section.forms.modal {
       .caseStudy .caseStudy__info .caseStudy__info-title:first-child {
         margin-top: 0; }
     .caseStudy .caseStudy__info p,
+    .caseStudy .caseStudy__info ul,
     .caseStudy .caseStudy__info .caseStudy__info-paragraph {
       font-size: 1.0625rem;
       line-height: 1.8;
       color: #797E81;
       white-space: pre-wrap; }
       .caseStudy .caseStudy__info p p,
+      .caseStudy .caseStudy__info ul p,
       .caseStudy .caseStudy__info .caseStudy__info-paragraph p {
         font-size: 1.0625rem;
         line-height: 1.8;
         color: #797E81;
         white-space: pre-wrap; }
+    .caseStudy .caseStudy__info ul {
+      list-style: initial;
+      margin-right: 1.875rem;
+      margin-left: 1.875rem;
+      white-space: initial; }
+      .caseStudy .caseStudy__info ul li {
+        margin-bottom: 0.9375rem; }
     .caseStudy .caseStudy__info img {
       max-width: 100%;
       display: block;
