@@ -8,7 +8,15 @@ description: Sam Barlow High School supplied teachers with the highest value tes
   education.
 location: Gresham, Oregon
 school_level: High school
-statistics: []
+statistics:
+- value: 391
+  value_subtitle: Total AP® students in 2016
+- value: 557
+  value_subtitle: AP® exams administered in 2016
+- value: 45%
+  value_subtitle: AP® students scored 3+ in 2016
+- value: 10
+  value_subtitle: AP® courses offered
 
 ---
 ## Introduction: A Changing School 
