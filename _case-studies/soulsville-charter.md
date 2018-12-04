@@ -2,7 +2,7 @@
 title: How Soulsville Charter Helped Traditionally Underserved Students
 layout: case_study
 date: 2018-11-29 23:09:38 +0000
-banner_image: ''
+banner_image: "/uploads/2018/12/04/soulsville.jpg"
 description: Intentional, aligned support was provided to first time AP® students
   in new AP® courses through partnership with Albert.
 location: Memphis, Tennessee
