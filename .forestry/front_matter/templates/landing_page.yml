@@ -35,15 +35,16 @@ fields:
   - testimonials
   - pre-footer
 pages:
-- results.md
-- pilot.md
-- success.md
-- demo-request.md
+- benefits-educators.md
+- solutions-k-12-science.md
+- features.md
 - benefits-self-study.md
 - solutions-k-12-ap.md
-- solutions-k-12-science.md
-- solutions-k-12-math.md
-- solutions-k-12-ela.md
+- demo-request.md
+- success.md
+- pilot.md
+- solutions-k-12-college-entrance.md
+- results.md
 - test-page.md
-- features.md
-- benefits-educators.md
+- solutions-k-12-ela.md
+- solutions-k-12-math.md

@@ -80,14 +80,16 @@ components:
 - template: slideshow
   block: slideshow-component
   slideshow_item:
-  - image: "/uploads/2018/11/21/features-page-administrator-experience-1.svg"
+  - image: "/uploads/2018/12/02/features-page-administrator-experience-1.svg"
     title: Change. Managed.
     description: Albert provides powerful tools for school administrators to manage
       their Albert deployment at all levels. .
+    strip_styling: true
   - image: "/uploads/2018/11/21/features-page-administrator-experience-2.svg"
     title: Complete insights
     description: Our comprehensive reporting tools provide detailed insights into
       classes, teachers, students, and subjects for a complete view of your data.
+    strip_styling: true
   - image: "/uploads/2018/11/21/tiny-ui_admin-tab--reports.png"
     title: Drive instructional value
     description: 'User Albert’s data insights to drive engagement across teachers
@@ -97,6 +99,7 @@ components:
     description: As your students learn more deeply while your teachers free up time
       for personalized instruction, watch test scores, productivity, and engagement
       improve.
+    strip_styling: true
   title: A complete administrator experience
 - template: pre-footer
   block: pre-footer-component

@@ -2078,8 +2078,7 @@ section.interstitial {
           .salesRoster .salesRoster__wrapper .salesRoster__visuals .salesRoster__list .salesRoster__item:hover .salesRoster__profile .salesRoster__profile-visual {
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12), 0 7px 20px rgba(0, 0, 0, 0.05), 0 7px 20px rgba(0, 0, 0, 0.05);
             transform: scale(1.22);
-            transition: all .2s ease-in-out;
-            background-size: 110%; }
+            transition: all .2s ease-in-out; }
           .salesRoster .salesRoster__wrapper .salesRoster__visuals .salesRoster__list .salesRoster__item:hover .salesRoster__profile .salesRoster__caption {
             opacity: 1;
             transition: opacity .1s ease-in-out; }
