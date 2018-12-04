@@ -20,18 +20,19 @@ fields:
   name: components
   label: Components
   template_types:
-  - team_roster
-  - form-demo-request
-  - comic-collection
   - bar-graph
-  - tab-bar
-  - testimonials
+  - comic-collection
   - course_preview
-  - slideshow
-  - hero
+  - form-demo-request
+  - form-pilot-request
   - feature_list
   - feature_grid
+  - hero
   - interstitial
+  - slideshow
+  - tab-bar
+  - team_roster
+  - testimonials
   - pre-footer
 pages:
 - results.md

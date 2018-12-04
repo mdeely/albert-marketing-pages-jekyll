@@ -843,7 +843,9 @@ allRoundGothic-selector {
     .mainNav {
       top: 0 !important; }
       .mainNav.mobile--open {
-        background-color: #399FDF; }
+        background-color: #2271A3; }
+        .mainNav.mobile--open header .mainNav__logo svg path {
+          fill: #FFFFFF; }
       .mainNav header .mainNav__mobile-toggle {
         display: none; }
       .mainNav header .mainNav__logo {
@@ -1078,7 +1080,8 @@ allRoundGothic-selector {
           min-width: 15.625rem;
           flex: 1;
           filter: grayscale(100%);
-          transition: .2s ease-in-out; }
+          transition: .2s ease-in-out;
+          background-color: #FFFFFF; }
           .comicStrip .comicStrip__list .comicStrip__item .comicPanel__list .comicPanel__item.active, .comicStrip .comicStrip__list .comicStrip__item .comicPanel__list .comicPanel__item:hover {
             filter: grayscale(0%); }
             .comicStrip .comicStrip__list .comicStrip__item .comicPanel__list .comicPanel__item.active .comicPanel__link .comicPanel__caption, .comicStrip .comicStrip__list .comicStrip__item .comicPanel__list .comicPanel__item:hover .comicPanel__link .comicPanel__caption {

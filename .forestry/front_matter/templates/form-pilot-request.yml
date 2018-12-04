@@ -1,0 +1,14 @@
+---
+label: Pilot Request Form
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: form-pilot-request-component
+- type: boolean
+  name: enabled
+  label: Use as modal
+  description: Use '#pilot_request_form_modal' in any URL to trigger this modal
