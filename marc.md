@@ -21,8 +21,7 @@ components:
     description: Explore how Albert can help your school meet its instructional goals
       with one of our Schools team members.
     cta:
-      button_text: Request demo
-      url: https://www.albert.io/schools/request-demo
-published: false
+      button_text: Please change?
+      url: Different value
 
 ---
