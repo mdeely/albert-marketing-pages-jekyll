@@ -34,7 +34,7 @@ Margaret Wilkening, Social Studies Chair, explained, “Our school is interestin
 
 Teachers at George Ranch supplemented their teaching with Albert, by using it as an additional resource to provide students with AP® curriculum aligned, rigorous practice. Teachers at George Ranch used Albert frequently in everything from daily homework to quizzes, as well as for end of year review. Ms. Wilkening explained:
 
-> “We explored other resources, but nothing compared. The textbook questions were too content based, and did not require the critical thinking that was needed for the AP®, and other sources such as Barron’s® and AP® Insight were not as useful. AP® Insight only focused on challenge areas, and we wanted practice for the whole course. The review materials on Albert were outstanding, so there was no comparis![](/uploads/2018/11/29/SamBarlowHs.jpg)on to the other sources.”
+> “We explored other resources, but nothing compared. The textbook questions were too content based, and did not require the critical thinking that was needed for the AP®, and other sources such as Barron’s® and AP® Insight were not as useful. AP® Insight only focused on challenge areas, and we wanted practice for the whole course. The review materials on Albert were outstanding, so there was no comparison to the other sources.”
 
 Over the course of the 2015-2016 school year, GRHS’s second year using Albert, 778 AP® students answered 339,693 College Board® aligned questions on Albert. That’s about 436 questions per student or approximately **7 AP® practice exams.**
 
