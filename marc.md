@@ -14,6 +14,7 @@ components:
       by a dedicated member of our Schools team.
     cta:
       button_text: Apply
+      url: "#demo_request_form_modal"
   right:
     image:
       image: "/uploads/2018/11/24/analytics_data_support (1).svg"
@@ -25,6 +26,9 @@ components:
       url: "#pilot_request_form_modal"
 - template: form-pilot-request
   block: form-pilot-request-component
+  enabled: true
+- template: form-demo-request
+  block: form-demo-request-component
   enabled: true
 
 ---
