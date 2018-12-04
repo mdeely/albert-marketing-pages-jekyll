@@ -83,6 +83,7 @@ components:
       by a dedicated member of our Schools team.
     cta:
       button_text: Apply
+      url: "#pilot_request_form_modal"
   right:
     image:
       image: "/uploads/2018/11/24/analytics_data_support (1).svg"
@@ -91,6 +92,6 @@ components:
       with one of our Schools team members.
     cta:
       button_text: Request demo
-      url: "#pilot_request_form_modal"
+      url: ''
 
 ---
