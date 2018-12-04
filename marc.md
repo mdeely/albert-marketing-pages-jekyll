@@ -22,6 +22,9 @@ components:
       with one of our Schools team members.
     cta:
       button_text: Please change?
-      url: Different value
+      url: "#pilot_request_form_modal"
+- template: form-pilot-request
+  block: form-pilot-request-component
+  enabled: true
 
 ---
