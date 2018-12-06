@@ -37,7 +37,7 @@
 
 	{% for domain in coursePreview.curriculum_area %}
 
-		{% if domain.domain_description %}
+		{% if domain.description %}
 			{% if forloop.index == 1 %}
 				<p class="coursePreview__group-description active" data-additional-target="#{{ domain.title | append: index | slugify }}">{{ domain.description }}</p>
 			{% else %}
