@@ -6,6 +6,6 @@ description: ''
 components:
 - template: form-demo-request
   block: form-demo-request-component
-published: false
+  enabled: false
 
 ---
