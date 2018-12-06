@@ -7,7 +7,7 @@
 		padding-bottom: rem(40);
 		color: #FFFFFF;
 		position: relative;
-	    background-position: center;
+	    background-position: center 120%;
 	    background-repeat: no-repeat;
 	    background-size: cover;
 	    display: flex;
@@ -341,6 +341,14 @@
 					font-size: rem(20);
 				}
 			}
+		}
+	}
+}
+
+@media only screen and (min-width: $xl-viewport) {
+	.caseStudy {
+		.caseStudy__hero {
+			background-position: center 50%;
 		}
 	}
 }

@@ -21,6 +21,7 @@ components:
   title: Learn anything
   curriculum_area:
   - title: Math
+    description: Testing the description area
     cta:
       enabled: true
       button_text: View courses
