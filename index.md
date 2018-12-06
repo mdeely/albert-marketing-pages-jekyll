@@ -37,6 +37,7 @@ components:
       title: Math
       image:
         image: "/uploads/2018/11/27/mastery_math_algebra_2.svg"
+    description: Heyo here is a description
   - cta:
       url: url
       button_text: View more courses
