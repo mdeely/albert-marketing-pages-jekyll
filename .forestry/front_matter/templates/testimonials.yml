@@ -8,7 +8,7 @@ fields:
   hidden: true
   label: block
   name: block
-  default: testmionial-component
+  default: testmionials-component
 - type: text
   name: title
   label: Title
@@ -20,7 +20,6 @@ fields:
   hidden: false
   config:
     labelField: teacher_name
-    min: '3'
   fields:
   - type: file
     name: image
